@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "potnia"
+version = "0.1.0"
+description = "Potnia is a Python Library to help users work with Aegean scripts."
+authors = ["Emily Tour <esmtour@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
