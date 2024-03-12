@@ -14,6 +14,9 @@ class Mapper:
         self.transliteration_to_unicode_dict = {v: k for k, v in self.unicode_to_transliteration_dict.items()}
 
     def tokenize_unicode(self, text:str) -> List[str]:
+        words = ['-'.join(word) for word in text.split()]
+        text = ' '.join(words)
+
         return list(text)
 
     def tokenize_transliteration(self, text:str) -> List[str]:
