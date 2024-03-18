@@ -12,3 +12,13 @@ def test_linear_a_unicode(test_input, expected):
 def test_linear_a_transliteration(test_input, expected):
     assert linear_a_mapper.to_transliteration(test_input) == expected
 
+
+def test_tokenize_transliteration_linear_a():
+    assert linear_a_mapper.tokenize_transliteration("]ta-pi ]ki[ ]a-ra[ ]a-su-mi-*118[ a-pa-[?][ ]mi-ki-sa-ne[") == [
+        "]", "ta", "pi", " ", 
+        "]", "ki", "[", " ", 
+        "]", "a", "ra", "[", " ", 
+        "]", "a", "su", "mi", "*118", "[", " ", 
+        "a", "pa", "[?]", "[", " ", 
+        "]", "mi", "ki", "sa", "ne", "['",
+    ]
