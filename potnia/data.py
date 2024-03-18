@@ -14,7 +14,7 @@ def read_data_yaml_cached(filename: str) -> Dict[str, str]:
     if not path.exists():
         return dict()
     
-    with open(path) as f:
+    with open(path, encoding='utf8') as f:
         result = yaml.safe_load(f)
     return result or dict()
 
