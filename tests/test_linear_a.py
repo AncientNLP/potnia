@@ -14,11 +14,12 @@ def test_linear_a_transliteration(test_input, expected):
 
 
 def test_tokenize_transliteration_linear_a():
-    assert linear_a_mapper.tokenize_transliteration("]ta-pi ]ki[ ]a-ra[ ]a-su-mi-*118[ a-pa-[?][ ]mi-ki-sa-ne[") == [
+    result = linear_a_mapper.tokenize_transliteration("]ta-pi ]ki[ ]a-ra[ ]a-su-mi-*118[ a-pa-[?][ ]mi-ki-sa-ne[")
+    assert result == [
         "]", "ta", "pi", " ", 
         "]", "ki", "[", " ", 
         "]", "a", "ra", "[", " ", 
         "]", "a", "su", "mi", "*118", "[", " ", 
         "a", "pa", "[?]", "[", " ", 
-        "]", "mi", "ki", "sa", "ne", "['",
+        "]", "mi", "ki", "sa", "ne", "[",
     ]
