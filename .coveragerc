@@ -1,0 +1,6 @@
+[run]
+source = potnia
+
+[report]
+precision = 2
+

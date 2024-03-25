@@ -12,3 +12,9 @@ def test_linear_a_unicode(test_input, expected):
 def test_linear_a_transliteration(test_input, expected):
     assert linear_a_mapper.to_transliteration(test_input) == expected
 
+
+@pytest.mark.parametrize("test_input,expected", expected("linear_a_tokenize_transliteration"))
+def test_tokenize_transliteration_linear_a(test_input, expected):
+    assert linear_a_mapper.tokenize_transliteration(test_input) == expected
+
+

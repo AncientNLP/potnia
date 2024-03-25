@@ -12,3 +12,8 @@ def test_linear_b_unicode(test_input, expected):
 def test_linear_b_transliteration(test_input, expected):
     assert linear_b_mapper.to_transliteration(test_input) == expected
 
+
+@pytest.mark.parametrize("test_input,expected", expected("linear_b_tokenize_transliteration"))
+def test_tokenize_transliteration_linear_b(test_input, expected):
+    breakpoint()
+    assert linear_b_mapper.tokenize_transliteration(test_input) == expected
