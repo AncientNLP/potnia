@@ -1,3 +1,4 @@
+# LB SOUND VALUES KNOWN
 𐀀: a
 𐀁: e
 𐀂: i
@@ -58,6 +59,10 @@
 𐀼: za
 𐀽: ze
 𐀿: zo
-𐁀: a2
-𐁁: a3
-𐁂: au
+
+# LB SOUND VALUES UNKNOWN
+𐁒: *022
+𐁓: *034
+𐁔: *047
+𐁕: *049
+𐁜: *086
