@@ -14,12 +14,12 @@
 𐁍: two
 
 # SOUND VALUES UNKNOWN
-𐁐: *018
-𐁑: *019
+𐁐: "*018"
+𐁑: "*019"
 # *035 missing unicode sign?
-𐁗: *063
-𐁛: *083
-𐁝: *089
+𐁗: "*063"
+𐁛: "*083"
+𐁝: "*089"
 
 # DOUBTFUL VALUES (NOT IN LiBER TEXTS)
 𐁖: pa\u2083
