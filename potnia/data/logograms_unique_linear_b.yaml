@@ -1,0 +1,277 @@
+# PEOPLE AND ANIMALS
+𐂀: VIR
+𐂁: MUL
+𐂂: CERV
+𐂃: EQU
+𐂄: EQUf
+𐂅: EQUm
+𐀥: OVIS
+𐂆: OVISf
+𐂇: OVISm
+𐁒: CAP
+𐂈: CAPf
+𐂉: CAPm
+𐁂: SUS
+𐂊: SUSf
+𐂋: SUSm
+𐀘: BOS
+𐂌: BOSf
+𐂍: BOSm
+
+# CEREALS AND PLANS
+𐂎: GRA
+𐂏: HORD
+𐂐: OLIV
+𐂑: AROM
+𐂒: CYP
+𐂓: KA+PO
+𐂔: KA+NA+KO
+# NO *144 CROCUS UNICODE SIGN?
+
+# EXTRACTS
+𐂕: OLE
+𐂖: VIN
+𐂗: *132
+𐂘: A+RE+PA
+𐂙: ME+RI
+
+# METALS
+𐂚: AES
+𐂛: AUR
+𐂜: *142
+
+# OTHER MATERIALS AND ITEMS
+𐂝: LANA
+𐂞: *146
+𐂟: *150
+𐂠: HORN
+𐂡: *152
+𐂢: *153
+𐂣: *154
+𐂤: TU+RO\u2802
+𐂥: *157
+𐂦: *158
+𐂧: TELA
+𐂨: *160
+𐂩: *161
+𐂪: TUN
+𐂫: ARM
+𐂬: *164
+𐂭: *165
+𐂮: *166
+𐂯: *167
+𐂰: *168
+𐂱: *169
+𐂲: *170
+𐂳: *171
+𐂴: *172
+𐂵: LUNA
+𐂶: *174
+𐂷: ARB
+𐂸: *177
+𐂹: *178
+𐂺: *179
+𐂻: *180
+𐂼: *181
+𐂽: *182
+𐂾: *183
+𐂿: *184
+𐃀: *185
+𐃁: *189
+𐃂: *190
+𐃃: GAL
+𐃄: *220
+𐃅: ALV
+𐃆: HAS
+𐃇: SAG
+𐃈: *232
+𐃉: PUG
+𐃊: *234
+𐃋: GUP
+𐃌: BIG
+𐃍: CUR
+𐃎: CAPS
+𐃏: ROTA
+𐃐: *245
+𐃑: *246
+𐃒: DI+PTE
+𐃓: *248
+𐃔: *249
+𐃕: *251
+𐃖: *252
+𐃗: *253
+𐃘: JAC
+𐃙: *255
+𐃚: *256
+𐃛: *257
+𐃜: *258
+𐃝: *259
+
+# VESSELS
+𐃞: *155VAS
+𐃟: *200VAS
+𐃠: *201VAS
+𐃡: *202VAS
+𐃢: *203VAS
+𐃣: *204VAS
+𐃤: *205VAS
+𐃥: *206VAS
+𐃦: *207VAS
+𐃧: *208VAS
+𐃨: *209VAS
+𐃩: *210VAS
+𐃪: *211VAS
+𐃫 : *212VAS
+𐃬: *213VAS
+𐃭: *214VAS
+𐃮: *215VAS
+𐃯: *216VAS
+𐃰: *217VAS
+𐃱: *218VAS
+𐃲: *219VAS
+𐃳: *221VAS
+𐃴: *222VAS
+𐃵: *226VAS
+𐃶: *227VAS
+𐃷: *228VAS
+𐃸: *229VAS
+𐃹: *250VAS
+𐃺: *305VAS
+
+# METRIC
+𐄿: Z
+𐄾: V
+𐄼: T
+𐄽: S
+𐄻: Q
+𐄺: P
+𐄹: N
+𐄸: M
+𐄷: L
+
+# COMPOSITE IDEOGRAMS WITHOUT DESIGNATED UNICODE SIGNS
+# USED IN LiBER TEXTS
+𐂐+𐀀: OLIV+A
+𐃨+𐀀: 209VAS+A
+𐃫+𐀄: 212VAS+U
+𐂰+𐀮: 168+SE
+𐂯: 167+PE
+𐂧+𐀓: TELA+KU
+𐂑+𐂒: AROM+CYP
+
+# NOT USED IN LiBER TEXTS
+# OVIS+TA
+# CAP+E
+# SUS+KA
+# SUS+SI
+# BOS+SI
+# GRA+Q
+# GRA+PE
+# OLIV+TI
+# AROM+KO
+# CYP+KU
+# CYP+O
+# CYP+PA
+# CYP+QA
+# KA+PO
+# KA+NA+KO
+# OLE+A
+# OLE+PA
+# OLE+SI
+# OLE+WE
+# A+RE+PA
+# TUN+KI
+# TUN+QE
+# TUN+RI
+# 166+WE
+# 172+KE+RO
+# 180+DI
+# 202VAS+DI
+# 210VAS+KA
+# 214VAS+DI
+# ROTA+TE
+# DI+PTE
+
+# SYLLABOGRAMS AS IDEOGRAMS
+# SOUND VALUES UNKNOWN
+𐀛: *030
+𐀭: *031
+𐁉: *033
+𐀎: *065
+
+# SOUND VALUES KNOWN
+# SHOULD WE INCLUDE CURRENTLY UNUSED ONES FOR FUTURE-PROOFING PURPOSES?
+𐀀: A
+# 𐀁: E
+# 𐀂: I
+𐀃: O
+𐀄: U
+𐀅: DA
+# 𐀆: DE
+𐀇: DI
+# 𐀈: DO
+# 𐀉: DU
+# 𐀊: JA
+# 𐀋: JE
+# 𐀍: JO
+# 𐀎: JU
+𐀏: KA
+# 𐀐: KE
+𐀑: KI
+𐀒: KO
+𐀓: KU
+𐀔: MA
+𐀕: ME
+# 𐀖: MI
+𐀗: MO
+𐀘: MU
+𐀙: NA
+𐀚: NE
+𐀛: NI
+𐀜: NO
+# 𐀝: NU
+𐀞: PA
+𐀟: PE
+# 𐀠: PI
+𐀡: PO
+𐀢: PU
+# 𐀣: QA
+# 𐀤: QE
+𐀥: QI
+# 𐀦: QO
+# 𐀨: RA
+𐀩: RE
+# 𐀪: RI
+𐀫: RO
+# 𐀬: RU
+𐀭: SA
+𐀮: SE
+# 𐀯: SI
+𐀰: SO
+# 𐀱: SU
+# 𐀲: TA
+𐀳: TE
+𐀴: TI
+# 𐀵: TO
+# 𐀶: TU
+# 𐀷: WA
+𐀸: WE
+𐀹: WI
+# 𐀺: WO
+𐀼: ZA
+𐀽: ZE
+𐀿: ZO
+# 𐁀: A2
+𐁁: A3
+# 𐁂: AU
+# 𐁃: DWE
+# 𐁄: DWO
+# 𐁅: NWA
+# 𐁆: PU2
+# 𐁇: PTE
+# 𐁈: RA2
+𐁉: RA3
+# 𐁊: RO2
+# 𐁋: TA2
+# 𐁌: TWE
+# 𐁍: TWO
