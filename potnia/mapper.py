@@ -9,8 +9,8 @@ class Mapper:
     def __init__(self):
         self.syllabograms_dict = read_data(*self.syllabograms)
         self.logograms_dict = read_data(*self.syllabograms)
-        self.unicode_to_transliteration_dict = read_data(*self.syllabograms, *self.logograms)
-        self.transliteration_to_unicode_dict = {v: k for k, v in self.unicode_to_transliteration_dict.items()}
+        self.transliteration_to_unicode_dict = read_data(*self.syllabograms, *self.logograms)
+        self.unicode_to_transliteration_dict = {v: k for k, v in self.transliteration_to_unicode_dict.items()}
 
     def tokenize_unicode(self, text:str) -> list[str]:
         words = ['-'.join(word) for word in text.split()]

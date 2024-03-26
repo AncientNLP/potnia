@@ -1,29 +1,29 @@
-𐁀: a\u2082
-𐁁: a\u2083
-𐁂: au
-𐁃: dwe
-𐁄: dwo
-𐁅: nwa
-𐁆: pu\u2082
-𐁇: pte
-𐁈: ra\u2082
-𐁉: ra\u2083
-𐁊: ro\u2082
-𐁋: ta\u2082
-𐁌: twe
-𐁍: two
+a\u2082: 𐁀
+a\u2083: 𐁁
+au: 𐁂
+dwe: 𐁃
+dwo: 𐁄
+nwa: 𐁅
+pu\u2082: 𐁆
+pte: 𐁇
+ra\u2082: 𐁈
+ra\u2083: 𐁉
+ro\u2082: 𐁊
+ta\u2082: 𐁋
+twe: 𐁌
+two: 𐁍
 
 # SOUND VALUES UNKNOWN
-𐁐: "*018"
-𐁑: "*019"
+"*018": 𐁐
+"*019": 𐁑
 # *035 missing unicode sign?
-𐁗: "*063"
-𐁛: "*083"
-𐁝: "*089"
+"*063": 𐁗
+"*083": 𐁛
+"*089": 𐁝
 
 # DOUBTFUL VALUES (NOT IN LiBER TEXTS)
-𐁖: pa\u2083
-𐁘: swi
-𐀎: ju
-𐁙: zu
-𐁚: swa
+pa\u2083: 𐁖
+swi: 𐁘
+ju: 𐀎
+zu: 𐁙
+swa: 𐁚
