@@ -1,15 +1,15 @@
-a\u2082: 𐁀
-a\u2083: 𐁁
+a₂: 𐁀
+a₃: 𐁁
 au: 𐁂
 dwe: 𐁃
 dwo: 𐁄
 nwa: 𐁅
-pu\u2082: 𐁆
+pu₂: 𐁆
 pte: 𐁇
-ra\u2082: 𐁈
-ra\u2083: 𐁉
-ro\u2082: 𐁊
-ta\u2082: 𐁋
+ra₂: 𐁈
+ra₃: 𐁉
+ro₂: 𐁊
+ta₂: 𐁋
 twe: 𐁌
 two: 𐁍
 
@@ -22,8 +22,13 @@ two: 𐁍
 "*089": 𐁝
 
 # DOUBTFUL VALUES (NOT IN LiBER TEXTS)
-pa\u2083: 𐁖
+pa₃: 𐁖
 swi: 𐁘
 ju: 𐀎
 zu: 𐁙
 swa: 𐁚
+
+# SPECIAL CHARACTERS FOR LiBER
+[ : %
+] : %
+
