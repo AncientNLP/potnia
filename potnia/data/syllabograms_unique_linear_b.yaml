@@ -29,6 +29,6 @@ zu: 𐁙
 swa: 𐁚
 
 # SPECIAL CHARACTERS FOR LiBER
-[ : %
-] : %
+"[" : "%"
+"]" : "%"
 
