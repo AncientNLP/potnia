@@ -4,6 +4,21 @@ from .mapper import Mapper
 class LinearBMapper(Mapper):
     syllabograms = ("syllabograms_common", "syllabograms_unique_linear_b")
     logograms = ("logograms_common", "logograms_unique_linear_b")
+    patterns_to_ignore = [
+        r"vacat\s*\.?",
+        r"lat\s*\.",
+        r"inf\s*\.",
+        r"i\s*\.",
+        r"mut\s*\.",
+        r"sup\s*\.",
+        r"vac\s*\.",
+        r"v\s*\.",
+        r"vestigia",
+        r"l\s*\.",
+        r"s\s*\.",
+        r"Graffito",
+        r"[\/\,\']",
+    ]
 
     def tokenize_transliteration(self, text:str) -> list[str]:
         """

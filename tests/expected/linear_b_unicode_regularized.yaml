@@ -1,0 +1,116 @@
+# Test LB.U.1:
+
+    "a-ri-to-jo" : "𐀀𐀪𐀵𐀍"
+
+# Test LB.U.2:
+
+    "a-ri-to-jo a-ri-to-jo" : "𐀀𐀪𐀵𐀍 𐀀𐀪𐀵𐀍"
+
+# Test LB.U.3:
+
+  # TC TBD (test ideograms, numerals and unknown signs)
+
+# Test LB.U.4:
+
+    # TC TBD (test sign that has multiple possible transliterated values)
+
+# Test LB.U.5
+
+    #"]ra-ma-na , / e-ne-ra MUL[" : "]𐀨𐀔𐀙 , / 𐀁𐀚𐀨 𐂁[" #TC if we want all characters to appear.
+    "]ra-ma-na , / e-ne-ra MUL[" : "%𐀨𐀔𐀙 𐀁𐀚𐀨 𐂁%" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs, i.e. hide ',' and '/', and convert ']' and '[' to '%'
+
+# Test LB.U.6
+
+    # "] ko-wo / m\u0323e\u0323[-zo] 1 ko-wo / me-wi-jo 2 [" : "] 𐀒𐀺 𐀕[𐀿 ] 1 𐀒𐀺 / 𐀕𐀹𐀍 2 [" #TC if we want all characters to appear.
+    "] ko-wo / m\u0323e\u0323[-zo] 1 ko-wo / me-wi-jo 2 [" : "% 𐀒𐀺 𐀕%𐀿 % 1 𐀒𐀺 𐀕𐀹𐀍 2 %" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+
+# Test LB.U.7
+
+    #"]wa VIR 1 MUL 2 'ko-wa 1' ko-wo 1": "]𐀷 𐂀 1 𐂁 2 '𐀒𐀷 1' 𐀒𐀷𐀺 1" #TC if we want all characters to appear.
+    "]wa VIR 1 MUL 2 'ko-wa 1' ko-wo 1": "%𐀷 𐂀 1 𐂁 2 𐀒𐀷 1 𐀒𐀷𐀺 1" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+
+# Test LB.U.8
+
+    # "]qa-ra / re-me-to * 168 + SE 28" : "]𐀣𐀨 / 𐀩𐀕𐀵 𐂰+𐀮 28" #TC if we want all characters to appear.
+    "]qa-ra / re-me-to * 168 + SE 28" : "%𐀣𐀨 𐀩𐀕𐀵 𐂰+𐀮 28" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+
+# Test LB.U.9
+
+    # "da-pu\u2082-ri-to-jo , / po-ti-ni-ja 'me-ri' * 209 VAS 1" : "𐀅𐁆𐀪𐀵𐀍 , / 𐀡𐀴𐀛𐀊 '𐀕𐀪' 𐃨 1" #TC if we want all characters to appear.
+    "da-pu\u2082-ri-to-jo , / po-ti-ni-ja 'me-ri' * 209 VAS 1" : "𐀅𐁆𐀪𐀵𐀍 𐀡𐀴𐀛𐀊 𐀕𐀪 𐃨 1" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+
+# Test LB.U.10
+
+    # "po-*34-wi-do \u27e6TUN\u27e7 BIG[" : "𐀡𐁓𐀹𐀈 ⟦𐂪⟧ 𐃌[" #TC if we want all characters to appear.
+    "po-*34-wi-do \u27e6TUN\u27e7 BIG[" : "𐀡𐁓𐀹𐀈 𐃌%" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+
+# Test LB.U.11
+
+    # "inf . mut ." : "inf. mut." #TC if we want all characters to appear.
+    "inf . mut ." : "" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+ 
+# Test LB.U.11
+
+    # "] vacat [" : "] vacat [" #TC if we want all characters to appear.   
+    "] vacat [" : "% %" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+
+# Test LB.U.11
+
+    # "] vest ., / su-ri-mo , u-ta-jo-jo , o OVIS m 85[\u00a0] vac ." : "] vest., / 𐀱𐀪𐀗 , 𐀄𐀲𐀍𐀍 , 𐀃 𐂇 85[ ]" #TC if we want all characters to appear.  
+    "] vest ., / su-ri-mo , u-ta-jo-jo , o OVIS m 85[\u00a0] vac ." : "% % 𐀱𐀪𐀗 𐀄𐀲𐀍𐀍 𐀃 𐂇 85% %" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+
+# Test LB.U.12
+
+    # "su-ma-no / ti-ri-to [ vestigia? ] vacat" : "𐀱𐀔𐀜 / 𐀴𐀪𐀵 [ vestigia? ] vacat"
+    "su-ma-no / ti-ri-to [ vestigia? ] vacat" : "𐀱𐀔𐀜 𐀴𐀪𐀵 % % %"
+
+# Test LB.U.13
+
+    # "]EQU [" : "]𐂃 ["
+    "]EQU [" : "%𐂃 %"
+
+# Test LB.U.14
+
+    # "v." : "v."
+    "v." : ""
+
+# Test LB.U.15
+
+    # "l . s .": "l. s."
+    "l . s .": ""
+
+# Test LB.U.16
+
+    # "l\u0323a\u0323t\u0323 . i\u0323n\u0323f\u0323 .": "lat. inf."
+    "l\u0323a\u0323t\u0323 . i\u0323n\u0323f\u0323 .": ""
+
+# Test LB.U.17
+
+    # "l . i .": "l. i."
+    "l . i .": ""
+
+# Test LB.U.18
+
+    # "] Graffito [": "] Graffito ["
+    "] Graffito [": ""
+
+# Test LB.U.19
+
+    # "CAP f 130 SUS 17 SUS f 41 BOS m 2 BOS f 4": "𐂈 130 𐁂 17 𐂊 41 𐂍 2 𐂌 4" #Same outcome in both scenarios
+    "CAP f 130 SUS 17 SUS f 41 BOS m 2 BOS f 4": "𐂈 130 𐁂 17 𐂊 41 𐂍 2 𐂌 4"
+
+# Test LB.U.20
+
+    # "i[-qi-ja?": "𐀂[𐀥𐀊?"
+    "i[-qi-ja?": "𐀂%𐀥𐀊"
+
+
+# Test LB.U.21
+
+    # "]r\u0323o\u0323 , / da-mo GRA [ ]8 OLIV+ A 12" : "]𐀫 , / 𐀅𐀗 𐂎 [ ]8 𐂐+𐀀 12" #TC if we want all characters to appear.
+    "]r\u0323o\u0323 , / da-mo GRA [ ]8 OLIV+ A 12" : "%𐀫 𐀅𐀗 𐂎 % %8 𐂐+𐀀 12" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+
+# Test LB.U.22
+
+#    "pu-ri / a\u2083-zo-ro-qe , po-da-ko-qe BOS m ZE 1[" :  "𐀢𐀪 / 𐁀𐀿𐀫𐀤 , 𐀡𐀅𐀒𐀤 𐂍 𐀽 1[" #TC if we want all characters to appear.
+    "pu-ri / a\u2083-zo-ro-qe , po-da-ko-qe BOS m ZE 1[" :  "𐀢𐀪 𐁀𐀿𐀫𐀤 𐀡𐀅𐀒𐀤 𐂍 𐀽 1%" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
