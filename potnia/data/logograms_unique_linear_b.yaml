@@ -1,5 +1,3 @@
-# FAR?
-
 # PEOPLE AND ANIMALS
 VIR: 𐂀
 MUL: 𐂁
@@ -30,7 +28,7 @@ BOS:f: 𐂌
 BOSm: 𐂍
 BOS:m: 𐂍
 
-# CEREALS AND PLANS
+# CEREALS AND PLANTS
 GRA: 𐂎
 HORD: 𐂏
 OLIV: 𐂐
@@ -38,7 +36,8 @@ AROM: 𐂑
 CYP: 𐂒
 KA+PO: 𐂓
 KA+NA+KO: 𐂔
-# NO *144 CROCUS UNICODE SIGN?
+CROC: 𐁉
+FAR: 𐀎
 
 # EXTRACTS
 OLE: 𐂕
@@ -46,6 +45,7 @@ VIN: 𐂖
 "*132": 𐂗
 A+RE+PA: 𐂘
 ME+RI: 𐂙
+ME±RI: 𐂙
 
 # METALS
 AES: 𐂚
@@ -290,3 +290,5 @@ RO₂: 𐁊
 TA₂: 𐁋
 TWE: 𐁌
 TWO: 𐁍
+
+# CHECK SUBSCRIPT
