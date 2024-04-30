@@ -22,11 +22,11 @@ two: 𐁍
 "*089": 𐁝
 
 # DOUBTFUL VALUES (NOT IN LiBER TEXTS)
-pa₃: 𐁖
-swi: 𐁘
-ju: 𐀎
-zu: 𐁙
-swa: 𐁚
+"*56": 𐁖 # potential sound value 'pa₃'
+"*64": 𐁘 # potential sound value 'swi'
+"*65": 𐀎 # potential sound value 'ju'
+"*79": 𐁙 # potential sound value 'zu'
+"*82": 𐁚 # potential sound value 'swa'
 
 # SPECIAL CHARACTERS FOR LiBER
 "[" : "%"
