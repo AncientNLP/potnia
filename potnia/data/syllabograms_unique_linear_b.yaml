@@ -14,12 +14,12 @@ twe: 𐁌
 two: 𐁍
 
 # SOUND VALUES UNKNOWN
-"*018": 𐁐
-"*019": 𐁑
-# *035 missing unicode sign?
-"*063": 𐁗
-"*083": 𐁛
-"*089": 𐁝
+"*18": 𐁐
+"*19": 𐁑
+# *35 missing unicode sign?
+"*63": 𐁗
+"*83": 𐁛
+"*89": 𐁝
 
 # DOUBTFUL VALUES (NOT IN LiBER TEXTS)
 "*56": 𐁖 # potential sound value 'pa₃'
@@ -29,6 +29,6 @@ two: 𐁍
 "*82": 𐁚 # potential sound value 'swa'
 
 # SPECIAL CHARACTERS FOR LiBER
-"[" : "%"
-"]" : "%"
+# "[" : "%"
+# "]" : "%"
 
