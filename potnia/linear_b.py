@@ -66,6 +66,9 @@ class LinearBMapper(Mapper):
         return tokenized if tokenized else [""]
 
     def regularize(self, text: str) -> str:
+        text = re.sub(r"vestigia", "%", text)
+        text = re.sub(r"vest\s*\.", "%", text)
+
         text = super().regularize(text)
 
         text = re.sub(r'[\[\]]', "%", text)
