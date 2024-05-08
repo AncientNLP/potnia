@@ -52,7 +52,7 @@
 # Test LB.U.11
 
     # "] vacat [" : "] vacat [" #TC if we want all characters to appear.   
-    "] vacat [" : "% %" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+    "] vacat [" : "" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
 
 # Test LB.U.11
 

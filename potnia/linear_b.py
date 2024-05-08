@@ -17,7 +17,7 @@ class LinearBMapper(Mapper):
         r"l\s*\.",
         r"s\s*\.",
         r"Graffito",
-        r"[\/\,\']",
+        r"[\/\,\'\?]",
         r"⟦.*?⟧",
     ]
 
@@ -52,9 +52,6 @@ class LinearBMapper(Mapper):
         for pattern, replacement in patterns:
             text = re.sub(pattern, replacement, text)
 
-
-        text = re.sub(r'[\[\]]', "%", text)
-
         # Space handling
         space_placeholder = "\uE000"  # Placeholder for spaces
         text = re.sub(r' ', space_placeholder, text)
@@ -67,6 +64,18 @@ class LinearBMapper(Mapper):
         tokenized = [tok if tok != space_placeholder else " " for tok in tokens if tok and tok!="-"]
 
         return tokenized if tokenized else [""]
+
+    def regularize(self, text: str) -> str:
+        text = super().regularize(text)
+
+        text = re.sub(r'[\[\]]', "%", text)
+
+        informative_chars = set(list(re.sub(r'[%\s]', "", text)))
+        if len(informative_chars) == 0:
+            return ""
+        
+        return text
+
 
 
 linear_b_mapper = LinearBMapper()
