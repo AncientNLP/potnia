@@ -22,12 +22,12 @@
 # Test LB.U.6
 
     # "] ko-wo / m\u0323e\u0323[-zo] 1 ko-wo / me-wi-jo 2 [" : "] 𐀒𐀺 𐀕[𐀿] 1 𐀒𐀺 / 𐀕𐀹𐀍 2 [" #TC if we want all characters to appear.
-    "] ko-wo / m\u0323e\u0323[-zo] 1 ko-wo / me-wi-jo 2 [" : "% 𐀒𐀺 𐀕%𐀿 % 1 𐀒𐀺 𐀕𐀹𐀍 2 %" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+    "] ko-wo / m\u0323e\u0323[-zo] 1 ko-wo / me-wi-jo 2 [" : "% 𐀒𐀺 𐀕%𐀿% 1 𐀒𐀺 𐀕𐀹𐀍 2 %" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
 
 # Test LB.U.7
 
     # "]wa VIR 1 MUL 2 'ko-wa 1' ko-wo 1": "]𐀷 𐂀 1 𐂁 2 '𐀒𐀷 1' 𐀒𐀷𐀺 1" #TC if we want all characters to appear.
-    "]wa VIR 1 MUL 2 'ko-wa 1' ko-wo 1": "%𐀷 𐂀 1 𐂁 2 𐀒𐀷 1 𐀒𐀷𐀺 1" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+    "]wa VIR 1 MUL 2 'ko-wa 1' ko-wo 1": "%𐀷 𐂀 1 𐂁 2 𐀒𐀷 1 𐀒𐀺 1" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
 
 # Test LB.U.8
 

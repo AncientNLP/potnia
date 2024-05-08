@@ -56,7 +56,7 @@
 
 # Test LB.U.11
 
-    "] vest ., / su-ri-mo , u-ta-jo-jo , o OVIS m 85[\u00a0] vac ." : "] vest., / 𐀱𐀪𐀗 , 𐀄𐀲𐀍𐀍 , 𐀃 𐂇 85[ ]" #TC if we want all characters to appear.  
+    "] vest ., / su-ri-mo , u-ta-jo-jo , o OVIS m 85[\u00a0] vac ." : "] vest., / 𐀱𐀪𐀗 , 𐀄𐀲𐀍𐀍 , 𐀃 𐂇 85[ ] vac." #TC if we want all characters to appear.  
     # "] vest ., / su-ri-mo , u-ta-jo-jo , o OVIS m 85[\u00a0] vac ." : "% % 𐀱𐀪𐀗 𐀄𐀲𐀍𐀍 𐀃 𐂇 85% %" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
 
 # Test LB.U.12
