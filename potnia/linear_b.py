@@ -18,6 +18,7 @@ class LinearBMapper(Mapper):
         r"s\s*\.",
         r"Graffito",
         r"[\/\,\']",
+        r"⟦.*?⟧",
     ]
 
     def tokenize_transliteration(self, text:str) -> list[str]:
@@ -50,6 +51,9 @@ class LinearBMapper(Mapper):
         # Apply each pattern replacement in order
         for pattern, replacement in patterns:
             text = re.sub(pattern, replacement, text)
+
+
+        text = re.sub(r'[\[\]]', "%", text)
 
         # Space handling
         space_placeholder = "\uE000"  # Placeholder for spaces
