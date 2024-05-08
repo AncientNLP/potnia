@@ -30,7 +30,8 @@ class Mapper:
         return "".join([self.unicode_to_transliteration_dict.get(token, token) for token in self.tokenize_unicode(text)])
 
     def to_unicode(self, text:str, regularize:bool=False) -> str:
-        result = "".join([self.transliteration_to_unicode_dict.get(token, token) for token in self.tokenize_transliteration(text)])
+        tokens = self.tokenize_transliteration(text)
+        result = "".join([self.transliteration_to_unicode_dict.get(token, token) for token in tokens])
         if regularize:
             result = self.regularize(result)
         return result

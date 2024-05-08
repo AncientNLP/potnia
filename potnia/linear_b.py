@@ -36,7 +36,7 @@ class LinearBMapper(Mapper):
         
         # List of patterns and their replacements
         patterns = [
-            (r'(?<=\S)\?', ' ?'),  # Ensure '?' is separated when it follows a character
+            # (r'(?<=\S)\?', ' ?'),  # Ensure '?' is separated when it follows a character
             (r'\b({})\s([mf])\b'.format('|'.join(['BOS', 'SUS', 'OVIS', 'CAP', 'EQU'])), r'\1\2'),  # Combine terms with 'm' or 'f'
             (r'\](?=[^\s])', r']-'),  # Pre-process ']' and '[' for special handling
             (r'(?<=[^\s])\[', r'-['),
@@ -57,7 +57,7 @@ class LinearBMapper(Mapper):
         text = re.sub(r' ', space_placeholder, text)
 
         # Tokenize based on special characters and space placeholder
-        special_chars_pattern = r'(\[|\]|\,|\'|\u27e6|\u27e7|-|' + re.escape(space_placeholder) + ')'
+        special_chars_pattern = r'(\[|\]|\,|\'|\u27e6|\u27e7|-|\?|' + re.escape(space_placeholder) + ')'
         tokens = re.split(special_chars_pattern, text)
 
         # Replace placeholder with actual space and filter empty tokens
