@@ -56,7 +56,7 @@ AUR: 𐂛
 LANA: 𐂝
 "*146": 𐂞
 "*150": 𐂟
-HORN: 𐂠
+CORN: 𐂠
 "*152": 𐂡
 "*153": 𐂢
 "*154": 𐂣
@@ -150,6 +150,10 @@ JAC: 𐃘
 "*250VAS": 𐃹
 "*305VAS": 𐃺
 
+"*211VAS+PO": 𐃪+𐂓
+"*212VAS+U": 𐃫+𐀄
+"*209VAS+A": 𐃨+𐀀
+
 # METRIC
 Z: 𐄿
 V: 𐄾
@@ -163,6 +167,7 @@ L: 𐄷
 
 # COMPOSITE IDEOGRAMS WITHOUT DESIGNATED UNICODE SIGNS
 # USED IN LiBER TEXTS
+OLE+O: 𐂕+𐀃
 OLIV+A: 𐂐+𐀀
 209VAS+A: 𐃨+𐀀
 212VAS+U: 𐃫+𐀄
