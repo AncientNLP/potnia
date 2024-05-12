@@ -113,4 +113,24 @@
 # Test LB.U.22
 
     # "pu-ri / a\u2083-zo-ro-qe , po-da-ko-qe BOS m ZE 1[" :  "𐀢𐀪 / 𐁀𐀿𐀫𐀤 , 𐀡𐀅𐀒𐀤 𐂍 𐀽 1[" #TC if we want all characters to appear.
-    # "pu-ri / a\u2083-zo-ro-qe , po-da-ko-qe BOS m ZE 1[" :  "𐀢𐀪 𐁀𐀿𐀫𐀤 𐀡𐀅𐀒𐀤 𐂍 𐀽 1%" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+    "pu-ri / a\u2083-zo-ro-qe , po-da-ko-qe BOS m ZE 1[" :  "𐀢𐀪 𐁀𐀿𐀫𐀤 𐀡𐀅𐀒𐀤 𐂍 𐀽 1%" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+
+# Test LB.U.23
+    "] deest [" : "% %"
+    
+# Test LB.U.24
+
+    "du-to\u2e24 \u2e25 / r\u0323u\u0323-ki-to" : "𐀉𐀵 𐀬𐀑𐀵"
+
+# Test LB.U.25
+    "]po-[\u2022] , / [ OVIS m ] 40 o OVIS m 20" : "%𐀡% % 𐂇 % 40 o 𐂇 20"
+
+# Test LB.U.26
+    "ME + RI *211 VAS + PO 1[" : "𐂙 𐃪+𐂓 1%"
+
+# Test LB.U.27
+    "] * 161 TELA 2 [" : "% 𐂩 𐂧² %"
+
+# Test LB.U.28
+    "do-ti-ja TELA 2 + PU 5\u03230[" : "𐀈𐀴𐀊 𐂧²+𐀢 5⁰%"
+
