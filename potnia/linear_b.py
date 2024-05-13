@@ -20,6 +20,7 @@ class LinearBMapper(Mapper):
         r"[\/\,\'\?]",
         r"⟦.*?⟧",
         r"deest",
+        r"[⸤⸥]",
     ]
 
     def tokenize_transliteration(self, text:str) -> list[str]:
@@ -70,6 +71,7 @@ class LinearBMapper(Mapper):
     def regularize(self, text: str) -> str:
         text = re.sub(r"vestigia", "%", text)
         text = re.sub(r"vest\s*\.", "%", text)
+        text = re.sub(r"\[•\]", "%", text)
 
         text = super().regularize(text)
 
