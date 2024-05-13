@@ -60,7 +60,7 @@ class LinearBMapper(Mapper):
         text = re.sub(r' ', space_placeholder, text)
 
         # Tokenize based on special characters and space placeholder
-        special_chars_pattern = r'(\[|\]|\,|\'|\u27e6|\u27e7|-|\?|' + re.escape(space_placeholder) + ')'
+        special_chars_pattern = r'(\[|\]|\,|\'|\u27e6|\u27e7|-|\?|\u2e24|\u2e25|' + re.escape(space_placeholder) + ')'
         tokens = re.split(special_chars_pattern, text)
 
         # Replace placeholder with actual space and filter empty tokens
