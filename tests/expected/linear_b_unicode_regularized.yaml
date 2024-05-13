@@ -116,7 +116,7 @@
     "pu-ri / a\u2083-zo-ro-qe , po-da-ko-qe BOS m ZE 1[" :  "𐀢𐀪 𐁀𐀿𐀫𐀤 𐀡𐀅𐀒𐀤 𐂍 𐀽 1%" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
 
 # Test LB.U.23
-    "] deest [" : "% %"
+    "] deest [" : ""
     
 # Test LB.U.24
 
