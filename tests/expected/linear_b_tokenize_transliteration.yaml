@@ -15,3 +15,5 @@
 "] Graffito [": [']', ' ', 'Graffito', ' ', '[']
 "CAP f 130 SUS 17 SUS f 41 BOS m 2 BOS f 4": ['CAPf', ' ', '130', ' ', 'SUS', ' ', '17', ' ', 'SUSf', ' ', '41', ' ', 'BOSm', ' ', '2', ' ', 'BOSf', ' ', '4']
 "i[-qi-ja?": ['i', '[', 'qi', 'ja', '?']
+"]2 TELA 2 + PU 90": ["]","2"," ","TELA2+PU"," ", "90"]
+"]TELA 1 1 LANA 3": ["]", "TELA1", " ", "1", " ", "LANA"," ","3"]

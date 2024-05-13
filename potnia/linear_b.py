@@ -19,6 +19,7 @@ class LinearBMapper(Mapper):
         r"Graffito",
         r"[\/\,\'\?]",
         r"⟦.*?⟧",
+        r"deest",
     ]
 
     def tokenize_transliteration(self, text:str) -> list[str]:
@@ -40,6 +41,7 @@ class LinearBMapper(Mapper):
             (r'\b({})\s([mf])\b'.format('|'.join(['BOS', 'SUS', 'OVIS', 'CAP', 'EQU'])), r'\1\2'),  # Combine terms with 'm' or 'f'
             (r'\](?=[^\s])', r']-'),  # Pre-process ']' and '[' for special handling
             (r'(?<=[^\s])\[', r'-['),
+            (r"TELA\s+(\d+)", r'TELA\1'), # combine TELA with the following numeral
             (r'\* (\d+)', r'*\1'),  # Combine '*' with the following numeral
             (r'\+ ([^\s]+)', r'+\1'),  # Combine '+' with surrounding ideograms
             (r'([^\s]) \+', r'\1+'),  # Ensure '+' is properly attached
