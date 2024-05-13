@@ -112,8 +112,8 @@
 
 # Test LB.U.22
 
-    # "pu-ri / a\u2083-zo-ro-qe , po-da-ko-qe BOS m ZE 1[" :  "𐀢𐀪 / 𐁀𐀿𐀫𐀤 , 𐀡𐀅𐀒𐀤 𐂍 𐀽 1[" #TC if we want all characters to appear.
-    "pu-ri / a\u2083-zo-ro-qe , po-da-ko-qe BOS m ZE 1[" :  "𐀢𐀪 𐁀𐀿𐀫𐀤 𐀡𐀅𐀒𐀤 𐂍 𐀽 1%" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
+    # "pu-ri / a\u2083-zo-ro-qe , po-da-ko-qe BOS m ZE 1[" :  "𐀢𐀪 / 𐁁𐀿𐀫𐀤 , 𐀡𐀅𐀒𐀤 𐂍 𐀽 1[" #TC if we want all characters to appear.
+    "pu-ri / a\u2083-zo-ro-qe , po-da-ko-qe BOS m ZE 1[" :  "𐀢𐀪 𐁁𐀿𐀫𐀤 𐀡𐀅𐀒𐀤 𐂍 𐀽 1%" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
 
 # Test LB.U.23
     "] deest [" : ""
@@ -132,5 +132,5 @@
     "] * 161 TELA 2 [" : "% 𐂩 𐂧² %"
 
 # Test LB.U.28
-    "do-ti-ja TELA 2 + PU 5\u03230[" : "𐀈𐀴𐀊 𐂧²+𐀢 5⁰%"
+    "do-ti-ja TELA 2 + PU 5\u03230[" : "𐀈𐀴𐀊 𐂧²+𐀢 50⁰%"
 
