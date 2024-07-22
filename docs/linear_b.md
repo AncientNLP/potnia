@@ -4,12 +4,12 @@ This document outlines the rules used in the conversion process for Linear B tex
 
 ## 1. Patterns to Ignore:
 
-This list of regular expressions identifies various patterns in the text that should either be removed or ignored during tokenization:
+This list of regular expressions identifies various patterns in the text that should either be removed or ignored during tokenization (regularization?):
 
-- `vacat, lat, inf, i, mut, sup, vac, v, vestigia, l, s, Graffito`: Various abbreviations or markers indicating missing or undetermined text parts.
-- `[/,'?]` and `[⸤⸥]`: Specific punctuation and bracket types to ignore or handle specially.
-- `⟦.*?⟧`: Matches text within these special brackets, often indicating uncertain or reconstructed text.
-- `deest`: Latin for "is missing," used in text critical editions to indicate missing text.
+- `lat., l., inf., i., sup., s., dex., mut, verso, v., Graffito, vacat, vac., deest`: Various annotations related epigraphic features of the document, rather than the actual contents of the text.
+- `vestigia, vest.` and `[]`: Various text annotations or specific punctuation denoting undetermined text parts, which should be handled as wildcards.
+- `/,'?⸤⸥`: Specific punctuation and bracket types to ignore.
+- `⟦.*?⟧`: Matches text within these special double brackets, which indicate text erasures.
 
 ## 2. Tokenization Rules
 
