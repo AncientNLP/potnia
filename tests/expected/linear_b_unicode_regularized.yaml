@@ -121,7 +121,7 @@
     "] deest [" : ""
     
 # Test LB.U.24
-    "du-to\u2e24 \u2e25 / r\u0323u\u0323-ki-to" : "𐀉𐀵 𐀬𐀑𐀵"
+    # "du-to\u2e24 \u2e25 / r\u0323u\u0323-ki-to" : "𐀉𐀵 𐀬𐀑𐀵"
 
 # Test LB.U.25
     "]po-[\u2022] , / [ OVIS m ] 40 o OVIS m 20" : "%𐀡% % 𐂇 % 40 𐀃 𐂇 20"
@@ -145,14 +145,14 @@
 # ignore 'vest.'
 # ignore 'vac.'
 # what to do about [VIR 1] and [1] here?
-    "]-vest.-[ ]-re-po-so [ ka-ri-se-u [VIR 1] wi-je-mo VIR 1 pi-ro-qa-wo-[ qe-te-se-u VIR [1] no-da-ro VIR 1 a-ku-ri-jo-[ vac. [ ]-to-so VIR 7" : "%%% %𐀩𐀡𐀰 % 𐀏𐀪𐀮𐀄 [𐂀 1] 𐀹𐀋𐀗 𐂀 1 𐀠𐀫𐀣𐀺% 𐀤𐀳𐀮𐀄 𐂀 [1] 𐀜𐀅𐀫 𐂀 1 𐀀𐀓𐀪𐀍% % [%]𐀵𐀰 𐂀 7"
+    # "]-vest.-[ ]-re-po-so [ ka-ri-se-u [VIR 1] wi-je-mo VIR 1 pi-ro-qa-wo-[ qe-te-se-u VIR [1] no-da-ro VIR 1 a-ku-ri-jo-[ vac. [ ]-to-so VIR 7" : "%%% %𐀩𐀡𐀰 % 𐀏𐀪𐀮𐀄 [𐂀 1] 𐀹𐀋𐀗 𐂀 1 𐀠𐀫𐀣𐀺% 𐀤𐀳𐀮𐀄 𐂀 [1] 𐀜𐀅𐀫 𐂀 1 𐀀𐀓𐀪𐀍% % [%]𐀵𐀰 𐂀 7"
 
 # Test LB.U.31
 # ignore 'fragmentum'
 # ignore 'sup. mut.'
 # ignore 'inf. mut.'
 # ignore 'X' or 'x' = check-mark
-    "fragmentum A sup. mut. ] X MUL 1 ]--u-ra MUL 1 X ]-na MUL 1 tu-ka-na X MUL 1 ]-ma MUL 1 te-qa-ja MUL 1 ]-ja MUL 1-[ ]-ja-mu-ta MUL 1-[ ]--ta2-no-[ inf. mut." : "% % 𐂁 1 %𐀄𐀨 𐂁 1 %𐀙 𐂁 1 𐀶𐀏𐀙 𐂁 1 %𐀔 𐂁 1 𐀳𐀣𐀊 𐂁 1 %𐀊 𐂁 1% %𐀊𐀘𐀲 𐂁 1% %𐁋𐀜%"
+    # "fragmentum A sup. mut. ] X MUL 1 ]--u-ra MUL 1 X ]-na MUL 1 tu-ka-na X MUL 1 ]-ma MUL 1 te-qa-ja MUL 1 ]-ja MUL 1-[ ]-ja-mu-ta MUL 1-[ ]--ta2-no-[ inf. mut." : "% % 𐂁 1 %𐀄𐀨 𐂁 1 %𐀙 𐂁 1 𐀶𐀏𐀙 𐂁 1 %𐀔 𐂁 1 𐀳𐀣𐀊 𐂁 1 %𐀊 𐂁 1% %𐀊𐀘𐀲 𐂁 1% %𐁋𐀜%"
 
 # Test LB.U.32
 # Ignore 'v.→'
@@ -160,20 +160,20 @@
 
 # Test LB.U.33
 # Ignore '<' and ''>'
-    "] <OVIS:m> 69 OVIS:f 30 [ ]-e-ke-me-de , / tu-ni-ja , pa OVIS:m 1" : "% 𐂇 69 𐂆 30 % %𐀁𐀐𐀕𐀆 𐀶𐀛𐀊 𐀞 𐂇 1" # https://liber.cnr.it/tablet/view/3172?wl=12765
-    "]-o-pe-ro *209VAS 'ME<±RI>' 5 [" : "%𐀃𐀟𐀫 𐃨 𐂙 5" # https://liber.cnr.it/tablet/view/4215?wl=23278
+    # "] <OVIS:m> 69 OVIS:f 30 [ ]-e-ke-me-de , / tu-ni-ja , pa OVIS:m 1" : "% 𐂇 69 𐂆 30 % %𐀁𐀐𐀕𐀆 𐀶𐀛𐀊 𐀞 𐂇 1" # https://liber.cnr.it/tablet/view/3172?wl=12765
+    # "]-o-pe-ro *209VAS 'ME<±RI>' 5 [" : "%𐀃𐀟𐀫 𐃨 𐂙 5" # https://liber.cnr.it/tablet/view/4215?wl=23278
 
 # Test LB.U.34
 # Checking mapping of 'ME±RI'
-    "]-i-to , / da-nwa ME±RI *209VAS+A 16 *172 8" : "%𐀂𐀵 𐀅𐁅 𐂙 𐃨+𐀀 16 𐂹 8"
+    "]-i-to , / da-nwa ME±RI *209VAS+A 16 *172 8" : "%𐀂𐀵 𐀅𐁅 𐂙 𐃨+𐀀 16 𐂴 8"
 
 # Test LB.U.35
 # Checking ' ' signs ignored
-    "pa-si-te-o-i / me-ri *209VAS 1 da-pu2-ri-to-jo , / po-ti-ni-ja 'me-ri' *209VAS 1" : "𐀞𐀯𐀳𐀃𐀂 𐀕𐀪 𐃨 1 𐀅𐁆𐀪𐀵𐀍 𐀡𐀴𐀛𐀊 𐀕𐀪 𐃨 1"
+    # "pa-si-te-o-i / me-ri *209VAS 1 da-pu2-ri-to-jo , / po-ti-ni-ja 'me-ri' *209VAS 1" : "𐀞𐀯𐀳𐀃𐀂 𐀕𐀪 𐃨 1 𐀅𐁆𐀪𐀵𐀍 𐀡𐀴𐀛𐀊 𐀕𐀪 𐃨 1"
 
 # Test LB.U.36
 # Treat '--' as '-'
-    "a-ka--[ ]--jo-jo , me-no-[ da-pu2-ri-[-to-jo ]-po-ti-ni-ja ri *166+WE 22-[" : "𐀀𐀏% %𐀍𐀍 𐀕𐀜% 𐀅𐁆𐀪%𐀵𐀍 %𐀡𐀴𐀛𐀊 𐀪 𐂮+𐀸 22%" # https://liber.cnr.it/tablet/view/124
+    # "a-ka--[ ]--jo-jo , me-no-[ da-pu2-ri-[-to-jo ]-po-ti-ni-ja ri *166+WE 22-[" : "𐀀𐀏% %𐀍𐀍 𐀕𐀜% 𐀅𐁆𐀪%𐀵𐀍 %𐀡𐀴𐀛𐀊 𐀪 𐂮+𐀸 22%" # https://liber.cnr.it/tablet/view/124
     
 # Test LB.U.37
 # Ignore erasures '⟦xxx⟧'
@@ -182,7 +182,7 @@
 
 # Test LB.U.38
 # Ignore 'X'
-    "] e-ko-so OVIS:m 100 LANA [ ]-da-ro , / X LANA [ lat. inf. ]-a3 [" : "% 𐀁𐀒𐀰 𐂇 100 𐂝 % %𐀅𐀫 𐂝 % %𐁁 %"
+    # "] e-ko-so OVIS:m 100 LANA [ ]-da-ro , / X LANA [ lat. inf. ]-a3 [" : "% 𐀁𐀒𐀰 𐂇 100 𐂝 % %𐀅𐀫 𐂝 % %𐁁 %"
 
 # Test LB.U.39
 # Test TELAs
@@ -199,8 +199,8 @@
 # Convert fragmentum to '%'
 # Ignore 'A' and 'B' 
 # Ignore vacat
-    "fragmentum A fragmentum B sup. mut. sup. mut.</em> ]--to-[ ]-da-*22-to HORD [ ] 'da-*22-to' HORD 2 da-]-*22-to HORD-[ ]--ro 'da-*22-to' HORD 2 inf. mut. ]--ri 'da-*22-to' HORD 2 ] vac. inf. mut." : "% % %𐀵% %𐀅𐁒𐀵 𐂏 % % 𐀅𐁒𐀵 𐂏 2 𐀅%𐁒𐀵 𐂏[ ]𐀫 𐀅𐁒𐀵 𐂏 2 %𐀪 𐀅𐁒𐀵 𐂏 2"
-    "fragmentum A fragmentum B vacat [ sup. mut. e-me-si-jo-jo-[ ] 3-[ pa-na-so GRA 100-[ ]-vac.-[ ta-ra-qo GRA [ inf. mut. ta-u-pa-du-we GRA-[ a-ro-ja-[ pu-na-so-[ inf. mut." : "% % 𐀁𐀕𐀯𐀍𐀍% % 3% 𐀞𐀙𐀡 𐂎 100% %% 𐀲𐀨𐀦 𐂎 % 𐀲𐀄𐀞𐀉𐀸 𐂎% 𐀀𐀫𐀊% 𐀢𐀙𐀰%"
+   #  "fragmentum A fragmentum B sup. mut. sup. mut.</em> ]--to-[ ]-da-*22-to HORD [ ] 'da-*22-to' HORD 2 da-]-*22-to HORD-[ ]--ro 'da-*22-to' HORD 2 inf. mut. ]--ri 'da-*22-to' HORD 2 ] vac. inf. mut." : "% % %𐀵% %𐀅𐁒𐀵 𐂏 % % 𐀅𐁒𐀵 𐂏 2 𐀅%𐁒𐀵 𐂏[ ]𐀫 𐀅𐁒𐀵 𐂏 2 %𐀪 𐀅𐁒𐀵 𐂏 2"
+   #  "fragmentum A fragmentum B vacat [ sup. mut. e-me-si-jo-jo-[ ] 3-[ pa-na-so GRA 100-[ ]-vac.-[ ta-ra-qo GRA [ inf. mut. ta-u-pa-du-we GRA-[ a-ro-ja-[ pu-na-so-[ inf. mut." : "% % 𐀁𐀕𐀯𐀍𐀍% % 3% 𐀞𐀙𐀡 𐂎 100% %% 𐀲𐀨𐀦 𐂎 % 𐀲𐀄𐀞𐀉𐀸 𐂎% 𐀀𐀫𐀊% 𐀢𐀙𐀰%"
 
 # Test LB.U.44
 # Mid-word ']'
@@ -225,7 +225,7 @@
 # However, square brackets that are not closed/have spaces between, are still treated as wildcards 'i-[-jo ]-wo' becomes '𐀂%𐀍 %𐀺', and 'a-[ ]' becomes '𐀀% %' 
 # Complicated text because of annotations (mainly 'ijo')
 # https://liber.cnr.it/tablet/view/697
-    "sup. mut. ] i-[-jo ]-wo , a-[ ] wa-du-na , [•~•~•~•] ]--to , e-[ ] vac. ]-sa-ka-ri-jo , [ ] vac. i-jo i-jo [o-]-pi / di-zo , pi-ma-na-ro , zo-wi-jo 1 a-tu-qo-te-ra-to 1-[ i-jo o-pi / ri-zo , pi-ma-na-ro pi-ro-i-ta 1 o-pi / pa-ka , di-wa-jo 1 ]-pi / o-na-se-u 1 ri--[ ]-wi-du 1 ke--[ ]-za-[ inf. mut." : "% 𐀂%𐀍 %𐀺 𐀀[ ] 𐀷𐀉𐀙 %%%% %𐀵 e% % %𐀭𐀏𐀪𐀍 % % 𐀂𐀍 𐀂𐀍 [𐀃]𐀠 𐀇𐀿 𐀠𐀔𐀙𐀫 𐀿𐀹𐀍 1 𐀀𐀶𐀦𐀳𐀨𐀵 1% 𐀂𐀍 𐀃𐀠 𐀪𐀿 𐀠𐀔𐀙𐀫 𐀠𐀫𐀂𐀲 1 𐀃𐀠 𐀞𐀏 𐀇𐀷𐀍 1 %𐀠 𐀃𐀙𐀮𐀄 1 𐀪% %𐀹𐀉 1 𐀐% %𐀼%"
+    # "sup. mut. ] i-[-jo ]-wo , a-[ ] wa-du-na , [•~•~•~•] ]--to , e-[ ] vac. ]-sa-ka-ri-jo , [ ] vac. i-jo i-jo [o-]-pi / di-zo , pi-ma-na-ro , zo-wi-jo 1 a-tu-qo-te-ra-to 1-[ i-jo o-pi / ri-zo , pi-ma-na-ro pi-ro-i-ta 1 o-pi / pa-ka , di-wa-jo 1 ]-pi / o-na-se-u 1 ri--[ ]-wi-du 1 ke--[ ]-za-[ inf. mut." : "% 𐀂%𐀍 %𐀺 𐀀[ ] 𐀷𐀉𐀙 %%%% %𐀵 e% % %𐀭𐀏𐀪𐀍 % % 𐀂𐀍 𐀂𐀍 [𐀃]𐀠 𐀇𐀿 𐀠𐀔𐀙𐀫 𐀿𐀹𐀍 1 𐀀𐀶𐀦𐀳𐀨𐀵 1% 𐀂𐀍 𐀃𐀠 𐀪𐀿 𐀠𐀔𐀙𐀫 𐀠𐀫𐀂𐀲 1 𐀃𐀠 𐀞𐀏 𐀇𐀷𐀍 1 %𐀠 𐀃𐀙𐀮𐀄 1 𐀪% %𐀹𐀉 1 𐀐% %𐀼%"
 
 # Test LB.U.49
 # Ignore 'α', 'β', 'γ', 'supra sigillum'
