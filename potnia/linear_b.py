@@ -36,6 +36,18 @@ class LinearBMapper(Mapper):
         # Normalize spaces and remove specific patterns
         text = text.replace('\u00a0', ' ').replace('\u0323', '')
         
+        # Normalize the text by replacing double dashes with a single dash
+        text = re.sub(r'--', '-', text)
+
+        # # Handle special sequences with wildcards for uncertainty or missing elements
+        special_sequences = [
+            (r'\[?•~•~•~•\]?', '%%%%'),
+            (r'\[?•~•~•\]?', '%%%'),
+            (r'\[?•~•\]?', '%%')
+        ]
+        for pattern, replacement in special_sequences:
+            text = re.sub(pattern, replacement, text)
+        
         # List of patterns and their replacements
         patterns = [
             # (r'(?<=\S)\?', ' ?'),  # Ensure '?' is separated when it follows a character
@@ -49,6 +61,8 @@ class LinearBMapper(Mapper):
             (r'([^\s]+) VAS', r'\1VAS'),  # Attach 'VAS' properly
             # Ignore or modify specific patterns
             *[(rf'\b{term}\s?\.', term + '.') for term in ['vac', 'vest', 'l', 's', 'lat', 'inf', 'mut', 'sup', 'i']],  # Refactored for brevity
+            (r'v\.[↓→]?', 'v.'),  # Standardize and tokenize variations of 'v.'
+            (r'\b(fragmentum|supra sigillum|reliqua pars sine regulis|vacat)\b', r'\1'),  # Explicit tokenization
         ]
 
         # Apply each pattern replacement in order
@@ -60,7 +74,7 @@ class LinearBMapper(Mapper):
         text = re.sub(r' ', space_placeholder, text)
 
         # Tokenize based on special characters and space placeholder
-        special_chars_pattern = r'(\[|\]|\,|\'|\u27e6|\u27e7|-|\?|\u2e24|\u2e25|' + re.escape(space_placeholder) + ')'
+        special_chars_pattern = r'(\[|\]|\,|\'|\u27e6|\u27e7|-|\?|<|>|⌞|⌟|' + re.escape(space_placeholder) + ')'
         tokens = re.split(special_chars_pattern, text)
 
         # Replace placeholder with actual space and filter empty tokens
