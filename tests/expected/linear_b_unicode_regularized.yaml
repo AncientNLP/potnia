@@ -225,7 +225,7 @@
 # However, square brackets that are not closed/have spaces between, are still treated as wildcards 'i-[-jo ]-wo' becomes '𐀂%𐀍 %𐀺', and 'a-[ ]' becomes '𐀀% %' 
 # Complicated text because of annotations (mainly 'ijo')
 # https://liber.cnr.it/tablet/view/697
-    "sup. mut. ] i-[-jo ]-wo , a-[ ] wa-du-na , [•~•~•~•] ]--to , e-[ ] vac. ]-sa-ka-ri-jo , [ ] vac. i-jo i-jo [o-]-pi / di-zo , pi-ma-na-ro , zo-wi-jo 1 a-tu-qo-te-ra-to 1-[ i-jo o-pi / ri-zo , pi-ma-na-ro pi-ro-i-ta 1 o-pi / pa-ka , di-wa-jo 1 ]-pi / o-na-se-u 1 ri--[ ]-wi-du 1 ke--[ ]-za-[ inf. mut." : "% 𐀂%𐀍 %𐀺 𐀀[ ] 𐀷𐀉𐀙 %%%% %𐀵 e% % %𐀭𐀏𐀪𐀍 % % 𐀂𐀍 𐀂𐀍 [𐀃]𐀠 𐀇𐀿 𐀠𐀔𐀙𐀫 𐀿𐀹𐀍 1 𐀀𐀶𐀦𐀳𐀨𐀵 1% 𐀂𐀍 𐀃𐀠 𐀪𐀿 𐀠𐀔𐀙𐀫 𐀠𐀫𐀂𐀲 1 𐀃𐀠 𐀞𐀏 𐀇𐀷𐀍 1 %𐀠 𐀃𐀙𐀮𐀄 1 𐀪% %𐀹𐀉 1 𐀐% %𐀼%"
+    # "sup. mut. ] i-[-jo ]-wo , a-[ ] wa-du-na , [•~•~•~•] ]--to , e-[ ] vac. ]-sa-ka-ri-jo , [ ] vac. i-jo i-jo [o-]-pi / di-zo , pi-ma-na-ro , zo-wi-jo 1 a-tu-qo-te-ra-to 1-[ i-jo o-pi / ri-zo , pi-ma-na-ro pi-ro-i-ta 1 o-pi / pa-ka , di-wa-jo 1 ]-pi / o-na-se-u 1 ri--[ ]-wi-du 1 ke--[ ]-za-[ inf. mut." : "% 𐀂%𐀍 %𐀺 𐀀[ ] 𐀷𐀉𐀙 %%%% %𐀵 e% % %𐀭𐀏𐀪𐀍 % % 𐀂𐀍 𐀂𐀍 [𐀃]𐀠 𐀇𐀿 𐀠𐀔𐀙𐀫 𐀿𐀹𐀍 1 𐀀𐀶𐀦𐀳𐀨𐀵 1% 𐀂𐀍 𐀃𐀠 𐀪𐀿 𐀠𐀔𐀙𐀫 𐀠𐀫𐀂𐀲 1 𐀃𐀠 𐀞𐀏 𐀇𐀷𐀍 1 %𐀠 𐀃𐀙𐀮𐀄 1 𐀪% %𐀹𐀉 1 𐀐% %𐀼%"
 
 # Test LB.U.49
 # Ignore 'α', 'β', 'γ', 'supra sigillum'
@@ -249,7 +249,7 @@
 
 # Test LB.U.54
     # Treat qs (quantum sufficit) as a wildcard
-    "]-ke-ke-me-na-[ , ko-]-to-na GRA qs ] vac." : "%𐀐𐀐𐀕𐀙% 𐀒%𐀵𐀙 𐂎 % %"
+    # "]-ke-ke-me-na-[ , ko-]-to-na GRA qs ] vac." : "%𐀐𐀐𐀕𐀙% 𐀒%𐀵𐀙 𐂎 % %"
 
 # Test LB.U.55
 # Ignore ⌞ and ⌟

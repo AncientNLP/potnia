@@ -21,6 +21,7 @@ class LinearBMapper(Mapper):
         r"⟦.*?⟧",
         r"deest",
         r"[⸤⸥]",
+        r"[\u231e\u231f]",  # Ignore characters ⌞ and ⌟
     ]
 
     def tokenize_transliteration(self, text:str) -> list[str]:
@@ -38,12 +39,14 @@ class LinearBMapper(Mapper):
         
         # Normalize the text by replacing double dashes with a single dash
         text = re.sub(r'--', '-', text)
+        
 
         # # Handle special sequences with wildcards for uncertainty or missing elements
         special_sequences = [
+            (r'\[•~•~•~•\]', '%%%%'),  # Replace with '%%%%'
             (r'\[?•~•~•~•\]?', '%%%%'),
-            (r'\[?•~•~•\]?', '%%%'),
-            (r'\[?•~•\]?', '%%')
+            (r'\[•~•~•\]', '%%%'),
+            (r'\[•~•\]', '%%')
         ]
         for pattern, replacement in special_sequences:
             text = re.sub(pattern, replacement, text)
@@ -61,8 +64,10 @@ class LinearBMapper(Mapper):
             (r'([^\s]+) VAS', r'\1VAS'),  # Attach 'VAS' properly
             # Ignore or modify specific patterns
             *[(rf'\b{term}\s?\.', term + '.') for term in ['vac', 'vest', 'l', 's', 'lat', 'inf', 'mut', 'sup', 'i']],  # Refactored for brevity
-            (r'v\.[↓→]?', 'v.'),  # Standardize and tokenize variations of 'v.'
             (r'\b(fragmentum|supra sigillum|reliqua pars sine regulis|vacat)\b', r'\1'),  # Explicit tokenization
+            # Corrected regex pattern to tokenize specific characters
+            (r'[αβγ]', ''),
+            (r'\bB\b',''),
         ]
 
         # Apply each pattern replacement in order
@@ -83,10 +88,17 @@ class LinearBMapper(Mapper):
         return tokenized if tokenized else [""]
 
     def regularize(self, text: str) -> str:
+        
         text = re.sub(r"vestigia", "%", text)
         text = re.sub(r"vest\s*\.", "%", text)
         text = re.sub(r"\[•\]", "%", text)
-
+        # Additional cleanup for specific phrases and codes
+        text = re.sub(r'supra sigillum|CMS \w+\d+[A-Z]* \d+', '', text)
+        text = re.sub(r'reliqua pars sine regulis', '', text)
+        text=re.sub(r'v.→','',text)
+        text=re.sub(r'v.↓','',text)
+        text=re.sub(r'fragmentum','',text)
+        
         text = super().regularize(text)
 
         text = re.sub(r'[\[\]]', "%", text)
