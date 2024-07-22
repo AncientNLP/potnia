@@ -1,7 +1,7 @@
 Potnia
 ====================
 
-.. start-badges
+.. start-summary
 
 |testing badge| |git3moji badge| |black badge|
 
@@ -14,7 +14,6 @@ Potnia
 .. |git3moji badge| image:: https://img.shields.io/badge/git3moji-%E2%9A%A1%EF%B8%8F%F0%9F%90%9B%F0%9F%93%BA%F0%9F%91%AE%F0%9F%94%A4-fffad8.svg
     :target: https://robinpokorny.github.io/git3moji/
 
-.. end-badges
 
 
 Potnia is a Python Library to process ancient scripts such as Linear A, Linear B, Sumerian and Akkadian.
@@ -22,6 +21,11 @@ Potnia is a Python Library to process ancient scripts such as Linear A, Linear B
 Currently Linear B is fully supported, with Linear A, Sumerian and Akkadian in development.
 
 Contributions are welcome! Please see the `CONTRIBUTING.rst <CONTRIBUTING.rst>`_ file for more information.
+
+.. end-summary
+
+
+.. start-quickstart
 
 Installation
 ====================
@@ -79,12 +83,17 @@ This will return the following list:
 
     [']', 'wa', ' ', 'VIR', ' ', '1', ' ', 'MUL', ' ', '2', ' ', "'", 'ko', 'wa', ' ', '1', "'", ' ', 'ko', 'wo', ' ', '1']
 
+.. end-quickstart
 
-Credit
+Credits
 ====================
+
+.. start-credits
 
 Potnia is developed by:
 
 - Emily Tour (University of Melbourne)
 - Kabir Manandhar Shrestha (Melbourne Data Analytics Platform, University of Melbourne)
 - Dr Robert Turnbull (Melbourne Data Analytics Platform, University of Melbourne)
+
+.. end-credits
