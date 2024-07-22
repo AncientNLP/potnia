@@ -80,7 +80,7 @@ Credits
 Potnia is developed by:
 
 - Emily Tour (University of Melbourne)
-- Kabir Manandhar Shrestha (Melbourne Data Analytics Platform, University of Melbourne)
-- Dr Robert Turnbull (Melbourne Data Analytics Platform, University of Melbourne)
+- `Kabir Manandhar Shrestha <https://findanexpert.unimelb.edu.au/profile/892683-kabir-manandhar-shrestha>`_ (Melbourne Data Analytics Platform, University of Melbourne)
+- `Dr Robert Turnbull <https://findanexpert.unimelb.edu.au/profile/877006-robert-turnbull>`_ (Melbourne Data Analytics Platform, University of Melbourne)
 
 .. end-credits
