@@ -2,18 +2,9 @@
 
 This document outlines the rules used in the conversion process for Linear B texts. The process involves tokenization, regularization, and handling of special patterns to prepare the text for further analysis.
 
-## 1. Patterns to Ignore:
+## 1. Tokenization Rules
 
-This list of regular expressions identifies various patterns in the text that should either be removed or ignored during tokenization (regularization?):
-
-- `lat., l., inf., i., sup., s., dex., mut, verso, v., Graffito, vacat, vac., deest`: Various annotations related epigraphic features of the document, rather than the actual contents of the text.
-- `vestigia, vest.` and `[]`: Various text annotations or specific punctuation denoting undetermined text parts, which should be handled as wildcards.
-- `/,'?⸤⸥`: Specific punctuation and bracket types to ignore.
-- `⟦.*?⟧`: Matches text within these special double brackets, which indicate text erasures.
-
-## 2. Tokenization Rules
-
-Tokenization is the process of breaking down the text into individual elements or tokens. For Linear B, this involves handling various sQpecial cases and patterns.
+Tokenization is the process of breaking down the text into individual elements or tokens. For Linear B, this involves handling various special cases and patterns.
 
 ### a) Space Normalization
 
@@ -37,7 +28,7 @@ Replaces non-breaking spaces and certain diacritic marks with regular spaces and
 
 Iterates over each pattern-replacement pair, applying them sequentially to the text to ensure all intended formatting and corrections are made.
 
-## Space Handling :
+### c) Space Handling :
 
 Uses a placeholder character to temporarily replace spaces, facilitating token splitting based on special characters and preserved spaces.
 
@@ -46,7 +37,7 @@ space_placeholder = "\uE000"  # Placeholder for spaces
 text = re.sub(r' ', space_placeholder, text)
 ```
 
-## Tokenization with Space Placeholder
+### d) Tokenization with Space Placeholder
 
 Splits the text based on special characters and the space placeholder, ensuring that meaningful elements like brackets, commas, and quotation marks are preserved as separate tokens.
 
@@ -55,7 +46,7 @@ special_chars_pattern = r'(\[|\]|\,|\'|\u27e6|\u27e7|-|\?|\u2e24|\u2e25|' + re.e
 tokens = re.split(special_chars_pattern, text)
 ```
 
-### d) Final Tokenization
+### e) Final Tokenization
 
 Replace the placeholder with actual spaces and filter empty tokens:
 
@@ -64,3 +55,13 @@ tokenized = [tok if tok != space_placeholder else " " for tok in tokens if tok a
 ```
 
 These rules form the core of the Linear B conversion process, handling various special cases in the transliteration, tokenization, and regularization of the text. The process aims to preserve important linguistic features while standardizing the format for further processing or analysis. This standardization is crucial for consistent treatment of texts across different sources and editions.
+
+## 2. Regularization Rules:
+
+This list of regular expressions identifies various patterns in the text that should be tokenised as is, but then removed or handled as a special case during regularization.
+
+- `lat., l., inf., i., sup., s., dex., mut, verso, v., v.→, v.↓, Graffito, vacat, vac., deest, α, β, γ, supra sigillum, reliqua pars sine regulis`: Various annotations related epigraphic features of the document, which should be removed at this step.
+- `fragmentum, qs, vestigia, vest.` and `][•`: Various annotations or specific punctuation denoting undetermined text parts, which should be handled as wildcards at this step (i.e. converted to `%`).
+- `/,'?⸤⸥<>`: Specific punctuation and bracket types, which should be removed at this step.
+- `⟦.*?⟧`: Matches text within these special double brackets, which indicate text erasures. Both punctuation and included text should be removed at this step.
+
