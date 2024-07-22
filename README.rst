@@ -49,39 +49,26 @@ To convert Romanized Linear B to Linear B Unicode, use the following code:
 
 .. code-block:: python
 
-    from potnia import linear_b_mapper
-
-    linear_b_mapper("a-ri-to-jo")
-
-This will return the following output:
-
-.. code-block:: python
-
+    >>> from potnia import linear_b_mapper
+    >>> linear_b_mapper("a-ri-to-jo")
     '𐀀𐀪𐀵𐀍'
+
 
 If you wish to regularize the text to remove markup present in the LiBER or DĀMOS transcriptions, use the following code:
 
 .. code-block:: python
 
-    linear_b_mapper("e-ke-qe ]-o-na-to , ke-ke-me-na⌞ ⌟ko-to-na GRA qs ] vac.", regularize=True)
-
-This will return the following string:
-
-.. code-block:: python
-
+    >>> linear_b_mapper("e-ke-qe ]-o-na-to , ke-ke-me-na⌞ ⌟ko-to-na GRA qs ] vac.", regularize=True)
     '𐀁𐀐𐀤 %𐀃𐀙𐀵 𐀐𐀐𐀕𐀙 𐀒𐀵𐀙 𐂎 qs %'
+    
 
 To tokenize Linear B text without converting it to Unicode, use the following code:
 
 .. code-block:: python
 
-    linear_b_mapper.tokenize_transliteration("]wa VIR 1 MUL 2 'ko-wa 1' ko-wo 1")
-
-This will return the following list:
-
-.. code-block:: python
-
+    >>> linear_b_mapper.tokenize_transliteration("]wa VIR 1 MUL 2 'ko-wa 1' ko-wo 1")
     [']', 'wa', ' ', 'VIR', ' ', '1', ' ', 'MUL', ' ', '2', ' ', "'", 'ko', 'wa', ' ', '1', "'", ' ', 'ko', 'wo', ' ', '1']
+    
 
 .. end-quickstart
 
