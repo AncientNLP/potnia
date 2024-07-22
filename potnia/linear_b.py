@@ -41,15 +41,7 @@ class LinearBMapper(Mapper):
         text = re.sub(r'--', '-', text)
         
 
-        # # Handle special sequences with wildcards for uncertainty or missing elements
-        special_sequences = [
-            (r'\[•~•~•~•\]', '%%%%'),  # Replace with '%%%%'
-            (r'\[?•~•~•~•\]?', '%%%%'),
-            (r'\[•~•~•\]', '%%%'),
-            (r'\[•~•\]', '%%')
-        ]
-        for pattern, replacement in special_sequences:
-            text = re.sub(pattern, replacement, text)
+       
         
         # List of patterns and their replacements
         patterns = [
@@ -66,8 +58,7 @@ class LinearBMapper(Mapper):
             *[(rf'\b{term}\s?\.', term + '.') for term in ['vac', 'vest', 'l', 's', 'lat', 'inf', 'mut', 'sup', 'i']],  # Refactored for brevity
             (r'\b(fragmentum|supra sigillum|reliqua pars sine regulis|vacat)\b', r'\1'),  # Explicit tokenization
             # Corrected regex pattern to tokenize specific characters
-            (r'[αβγ]', ''),
-            (r'\bB\b',''),
+            (r'[αβγ]', ''),            
         ]
 
         # Apply each pattern replacement in order
@@ -89,19 +80,42 @@ class LinearBMapper(Mapper):
 
     def regularize(self, text: str) -> str:
         
+        patterns = [
+            (r'\[?•~•~•~•\]?', '%%%%'),  # Matches '•~•~•~•' or '[•~•~•~•]' with optional brackets
+            (r'\[?•~•~•\]?', '%%%'),     # Matches '•~•~•' or '[•~•~•]'
+            (r'\[?•~•~\]?', '%%'),       # Matches '•~•~' or '[•~•~]'
+            (r'\[?•~•\]?', '%%'),        # Matches '•~•' or '[•~•]'
+        ]
+
+        # Apply each pattern replacement in order
+        for pattern, replacement in patterns:
+            text = re.sub(pattern, replacement, text)
+        
+        text = re.sub(r'\[ \]', '[ ]', text)  # Ensure brackets with spaces remain
+    
+        text = re.sub(r'ro2', '𐁊', text)  # Replace 'ro2' after initial transliterations are done
         text = re.sub(r"vestigia", "%", text)
         text = re.sub(r"vest\s*\.", "%", text)
         text = re.sub(r"\[•\]", "%", text)
         # Additional cleanup for specific phrases and codes
         text = re.sub(r'supra sigillum|CMS \w+\d+[A-Z]* \d+', '', text)
         text = re.sub(r'reliqua pars sine regulis', '', text)
-        text=re.sub(r'v.→','',text)
-        text=re.sub(r'v.↓','',text)
-        text=re.sub(r'fragmentum','',text)
+        text=re.sub(r'v\.→','',text)
+        text=re.sub(r'v\.↓','',text)
+        text=re.sub(r'v\.','',text)
+        text = re.sub(r'\bfragmentum\b', '%', text)
+        text = re.sub(r'\bvacat\b', '', text)
+        text = re.sub(r'</em>', '', text)
+        text=re.sub(r'\bB\b','',text)
+        text=re.sub(r'\bdeest\b','',text)
+        
+        # Remove any remaining standalone brackets
+        text = re.sub(r'[\[\]]', "%", text)
+        
+        # # Handle special sequences with wildcards for uncertainty or missing elements
         
         text = super().regularize(text)
 
-        text = re.sub(r'[\[\]]', "%", text)
 
         informative_chars = set(list(re.sub(r'[%\s]', "", text)))
         if len(informative_chars) == 0:
