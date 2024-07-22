@@ -2,9 +2,19 @@
 name = "potnia"
 version = "0.1.1"
 description = "Potnia is a Python Library to help users work with Aegean scripts."
-authors = ["Emily Tour <esmtour@gmail.com>", "Robert Turnbull"]
+authors = ["Emily Tour <esmtour@gmail.com>", "Kabir Manandhar Shrestha", "Robert Turnbull"]
 license = "Apache-2.0"
 readme = "README.rst"
+repository = "https://github.com/Linear-A-Decipher/potnia/"
+documentation = "https://Linear-A-Decipher.github.io/potnia"
+homepage = "https://github.com/Linear-A-Decipher/potnia/"
+keywords = ["linear a", "linear b", "sumerian", "akkadian", "cuneiform", "unicode"]
+# For classifiers see https://pypi.org/classifiers/
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Science/Research",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
