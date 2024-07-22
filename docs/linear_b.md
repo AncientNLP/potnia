@@ -58,7 +58,7 @@ These rules form the core of the Linear B conversion process, handling various s
 
 ## 2. Regularization Rules:
 
-This list of regular expressions identifies various patterns in the text that should be tokenised as is, but then removed or handled as a special case during regularization.
+This list of regular expressions identifies various patterns in the text that should be tokenised as is in the previous step, but then either removed or handled as a special case during subsequent regularization.
 
 - `lat., l., inf., i., sup., s., dex., mut, verso, v., v.→, v.↓, Graffito, vacat, vac., deest, α, β, γ, supra sigillum, reliqua pars sine regulis`: Various annotations related epigraphic features of the document, which should be removed at this step.
 - `fragmentum, qs, vestigia, vest.` and `][•`: Various annotations or specific punctuation denoting undetermined text parts, which should be handled as wildcards at this step (i.e. converted to `%`).
