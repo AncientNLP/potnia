@@ -39,7 +39,7 @@ class LinearBMapper(Mapper):
         # Normalize the text by replacing double dashes with a single dash
         text = re.sub(r'--', '-', text)
 
-        # Handle special sequences with wildcards for uncertainty or missing elements
+        # # Handle special sequences with wildcards for uncertainty or missing elements
         special_sequences = [
             (r'\[?•~•~•~•\]?', '%%%%'),
             (r'\[?•~•~•\]?', '%%%'),
@@ -63,7 +63,6 @@ class LinearBMapper(Mapper):
             *[(rf'\b{term}\s?\.', term + '.') for term in ['vac', 'vest', 'l', 's', 'lat', 'inf', 'mut', 'sup', 'i']],  # Refactored for brevity
             (r'v\.[↓→]?', 'v.'),  # Standardize and tokenize variations of 'v.'
             (r'\b(fragmentum|supra sigillum|reliqua pars sine regulis|vacat)\b', r'\1'),  # Explicit tokenization
-            (r'[AaBbXxαβγ●]', r' \0 '),  # Tokenize specific characters as separate tokens
         ]
 
         # Apply each pattern replacement in order
