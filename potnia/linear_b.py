@@ -40,9 +40,6 @@ class LinearBMapper(Mapper):
         # Normalize the text by replacing double dashes with a single dash
         text = re.sub(r'--', '-', text)
         
-
-       
-        
         # List of patterns and their replacements
         patterns = [
             # (r'(?<=\S)\?', ' ?'),  # Ensure '?' is separated when it follows a character
@@ -70,7 +67,7 @@ class LinearBMapper(Mapper):
         text = re.sub(r' ', space_placeholder, text)
 
         # Tokenize based on special characters and space placeholder
-        special_chars_pattern = r'(\[|\]|\,|\'|\u27e6|\u27e7|-|\?|<|>|⌞|⌟|' + re.escape(space_placeholder) + ')'
+        special_chars_pattern = r'(\[|\]|\,|\'|\u27e6|\u27e7|-|\?|<|>|⌞|⌟|⸤|⸥|' + re.escape(space_placeholder) + ')'
         tokens = re.split(special_chars_pattern, text)
 
         # Replace placeholder with actual space and filter empty tokens
@@ -80,11 +77,14 @@ class LinearBMapper(Mapper):
 
     def regularize(self, text: str) -> str:
         
+        # print(text)
+        
         patterns = [
             (r'\[?•~•~•~•\]?', '%%%%'),  # Matches '•~•~•~•' or '[•~•~•~•]' with optional brackets
             (r'\[?•~•~•\]?', '%%%'),     # Matches '•~•~•' or '[•~•~•]'
             (r'\[?•~•~\]?', '%%'),       # Matches '•~•~' or '[•~•~]'
             (r'\[?•~•\]?', '%%'),        # Matches '•~•' or '[•~•]'
+            (r'\<|\>', ''),              # Remove '<' and '>' characters
         ]
 
         # Apply each pattern replacement in order
@@ -95,6 +95,8 @@ class LinearBMapper(Mapper):
     
         text = re.sub(r'ro2', '𐁊', text)  # Replace 'ro2' after initial transliterations are done
         text = re.sub(r"vestigia", "%", text)
+        # Replace 'qs' only when it appears as a standalone word
+        text = re.sub(r'\bqs\b', '%', text)
         text = re.sub(r"vest\s*\.", "%", text)
         text = re.sub(r"\[•\]", "%", text)
         # Additional cleanup for specific phrases and codes
@@ -103,15 +105,12 @@ class LinearBMapper(Mapper):
         text=re.sub(r'v\.→','',text)
         text=re.sub(r'v\.↓','',text)
         text=re.sub(r'v\.','',text)
-        text = re.sub(r'\bfragmentum\b', '%', text)
-        text = re.sub(r'\bvacat\b', '', text)
         text = re.sub(r'</em>', '', text)
-        text=re.sub(r'\bB\b','',text)
-        text=re.sub(r'\bdeest\b','',text)
+        text = re.sub(r'\b(fragmentum|vacat|sup. mut.|inf. mut.|A|B|deest|X)\b', '', text)  
         
         # Remove any remaining standalone brackets
         text = re.sub(r'[\[\]]', "%", text)
-        
+                
         # # Handle special sequences with wildcards for uncertainty or missing elements
         
         text = super().regularize(text)
