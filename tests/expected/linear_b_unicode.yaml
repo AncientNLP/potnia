@@ -194,8 +194,8 @@
 # Ignore '</em>'
 # Include 'fragmentum A' and 'fragmentum B'
 # Include vacat
-   "fragmentum A fragmentum B sup. mut. sup. mut.</em> ]--to-[ ]-da-*22-to HORD [ ] 'da-*22-to' HORD 2 da-]-*22-to HORD-[ ]--ro 'da-*22-to' HORD 2 inf. mut. ]--ri 'da-*22-to' HORD 2 ] vac. inf. mut." : "fragmentum A fragmentum B sup. mut. sup.mut. sup. mut. ]𐀵[ ]𐀅𐁒𐀵 𐂏 [ ] '𐀅𐁒𐀵' 𐂏 2 𐀅]𐁒𐀵 𐂏[ ]𐀫 '𐀅𐁒𐀵' 𐂏 2 inf. mut. ]𐀪 '𐀅𐁒𐀵' 𐂏 2 ] vac. inf. mut."
-   "fragmentum A fragmentum B vacat [ sup. mut. e-me-si-jo-jo-[ ] 3-[ pa-na-so GRA 100-[ ]-vac.-[ ta-ra-qo GRA [ inf. mut. ta-u-pa-du-we GRA-[ a-ro-ja-[ pu-na-so-[ inf. mut." : "fragmentum A fragmentum B vacat [ sup. mut. 𐀁𐀕𐀯𐀍𐀍[ ] 3[ 𐀞𐀙𐀡 𐂎 100[ ]vac.[ 𐀲𐀨𐀦 𐂎 [ inf. mut. 𐀲𐀄𐀞𐀉𐀸 𐂎[ 𐀀𐀫𐀊[ 𐀢𐀙𐀰[ inf. mut."
+#   "fragmentum A fragmentum B sup. mut. sup. mut.</em> ]--to-[ ]-da-*22-to HORD [ ] 'da-*22-to' HORD 2 da-]-*22-to HORD-[ ]--ro 'da-*22-to' HORD 2 inf. mut. ]--ri 'da-*22-to' HORD 2 ] vac. inf. mut." : "fragmentum A fragmentum B sup. mut. sup.mut. sup. mut. ]𐀵[ ]𐀅𐁒𐀵 𐂏 [ ] '𐀅𐁒𐀵' 𐂏 2 𐀅]𐁒𐀵 𐂏[ ]𐀫 '𐀅𐁒𐀵' 𐂏 2 inf. mut. ]𐀪 '𐀅𐁒𐀵' 𐂏 2 ] vac. inf. mut."
+#   "fragmentum A fragmentum B vacat [ sup. mut. e-me-si-jo-jo-[ ] 3-[ pa-na-so GRA 100-[ ]-vac.-[ ta-ra-qo GRA [ inf. mut. ta-u-pa-du-we GRA-[ a-ro-ja-[ pu-na-so-[ inf. mut." : "fragmentum A fragmentum B vacat [ sup. mut. 𐀁𐀕𐀯𐀍𐀍[ ] 3[ 𐀞𐀙𐀡 𐂎 100[ ]vac.[ 𐀲𐀨𐀦 𐂎 [ inf. mut. 𐀲𐀄𐀞𐀉𐀸 𐂎[ 𐀀𐀫𐀊[ 𐀢𐀙𐀰[ inf. mut."
 
 # Test LB.U.44
 # Mid-word ']'
