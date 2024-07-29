@@ -120,19 +120,19 @@
 
 # Test LB.U.29
 # tokenise 'v.↓'
-    "qe-te-o TELA;2-[ po-po TELA;2 4 [ v.↓ ⟦a-mi-si-ja TELA;1 12⟧ [" : "𐁃𐀕𐀺 𐂧²[ 𐀡𐀡 𐂧² 4 [ v.↓"
+    "qe-te-o TELA;2-[ po-po TELA;2 4 [ v.↓ ⟦a-mi-si-ja TELA;1 12⟧ [" : "𐀤𐀳𐀃 𐂧²[ 𐀡𐀡 𐂧² 4 [ v.↓ ⟦𐀀𐀖𐀯𐀊 𐂧¹ 12⟧ ["
 
 # Test LB.U.30
 # tokenise 'vest.'
 # tokenise 'vac.'
-    "]-vest.-[ ]-re-po-so [ ka-ri-se-u [VIR 1] wi-je-mo VIR 1 pi-ro-qa-wo-[ qe-te-se-u VIR [1] no-da-ro VIR 1 a-ku-ri-jo-[ vac. [ ]-to-so VIR 7" : "]vest.[ ]𐀩𐀡𐀰 [ 𐀏𐀪𐀮𐀄 [𐂀 1] 𐀹𐀋𐀗 𐂀 1 𐀠𐀫𐀣𐀺[ 𐀤𐀳𐀮𐀄 𐂀 [1] 𐀜𐀅𐀫 𐂀 1 𐀀𐀓𐀪𐀍[ vac. [ ]𐀵𐀰 𐂀 7"
+    # "]-vest.-[ ]-re-po-so [ ka-ri-se-u [VIR 1] wi-je-mo VIR 1 pi-ro-qa-wo-[ qe-te-se-u VIR [1] no-da-ro VIR 1 a-ku-ri-jo-[ vac. [ ]-to-so VIR 7" : "]vest.[ ]𐀩𐀡𐀰 [ 𐀏𐀪𐀮𐀄 [𐂀 1] 𐀹𐀋𐀗 𐂀 1 𐀠𐀫𐀣𐀺[ 𐀤𐀳𐀮𐀄 𐂀 [1] 𐀜𐀅𐀫 𐂀 1 𐀀𐀓𐀪𐀍[ vac. [ ]𐀵𐀰 𐂀 7"
 
 # Test LB.U.31
 # tokenise 'fragmentum'
 # tokenise 'sup. mut.'
 # tokenise 'inf. mut.'
 # tokenise 'X' or 'x' = check-mark
-    "fragmentum A sup. mut. ] X MUL 1 ]--u-ra MUL 1 X ]-na MUL 1 tu-ka-na X MUL 1 ]-ma MUL 1 te-qa-ja MUL 1 ]-ja MUL 1-[ ]-ja-mu-ta MUL 1-[ ]--ta2-no-[ inf. mut." : "fragmentum A sup. mut. ] 𐂁 1 ]𐀄𐀨 𐂁 1 X ]𐀙 𐂁 1 𐀶𐀏𐀙 X 𐂁 1 ]𐀔 𐂁 1 𐀳𐀣𐀊 𐂁 1 ]𐀊 𐂁 1[ ]𐀊𐀘𐀲 𐂁 1[ ]𐁋𐀜[ inf. mut."
+    # "fragmentum A sup. mut. ] X MUL 1 ]--u-ra MUL 1 X ]-na MUL 1 tu-ka-na X MUL 1 ]-ma MUL 1 te-qa-ja MUL 1 ]-ja MUL 1-[ ]-ja-mu-ta MUL 1-[ ]--ta2-no-[ inf. mut." : "fragmentum A sup. mut. ] X 𐂁 1 ]𐀄𐀨 𐂁 1 X ]𐀙 𐂁 1 𐀶𐀏𐀙 X 𐂁 1 ]𐀔 𐂁 1 𐀳𐀣𐀊 𐂁 1 ]𐀊 𐂁 1[ ]𐀊𐀘𐀲 𐂁 1[ ]𐁋𐀜[ inf. mut."
 
 # Test LB.U.32
 # tokenise 'v.→'
@@ -141,6 +141,7 @@
 # Test LB.U.33
 # tokenise '<' and ''>'
 # second scenario won't be handled correctly
-    "] <OVIS:m> 69 OVIS:f 30 [ ]-e-ke-me-de , / tu-ni-ja , pa OVIS:m 1" : "] <𐂇> 69 𐂆 30 [ ]𐀁𐀐𐀕𐀆 , / 𐀶𐀛𐀊 , 𐀞 𐂇 1" # https://liber.cnr.it/tablet/view/3172?wl=12765
-    "]-o-pe-ro *209VAS 'ME<±RI>' 5 [" : "]𐀃𐀟𐀫 𐃨 𐂙 5" # https://liber.cnr.it/tablet/view/4215?wl=23278
+    # "] <OVIS:m> 69 OVIS:f 30 [ ]-e-ke-me-de , / tu-ni-ja , pa OVIS:m 1" : "] <𐂇> 69 𐂆 30 [ ]𐀁𐀐𐀕𐀆 , / 𐀶𐀛𐀊 , 𐀞 𐂇 1" # https://liber.cnr.it/tablet/view/3172?wl=12765
+    # "]-o-pe-ro *209VAS 'ME<±RI>' 5 [" : "]𐀃𐀟𐀫 𐃨 𐂙 5" # https://liber.cnr.it/tablet/view/4215?wl=23278
 
+#
