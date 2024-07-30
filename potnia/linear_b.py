@@ -40,6 +40,10 @@ class LinearBMapper(Mapper):
         # Normalize the text by replacing double dashes with a single dash
         text = re.sub(r'--', '-', text)
         
+        # Preprocess 'fragmentum A' and 'fragmentum B' to ensure they are not split
+        text = re.sub(r'fragmentum A', 'fragmentum_A', text)
+        text = re.sub(r'fragmentum B', 'fragmentum_B', text)
+        
         # List of patterns and their replacements
         patterns = [
             # (r'(?<=\S)\?', ' ?'),  # Ensure '?' is separated when it follows a character
@@ -53,7 +57,7 @@ class LinearBMapper(Mapper):
             (r'([^\s]+) VAS', r'\1VAS'),  # Attach 'VAS' properly
             # Ignore or modify specific patterns
             *[(rf'\b{term}\s?\.', term + '.') for term in ['vac', 'vest', 'l', 's', 'lat', 'inf', 'mut', 'sup', 'i']],  # Refactored for brevity
-            (r'\b(fragmentum|supra sigillum|reliqua pars sine regulis|vacat)\b', r'\1'),  # Explicit tokenization
+            (r'\b(supra sigillum|reliqua pars sine regulis|vacat)\b', r'\1'),  # Explicit tokenization
             # Corrected regex pattern to tokenize specific characters
             (r'[αβγ]', ''),            
         ]
@@ -72,6 +76,9 @@ class LinearBMapper(Mapper):
 
         # Replace placeholder with actual space and filter empty tokens
         tokenized = [tok if tok != space_placeholder else " " for tok in tokens if tok and tok!="-"]
+        
+        # Replace placeholder with actual space and filter empty tokens
+        tokenized = [tok.replace('fragmentum_A', 'fragmentum A').replace('fragmentum_B', 'fragmentum B') if tok != space_placeholder else " " for tok in tokens if tok and tok != "-"]
 
         return tokenized if tokenized else [""]
 
@@ -106,7 +113,7 @@ class LinearBMapper(Mapper):
         text=re.sub(r'v\.↓','',text)
         text=re.sub(r'v\.','',text)
         text = re.sub(r'</em>', '', text)
-        text = re.sub(r'\b(fragmentum|vacat|sup. mut.|inf. mut.|A|B|deest|X)\b', '', text)  
+        text = re.sub(r'\b(vacat|sup. mut.|inf. mut.|deest|X)\b', '', text)  
         
         # Remove any remaining standalone brackets
         text = re.sub(r'[\[\]]', "%", text)
