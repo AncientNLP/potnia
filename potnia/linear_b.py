@@ -112,8 +112,8 @@ class LinearBMapper(Mapper):
         text=re.sub(r'v\.→','',text)
         text=re.sub(r'v\.↓','',text)
         text=re.sub(r'v\.','',text)
-        text = re.sub(r'</em>', '', text)
-        text = re.sub(r'\b(vacat|sup. mut.|inf. mut.|deest|X)\b', '', text)  
+        text = re.sub(r'/em', '', text)
+        text = re.sub(r'\b(vacat|sup. mut.|inf. mut.|deest|X|fragmentum A|fragmentum B)\b', '', text)  
         
         # Remove any remaining standalone brackets
         text = re.sub(r'[\[\]]', "%", text)
@@ -128,7 +128,5 @@ class LinearBMapper(Mapper):
             return ""
         
         return text
-
-
 
 linear_b_mapper = LinearBMapper()
