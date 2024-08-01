@@ -37,6 +37,9 @@ class LinearBMapper(Mapper):
         # Normalize spaces and remove specific patterns
         text = text.replace('\u00a0', ' ').replace('\u0323', '')
         
+        # Remove the '</em>' tag before further processing
+        text = text.replace('</em>', '')
+        
         # Normalize the text by replacing double dashes with a single dash
         text = re.sub(r'--', '-', text)
         
@@ -58,8 +61,7 @@ class LinearBMapper(Mapper):
             # Ignore or modify specific patterns
             *[(rf'\b{term}\s?\.', term + '.') for term in ['vac', 'vest', 'l', 's', 'lat', 'inf', 'mut', 'sup', 'i']],  # Refactored for brevity
             (r'\b(supra sigillum|reliqua pars sine regulis|vacat)\b', r'\1'),  # Explicit tokenization
-            # Corrected regex pattern to tokenize specific characters
-            (r'[αβγ]', ''),            
+            # Corrected regex pattern to tokenize specific characters            
         ]
 
         # Apply each pattern replacement in order
@@ -109,10 +111,10 @@ class LinearBMapper(Mapper):
         # Additional cleanup for specific phrases and codes
         text = re.sub(r'supra sigillum|CMS \w+\d+[A-Z]* \d+', '', text)
         text = re.sub(r'reliqua pars sine regulis', '', text)
+        text = re.sub(r'[αβγ]', '', text)
         text=re.sub(r'v\.→','',text)
         text=re.sub(r'v\.↓','',text)
         text=re.sub(r'v\.','',text)
-        text = re.sub(r'/em', '', text)
         text = re.sub(r'\b(vacat|sup. mut.|inf. mut.|deest|X|fragmentum A|fragmentum B)\b', '', text)  
         
         # Remove any remaining standalone brackets

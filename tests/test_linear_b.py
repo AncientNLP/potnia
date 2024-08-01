@@ -24,3 +24,5 @@ def test_linear_b_transliteration(test_input, expected):
 def test_tokenize_transliteration_linear_b(test_input, expected):
     result = linear_b_mapper.tokenize_transliteration(test_input)
     assert result == expected, f"Expected: linear_b_mapper.tokenize_transliteration('{test_input}') to produce '{expected}' but got '{result}'"
+
+breakpoint()
