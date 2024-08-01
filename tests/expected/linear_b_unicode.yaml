@@ -147,7 +147,7 @@
 # tokenise 'sup. mut.'
 # tokenise 'inf. mut.'
 # tokenise 'X' or 'x' = check-mark
-    # "fragmentum A sup. mut. ] X MUL 1 ]--u-ra MUL 1 X ]-na MUL 1 tu-ka-na X MUL 1 ]-ma MUL 1 te-qa-ja MUL 1 ]-ja MUL 1-[ ]-ja-mu-ta MUL 1-[ ]--ta2-no-[ inf. mut." : "fragmentum A sup. mut. ] X 𐂁 1 ]𐀄𐀨 𐂁 1 X ]𐀙 𐂁 1 𐀶𐀏𐀙 X 𐂁 1 ]𐀔 𐂁 1 𐀳𐀣𐀊 𐂁 1 ]𐀊 𐂁 1[ ]𐀊𐀘𐀲 𐂁 1[ ]𐁋𐀜[ inf. mut."
+    "fragmentum A sup. mut. ] X MUL 1 ]--u-ra MUL 1 X ]-na MUL 1 tu-ka-na X MUL 1 ]-ma MUL 1 te-qa-ja MUL 1 ]-ja MUL 1-[ ]-ja-mu-ta MUL 1-[ ]--ta2-no-[ inf. mut." : "fragmentum A sup. mut. ] X 𐂁 1 ]𐀄𐀨 𐂁 1 X ]𐀙 𐂁 1 𐀶𐀏𐀙 X 𐂁 1 ]𐀔 𐂁 1 𐀳𐀣𐀊 𐂁 1 ]𐀊 𐂁 1[ ]𐀊𐀘𐀲 𐂁 1[ ]𐁋𐀜[ inf. mut."
 
 # Test LB.U.32
 # tokenise 'v.→'
@@ -194,8 +194,8 @@
 # Ignore '</em>'
 # Include 'fragmentum A' and 'fragmentum B'
 # Include vacat
-#   "fragmentum A fragmentum B sup. mut. sup. mut.</em> ]--to-[ ]-da-*22-to HORD [ ] 'da-*22-to' HORD 2 da-]-*22-to HORD-[ ]--ro 'da-*22-to' HORD 2 inf. mut. ]--ri 'da-*22-to' HORD 2 ] vac. inf. mut." : "fragmentum A fragmentum B sup. mut. sup.mut. sup. mut. ]𐀵[ ]𐀅𐁒𐀵 𐂏 [ ] '𐀅𐁒𐀵' 𐂏 2 𐀅]𐁒𐀵 𐂏[ ]𐀫 '𐀅𐁒𐀵' 𐂏 2 inf. mut. ]𐀪 '𐀅𐁒𐀵' 𐂏 2 ] vac. inf. mut."
-#   "fragmentum A fragmentum B vacat [ sup. mut. e-me-si-jo-jo-[ ] 3-[ pa-na-so GRA 100-[ ]-vac.-[ ta-ra-qo GRA [ inf. mut. ta-u-pa-du-we GRA-[ a-ro-ja-[ pu-na-so-[ inf. mut." : "fragmentum A fragmentum B vacat [ sup. mut. 𐀁𐀕𐀯𐀍𐀍[ ] 3[ 𐀞𐀙𐀡 𐂎 100[ ]vac.[ 𐀲𐀨𐀦 𐂎 [ inf. mut. 𐀲𐀄𐀞𐀉𐀸 𐂎[ 𐀀𐀫𐀊[ 𐀢𐀙𐀰[ inf. mut."
+   "fragmentum A fragmentum B sup. mut. sup. mut.</em> ]--to-[ ]-da-*22-to HORD [ ] 'da-*22-to' HORD 2 da-]-*22-to HORD-[ ]--ro 'da-*22-to' HORD 2 inf. mut. ]--ri 'da-*22-to' HORD 2 ] vac. inf. mut." : "fragmentum A fragmentum B sup. mut. sup.mut. sup. mut. ]𐀵[ ]𐀅𐁒𐀵 𐂏 [ ] '𐀅𐁒𐀵' 𐂏 2 𐀅]𐁒𐀵 𐂏[ ]𐀫 '𐀅𐁒𐀵' 𐂏 2 inf. mut. ]𐀪 '𐀅𐁒𐀵' 𐂏 2 ] vac. inf. mut."
+   "fragmentum A fragmentum B vacat [ sup. mut. e-me-si-jo-jo-[ ] 3-[ pa-na-so GRA 100-[ ]-vac.-[ ta-ra-qo GRA [ inf. mut. ta-u-pa-du-we GRA-[ a-ro-ja-[ pu-na-so-[ inf. mut." : "fragmentum A fragmentum B vacat [ sup. mut. 𐀁𐀕𐀯𐀍𐀍[ ] 3[ 𐀞𐀙𐀡 𐂎 100[ ]vac.[ 𐀲𐀨𐀦 𐂎 [ inf. mut. 𐀲𐀄𐀞𐀉𐀸 𐂎[ 𐀀𐀫𐀊[ 𐀢𐀙𐀰[ inf. mut."
 
 # Test LB.U.44
 # Mid-word ']'
@@ -243,7 +243,7 @@
 
 # Test LB.U.54
     # Include qs (quantum sufficit)
-    "]-ke-ke-me-na-[ , ko-]-to-na GRA qs ] vac." : "]𐀐𐀐𐀕𐀙[ , 𐀒[𐀵𐀙 𐂎 qs ] vac."
+    "]-ke-ke-me-na-[ , ko-]-to-na GRA qs ] vac." : "]𐀐𐀐𐀕𐀙[ , 𐀒]𐀵𐀙 𐂎 qs ] vac."
 
 # Test LB.U.55
 # Include ⌞ and ⌟
