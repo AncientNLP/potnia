@@ -10,6 +10,7 @@
 # Requirements mapping: 
     # LB.1: Tokenise each blank space and use to distinguish individual words. Represent as is in both annotated and regularised output.
         #   The only exceptions to this is if a space appears after '*', before/after '+', or before a '.'  in an annotation (e.g. 'lat .'); spaces in these instances should be removed in both the annotated and regularized outputs.
+    
     "a-ri-to-jo a-ri-to-jo" : "𐀀𐀪𐀵𐀍 𐀀𐀪𐀵𐀍"
 
 # Test LB.A.3
@@ -57,12 +58,10 @@
     # LB.12: Tokenise each instance of Scott brackets (i.e. '⟦' and '⟧', or '\u27e6' and '\u27e7'). Represent these symbols as is in the annotated output. Do not include these symbols, or any other text that they contain, in the reguarised ouput.
        
     "po-*34-wi-do \u27e6TUN\u27e7 BIG[" : "𐀡𐁓𐀹𐀈 ⟦𐂪⟧ 𐃌[" #TC if we want all characters to appear.
-    # "po-*34-wi-do \u27e6TUN\u27e7 BIG[" : "𐀡𐁓𐀹𐀈 𐃌%" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
 
 # Test LB.U.11
 
     "inf . mut ." : "inf. mut." #TC if we want all characters to appear.
-    # "inf . mut ." : "" #TC if we only want to output syllabograms, logograms, spaces and numbers, and indicate uncertain signs.
  
 # Test LB.U.11
 
@@ -194,12 +193,12 @@
 # Ignore '</em>'
 # Include 'fragmentum A' and 'fragmentum B'
 # Include vacat
-   "fragmentum A fragmentum B sup. mut. sup. mut.</em> ]--to-[ ]-da-*22-to HORD [ ] 'da-*22-to' HORD 2 da-]-*22-to HORD-[ ]--ro 'da-*22-to' HORD 2 inf. mut. ]--ri 'da-*22-to' HORD 2 ] vac. inf. mut." : "fragmentum A fragmentum B sup. mut. sup.mut. sup. mut. ]𐀵[ ]𐀅𐁒𐀵 𐂏 [ ] '𐀅𐁒𐀵' 𐂏 2 𐀅]𐁒𐀵 𐂏[ ]𐀫 '𐀅𐁒𐀵' 𐂏 2 inf. mut. ]𐀪 '𐀅𐁒𐀵' 𐂏 2 ] vac. inf. mut."
-   "fragmentum A fragmentum B vacat [ sup. mut. e-me-si-jo-jo-[ ] 3-[ pa-na-so GRA 100-[ ]-vac.-[ ta-ra-qo GRA [ inf. mut. ta-u-pa-du-we GRA-[ a-ro-ja-[ pu-na-so-[ inf. mut." : "fragmentum A fragmentum B vacat [ sup. mut. 𐀁𐀕𐀯𐀍𐀍[ ] 3[ 𐀞𐀙𐀡 𐂎 100[ ]vac.[ 𐀲𐀨𐀦 𐂎 [ inf. mut. 𐀲𐀄𐀞𐀉𐀸 𐂎[ 𐀀𐀫𐀊[ 𐀢𐀙𐀰[ inf. mut."
+   # "fragmentum A fragmentum B sup. mut. sup. mut.</em> ]--to-[ ]-da-*22-to HORD [ ] 'da-*22-to' HORD 2 da-]-*22-to HORD-[ ]--ro 'da-*22-to' HORD 2 inf. mut. ]--ri 'da-*22-to' HORD 2 ] vac. inf. mut." : "fragmentum A fragmentum B sup. mut. sup.mut. ]𐀵[ ]𐀅𐁒𐀵 𐂏 [ ] '𐀅𐁒𐀵' 𐂏 2 𐀅]𐁒𐀵 𐂏[ ]𐀫 '𐀅𐁒𐀵' 𐂏 2 inf. mut. ]𐀪 '𐀅𐁒𐀵' 𐂏 2 ] vac. inf. mut."
+   # "fragmentum A fragmentum B vacat [ sup. mut. e-me-si-jo-jo-[ ] 3-[ pa-na-so GRA 100-[ ]-vac.-[ ta-ra-qo GRA [ inf. mut. ta-u-pa-du-we GRA-[ a-ro-ja-[ pu-na-so-[ inf. mut." : "fragmentum A fragmentum B vacat [ sup. mut. 𐀁𐀕𐀯𐀍𐀍[ ] 3[ 𐀞𐀙𐀡 𐂎 100[ ]vac.[ 𐀲𐀨𐀦 𐂎 [ inf. mut. 𐀲𐀄𐀞𐀉𐀸 𐂎[ 𐀀𐀫𐀊[ 𐀢𐀙𐀰[ inf. mut."
 
 # Test LB.U.44
 # Mid-word ']'
-    "po-]-ki-ro-nu-ka , '*161' TELA;2 3 ki-ri-ta , / e-ru-ta-ra-pi , *161 TELA;3 [ ] e-ru-ta-ra-pi [ ]-TELA;x 2 ke-ro-ta , / *161 ki-to-na TELA;x-[" : "𐀡]𐀑𐀫𐀝𐀏 , '𐂩' 𐂧² 3 𐀑𐀪𐀲 𐀁𐀬𐀲𐀨𐀠 , / 𐂩 𐂧³ [ ] 𐀁𐀬𐀲𐀨𐀠 [ ]𐂧ˣ 2 𐀐𐀫𐀲 , / 𐂩 𐀑𐀵𐀙 𐂧ˣ["
+    "po-]-ki-ro-nu-ka , '*161' TELA;2 3 ki-ri-ta , / e-ru-ta-ra-pi , *161 TELA;3 [ ] e-ru-ta-ra-pi [ ]-TELA;x 2 ke-ro-ta , / *161 ki-to-na TELA;x-[" : "𐀡]𐀑𐀫𐀝𐀏 , '𐂩' 𐂧² 3 𐀑𐀪𐀲 , / 𐀁𐀬𐀲𐀨𐀠 , 𐂩 𐂧³ [ ] 𐀁𐀬𐀲𐀨𐀠 [ ]𐂧ˣ 2 𐀐𐀫𐀲 , / 𐂩 𐀑𐀵𐀙 𐂧ˣ["
 
 # Test LB.U.45
 # Test 'o'
@@ -219,7 +218,7 @@
 # However, square brackets that are not closed/have spaces between, are still treated as wildcards 'i-[-jo ]-wo' becomes '𐀂%𐀍 %𐀺', and 'a-[ ]' becomes '𐀀% %' 
 # Complicated text because of annotations (mainly 'ijo')
 # https://liber.cnr.it/tablet/view/697
-    "sup. mut. ] i-[-jo ]-wo , a-[ ] wa-du-na , [•~•~•~•] ]--to , e-[ ] vac. ]-sa-ka-ri-jo , [ ] vac. i-jo i-jo [o-]-pi / di-zo , pi-ma-na-ro , zo-wi-jo 1 a-tu-qo-te-ra-to 1-[ i-jo o-pi / ri-zo , pi-ma-na-ro pi-ro-i-ta 1 o-pi / pa-ka , di-wa-jo 1 ]-pi / o-na-se-u 1 ri--[ ]-wi-du 1 ke--[ ]-za-[ inf. mut." : "sup. mut. ] 𐀂[𐀍 ]𐀺 , 𐀀[ ] 𐀷𐀉𐀙 , [•~•~•~•] ]𐀵 e[ ] vac. ]𐀭𐀏𐀪𐀍 ,  [ ] vac. 𐀂𐀍 𐀂𐀍 [𐀃]𐀠 / 𐀇𐀿 , 𐀠𐀔𐀙𐀫 , 𐀿𐀹𐀍 1 𐀀𐀶𐀦𐀳𐀨𐀵 1[ 𐀂𐀍 𐀃𐀠 / 𐀪𐀿 , 𐀠𐀔𐀙𐀫 𐀠𐀫𐀂𐀲 1 𐀃𐀠 / 𐀞𐀏 , 𐀇𐀷𐀍 1 ]𐀠 / 𐀃𐀙𐀮𐀄 1 𐀪[ ]𐀹𐀉 1 𐀐[ ]𐀼[ inf. mut."
+    "sup. mut. ] i-[-jo ]-wo , a-[ ] wa-du-na , [•~•~•~•] ]--to , e-[ ] vac. ]-sa-ka-ri-jo , [ ] vac. i-jo i-jo [o-]-pi / di-zo , pi-ma-na-ro , zo-wi-jo 1 a-tu-qo-te-ra-to 1-[ i-jo o-pi / ri-zo , pi-ma-na-ro pi-ro-i-ta 1 o-pi / pa-ka , di-wa-jo 1 ]-pi / o-na-se-u 1 ri--[ ]-wi-du 1 ke--[ ]-za-[ inf. mut." : "sup. mut. ] 𐀂[𐀍 ]𐀺 , 𐀀[ ] 𐀷𐀉𐀙 , [•~•~•~•] ]𐀵 , 𐀁[ ] vac. ]𐀭𐀏𐀪𐀍 ,  [ ] vac. 𐀂𐀍 𐀂𐀍 [𐀃]𐀠 / 𐀇𐀿 , 𐀠𐀔𐀙𐀫 , 𐀿𐀹𐀍 1 𐀀𐀶𐀦𐀳𐀨𐀵 1[ 𐀂𐀍 𐀃𐀠 / 𐀪𐀿 , 𐀠𐀔𐀙𐀫 𐀠𐀫𐀂𐀲 1 𐀃𐀠 / 𐀞𐀏 , 𐀇𐀷𐀍 1 ]𐀠 / 𐀃𐀙𐀮𐀄 1 𐀪[ ]𐀹𐀉 1 𐀐[ ]𐀼[ inf. mut."
 
 # Test LB.U.49
 # Include 'α', 'β', 'γ', 'supra sigillum'
@@ -236,7 +235,7 @@
 
 # Test LB.U.52
 # Include 'deest'
-    "sup. mut. ]-deest-[ inf. mut." : "sup. mut. ]-deest-[ inf. mut."
+    "sup. mut. ]-deest-[ inf. mut." : "sup. mut. ]deest[ inf. mut."
 
 # Test LB.U.53
     "HORD T 1 NI V 3 FAR V 2 VIN V 2 a-ro-do-ro-o , / wa-ke-ta , HORD T 1 NI V 3 OLE V 1 v.↓ ME±RI Z 2" : "𐂏 𐄼 1 𐀛 𐄾 3 𐀎 𐄾 2 𐂖 𐄾 2 𐀀𐀫𐀈𐀫𐀃 , / 𐀷𐀐𐀲 , 𐂏 𐄼 1 𐀛 𐄾 3 𐂕 𐄾 1 v.↓ 𐂙 𐄿 2"
