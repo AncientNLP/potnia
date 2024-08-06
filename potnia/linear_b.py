@@ -40,6 +40,9 @@ class LinearBMapper(Mapper):
         # Remove the '</em>' tag before further processing
         text = text.replace('</em>', '')
         
+        # Handle specific compound tokens like 'ME<±RI>'
+        text = re.sub(r'ME<±RI>', 'ME±RI', text)
+        
         # Normalize the text by replacing double dashes with a single dash
         text = re.sub(r'--', '-', text)
         
@@ -82,6 +85,9 @@ class LinearBMapper(Mapper):
         # Replace placeholder with actual space and filter empty tokens
         tokenized = [tok.replace('fragmentum_A', 'fragmentum A').replace('fragmentum_B', 'fragmentum B') if tok != space_placeholder else " " for tok in tokens if tok and tok != "-"]
 
+        # Restore specific tokens like 'ME±RI' to their original form
+        tokenized = [tok.replace('ME±RI', 'ME<±RI>') for tok in tokenized]
+        
         return tokenized if tokenized else [""]
 
     def regularize(self, text: str) -> str:
@@ -99,7 +105,7 @@ class LinearBMapper(Mapper):
         # Apply each pattern replacement in order
         for pattern, replacement in patterns:
             text = re.sub(pattern, replacement, text)
-        
+                    
         text = re.sub(r'\[ \]', '[ ]', text)  # Ensure brackets with spaces remain
     
         text = re.sub(r'ro2', '𐁊', text)  # Replace 'ro2' after initial transliterations are done
