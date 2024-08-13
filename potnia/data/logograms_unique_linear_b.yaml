@@ -3,26 +3,31 @@ VIR: 𐂀
 MUL: 𐂁
 CERV: 𐂂
 EQU: 𐂃
+EQU:x: 𐂃
 EQUf: 𐂄
 EQU:f: 𐂄
 EQUm: 𐂅
 EQU:m: 𐂅
 OVIS: 𐀥
+OVIS:x: 𐀥
 OVISf: 𐂆
 OVIS:f: 𐂆
 OVISm: 𐂇
 OVIS:m: 𐂇
 CAP: 𐁒
+CAP:x: 𐁒
 CAPf: 𐂈
 CAP:f: 𐂈
 CAPm: 𐂉
 CAP:m: 𐂉
 SUS: 𐁂
+SUS:x: 𐁂
 SUSf: 𐂊
 SUS:f: 𐂊
 SUSm: 𐂋
 SUS:m: 𐂋
 BOS: 𐀘
+BOS:x: 𐀘
 BOSf: 𐂌
 BOS:f: 𐂌
 BOSm: 𐂍
@@ -34,8 +39,11 @@ HORD: 𐂏
 OLIV: 𐂐
 AROM: 𐂑
 CYP: 𐂒
+PYC: 𐂒
 KA+PO: 𐂓
+KA±PO: 𐂓
 KA+NA+KO: 𐂔
+KA±NA±KO: 𐂔
 CROC: 𐁉
 FAR: 𐀎
 
@@ -44,6 +52,7 @@ OLE: 𐂕
 VIN: 𐂖
 "*132": 𐂗
 A+RE+PA: 𐂘
+A±RE±PA: 𐂘
 ME+RI: 𐂙
 ME±RI: 𐂙
 ME<±RI>: 𐂙
@@ -56,12 +65,15 @@ AUR: 𐂛
 # OTHER MATERIALS AND ITEMS
 LANA: 𐂝
 "*146": 𐂞
+"*146;2": 𐂞²
+"*146+PE": 𐂞+𐀟
 "*150": 𐂟
 CORN: 𐂠
 "*152": 𐂡
 "*153": 𐂢
 "*154": 𐂣
 TU+RO₂: 𐂤
+TU±RO2 : 𐂤
 "*157": 𐂥
 "*158": 𐂦
 TELA: 𐂧
@@ -108,6 +120,7 @@ ROTA: 𐃏
 "*245": 𐃐
 "*246": 𐃑
 DI+PTE: 𐃒
+DI±PTE: 𐃒
 "*248": 𐃓
 "*249": 𐃔
 "*251": 𐃕
@@ -131,6 +144,8 @@ JAC: 𐃘
 "*206VAS": 𐃥
 "*207VAS": 𐃦
 "*208VAS": 𐃧
+"*208aVAS": 𐃧
+"*208bVAS": 𐃧
 "*209VAS": 𐃨
 "*210VAS": 𐃩
 "*211VAS": 𐃪
@@ -151,73 +166,89 @@ JAC: 𐃘
 "*250VAS": 𐃹
 "*305VAS": 𐃺
 
-"*211VAS+PO": 𐃪+𐂓
-"*212VAS+U": 𐃫+𐀄
-"*209VAS+A": 𐃨+𐀀
-
 # METRIC
 Z: 𐄿
+=Z: 𐄿
 V: 𐄾
+=V: 𐄾
 T: 𐄼
+=T: 𐄼
 S: 𐄽
+=S: 𐄽
 Q: 𐄻
+=Q: 𐄻
 P: 𐄺
+=P: 𐄺
 N: 𐄹
+=N: 𐄹
 M: 𐄸
+=M: 𐄸
 L: 𐄷
+=L: 𐄷
 
 # COMPOSITE IDEOGRAMS WITHOUT DESIGNATED UNICODE SIGNS
-# USED IN LiBER TEXTS
-OLE+O: 𐂕+𐀃
-OLIV+A: 𐂐+𐀀
-209VAS+A: 𐃨+𐀀
-212VAS+U: 𐃫+𐀄
-"*168+SE": 𐂰+𐀮
-"*167+PE": 𐂯
-TELA+KU: 𐂧+𐀓
-AROM+CYP: 𐂑+𐂒
+209VAS+A: 𐃨+𐀀 #CHECK
+212VAS+U: 𐃫+𐀄 #CHECK
 
-# USED IN DAMOS TEXTS, NOT IN LiBER
 OVIS+TA: 𐀥+𐀲
 SUS+KA: 𐁂+𐀏
 SUS+SI: 𐁂+𐀯
 BOS+SI: 𐀘+𐀯
-GRA+PE: 𐂎+𐀞
+EQU+QE: 𐂃+𐀤
+GRA+PE: 𐂎+𐀟
 OLIV+TI: 𐂐+𐀴
+AROM+CYP: 𐂑+𐂒
+AROM+PYC: 𐂑+𐂒
 AROM+KO: 𐂑+𐀒
 CYP+KU: 𐂒+𐀓
 CYP+O: 𐂒+𐀡
 CYP+PA: 𐂒+𐀞
+CYP+QA: 𐂒+𐀣
+PYC+KU: 𐂒+𐀓
+PYC+O: 𐂒+𐀡
+PYC+PA: 𐂒+𐀞
+PYC+QA: 𐂒+𐀣
 OLE+A: 𐂕+𐀀
+OLE+O: 𐂕+𐀃
 OLE+PA: 𐂕+𐀞
+OLE+RA: 𐂕+𐀨
 OLE+WE: 𐂕+𐀸
+OLIV+A: 𐂐+𐀀
+ROTA+TE: 𐃏+𐀳
 TUN+KI: 𐂪+𐀑
 TUN+QE: 𐂪+𐀤
 TUN+RI: 𐂪+𐀪
+TELA+KU: 𐂧+𐀓
+TELA+PU: 𐂧+𐀢
+TELA+TE: 𐂧+𐀳
 "*166+WE": 𐂮+𐀸
+"*167+PE": 𐂯+𐀟
+"*168+SE": 𐂰+𐀮
+"*172+KE": 𐂴+𐀐
 "*172+KE+RO2": 𐂴+𐀐+𐂤
 "*180+DI": 𐂻+𐀇
+"*155VAS+DI": 𐃞+𐀇
+"*155VAS+NI": 𐃞+𐀛
 "*202VAS+DI": 𐃡+𐀇
+"*209VAS+A": 𐃨+𐀀
 "*210VAS+KA": 𐃩+𐀏
+"*211VAS+PO": 𐃪+𐂓
+"*212VAS+U": 𐃫+𐀄
+"*213VAS+U": 𐃬+𐀄
 "*214VAS+U": 𐃭+𐀄
 "*214VAS+DI": 𐃭+𐀇
-ROTA+TE: 𐃏+𐀳
-# check AROM+PYC in Damos texts
+"AUR+*213VAS": 𐂛+𐃬
 
 # NOT USED IN LiBER OR DAMOS TEXTS
 # CAP+E
 # GRA+Q
-# CYP+QA
-# KA+PO
-# KA+NA+KO
 # check OLE+RA in Damos texts (is it actually OLE+PA?)
 # OLE+SI
-# A+RE+PA
-# DI+PTE
+
 
 # SYLLABOGRAMS AS IDEOGRAMS
 # SOUND VALUES UNKNOWN
-"*030": 𐀛
+"*030": 𐀛 #CHECK
 "*031": 𐀭
 "*033": 𐁉
 "*065": 𐀎
@@ -284,17 +315,24 @@ ZA: 𐀼
 ZE: 𐀽
 ZO: 𐀿
 A₂: 𐁀
+A2: 𐁀
 A₃: 𐁁
+A3: 𐁁
 AU: 𐁂
 DWE: 𐁃
 DWO: 𐁄
 NWA: 𐁅
 PU₂: 𐁆
+PU2: 𐁆
 PTE: 𐁇
 RA₂: 𐁈
+RA2: 𐁈
 RA₃: 𐁉
+RA3: 𐁉
 RO₂: 𐁊
+RO2: 𐁊
 TA₂: 𐁋
+TA2: 𐁋
 TWE: 𐁌
 TWO: 𐁍
 
@@ -329,6 +367,16 @@ TELA3+PA: 𐂧³+𐀞
 TELA;3+PA: 𐂧³+𐀞
 TELA4+PA: 𐂧⁴+𐀞
 TELA;4+PA: 𐂧⁴+𐀞
+TELAx+PO: 𐂧ˣ+𐀡
+TELA;x+PO: 𐂧ˣ+𐀡
+TELA1+PO: 𐂧¹+𐀡
+TELA;1+PO: 𐂧¹+𐀡
+TELA2+PO: 𐂧²+𐀡
+TELA;2+PO: 𐂧²+𐀡
+TELA3+PO: 𐂧³+𐀡
+TELA;3+PO: 𐂧³+𐀡
+TELA4+PO: 𐂧⁴+𐀡
+TELA;4+PO: 𐂧⁴+𐀡
 TELAx+PU: 𐂧ˣ+𐀢
 TELA;x+PU: 𐂧ˣ+𐀢
 TELA1+PU: 𐂧¹+𐀢
@@ -359,3 +407,13 @@ TELA3+ZO: 𐂧³+𐀿
 TELA;3+ZO: 𐂧³+𐀿
 TELA4+ZO: 𐂧⁴+𐀿
 TELA;4+ZO: 𐂧⁴+𐀿
+
+#EXCEPTION SCENARIOS
+"TELA;1+": 𐂧¹+
+"TELA[;1+TE": 𐂧¹%+𐀳
+"TELA[;1]+TE": 𐂧¹%+𐀳
+"+DI": +𐀇
+"+WE": +𐀸
+"OVIS[:m": 𐂇
+"OVIS[:f": 𐂆
+"OVIS:": 𐀥
