@@ -39,6 +39,7 @@ class LinearBMapper(Mapper):
         
         # Remove the '</em>' tag before further processing
         text = text.replace('</em>', '')
+        text = text.replace('<em>', '')
         
         # Handle specific compound tokens like 'ME<±RI>'
         text = re.sub(r'ME<±RI>', 'ME±RI', text)
@@ -46,9 +47,20 @@ class LinearBMapper(Mapper):
         # Normalize the text by replacing double dashes with a single dash
         text = re.sub(r'--', '-', text)
         
+        # Combine animal ideograms followed by 'x', 'm', or 'f' without space
+        animals = ['EQU', 'SUS', 'OVIS', 'BOS', 'CAP']
+        text = re.sub(r'\b(' + '|'.join(animals) + r')\s+(x|m|f)\b', r'\1\2', text)
+        
         # Preprocess 'fragmentum A' and 'fragmentum B' to ensure they are not split
         text = re.sub(r'fragmentum A', 'fragmentum_A', text)
         text = re.sub(r'fragmentum B', 'fragmentum_B', text)
+        
+        
+        
+        # Explicit tokenization for half brackets
+        text = text.replace('⌜', ' ⌜ ').replace('⌝', ' ⌝ ')
+        
+        text = text.replace('mutila', ' mutila ')
         
         # List of patterns and their replacements
         patterns = [
@@ -101,6 +113,11 @@ class LinearBMapper(Mapper):
             (r'\[?•~•\]?', '%%'),        # Matches '•~•' or '[•~•]'
             (r'\<|\>', ''),              # Remove '<' and '>' characters
         ]
+        
+        # Remove half brackets
+        text = text.replace('⌜', '').replace('⌝', '')
+        
+        text = text.replace('mutila', '')
 
         # Apply each pattern replacement in order
         for pattern, replacement in patterns:
@@ -122,6 +139,8 @@ class LinearBMapper(Mapper):
         text=re.sub(r'v\.↓','',text)
         text=re.sub(r'v\.','',text)
         text = re.sub(r'\b(vacat|sup. mut.|inf. mut.|deest|X|fragmentum A|fragmentum B)\b', '', text)  
+        text = re.sub(r'\b(x|m|f)\b', '', text)  # Remove 'x', 'm', 'f' if standalone (could be adjusted based on context)
+        text = re.sub(r'[\[\]]', "%", text)  # Replace standalone brackets with "%"
         
         # Remove any remaining standalone brackets
         text = re.sub(r'[\[\]]', "%", text)
