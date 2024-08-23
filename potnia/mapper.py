@@ -43,5 +43,5 @@ class Mapper:
         for regex in self.regex_to_ignore:
             string = re.sub(regex, "", string)
         string = re.sub(r'\s+', ' ', string)
-
+        string = re.sub('mut','',string)
         return string.strip()

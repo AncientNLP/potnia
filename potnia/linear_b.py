@@ -40,6 +40,25 @@ class LinearBMapper(Mapper):
         # Remove the '</em>' tag before further processing
         text = text.replace('</em>', '')
         text = text.replace('<em>', '')
+        # Special handling to ensure pipes are treated as separate tokens
+        text = re.sub(r'\|([^|]+)\|', r'|\1|', text)
+
+
+        
+        # Define placeholders for complex symbols
+        complex_symbols = {
+            'TELA-[;1+TE': 'PLACEHOLDER_TELA1',
+            'TELA;1+TE': 'PLACEHOLDER_TELA2',
+            'TELA-[;1]-+TE': 'PLACEHOLDER_TELA3',
+            'OVIS]-:m':'PLACEHOLDER_OVIS'
+        }
+        
+        # Reverse the complex_symbols dictionary
+        reversed_symbols = {v: k for k, v in complex_symbols.items()}
+
+        # Replace complex symbols with placeholders
+        for symbol, placeholder in complex_symbols.items():
+            text = text.replace(symbol, placeholder)
         
         # Handle specific compound tokens like 'ME<±RI>'
         text = re.sub(r'ME<±RI>', 'ME±RI', text)
@@ -68,7 +87,8 @@ class LinearBMapper(Mapper):
             (r'\b({})\s([mf])\b'.format('|'.join(['BOS', 'SUS', 'OVIS', 'CAP', 'EQU'])), r'\1\2'),  # Combine terms with 'm' or 'f'
             (r'\](?=[^\s])', r']-'),  # Pre-process ']' and '[' for special handling
             (r'(?<=[^\s])\[', r'-['),
-            (r"TELA\s+(\d+)", r'TELA\1'), # combine TELA with the following numeral
+            (r"TELA\s+([123x]|4(?!\d))", r'TELA\1'), # Existing code for specific cases
+            (r"TELA\s+(\d+)", r'TELA \1'), # Updated to handle other numbers with space
             (r'\* (\d+)', r'*\1'),  # Combine '*' with the following numeral
             (r'\+ ([^\s]+)', r'+\1'),  # Combine '+' with surrounding ideograms
             (r'([^\s]) \+', r'\1+'),  # Ensure '+' is properly attached
@@ -87,8 +107,7 @@ class LinearBMapper(Mapper):
         space_placeholder = "\uE000"  # Placeholder for spaces
         text = re.sub(r' ', space_placeholder, text)
 
-        # Tokenize based on special characters and space placeholder
-        special_chars_pattern = r'(\[|\]|\,|\'|\u27e6|\u27e7|-|\?|<|>|⌞|⌟|⸤|⸥|' + re.escape(space_placeholder) + ')'
+        special_chars_pattern = r'(\[|\]|\,|\'|\u27e6|\u27e7|-|\?|<|>|⌞|⌟|⸤|⸥|\||' + re.escape(space_placeholder) + ')'
         tokens = re.split(special_chars_pattern, text)
 
         # Replace placeholder with actual space and filter empty tokens
@@ -100,11 +119,15 @@ class LinearBMapper(Mapper):
         # Restore specific tokens like 'ME±RI' to their original form
         tokenized = [tok.replace('ME±RI', 'ME<±RI>') for tok in tokenized]
         
+        # Restore complex symbols using the reversed dictionary
+        for placeholder, symbol in reversed_symbols.items():
+            tokenized = [tok.replace(placeholder, symbol) for tok in tokenized]
+        
         return tokenized if tokenized else [""]
 
     def regularize(self, text: str) -> str:
         
-        # print(text)
+        print(text)
         
         patterns = [
             (r'\[?•~•~•~•\]?', '%%%%'),  # Matches '•~•~•~•' or '[•~•~•~•]' with optional brackets
@@ -113,6 +136,14 @@ class LinearBMapper(Mapper):
             (r'\[?•~•\]?', '%%'),        # Matches '•~•' or '[•~•]'
             (r'\<|\>', ''),              # Remove '<' and '>' characters
         ]
+        
+        text=text.replace("TELA-[;1+TE",'𐂧¹%+𐀳')
+        text=text.replace("TELA-[;1]-+TE",'𐂧¹%+𐀳')
+        text=text.replace("OVIS]-:m",'𐂇')
+        text=text.replace("|","")
+        text=text.replace(":","")
+        text=text.replace("r.","")
+        text=text.replace("[•~]","")
         
         # Remove half brackets
         text = text.replace('⌜', '').replace('⌝', '')
@@ -138,16 +169,20 @@ class LinearBMapper(Mapper):
         text=re.sub(r'v\.→','',text)
         text=re.sub(r'v\.↓','',text)
         text=re.sub(r'v\.','',text)
-        text = re.sub(r'\b(vacat|sup. mut.|inf. mut.|deest|X|fragmentum A|fragmentum B)\b', '', text)  
+        text = re.sub(r'\b(vacat|sup. mut.|inf. mut.|deest|X|fragmentum A|fragmentum B|graffito|angustum|prior pars sine regulis|fragmentum C|fragmentum D|fragmentum separatum|α|β|γ|δ|)\b', '', text)  
         text = re.sub(r'\b(x|m|f)\b', '', text)  # Remove 'x', 'm', 'f' if standalone (could be adjusted based on context)
         text = re.sub(r'[\[\]]', "%", text)  # Replace standalone brackets with "%"
         
         # Remove any remaining standalone brackets
         text = re.sub(r'[\[\]]', "%", text)
+        text = re.sub(r'=[^ ]*', '', text)
+        text = re.sub(r'•', "%", text)
+        text = re.sub(r'dex.', '', text)
                 
         # # Handle special sequences with wildcards for uncertainty or missing elements
         
         text = super().regularize(text)
+        
 
 
         informative_chars = set(list(re.sub(r'[%\s]', "", text)))
