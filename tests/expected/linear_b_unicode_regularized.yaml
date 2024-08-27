@@ -320,7 +320,7 @@
 # Requirements mapping:
     # LB.51: Tokenise each instance of 'sigillum'. Represent this text as is in the annotated output, but do not include in the regularised output.
     
-    "α sigillum β qe-ti-ja γ vac." : "sigillum 𐀤𐀴𐀊"
+    "α sigillum β qe-ti-ja γ vac." : "𐀤𐀴𐀊"
 
 # Test LB.R.43
 # Scenario: Test that 'supra sigillum' is not printed in regularized scenarios.
@@ -440,6 +440,7 @@
     "nu-wa-i-ja , / 'pa-we-a' * 161 TELA 3 30\u27e6 \u27e7" : "𐀝𐀷𐀂𐀊 𐀞𐀸𐀀 𐂩 𐂧³ 30"
     "] TELA 4 + PU 1[" : "% 𐂧⁴+𐀢 1%"
     "]ti-jo\u2e24 \u2e25 / to-mi-ka TELA x 30" : "%𐀴𐀍 𐀵𐀖𐀏 𐂧ˣ 30"
+    ']TELA 10 ⟦        ⟧ *158 1' =======> '%𐂧 10 𐂦 1'
     "to-sa TELA 40 o TELA 1 6[" : "𐀵𐀭 𐂧 40 𐀃 𐂧¹ 6%"
     
 # FRINGE SCENARIOS
