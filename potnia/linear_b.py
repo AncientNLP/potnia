@@ -87,7 +87,7 @@ class LinearBMapper(Mapper):
             (r'\b({})\s([mf])\b'.format('|'.join(['BOS', 'SUS', 'OVIS', 'CAP', 'EQU'])), r'\1\2'),  # Combine terms with 'm' or 'f'
             (r'\](?=[^\s])', r']-'),  # Pre-process ']' and '[' for special handling
             (r'(?<=[^\s])\[', r'-['),
-            (r"TELA\s+([123x]|4(?!\d))", r'TELA\1'), # Existing code for specific cases
+            (r"TELA\s+(?=[1234x]\b)", r'TELA'), # Existing code for specific cases
             (r"TELA\s+(\d+)", r'TELA \1'), # Updated to handle other numbers with space
             (r'\* (\d+)', r'*\1'),  # Combine '*' with the following numeral
             (r'\+ ([^\s]+)', r'+\1'),  # Combine '+' with surrounding ideograms
@@ -169,7 +169,7 @@ class LinearBMapper(Mapper):
         text=re.sub(r'v\.→','',text)
         text=re.sub(r'v\.↓','',text)
         text=re.sub(r'v\.','',text)
-        text = re.sub(r'\b(vacat|sup. mut.|inf. mut.|deest|X|fragmentum A|fragmentum B|graffito|angustum|prior pars sine regulis|fragmentum C|fragmentum D|fragmentum separatum|α|β|γ|δ|)\b', '', text)  
+        text = re.sub(r'\b(vacat|sup. mut.|inf. mut.|deest|X|fragmentum A|fragmentum B|graffito|angustum|prior pars sine regulis|fragmentum C|fragmentum D|fragmentum separatum|α|β|γ|δ|sigillum|)\b', '', text)  
         text = re.sub(r'\b(x|m|f)\b', '', text)  # Remove 'x', 'm', 'f' if standalone (could be adjusted based on context)
         text = re.sub(r'[\[\]]', "%", text)  # Replace standalone brackets with "%"
         
@@ -180,7 +180,7 @@ class LinearBMapper(Mapper):
         text = re.sub(r'dex.', '', text)
                 
         # # Handle special sequences with wildcards for uncertainty or missing elements
-        
+            
         text = super().regularize(text)
         
 
