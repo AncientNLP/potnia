@@ -177,8 +177,9 @@ class LinearBMapper(Mapper):
         text = re.sub(r'[\[\]]', "%", text)
         text = re.sub(r'=[^ ]*', '', text)
         text = re.sub(r'•', "%", text)
+        text = re.sub(r'●', "", text)
         text = re.sub(r'dex.', '', text)
-                
+        text = re.sub(r'sin.', '', text)        
         # # Handle special sequences with wildcards for uncertainty or missing elements
             
         text = super().regularize(text)
