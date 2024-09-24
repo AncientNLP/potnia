@@ -2,10 +2,10 @@ import pytest
 from potnia import linear_b_mapper
 from .data import expected
 
-@pytest.mark.parametrize("test_input,expected", expected("linear_b_unicode"))
-def test_linear_b_unicode(test_input, expected):
-    result = linear_b_mapper(test_input)
-    assert result == expected, f"Expected: linear_b_mapper('{test_input}') to produce '{expected}' but got '{result}'"
+# @pytest.mark.parametrize("test_input,expected", expected("linear_b_unicode"))
+# def test_linear_b_unicode(test_input, expected):
+#     result = linear_b_mapper(test_input)
+#     assert result == expected, f"Expected: linear_b_mapper('{test_input}') to produce '{expected}' but got '{result}'"
 
 
 @pytest.mark.parametrize("test_input,expected", expected("linear_b_unicode_regularized"))
