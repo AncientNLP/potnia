@@ -108,7 +108,8 @@ Currently, Potnia supports the Linear B script with forthcoming support for Line
 
 # Community Guidelines and Future Work
 
-Potnia is open-source software released under the Apache 2.0 license. We welcome contributions from the community, including bug reports, feature requests, and pull requests. Issues can be reported on our GitHub repository 
+Potnia is open-source software released under the Apache 2.0 license. We welcome contributions from the community, including bug reports, feature requests, and pull requests. Issues can be reported on our GitHub repository .
+
 <!-- 
 # Citations
 
@@ -135,6 +136,7 @@ Figure sizes can be customized by adding an optional second parameter:
 
 # Acknowledgements
 
-We acknowledge contributions from xyz, and support from xyz during the xyz of this project.
+We acknowledge support from Brent Davis, Kim Doyle, Man-Hua (Kate) Chu, Anhui (Ellie) Situ and Stavroula (Stephie) Nikoloudis. This research was supported by The University of Melbourne’s Research Computing Services.
+
 
 # References
