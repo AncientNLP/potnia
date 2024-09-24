@@ -40,7 +40,7 @@ To install the latest version from the repository, you can use this command:
 
 .. code-block:: bash
 
-    pip install git+https://github.com/Linear-A-Decipher/potnia.git
+    pip install git+https://github.com/AncientNLP/potnia.git
     
 Usage
 ====================
