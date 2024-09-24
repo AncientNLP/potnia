@@ -15,11 +15,11 @@ authors:
     affiliation: "1" # (Multiple affiliations must be quoted)
   - name: Kabir Manandhar Shrestha
     orcid: 0000-0000-0000-0000
-    equal-contrib: true
+    equal-contrib: false
     affiliation: 2
   - name: Robert Turnbull
-    orcid: 0000-0000-0000-0000
-    corresponding: true # (This is how to denote the corresponding author)
+    orcid: 0000-0003-1274-6750
+    corresponding: false # (This is how to denote the corresponding author)
     equal-contrib: true
     affiliation: 2
 affiliations:
@@ -28,7 +28,7 @@ affiliations:
  - name: Melbourne Data Analytics Platform, Australia
    index: 2
 date: 23 September 2024
-bibliography: JOSS_PotniaDraft.bib
+bibliography: paper.bib
 
 ---
 
