@@ -63,5 +63,5 @@ Other information for using reStructuredText in Sphinx can be found here: https:
 Code of Conduct
 ==================
 
-We follow the `Contributor Covenant Code of Conduct <https://github.com/Linear-A-Decipher/potnia/blob/main/CODE_OF_CONDUCT.md>`_ 
+We follow the `Contributor Covenant Code of Conduct <https://github.com/AncientNLP/potnia/blob/main/CODE_OF_CONDUCT.md>`_ 
 for all community contributions.
