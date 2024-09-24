@@ -1,3 +1,4 @@
+---
 title: 'Introducing Potnia: A Python language library for the conversion of ancient texts to Unicode'
 tags:
   - Python
@@ -29,7 +30,6 @@ affiliations:
    index: 2
 date: 23 September 2024
 bibliography: paper.bib
-
 ---
 
 # Summary
