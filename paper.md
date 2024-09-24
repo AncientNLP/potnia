@@ -13,14 +13,14 @@ authors:
     orcid: 0000-0001-5212-1427
     equal-contrib: true # (This is how you can denote equal contributions between multiple authors)
     corresponding: true
-    affiliation: "1" # (Multiple affiliations must be quoted)
+    affiliation: "1" 
   - name: Kabir Manandhar Shrestha
     orcid: 0009-0001-2059-1683
     equal-contrib: true
     affiliation: 2
   - name: Robert Turnbull
     orcid: 0000-0003-1274-6750
-    corresponding: false # (This is how to denote the corresponding author)
+    corresponding: false
     equal-contrib: true
     affiliation: 2
 affiliations:
