@@ -109,6 +109,7 @@ Currently, Potnia supports the Linear B script with forthcoming support for Line
 # Community Guidelines and Future Work
 
 Potnia is open-source software released under the Apache 2.0 license. We welcome contributions from the community, including bug reports, feature requests, and pull requests. Issues can be reported on our GitHub repository 
+<!-- 
 # Citations
 
 Citations to entries in paper.bib should be in
@@ -130,7 +131,7 @@ Figures can be included like this:
 and referenced from text using \autoref{fig:example}.
 
 Figure sizes can be customized by adding an optional second parameter:
-![Caption for example figure.](figure.png){ width=20% }
+![Caption for example figure.](figure.png){ width=20% } -->
 
 # Acknowledgements
 
