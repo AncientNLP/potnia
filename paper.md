@@ -14,8 +14,8 @@ authors:
     corresponding: true
     affiliation: "1" # (Multiple affiliations must be quoted)
   - name: Kabir Manandhar Shrestha
-    orcid: 0000-0000-0000-0000
-    equal-contrib: false
+    orcid: 0009-0001-2059-1683
+    equal-contrib: true
     affiliation: 2
   - name: Robert Turnbull
     orcid: 0000-0003-1274-6750
