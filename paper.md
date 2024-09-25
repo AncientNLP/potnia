@@ -48,41 +48,54 @@ Potnia fills a critical gap in the existing software ecosystem by providing a sp
 
 # Implementation
 
-Potnia is implemented in Python, leveraging object-oriented design principles for extensibility. The core functionality revolves around the `Mapper` class, which handles the conversion between transliterated text and Unicode representations. 
+Potnia is implemented in Python with an extensible architecture centered around the Mapper class, which converts transliterated texts into Unicode representations. The library is available on PyPI and is designed to handle the complexities of ancient scripts through a flexible and customizable framework.
 
-Key features of the implementation include:
-- Use of YAML files for storing mapping data, allowing for easy updates and additions
-- Regular expressions for handling complex patterns in ancient texts
-- A flexible tokenization system that can be customized for different scripts
-- Comprehensive error handling and input validation
+## Key Features
 
-Here's a simple example of using Potnia to convert a Linear B transliteration to Unicode:
+1. **YAML-Based Data Storage:**  Potnia stores script-specific syllabograms and logograms in YAML files, allowing easy updates and additions. This approach ensures scalability when integrating new scripts like Linear A and Akkadian.
 
-```python
-from potnia import linear_b_mapper
+    ```yaml
+    syllabograms:
+      ko: 𐀒
+      no: 𐀜
+      so: 𐀰
+    ```
 
-text = "ko-no-so"
-unicode_text = linear_b_mapper(text, regularize=True)
-print(unicode_text)  # Output: 𐀒𐀜𐀰
-```
+2. **Regular Expressions for Complex Text:** Regular expressions are used to manage uncertain readings, special symbols, and compound tokens. This enables accurate tokenization and conversion of transliterated texts.
 
-Potnia's architecture is designed to handle the inherent complexities of ancient scripts. The LinearBMapper class, for instance, extends the base Mapper class to implement specific rules for Linear B, including handling of syllabograms, logograms, and special characters. This modular design allows for easy extension to other ancient scripts.
+3. **Custom Tokenization and Unicode Conversion:** Potnia provides a flexible tokenization system tailored to each script’s unique structure. The to_unicode method converts transliterations into Unicode based on mappings stored in YAML files.
 
-The library uses PyYAML for efficient data loading and management of character mappings. Regular expressions are extensively used for tokenization and text normalization, ensuring robust handling of various text formats and notations commonly found in transliterated ancient texts.
+4. **Regularisation of Text:** The regularize method cleans the output by handling missing elements and unnecessary tags, refining the text for downstream use.
+
+    ```python
+    # Tokenisation Example
+    text = "ko-no-so"
+    tokens = linear_b_mapper.tokenize_transliteration(text)
+    print(tokens)  # Output: ['ko', '-', 'no', '-', 'so']
+
+    # Unicode Mapping
+    from potnia import linear_b_mapper
+    text = "ko-no-so"
+    unicode_text = linear_b_mapper(text, regularize=True)
+    print(unicode_text)  # Output: 𐀒𐀜𐀰
+    ```
+5. **Comprehensive Testing:** A test suite validates the accuracy of tokenization and conversion. Test cases, defined in YAML files, cover various scripts like Linear B and Linear A, ensuring reliability and facilitating contributions.
+
+    ```python
+    @pytest.mark.parametrize("test_input,expected", expected("linear_b_unicode_regularized"))
+    def test_linear_b_unicode_regularized(test_input, expected):
+        result = linear_b_mapper(test_input, regularize=True)
+        assert result == expected
+    ```
+This design makes Potnia easily extendable, with Linear B fully supported and work underway for other scripts like Linear A and Akkadian.
 
 # Research Application
 
-Potnia’s design and functionality address several key challenges in the analysis of ancient texts:
+Potnia’s design and functionality address the following challenges in the analysis of ancient texts:
 
-1. **Unicode Conversion:** By converting transliterated texts into their original scripts in Unicode, Potnia supports more accurate downstream processing, especially for machine learning applications.
+1. **Extensibility:** Potnia is designed to be highly extensible, allowing researchers to integrate new scripts by defining script-specific rules for tokenization and conversion. This flexibility makes the library suitable for a wide range of ancient languages that are not yet represented in Unicode, providing a valuable tool for researchers across various fields of ancient studies.
 
-2. **Tokenization and Regularization:** The library implements specialized tokenization and regularization strategies to manage unique symbols, uncertain readings, and structural elements of ancient scripts. It handles script-specific rules for dealing with missing or ambiguous elements, improving the accuracy of linguistic analysis.
-
-3. **Extensibility:** Potnia's design allows for the addition of new scripts by integrating script-specific rules for tokenization and conversion. This makes the library suitable for a wide range of ancient languages, providing a valuable tool for researchers across different fields of ancient studies.
-
-4. **Testing and Reliability:** The library includes a comprehensive test suite, with test cases written in YAML for easy expansion. This ensures the reliability of conversions and simplifies contributions from the open-source community.
-
-5. **Integration with Research Workflows:** Researchers can easily incorporate Potnia into their existing workflows. For example, in a typical research scenario, Potnia could be used to preprocess a corpus of Linear B texts before feeding them into a machine learning model for further analysis:
+2. **Integration with Research Workflows:** Researchers can easily incorporate Potnia into their existing workflows. For example, in a typical research scenario, Potnia could be used to preprocess a corpus of Linear B texts before feeding them into a machine learning model for further analysis:
 
 ```python
 from potnia import linear_b_mapper
@@ -102,11 +115,9 @@ bow_matrix = vectorizer.fit_transform(corpus['unicode_text'])
 # Continue with machine learning tasks...
 ```
 
-This integration allows researchers to leverage the benefits of Unicode representation in various computational linguistics tasks, potentially improving the accuracy and interpretability of their analyses.
+As an example, Potnia’s functionality is being used as part of a larger project aimed at deciphering Linear A. We are using Potnia to convert Roman transliterations of Linear B tablets into datasets and extend this capability to Linear A. The resulting datasets will be used to train language-specific models for tasks such as text generation and masked language modeling. Future models developed using this library will be released for public use, supporting downstream tasks such as decipherment, textual restoration, and palaeographic analysis. 
 
-Currently, Potnia supports the Linear B script with forthcoming support for Linear A, Sumerian, and Akkadian. This functionality positions Potnia as an essential tool for researchers working with digitized ancient language corpora.
-
-# Community Guidelines and Future Work
+# Community Guidelines
 
 Potnia is open-source software released under the Apache 2.0 license. We welcome contributions from the community, including bug reports, feature requests, and pull requests. Issues can be reported on our GitHub repository .
 
