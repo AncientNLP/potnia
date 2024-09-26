@@ -162,3 +162,5 @@ cython_debug/
 docshtml/
 paper.pdf
 jats/
+paper.preprint.tex
+paper.html
