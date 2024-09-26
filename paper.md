@@ -40,7 +40,7 @@ Potnia bridges this gap by providing a flexible framework for converting transli
 
 # Statement of Need
 
-While machine learning has increasingly been applied to the study of ancient languages [@sommerschieldMachineLearningAncient2023], some of this progress has involved working with transliterated texts rather than native script formats. Although Unicode standards exist for many ancient scripts, transliterated texts remain prevalent due to historical digitization practices
+While machine learning has increasingly been applied to the study of ancient languages [@sommerschieldMachineLearningAncient2023], some of this progress has involved working with transliterated texts rather than native script formats. Although Unicode standards exist for many ancient scripts, transliterated texts remain prevalent due to historical digitization practices.
 
 Transliteration is the process of converting text from its original script into a different script, using systematic processes. Its primary intention is to allow those who can understand the secondary script to comprehend the 'spelling' and approximate pronunciation of the original text (reference).  Prior to the gradual introduction of relevant Unicode blocks since the 1990s, it was also usually necessary for representing non-Latin scripts on Western computational systems, which were largely confined to letters of the Latin alphabet and a small number of special characters.
 
