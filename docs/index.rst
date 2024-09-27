@@ -6,6 +6,8 @@
 Welcome to potnia's documentation!
 ==================================
 
+.. image:: https://raw.githubusercontent.com/AncientNLP/potnia/main/docs/_static/img/potnia-banner.jpg
+
 .. include:: ../README.rst
    :start-after: start-summary
    :end-before: end-summary
