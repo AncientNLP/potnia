@@ -62,8 +62,12 @@ Potnia is implemented in Python with an extensible architecture centered around 
 
 ## Key Features
 
-1. **YAML-Based Mapping Specification:**  Potnia stores script-specific syllabograms and logograms in YAML files, allowing easy updates and additions. This approach ensures scalability when integrating new scripts like Linear A and Akkadian.
 
+1. **YAML-Based Mapping Specification:**  Potnia stores script-specific syllabograms and logograms in YAML files, allowing easy updates and additions (fig. \ref{fig:syllabograms}). This approach ensures scalability when integrating new scripts like Linear A and Akkadian.
+
+![Example of YAML mapping specification.\label{fig:syllabograms}](docs/_static/img/syllabograms.png){ width=50% }
+
+<!--
     ```yaml
     syllabograms:
       ja: 𐀊
@@ -71,26 +75,30 @@ Potnia is implemented in Python with an extensible architecture centered around 
       po: 𐀡
       ti: 𐀴
     ```
+-->
 
 2. **Regular Expressions for Complex Text:** Regular expressions are used to manage uncertain readings, special symbols, and compound tokens. This enables accurate tokenization and conversion of transliterated texts.
 
-3. **Custom Tokenization and Unicode Conversion:** Potnia provides a flexible tokenization system tailored to each script’s unique structure. The `to_unicode` method converts transliterations into Unicode based on mappings stored in YAML files.
+3. **Custom Tokenization and Unicode Conversion:** Potnia provides a flexible tokenization system tailored to each script’s unique structure. The ``to_unicode`` method converts transliterations into Unicode based on mappings stored in YAML files (fig. \ref{fig:potnia-example}).
+
+![Example of using potnia.\label{fig:potnia-example}](docs/_static/img/potnia-example.png){ width=80% }
 
 4. **Regularisation of Text:** The regularize method cleans the output by handling missing elements and unnecessary tags, refining the text for downstream use.
 
+<!--
     ```python
     from potnia import linear_b_mapper
     text = "po-ti-ni-ja"
 
     # Tokenisation Example
     tokens = linear_b_mapper.tokenize_transliteration(text)
-    print(tokens)  # Output: ['po', '-', 'ti', '-', 'ni', '-', 'ja']
+    print(tokens)  # Output: ['po', 'ti', 'ni', 'ja']
 
     # Unicode Mapping
-    unicode_text = linear_b_mapper(text, regularize=True)
+    unicode_text = linear_b_mapper(text)
     print(unicode_text)  # Output: 𐀡𐀴𐀛𐀊
     ```
-    
+    -->
 5. **Comprehensive Testing:** Pytest fixtures allow us to define test cases as lines in YAML files which allowed us to consisely add over 150 test examples, covering a broad range of edge cases. The code coverage of the tests is 100%.
 <!-- Test cases, defined in YAML files, cover various scripts like Linear B and Linear A, ensure acc
 
