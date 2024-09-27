@@ -306,7 +306,7 @@
     # LB.45: Tokenise each instance of 'lat.'. Represent this text as is in the annotated output, but do not include in the regularised output.
     # LB.47: Tokenise each instance of 'sup.'. Represent this text as is in the annotated output, but do not include in the regularised output.
 
-    "] TELA;4+⟦ZO⟧ 1 [ ]LANA M 1[ v.↓ ]-a ra[ lat. sup.]-so-ma [" : "% TELA;4+ 1 % %𐂝 𐄸 1% %𐀀 𐀨% %𐀰𐀔 %"
+    "] TELA;4+⟦ZO⟧ 1 [ ]LANA M 1[ v.↓ ]-a ra[ lat. sup.]-so-ma [" : "% 𐂧⁴+ 1 % %𐂝 𐄸 1% %𐀀 𐀨% %𐀰𐀔 %"
 
 # Test LB.R.41
 # Scenario: Test that 'dex.' is not printed in regularized scenarios.
