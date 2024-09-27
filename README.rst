@@ -1,5 +1,5 @@
 
-.. image:: https://raw.githubusercontent.com/rbturnbull/hespi/paper/docs/_static/img/potnia-banner.jpg
+.. image:: https://raw.githubusercontent.com/AncientNLP/potnia/paper/docs/_static/img/potnia-banner.jpg
 
 
 ====================
