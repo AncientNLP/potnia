@@ -137,9 +137,6 @@ class LinearBMapper(Mapper):
             (r'\<|\>', ''),              # Remove '<' and '>' characters
         ]
         
-        text=text.replace("TELA-[;1+TE",'𐂧¹%+𐀳')
-        text=text.replace("TELA-[;1]-+TE",'𐂧¹%+𐀳')
-        text=text.replace("OVIS]-:m",'𐂇')
         text=text.replace("|","")
         text=text.replace(":","")
         text=text.replace("r.","")

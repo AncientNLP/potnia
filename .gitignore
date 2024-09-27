@@ -160,3 +160,7 @@ cython_debug/
 #.idea/
 
 docshtml/
+paper.pdf
+jats/
+paper.preprint.tex
+paper.html

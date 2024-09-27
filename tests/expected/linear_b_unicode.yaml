@@ -46,7 +46,7 @@
 # Requirements mapping: 
     # LB.7: Tokenise each instance of ':'. Represent this symbol as is in the annotated output, but do not include in the regularised output.
 
-    "a-ta-ti-nu  :  si-wa-[" : "𐀀𐀲𐀴𐀝 : 𐀯𐀷%"
+    "a-ta-ti-nu  :  si-wa-[" : '𐀀𐀲𐀴𐀝  :  𐀯𐀷['
 
 # Test LB.A.7
 # Scenario: Test that single quotation marks are correctly printed in annotated scenarios.
@@ -98,7 +98,7 @@
 # Requirements mapping
     # LB.16: Tokenise each instance of half brackets (i.e. ' ⌜' and '⌝'). Represent these symbols as is in the annotated output. Do not include these symbols in the reguarised ouput.
 
-    "]2 OLIV T 2 ] OLIV T 1 to]-ko-do-mo HORD[ ]Z 3 VIR 20[ pi-ri-e-te-re HORD[ ]Z 3 VIR 5 pa-te-ko-to⌜ ⌝HORD[ ]V 2 [ vacat qa-ra2-te , o[-pi-me-]ne[ ]OLIV 6 pa-ka , o-pi-me-ne , [ OLIV qs pa-te-ko-to , o-pi-me-ne[ ]HORD 1 [ pi-ri-e-te-si , o-pi-me-ne[ ]HORD 1 T 4[ to-ko-do-mo , o-pi-me-ne[ ]HORD 7[ ]5 vac." : "]2 𐂐 𐄼 2 ] 𐂐 𐄼 1 𐀵]𐀒𐀈𐀗 𐂏[ ]𐄿 3 𐂀 20[ 𐀠𐀪𐀁𐀳𐀩 𐂏[ ]𐄿 3 𐂀 5 𐀞𐀳𐀒𐀵 𐂏⌜ ⌝𐄾 2 [ vacat 𐀣𐁈𐀳 , 𐀃[𐀠𐀕]𐀚[ ]𐂐 6 𐀞𐀏 , 𐀃𐀠𐀕𐀚 , [ 𐂐 qs 𐀞𐀳𐀒𐀵 , 𐀃𐀠𐀕𐀚[ ]𐂏 1 [ 𐀠𐀪𐀁𐀳𐀯 , 𐀃𐀠𐀕𐀚[ ]𐂏 1 𐄼 4[ 𐀵𐀒𐀈𐀗 , 𐀃𐀠𐀕𐀚[ ]𐂏 7[ ]5 vac."
+    "]2 OLIV T 2 ] OLIV T 1 to]-ko-do-mo HORD[ ]Z 3 VIR 20[ pi-ri-e-te-re HORD[ ]Z 3 VIR 5 pa-te-ko-to⌜ ⌝HORD[ ]V 2 [ vacat qa-ra2-te , o[-pi-me-]ne[ ]OLIV 6 pa-ka , o-pi-me-ne , [ OLIV qs pa-te-ko-to , o-pi-me-ne[ ]HORD 1 [ pi-ri-e-te-si , o-pi-me-ne[ ]HORD 1 T 4[ to-ko-do-mo , o-pi-me-ne[ ]HORD 7[ ]5 vac." : "]2 𐂐 𐄼 2 ] 𐂐 𐄼 1 𐀵]𐀒𐀈𐀗 𐂏[ ]𐄿 3 𐂀 20[ 𐀠𐀪𐀁𐀳𐀩 𐂏[ ]𐄿 3 𐂀 5 𐀞𐀳𐀒𐀵 ⌜   ⌝ 𐂏[ ]𐄾 2 [ vacat 𐀣𐁈𐀳 , 𐀃[𐀠𐀕]𐀚[ ]𐂐 6 𐀞𐀏 , 𐀃𐀠𐀕𐀚 , [ 𐂐 qs 𐀞𐀳𐀒𐀵 , 𐀃𐀠𐀕𐀚[ ]𐂏 1 [ 𐀠𐀪𐀁𐀳𐀯 , 𐀃𐀠𐀕𐀚[ ]𐂏 1 𐄼 4[ 𐀵𐀒𐀈𐀗 , 𐀃𐀠𐀕𐀚[ ]𐂏 7[ ]5 vac."
 
 # Test LB.A.14
 # Scenario: Test that \u2082 is correctly handled as a subscript '2' in annotated scenarios.
@@ -119,7 +119,7 @@
 # Requirements mapping:
     # LB 19: Tokenise each instance of 'mutila'. Represent this text as is in the annotated output, but do not include in the regularised output.
 
-    "] GRA[ qs mutila" : "] 𐂎[ qs mutila"
+    "] GRA[ qs mutila" : "] 𐂎[ qs  mutila "
 
 # Test LB.A.17
 # Scenario: Test that 'mut' is correctly printed in annotated scenarios.
@@ -159,7 +159,7 @@
 # Requirements mapping:
     # LB.26: Tokenise each instance of 'vestigia'. Represent this text as is in the annotated output, and represent as wildcard (i.e. '%') in regularised output.
 
-    "pa-ro , we-u-da-ne-we re-u-ko , a-ko-ro-we-e BOS+SI 2 re[-u-]ko , ma-ra-pi , pe-ko , a-ko-ro-we BOS+SI 1 OVIS:m? ]3 CAP:m 3 WE 3 CAP:m 3 ]vestigia[ ]2 [ ]BOS:x 3 ⟦ ⟧ ] vest. [ ] vest. [ re-u-ko[ ]ma-ra[-pi ]pe-ko , a-ko-ro-we[ OVIS:m 1 CAP:m 1 WE[ ] SUS:x[ ] vacat [ inf. mut." : "𐀞𐀫,  𐀸𐀄𐀅𐀚𐀸 𐀩𐀄𐀒 , 𐀀𐀒𐀫𐀸𐀁 𐀘+𐀯 2 𐀩[𐀄]𐀒 , 𐀔𐀨𐀠 , 𐀟𐀒 , 𐀀𐀒𐀫𐀸 𐀘+𐀯 1 𐂇? ]3 𐂉 3 𐀸 3 𐂉 3 ]vestigia?[ ]2 [ ]𐀘 3 ⟦ ⟧ ] vest. [ ] vest. 𐀩𐀄𐀒[ ]𐀔𐀨[𐀠 ]𐀟𐀒 , 𐀀𐀒𐀫𐀸[ 𐂇 1 𐂉 1 𐀸[ ] 𐁂[ ] vacat [ inf. mut."
+    "pa-ro , we-u-da-ne-we re-u-ko , a-ko-ro-we-e BOS+SI 2 re[-u-]ko , ma-ra-pi , pe-ko , a-ko-ro-we BOS+SI 1 OVIS:m? ]3 CAP:m 3 WE 3 CAP:m 3 ]vestigia[ ]2 [ ]BOS:x 3 ⟦ ⟧ ] vest. [ ] vest. [ re-u-ko[ ]ma-ra[-pi ]pe-ko , a-ko-ro-we[ OVIS:m 1 CAP:m 1 WE[ ] SUS:x[ ] vacat [ inf. mut." : "𐀞𐀫 , 𐀸𐀄𐀅𐀚𐀸 𐀩𐀄𐀒 , 𐀀𐀒𐀫𐀸𐀁 𐀘+𐀯 2 𐀩[𐀄]𐀒 , 𐀔𐀨𐀠 , 𐀟𐀒 , 𐀀𐀒𐀫𐀸 𐀘+𐀯 1 𐂇? ]3 𐂉 3 𐀸 3 𐂉 3 ]vestigia[ ]2 [ ]𐀘 3 ⟦ ⟧ ] vest. [ ] vest. [ 𐀩𐀄𐀒[ ]𐀔𐀨[𐀠 ]𐀟𐀒 , 𐀀𐀒𐀫𐀸[ 𐂇 1 𐂉 1 𐀸[ ] 𐁂[ ] vacat [ inf. mut."
 
 # Test LB.A.22
 # Scenario: Test that 'vestigia?' is correctly printed in annotated scenarios.
