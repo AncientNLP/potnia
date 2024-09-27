@@ -6,7 +6,7 @@ Potnia
 
 .. start-summary
 
-|testing badge| |docs badge| |git3moji badge| |black badge|
+|testing badge| |coverage badge| |docs badge| |git3moji badge| |black badge|
 
 .. |testing badge| image:: https://github.com/AncientNLP/potnia/actions/workflows/testing.yml/badge.svg
     :target: https://github.com/AncientNLP/potnia/actions
