@@ -1,4 +1,7 @@
-Potnia
+
+.. image:: https://raw.githubusercontent.com/rbturnbull/hespi/paper/docs/_static/img/potnia-banner.jpg
+
+
 ====================
 
 .. start-summary
