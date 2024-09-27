@@ -394,7 +394,9 @@ TELA;4+ZO: 𐂧⁴+𐀿
 #EXCEPTION SCENARIOS
 "TELA;1+": 𐂧¹+
 "TELA[;1+TE": 𐂧¹%+𐀳
+"TELA-[;1+TE": 𐂧¹%+𐀳
 "TELA[;1]+TE": 𐂧¹%+𐀳
+"TELA-[;1]-+TE": 𐂧¹%+𐀳
 "TELA[;1": 𐂧¹%
 "TELA;6+": 𐂧⁶+
 "TELA;4+": 𐂧⁴+
@@ -408,6 +410,7 @@ TELA;4+ZO: 𐂧⁴+𐀿
 "+TA": +𐀲
 "OVIS[:m": 𐂇
 "OVIS]:m": 𐂇
+"OVIS]-:m": 𐂇
 "OVIS[:f": 𐂆
 "OVIS]:f": 𐂆
 "OVIS:": 𐀥
