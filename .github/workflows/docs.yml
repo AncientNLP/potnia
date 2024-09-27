@@ -44,6 +44,11 @@ jobs:
       - name: Docs
         run: |
           poetry run sphinx-build -b html docs gh-pages
+      - name: Coverage
+        run: |
+          poetry run coverage run -m pytest
+          echo "COVERAGE=$(poetry run coverage report --precision 2 | grep TOTAL | tr -s ' ' | cut -f 4 -d " ")" >> $GITHUB_ENV
+          poetry run coverage html --directory gh-pages/coverage
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
@@ -52,4 +57,13 @@ jobs:
           path: 'gh-pages'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v2    
+      - name: Create Coverage Badge
+        uses: schneegans/dynamic-badges-action@v1.1.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: e640f26fb59e39e3051de8fbf020de62
+          filename: coverage-badge.json
+          label: coverage
+          message: ${{ env.COVERAGE }}
+          color: green
