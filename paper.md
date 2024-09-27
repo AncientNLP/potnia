@@ -26,7 +26,7 @@ authors:
 affiliations:
  - name: University of Melbourne, Australia
    index: 1
- - name: Melbourne Data Analytics Platform, Australia
+ - name: Melbourne Data Analytics Platform, University of Melbourne, Australia
    index: 2
 date: 23 September 2024
 bibliography: paper.bib
@@ -81,7 +81,7 @@ Potnia is implemented in Python with an extensible architecture centered around 
 
 3. **Custom Tokenization and Unicode Conversion:** Potnia provides a flexible tokenization system tailored to each script’s unique structure. The ``to_unicode`` method converts transliterations into Unicode based on mappings stored in YAML files (fig. \ref{fig:potnia-example}).
 
-![Example of using potnia.\label{fig:potnia-example}](docs/_static/img/potnia-example.png){ width=80% }
+![Example of using Potnia.\label{fig:potnia-example}](docs/_static/img/potnia-example.png){ width=80% }
 
 4. **Regularisation of Text:** The regularize method cleans the output by handling missing elements and unnecessary tags, refining the text for downstream use.
 
@@ -116,8 +116,11 @@ Potnia’s design and functionality address the following challenges in the anal
 
 1. **Extensibility:** Potnia is designed to be highly extensible, allowing researchers to integrate new scripts by defining script-specific rules for tokenization and conversion. This flexibility makes the library suitable for a wide range of ancient languages that are not yet represented in Unicode, providing a valuable tool for researchers across various fields of ancient studies.
 
-2. **Integration with Research Workflows:** Researchers can easily incorporate Potnia into their existing workflows. For example, in a typical research scenario, Potnia could be used to preprocess a corpus of Linear B texts before feeding them into a machine learning model for further analysis:
+2. **Integration with Research Workflows:** Researchers can easily incorporate Potnia into their existing workflows. For example, in a typical research scenario, Potnia could be used to preprocess a corpus of Linear B texts before feeding them into a machine learning model for further analysis (fig. \ref{fig:downstream-example}).
 
+![Example of using Potnia to preprocess a Linear B dataset.\label{fig:downstream-example}](docs/_static/img/downstream-example.png){ width=100% }
+
+<!-- 
     ```python
     from potnia import linear_b_mapper
     import pandas as pd
@@ -135,8 +138,9 @@ Potnia’s design and functionality address the following challenges in the anal
 
     # Continue with machine learning tasks...
     ```
+-->
 
-    For instance, Potnia’s functionality is being used as part of a larger project aimed at deciphering Linear A. We are using Potnia to convert Romanized transliterations of Linear B tablets into Unicode datasets, and will extend this capability to Linear A. The resulting datasets will be used to train language-specific models for tasks such as text generation and masked language modeling. Future models developed using this library will be released for public use, supporting downstream tasks such as decipherment, textual restoration, and palaeographic analysis. 
+Potnia’s functionality is being used as part of a larger project aimed at deciphering Linear A. We are using Potnia to convert Romanized transliterations of Linear B tablets into Unicode datasets, and will extend this capability to Linear A. The resulting datasets will be used to train language-specific models for tasks such as text generation and masked language modeling. Future models developed using this library will be released for public use, supporting downstream tasks such as decipherment, textual restoration, and palaeographic analysis. 
 
 # Availability
 
