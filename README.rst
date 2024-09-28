@@ -2,7 +2,7 @@
 Potnia
 ================================================================
 
-.. image:: https://raw.githubusercontent.com/AncientNLP/potnia/main/docs/_static/img/potnia-banner.jpg
+.. image:: https://raw.githubusercontent.com/AncientNLP/potnia/main/docs/_static/img/PotniaLogo.png
 
 .. start-summary
 
