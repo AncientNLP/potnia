@@ -10,8 +10,12 @@ docker run --rm -it \
     paper.md
 
 
-# docker run --rm \
-#     --volume $PWD:/data \
-#     --user $(id -u):$(id -g) \
-#     --env JOURNAL=joss \
-#     openjournals/inara
+echo Generating preprint
+docker run --rm -it \
+    -v $PWD:/data \
+    -u $(id -u):$(id -g) \
+    --env JOURNAL=joss \
+    openjournals/inara:latest \
+    -o preprint \
+    paper.md
+
