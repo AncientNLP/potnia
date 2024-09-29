@@ -68,8 +68,9 @@ If you wish to regularize the text to remove additional annotations present in t
 .. code-block:: python
 
     >>> linear_b_mapper("e-ke-qe ]-o-na-to , ke-ke-me-na⌞ ⌟ko-to-na GRA qs ] vac.", regularize=True)
-    '𐀁𐀐𐀤 %𐀃𐀙𐀵 𐀐𐀐𐀕𐀙 𐀒𐀵𐀙 𐂎 qs %'
-    
+    '𐀁𐀐𐀤 %𐀃𐀙𐀵 𐀐𐀐𐀕𐀙 𐀒𐀵𐀙 𐂎 %'
+
+Note that uncertain/missing signs or sections of text are presently being replaced with a wildcard '%' character.
 
 To tokenize transliterated Linear B texts without converting it to Unicode, use the following code:
 
