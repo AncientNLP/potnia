@@ -25,9 +25,9 @@ Potnia
 
 
 
-Potnia is a Python Library to process ancient scripts such as Linear A, Linear B, Sumerian and Akkadian.
+Potnia is an open-source Python library designed to convert Romanized transliterations of ancient texts into Unicode representations of ther respective native scripts.
 
-Currently Linear B is fully supported, with Linear A, Sumerian and Akkadian in development.
+Currently the conversion of transliterated Linear B texts into a Unicode representation of the script is fully supported, with functionality for Linear A, Sumero-Akkadian cuneiform, Hittite cuneiform, Luwian hieroglyphs and Etruscan in development.
 
 Contributions are welcome! Please see the `CONTRIBUTING.rst <CONTRIBUTING.rst>`_ file for more information.
 
@@ -54,7 +54,7 @@ To install the latest version from the repository, you can use this command:
 Usage
 ====================
 
-To convert Romanized Linear B to Linear B Unicode, use the following code:
+To convert transliterated Linear B to Linear B Unicode, use the following code:
 
 .. code-block:: python
 
@@ -63,7 +63,7 @@ To convert Romanized Linear B to Linear B Unicode, use the following code:
     '𐀀𐀪𐀵𐀍'
 
 
-If you wish to regularize the text to remove markup present in the LiBER or DĀMOS transcriptions, use the following code:
+If you wish to regularize the text to remove additional annotations present in the `LiBER <https://liber.cnr.it/index>` and  `DĀMOS <https://damos.hf.uio.no/about/content/>`` transliterations, use the following code:
 
 .. code-block:: python
 
@@ -71,7 +71,7 @@ If you wish to regularize the text to remove markup present in the LiBER or DĀM
     '𐀁𐀐𐀤 %𐀃𐀙𐀵 𐀐𐀐𐀕𐀙 𐀒𐀵𐀙 𐂎 qs %'
     
 
-To tokenize Linear B text without converting it to Unicode, use the following code:
+To tokenize transliterated Linear B texts without converting it to Unicode, use the following code:
 
 .. code-block:: python
 
