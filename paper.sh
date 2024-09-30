@@ -19,3 +19,6 @@ docker run --rm -it \
     -o preprint \
     paper.md
 
+# TODO replace "docs/_static/img/" in paths in paper.preprint.tex with root directory
+cat paper.preprint.tex | sed "s/docs\/_static\/img\///g" > tmp
+mv tmp paper.preprint.tex
