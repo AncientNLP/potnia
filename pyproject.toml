@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "potnia"
-version = "0.1.1"
+version = "0.2.0"
 description = "Potnia is a Python Library to help users work with Aegean scripts."
 authors = ["Emily Tour <esmtour@gmail.com>", "Kabir Manandhar Shrestha", "Robert Turnbull"]
 license = "Apache-2.0"
