@@ -6,7 +6,10 @@ Potnia
 
 .. start-summary
 
-|testing badge| |coverage badge| |docs badge| |git3moji badge| |black badge|
+|pypi badge| |testing badge| |coverage badge| |docs badge| |git3moji badge| |black badge|
+
+.. |pypi badge| image:: https://img.shields.io/pypi/v/potnia
+    :target: https://pypi.org/project/potnia/
 
 .. |testing badge| image:: https://github.com/AncientNLP/potnia/actions/workflows/testing.yml/badge.svg
     :target: https://github.com/AncientNLP/potnia/actions
