@@ -27,6 +27,7 @@ def load_ignore_patterns(file_path: str):
 class LinearBMapper(Mapper):
     syllabograms = ("syllabograms_common", "syllabograms_unique_linear_b")
     logograms = ("logograms_common", "logograms_unique_linear_b")
+    
     patterns_to_ignore=load_ignore_patterns("potnia/rules/ignore_patterns.yaml")
 
     def tokenize_transliteration(self, text: str) -> list[str]:
@@ -53,12 +54,11 @@ class LinearBMapper(Mapper):
         # Apply each pattern replacement in order
         for pattern, replacement in patterns:
             text = re.sub(pattern, replacement, text)
-
+        
         # Space handling
-        space_placeholder = "\uE000"  # Placeholder for spaces
+        space_placeholder = "\ue000"  # Placeholder for spaces
         text = re.sub(r' ', space_placeholder, text)
         
-        special_chars_pattern = r'(\[|\]|\,|\'|\u27e6|\u27e7|-|\?|<|>|⌞|⌟|⸤|⸥|\||' + re.escape(space_placeholder) + ')'
         tokens = re.split(special_chars_pattern, text)
 
         # Replace placeholder with actual space and filter empty tokens

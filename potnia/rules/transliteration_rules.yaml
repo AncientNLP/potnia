@@ -29,3 +29,5 @@ complex_symbols:
   'TELA;1+TE': 'PLACEHOLDER_TELA2'
   'TELA-[;1]-+TE': 'PLACEHOLDER_TELA3'
   'OVIS]-:m': 'PLACEHOLDER_OVIS'
+
+special_chars_pattern: "(\\[|\\]|\\,|\\'|\\u27e6|\\u27e7|-|\\?|<|>|⌞|⌟|⸤|⸥|\\||\ue000)"
