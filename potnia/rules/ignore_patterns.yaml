@@ -1,0 +1,18 @@
+patterns_to_ignore:
+  - "vacat\\s*\\.?"
+  - "lat\\s*\\."
+  - "inf\\s*\\."
+  - "i\\s*\\."
+  - "mut\\s*\\."
+  - "sup\\s*\\."
+  - "vac\\s*\\."
+  - "v\\s*\\."
+  - "vestigia"
+  - "l\\s*\\."
+  - "s\\s*\\."
+  - "Graffito"
+  - "[\\/\\,\\'\\?]"
+  - "⟦.*?⟧"
+  - "deest"
+  - "[⸤⸥]"
+  - "[\\u231e\\u231f]"  # Ignore characters ⌞ and ⌟
