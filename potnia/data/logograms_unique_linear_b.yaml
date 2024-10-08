@@ -1,107 +1,107 @@
 # PEOPLE AND ANIMALS
-VIR: 𐂀
-MUL: 𐂁
-CERV: 𐂂
-EQU: 𐂃
-EQUx: 𐂃
-EQU:x: 𐂃
-EQUf: 𐂄
-EQU:f: 𐂄
-EQUm: 𐂅
-EQU:m: 𐂅
-OVIS: 𐀥
-OVISx: 𐀥
-OVIS:x: 𐀥
-OVISf: 𐂆
-OVIS:f: 𐂆
-OVISm: 𐂇
-OVIS:m: 𐂇
-CAP: 𐁒
-CAPx: 𐁒
-CAP:x: 𐁒
-CAPf: 𐂈
-CAP:f: 𐂈
-CAPm: 𐂉
-CAP:m: 𐂉
-SUS: 𐁂
-SUSx: 𐁂
-SUS:x: 𐁂
-SUSf: 𐂊
-SUS:f: 𐂊
-SUSm: 𐂋
-SUS:m: 𐂋
-BOS: 𐀘
-BOSx: 𐀘
-BOS:x: 𐀘
-BOSf: 𐂌
-BOS:f: 𐂌
-BOSm: 𐂍
-BOS:m: 𐂍
+VIR: 𐂀 # man
+MUL: 𐂁 # woman
+CERV: 𐂂 # deer
+EQU: 𐂃 # horse
+EQUx: 𐂃 # horse
+EQU:x: 𐂃 # horse
+EQUf: 𐂄 # female horse
+EQU:f: 𐂄 # female horse
+EQUm: 𐂅 # male horse
+EQU:m: 𐂅 # male horse
+OVIS: 𐀥 # sheep
+OVISx: 𐀥 # sheep
+OVIS:x: 𐀥 # sheep
+OVISf: 𐂆 # female sheep
+OVIS:f: 𐂆 # female sheep
+OVISm: 𐂇 # male sheep
+OVIS:m: 𐂇 # male sheep
+CAP: 𐁒 # goat
+CAPx: 𐁒 # goat
+CAP:x: 𐁒 # goat
+CAPf: 𐂈 # female goat
+CAP:f: 𐂈 # female goat
+CAPm: 𐂉 # male goat
+CAP:m: 𐂉 # male goat
+SUS: 𐁂 # pig
+SUSx: 𐁂 # pig
+SUS:x: 𐁂 # pig
+SUSf: 𐂊 # female pig
+SUS:f: 𐂊 # female pig
+SUSm: 𐂋 # male pig
+SUS:m: 𐂋 # male pig
+BOS: 𐀘 # cattle
+BOSx: 𐀘 # cattle
+BOS:x: 𐀘 # cattle
+BOSf: 𐂌 # female cattle
+BOS:f: 𐂌 # female cattle
+BOSm: 𐂍 # male cattle
+BOS:m: 𐂍 # male cattle
 
-# CEREALS AND PLANTS
-GRA: 𐂎
-HORD: 𐂏
-OLIV: 𐂐
-AROM: 𐂑
-CYP: 𐂒
-PYC: 𐂒
-KA+PO: 𐂓
-KA±PO: 𐂓
-KA+NA+KO: 𐂔
-KA±NA±KO: 𐂔
-CROC: 𐁉
-FAR: 𐀎
+# DRY COMMODITIES
+GRA: 𐂎 # wheat or barley
+HORD: 𐂏 # barley
+OLIV: 𐂐 # olive
+AROM: 𐂑 # spice
+CYP: 𐂒 # cyperus
+PYC: 𐂒 # cyperus
+KA+PO: 𐂓 # fruit?
+KA±PO: 𐂓 # fruit?
+KA+NA+KO: 𐂔 # saffron
+KA±NA±KO: 𐂔 # saffron
+CROC: 𐁉 # saffron
+FAR: 𐀎 # flour
 
-# EXTRACTS
-OLE: 𐂕
-VIN: 𐂖
+# LIQUID COMMODITIES
+OLE: 𐂕 # olive oil
+VIN: 𐂖 # wine
 "*132": 𐂗
-A+RE+PA: 𐂘
-A±RE±PA: 𐂘
-ME+RI: 𐂙
-ME±RI: 𐂙
-ME<±RI>: 𐂙
+A+RE+PA: 𐂘 # ointment
+A±RE±PA: 𐂘 # ointment
+ME+RI: 𐂙 # honey
+ME±RI: 𐂙 # honey
+ME<±RI>: 𐂙 # honey
 
 # METALS
-AES: 𐂚
-AUR: 𐂛
+AES: 𐂚 # bronze
+AUR: 𐂛 # gold
 "*142": 𐂜
 
 # OTHER MATERIALS AND ITEMS
-LANA: 𐂝
-"*146": 𐂞
-"*146;2": 𐂞²
-"*146+PE": 𐂞+𐀟
+LANA: 𐂝 # wool
+"*146": 𐂞 # linen garment?
+"*146;2": 𐂞² # linen garment?
+"*146+PE": 𐂞+𐀟 # linen garment?
 "*150": 𐂟
-CORN: 𐂠
-"*152": 𐂡
-"*153": 𐂢
-"*154": 𐂣
-TU+RO₂: 𐂤
-TU±RO2 : 𐂤
+CORN: 𐂠 # horn (wild goat)
+"*152": 𐂡 # oxhinde
+"*153": 𐂢  # sheepskin
+"*154": 𐂣 # hide?
+TU+RO₂: 𐂤 # cheese
+TU±RO2 : 𐂤 # cheese
 "*157": 𐂥
 "*158": 𐂦
-TELA: 𐂧
+TELA: 𐂧 # cloth
 "*160": 𐂨
 "*161": 𐂩
-TUN: 𐂪
-ARM: 𐂫
+TUN: 𐂪 # breastplate
+ARM: 𐂫 # armour
 "*164": 𐂬
 "*165": 𐂭
 "*166": 𐂮
-"*167": 𐂯
+"*167": 𐂯 # ingot
 "*168": 𐂰
 "*169": 𐂱
 "*170": 𐂲
 "*171": 𐂳
-"*172": 𐂴
-LUNA: 𐂵
+"*172": 𐂴 # honeycomb?
+LUNA: 𐂵 # month's ration?
 "*174": 𐂶
-ARB: 𐂷
+ARB: 𐂷 # tree
 "*177": 𐂸
 "*178": 𐂹
 "*179": 𐂺
-"*180": 𐂻
+"*180": 𐂻 # parchment?
 "*181": 𐂼
 "*182": 𐂽
 "*183": 𐂾
@@ -109,113 +109,113 @@ ARB: 𐂷
 "*185": 𐃀
 "*189": 𐃁
 "*190": 𐃂
-GAL: 𐃃
-"*220": 𐃄
-ALV: 𐃅
-HAS: 𐃆
-SAG: 𐃇
+GAL: 𐃃 # helmet
+"*220": 𐃄 # footstool
+ALV: 𐃅 # bathtub
+HAS: 𐃆 # spear
+SAG: 𐃇 # arrow
 "*232": 𐃈
-PUG: 𐃉
+PUG: 𐃉 # dagger
 "*234": 𐃊
-GUP: 𐃋
-BIG: 𐃌
-CUR: 𐃍
-CAPS: 𐃎
-ROTA: 𐃏
-"*245": 𐃐
-"*246": 𐃑
-DI+PTE: 𐃒
-DI±PTE: 𐃒
+GUP: 𐃋 # dagger
+BIG: 𐃌 # chariot
+CUR: 𐃍 # chariot
+CAPS: 𐃎 # chariot frame
+ROTA: 𐃏 # wheel
+"*245": 𐃐 # chariot part?
+"*246": 𐃑 # chariot part?
+DI+PTE: 𐃒 # parchment?
+DI±PTE: 𐃒 # parchment?
 "*248": 𐃓
 "*249": 𐃔
 "*251": 𐃕
 "*252": 𐃖
 "*253": 𐃗
-JAC: 𐃘
+JAC: 𐃘 # javelin or dart
 "*255": 𐃙
-"*256": 𐃚
+"*256": 𐃚 # bow?
 "*257": 𐃛
 "*258": 𐃜
 "*259": 𐃝
 
 # VESSELS
-"*155VAS": 𐃞
+"*155VAS": 𐃞 # basket?
 "*200VAS": 𐃟
-"*201VAS": 𐃠
+"*201VAS": 𐃠 # tripod
 "*202VAS": 𐃡
 "*203VAS": 𐃢
 "*204VAS": 𐃣
 "*205VAS": 𐃤
-"*206VAS": 𐃥
+"*206VAS": 𐃥 # hydria
 "*207VAS": 𐃦
-"*208VAS": 𐃧
-"*208aVAS": 𐃧
-"*208bVAS": 𐃧
-"*209VAS": 𐃨
+"*208VAS": 𐃧 # patera
+"*208aVAS": 𐃧 # patera
+"*208bVAS": 𐃧 # patera
+"*209VAS": 𐃨 # amphora
 "*210VAS": 𐃩
 "*211VAS": 𐃪
 "*212VAS": 𐃫 
-"*213VAS": 𐃬
+"*213VAS": 𐃬 # lanx
 "*214VAS": 𐃭
-"*215VAS": 𐃮
+"*215VAS": 𐃮 # kylix
 "*216VAS": 𐃯
 "*217VAS": 𐃰
 "*218VAS": 𐃱
 "*219VAS": 𐃲
 "*221VAS": 𐃳
 "*222VAS": 𐃴
-"*226VAS": 𐃵
-"*227VAS": 𐃶
-"*228VAS": 𐃷
-"*229VAS": 𐃸
+"*226VAS": 𐃵 # washing ware shet
+"*227VAS": 𐃶 # rhyton
+"*228VAS": 𐃷 # ligula
+"*229VAS": 𐃸 # ladle
 "*250VAS": 𐃹
 "*305VAS": 𐃺
 
 # METRIC SYMBOLS
-Z: 𐄿
-V: 𐄾
-T: 𐄼
-S: 𐄽
-Q: 𐄻
-P: 𐄺
-N: 𐄹
-M: 𐄸
-L: 𐄷
+Z: 𐄿 # volume measure
+V: 𐄾 # volume measure
+T: 𐄼 # dry measure
+S: 𐄽 # liquid measure
+Q: 𐄻 # weight measure
+P: 𐄺 # weight measure
+N: 𐄹 # weight measure
+M: 𐄸 # weight measure
+L: 𐄷 # talent
 
 # COMPOSITE IDEOGRAMS WITHOUT DESIGNATED UNICODE SIGNS
-OVIS+TA: 𐀥+𐀲
-SUS+KA: 𐁂+𐀏
-SUS+SI: 𐁂+𐀯
-BOS+SI: 𐀘+𐀯
-CAP+E: 𐁒+𐀁
-EQU+QE: 𐂃+𐀤
+OVIS+TA: 𐀥+𐀲 # stabled sheep
+SUS+KA: 𐁂+𐀏 # wild boar
+SUS+SI: 𐁂+𐀯 # fattened pigs
+BOS+SI: 𐀘+𐀯 # fattened cattle
+CAP+E: 𐁒+𐀁 # kid (goat)
+EQU+QE: 𐂃+𐀤 
 GRA+Q: 𐂎+𐄻
 GRA+PE: 𐂎+𐀟
-OLIV+TI: 𐂐+𐀴
-AROM+CYP: 𐂑+𐂒
-AROM+PYC: 𐂑+𐂒
-AROM+KO: 𐂑+𐀒
-CYP+KU: 𐂒+𐀓
-CYP+O: 𐂒+𐀡
-CYP+PA: 𐂒+𐀞
-CYP+QA: 𐂒+𐀣
-PYC+KU: 𐂒+𐀓
-PYC+O: 𐂒+𐀡
-PYC+PA: 𐂒+𐀞
-PYC+QA: 𐂒+𐀣
-OLE+A: 𐂕+𐀀
+OLIV+A: 𐂐+𐀀 # wild olive
+OLIV+TI: 𐂐+𐀴 # domestic olive
+AROM+CYP: 𐂑+𐂒 # cyperus
+AROM+PYC: 𐂑+𐂒 # cyperus
+AROM+KO: 𐂑+𐀒 # coriander
+CYP+KU: 𐂒+𐀓 # cyperus
+CYP+O: 𐂒+𐀡 # cyperus (variant)
+CYP+PA: 𐂒+𐀞 # cyperus (variant)
+CYP+QA: 𐂒+𐀣 # cyperus (variant)
+PYC+KU: 𐂒+𐀓 # cyperus
+PYC+O: 𐂒+𐀡 # cyperus (variant)
+PYC+PA: 𐂒+𐀞 # cyperus (variant)
+PYC+QA: 𐂒+𐀣 # cyperus (variant)
+OLE+A: 𐂕+𐀀 # wild oil?
 OLE+O: 𐂕+𐀃
-OLE+PA: 𐂕+𐀞
+OLE+PA: 𐂕+𐀞 # sage-scented oil?
 OLE+RA: 𐂕+𐀨
 OLE+SI: 𐂕+𐀯
-OLE+WE: 𐂕+𐀸
-OLIV+A: 𐂐+𐀀
-ROTA+TE: 𐃏+𐀳
+OLE+WE: 𐂕+𐀸 # oil suitable for annointing
+ROTA+TE: 𐃏+𐀳 # wheel with border or flange
 TUN+KI: 𐂪+𐀑
-TUN+QE: 𐂪+𐀤
+TUN+QE: 𐂪+𐀤 # type of corselet
 TUN+RI: 𐂪+𐀪
 TELA+KU: 𐂧+𐀓
-TELA+PA: 𐂧+𐀞
+TELA+PA: 𐂧+𐀞 # pharwos cloth
 TELA+PU: 𐂧+𐀢
 TELA+TE: 𐂧+𐀳
 "*166+WE": 𐂮+𐀸
@@ -227,8 +227,8 @@ TELA+TE: 𐂧+𐀳
 "*155VAS+DI": 𐃞+𐀇
 "*155VAS+NI": 𐃞+𐀛
 "*202VAS+DI": 𐃡+𐀇
-"*209VAS+A": 𐃨+𐀀
-"*210VAS+KA": 𐃩+𐀏
+"*209VAS+A": 𐃨+𐀀 # amphora (plural)
+"*210VAS+KA": 𐃩+𐀏 # stirrup jar (plural)
 "*211VAS+PO": 𐃪+𐂓
 "*212VAS+U": 𐃫+𐀄
 "*213VAS+U": 𐃬+𐀄
@@ -238,12 +238,12 @@ TELA+TE: 𐂧+𐀳
 
 # SYLLABOGRAMS AS IDEOGRAMS
 A: 𐀀
-E: 𐀁
+E: 𐀁 # ginger grass? # kid (goat)?
 I: 𐀂
 O: 𐀃
 U: 𐀄
-DA: 𐀅
-DE: 𐀆
+DA: 𐀅 # male steward
+DE: 𐀆 # bundle (used to measure ginger grass)
 DI: 𐀇
 DO: 𐀈
 DU: 𐀉
@@ -254,16 +254,16 @@ JU: 𐀎
 KA: 𐀏
 KE: 𐀐
 KI: 𐀑
-KO: 𐀒
-KU: 𐀓
-MA: 𐀔
+KO: 𐀒 # coriander # piglet?
+KU: 𐀓 # cumin
+MA: 𐀔 # fennel
 ME: 𐀕
-MI: 𐀖
-MO: 𐀗
+MI: 𐀖 # mint
+MO: 𐀗 # single
 MU: 𐀘
 NA: 𐀙
 NE: 𐀚
-NI: 𐀛 #FIGS
+NI: 𐀛 # figs
 NO: 𐀜
 NU: 𐀝
 PA: 𐀞
@@ -277,25 +277,25 @@ QI: 𐀥
 QO: 𐀦
 RA: 𐀨
 RE: 𐀩
-RI: 𐀪
+RI: 𐀪 # flax
 RO: 𐀫
 RU: 𐀬
-SA: 𐀭 #FLAX
+SA: 𐀭 # sesame
 SE: 𐀮
 SI: 𐀯
 SO: 𐀰
 SU: 𐀱
-TA: 𐀲
+TA: 𐀲 # female steward
 TE: 𐀳
 TI: 𐀴
 TO: 𐀵
 TU: 𐀶
 WA: 𐀷
-WE: 𐀸
+WE: 𐀸 # yearling (animal)
 WI: 𐀹
 WO: 𐀺
 ZA: 𐀼
-ZE: 𐀽
+ZE: 𐀽 # pair
 ZO: 𐀿
 A₂: 𐁀
 A2: 𐁀
