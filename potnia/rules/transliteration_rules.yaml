@@ -31,3 +31,8 @@ complex_symbols:
   'OVIS]-:m': 'PLACEHOLDER_OVIS'
 
 special_chars_pattern: "(\\[|\\]|\\,|\\'|\\u27e6|\\u27e7|-|\\?|<|>|⌞|⌟|⸤|⸥|\\||\ue000)"
+
+restore_patterns:
+  - ['fragmentum_A', 'fragmentum A']
+  - ['fragmentum_B', 'fragmentum B']
+  - ['ME±RI', 'ME<±RI>']
