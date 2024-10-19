@@ -31,3 +31,8 @@ def test_hittite_main(test_input, expected):
     assert expected in result.stdout
 
 
+@pytest.mark.parametrize("test_input,expected", expected("luwian_unicode"))
+def test_luwian_main(test_input, expected):
+    result = runner.invoke(app, ["luwian", test_input])
+    assert expected in result.stdout
+

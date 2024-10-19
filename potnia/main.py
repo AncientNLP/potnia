@@ -1,6 +1,6 @@
 import typer
 
-from potnia import linear_a_mapper, linear_b_mapper, hittite_mapper
+from potnia import linear_a_mapper, linear_b_mapper, hittite_mapper, luwian_mapper
 
 app = typer.Typer()
 
@@ -27,4 +27,12 @@ def hittite(text: list[str], regularize:bool=False):
     if isinstance(text, list):
         text = " ".join(text)
     print(hittite_mapper(text, regularize=regularize))
+
+
+@app.command()
+def luwian(text: list[str], regularize:bool=False):
+    """ Converts a Luwian text to Unicode. """
+    if isinstance(text, list):
+        text = " ".join(text)
+    print(luwian_mapper(text, regularize=regularize))
 
