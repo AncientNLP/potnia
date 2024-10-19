@@ -26,6 +26,5 @@ def hittite(text: list[str], regularize:bool=False):
     """ Converts a Hittite text to Unicode. """
     if isinstance(text, list):
         text = " ".join(text)
-    breakpoint()
     print(hittite_mapper(text, regularize=regularize))
 

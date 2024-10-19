@@ -25,4 +25,9 @@ def test_linear_b_main_regularized(test_input, expected):
     assert expected in result.stdout
 
 
+@pytest.mark.parametrize("test_input,expected", expected("hittite_unicode"))
+def test_hittite_main(test_input, expected):
+    result = runner.invoke(app, ["hittite", test_input])
+    assert expected in result.stdout
+
 
