@@ -43,6 +43,7 @@ def load_rules(file_path: str, rule_type: str):
     else:
         raise ValueError(f"Unknown rule_type: {rule_type}")
 
+
 class LinearBMapper(Mapper):
     syllabograms = ("syllabograms_common", "syllabograms_unique_linear_b")
     logograms = ("logograms_common", "logograms_unique_linear_b")
@@ -97,7 +98,6 @@ class LinearBMapper(Mapper):
 
         return tokenized if tokenized else [""]
 
-
     def regularize(self, text: str) -> str:
         # Load regularisation rules
         patterns = load_rules("potnia/rules/regularisation_rules.yaml", "regularisation")
@@ -114,5 +114,6 @@ class LinearBMapper(Mapper):
             return ""
 
         return text
+
 
 linear_b_mapper = LinearBMapper()
