@@ -1,6 +1,7 @@
 import typer
 
 from potnia import linear_a_mapper, linear_b_mapper, hittite_mapper, luwian_mapper
+from guigaga import gui
 
 app = typer.Typer()
 
@@ -36,3 +37,6 @@ def luwian(text: list[str], regularize:bool=False):
         text = " ".join(text)
     print(luwian_mapper(text, regularize=regularize))
 
+
+click_command = typer.main.get_command(app)
+cli = gui()(click_command)
