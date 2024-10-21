@@ -143,14 +143,14 @@ Potnia’s design and functionality address the following challenges in the anal
     # Continue with machine learning tasks...
     ```
 -->
+<!-- 
+Potnia’s functionality is being used as part of a larger project aimed at deciphering the Linear A script. We are using Potnia to convert Romanized transliterations of Linear B tablets into Unicode datasets, and will extend this capability to Linear A. The resulting datasets will be used to train language-specific models for tasks such as text generation and masked language modeling. Future models developed using this library will be released for public use, supporting downstream tasks such as decipherment, textual restoration, and palaeographic analysis.  -->
 
-Potnia’s functionality is being used as part of a larger project aimed at deciphering the Linear A script. We are using Potnia to convert Romanized transliterations of Linear B tablets into Unicode datasets, and will extend this capability to Linear A. The resulting datasets will be used to train language-specific models for tasks such as text generation and masked language modeling. Future models developed using this library will be released for public use, supporting downstream tasks such as decipherment, textual restoration, and palaeographic analysis. 
+As part of a broader initiative to develop language models for ancient language research, Potnia serves as a foundational component by converting Romanized transliterations of Linear B texts into Unicode datasets for computational analysis. These datasets enable the development of language-specific models supporting tasks such as text generation, restoration, and vector embedding analysis. The library's modular design facilitates its application to additional ancient scripts, contributing to broader research initiatives in computational philology.
 
 # Availability
 
 Potnia is open-source software released under the Apache 2.0 license. It is available through [PyPI](https://pypi.org/project/potnia/) and [GitHub](https://github.com/AncientNLP/potnia). We welcome contributions from the community and adhere to the Contributor Covenant Code of Conduct. Documentation is available at [https://ancientnlp.github.io/potnia/](https://ancientnlp.github.io/potnia/).
-
-
 
 <!-- 
 # Citations
