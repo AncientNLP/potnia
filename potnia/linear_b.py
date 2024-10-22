@@ -6,37 +6,18 @@ from .data import read_data
 from .mapper import Mapper
 
 
-def load_rules(file_path: str, rule_type: str):
-    """
-    Loads rules from the YAML file based on the specified rule type.
 
-    Parameters:
-    file_path (str): Path to the YAML file.
-    rule_type (str): The type of rules to load: 'transliteration', 'regularization', or 'ignore'.
+def load_ignore_patterns_rules() -> list[str]:
+    """
+    Loads ignore patterns rules from the YAML file.
 
     Returns:
-    Depending on the rule_type:
-    - 'transliteration': Returns patterns, complex_symbols, special_chars_pattern, restore_patterns.
-    - 'regularization': Returns corrected_patterns.
-    - 'ignore': Returns patterns_to_ignore.
+        patterns_to_ignore.
     """
-    with open(file_path, 'r', encoding='utf8') as f:
-        rules = yaml.safe_load(f)
+    rules = read_data("rules/ignore_patterns_linear_b.yaml")
 
-    if rule_type == 'regularization':
-        # Correct the double escaping of backslashes
-        corrected_patterns = [
-            (re.sub(r'\\\\', r'\\', pattern), replacement) 
-            for pattern, replacement in rules.get('patterns', [])
-        ]
-        return corrected_patterns
-
-    elif rule_type == 'ignore':
-        patterns_to_ignore = rules.get('patterns_to_ignore', [])
-        return patterns_to_ignore
-
-    else:
-        raise ValueError(f"Unknown rule_type: {rule_type}")
+    patterns_to_ignore = rules.get('patterns_to_ignore', [])
+    return patterns_to_ignore
 
 
 def load_regularization_rules() -> list:
@@ -82,9 +63,7 @@ class LinearBMapper(Mapper):
         "logograms_common", 
         "logograms_unique_linear_b",
     )
-
-    # Load ignore patterns using the unified function
-    patterns_to_ignore = load_rules("potnia/data/rules/ignore_patterns_linear_b.yaml", "ignore")
+    patterns_to_ignore = load_ignore_patterns_rules()
 
     def tokenize_transliteration(self, text: str) -> list[str]:
         """
