@@ -1,7 +1,8 @@
 import re
 import yaml
-from .mapper import Mapper
 from functools import reduce
+
+from .mapper import Mapper
 
 
 def load_rules(file_path: str, rule_type: str):

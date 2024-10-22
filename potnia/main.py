@@ -2,6 +2,7 @@ import typer
 
 from potnia import linear_a_mapper, linear_b_mapper, hittite_mapper, luwian_mapper
 from guigaga import gui
+from .data import DATA_DIR
 
 app = typer.Typer()
 
@@ -36,6 +37,16 @@ def luwian(text: list[str], regularize:bool=False):
     if isinstance(text, list):
         text = " ".join(text)
     print(luwian_mapper(text, regularize=regularize))
+
+
+@app.command()
+def bibtex():
+    """ Prints the BibTeX entry for this software package. """
+    bibtex_path = DATA_DIR / "potnia.bib"
+    print("% This BibTeX entry can be used to cite this software package.")
+    print("% This will get updated when Potnia has a preprint and is published.")
+    bibtex_str = bibtex_path.read_text()
+    print(bibtex_str)
 
 
 click_command = typer.main.get_command(app)
