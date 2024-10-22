@@ -3,9 +3,6 @@ from enum import Enum
 from potnia import linear_a_mapper, linear_b_mapper, hittite_mapper, luwian_mapper
 from guigaga import gui
 from pybtex import PybtexEngine
-from unittest.mock import patch
-import pybtex.richtext
-
 
 from .data import DATA_DIR
 
@@ -55,21 +52,6 @@ def bibtex():
     print(bibtex_str)
 
 
-def from_latex(latex):
-    """ 
-    Temporary patch until this issue isresolved:
-    https://bitbucket.org/pybtex-devs/pybtex/issues/443/decoding-issue-in-from_latex-method-in-the
-    """
-    import codecs
-    import latexcodec  # noqa
-    from pybtex.markup import LaTeXParser
-
-    if not isinstance(latex, str):
-        latex = codecs.decode(latex, 'ulatex')
-
-    return LaTeXParser(latex).parse()
-
-
 class BibliographyFormat(str, Enum):
     plaintext = "plaintext"
     html = "html"
@@ -91,7 +73,6 @@ class BibliographyStyle(str, Enum):
 
 
 @app.command()
-@patch.object(pybtex.richtext.Text, 'from_latex', from_latex)
 def bibliography(
     style:BibliographyStyle="plain", 
     output:BibliographyFormat="plaintext",
