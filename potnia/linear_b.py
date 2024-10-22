@@ -11,9 +11,9 @@ class LinearBMapper(Mapper):
         "logograms_common", 
         "logograms_unique_linear_b",
     )
-    patterns_to_ignore = ("rules/ignore_patterns_linear_b.yaml",)
-    regularization_rules = ("rules/regularization_rules_linear_b.yaml",)
-    transliteration_rules = ("rules/transliteration_rules_linear_b.yaml",)
+    patterns_to_ignore = "rules/ignore_patterns_linear_b.yaml"
+    regularization_rules = "rules/regularization_rules_linear_b.yaml"
+    transliteration_rules = "rules/transliteration_rules_linear_b.yaml"
 
     def regularize(self, text: str) -> str:
         text = super().regularize(text)

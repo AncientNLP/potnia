@@ -1,8 +1,8 @@
 from .mapper import Mapper
 
 class HittiteMapper(Mapper):
-    syllabograms = ("syllabograms_hittite_cuneiform",)
-    logograms = tuple()
+    syllabograms = "syllabograms_hittite_cuneiform"
+    logograms = None
 
     def tokenize_transliteration(self, input_string:str) -> list[str]:
         tokens = []

@@ -11,27 +11,27 @@ class Mapper:
     transliteration_rules:tuple[str] = tuple()
     
     def __init__(self):
-        self.syllabograms_dict = read_data(*self.syllabograms)
-        self.logograms_dict = read_data(*self.syllabograms)
-        self.transliteration_to_unicode_dict = read_data(*self.syllabograms, *self.logograms)
+        self.syllabograms_dict = read_data(self.syllabograms)
+        self.logograms_dict = read_data(self.syllabograms)
+        self.transliteration_to_unicode_dict = read_data(self.syllabograms, self.logograms)
         self.unicode_to_transliteration_dict = {}
         for k, v in self.transliteration_to_unicode_dict.items():
             if v not in self.unicode_to_transliteration_dict:
                 self.unicode_to_transliteration_dict[v] = k
 
         # Load patterns to ignore                
-        patterns_to_ignore_dict = read_data(*self.patterns_to_ignore)
+        patterns_to_ignore_dict = read_data(self.patterns_to_ignore)
         self.regex_to_ignore = [re.compile(pattern) for pattern in patterns_to_ignore_dict.get("patterns_to_ignore", [])]
 
         # Load regularization rules
-        regularization_rules = read_data(*self.regularization_rules)
+        regularization_rules = read_data(self.regularization_rules)
         self.regularization_regex = [
             (re.compile(re.sub(r'\\\\', r'\\', pattern)), replacement) 
             for pattern, replacement in regularization_rules.get('patterns', [])
         ]
 
         # Load transliteration rules
-        transliteration_rules = read_data(*self.transliteration_rules)
+        transliteration_rules = read_data(self.transliteration_rules)
         self.transliteration_patterns = [ 
             (re.compile(pattern),replacement) 
             for pattern, replacement in transliteration_rules.get('patterns', [])
