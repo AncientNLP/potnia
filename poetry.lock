@@ -920,6 +920,17 @@ files = [
 ]
 
 [[package]]
+name = "latexcodec"
+version = "3.0.0"
+description = "A lexer and codec to work with LaTeX code in Python."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "latexcodec-3.0.0-py3-none-any.whl", hash = "sha256:6f3477ad5e61a0a99bd31a6a370c34e88733a6bad9c921a3ffcfacada12f41a7"},
+    {file = "latexcodec-3.0.0.tar.gz", hash = "sha256:917dc5fe242762cc19d963e6548b42d63a118028cdd3361d62397e3b638b6bc5"},
+]
+
+[[package]]
 name = "markdown-it-py"
 version = "3.0.0"
 description = "Python port of markdown-it. Markdown parsing, done right!"
@@ -1450,6 +1461,54 @@ files = [
 [package.extras]
 dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark"]
+
+[[package]]
+name = "pybtex"
+version = "0.24.0"
+description = "A BibTeX-compatible bibliography processor in Python"
+optional = false
+python-versions = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*"
+files = [
+    {file = "pybtex-0.24.0-py2.py3-none-any.whl", hash = "sha256:e1e0c8c69998452fea90e9179aa2a98ab103f3eed894405b7264e517cc2fcc0f"},
+    {file = "pybtex-0.24.0.tar.gz", hash = "sha256:818eae35b61733e5c007c3fcd2cfb75ed1bc8b4173c1f70b56cc4c0802d34755"},
+]
+
+[package.dependencies]
+latexcodec = ">=1.0.4"
+PyYAML = ">=3.01"
+six = "*"
+
+[package.extras]
+test = ["pytest"]
+
+[[package]]
+name = "pybtexnbib"
+version = "0.1.2"
+description = "A pybtex plugin for NBIB/Medline/PubMed files"
+optional = false
+python-versions = ">=3.7.1,<4.0.0"
+files = [
+    {file = "pybtexnbib-0.1.2-py3-none-any.whl", hash = "sha256:31051eafd63ab36a72de5aafebb1ab6c7a577d97b4c7061fd1898c2486c5325e"},
+    {file = "pybtexnbib-0.1.2.tar.gz", hash = "sha256:a9b865643c91153a26169e9f234d8a87e8daf76fdb98a141ca660e0aac178843"},
+]
+
+[package.dependencies]
+pybtex = ">=0.24.0,<0.25.0"
+pybtexris = ">=0.1.2,<0.2.0"
+
+[[package]]
+name = "pybtexris"
+version = "0.1.2"
+description = "A pybtex plugin for working with RIS files."
+optional = false
+python-versions = ">=3.7.1,<4.0.0"
+files = [
+    {file = "pybtexris-0.1.2-py3-none-any.whl", hash = "sha256:0b0a5f3b9af3502f858bfed95bbffc776ce377159a13beb61b0b696c6739ed14"},
+    {file = "pybtexris-0.1.2.tar.gz", hash = "sha256:84ce8d59e2934d8c5416fe2cc6d57c2fbf3d8ab0c330dcb2103b687491158ebd"},
+]
+
+[package.dependencies]
+pybtex = ">=0.24.0,<0.25.0"
 
 [[package]]
 name = "pydantic"
@@ -2365,4 +2424,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "d086da2b870c4c55f70d95a65d89e69b744e03e4aa6f01cfa581062bbc911277"
+content-hash = "ecbabe8a7fd21ffc4f7b1adbf8e474e87015641e70996360d97b4d4801d8fdf5"

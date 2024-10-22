@@ -1,8 +1,15 @@
 import typer
-
+from enum import Enum
 from potnia import linear_a_mapper, linear_b_mapper, hittite_mapper, luwian_mapper
 from guigaga import gui
+from pybtex import PybtexEngine
+from unittest.mock import patch
+import pybtex.richtext
+
+
 from .data import DATA_DIR
+
+BIBTEX_PATH = DATA_DIR / "potnia.bib"
 
 app = typer.Typer()
 
@@ -42,11 +49,60 @@ def luwian(text: list[str], regularize:bool=False):
 @app.command()
 def bibtex():
     """ Prints the BibTeX entry for this software package. """
-    bibtex_path = DATA_DIR / "potnia.bib"
     print("% This BibTeX entry can be used to cite this software package.")
     print("% This will get updated when Potnia has a preprint and is published.")
-    bibtex_str = bibtex_path.read_text()
+    bibtex_str = BIBTEX_PATH.read_text()
     print(bibtex_str)
+
+
+def from_latex(latex):
+    """ 
+    Temporary patch until this issue isresolved:
+    https://bitbucket.org/pybtex-devs/pybtex/issues/443/decoding-issue-in-from_latex-method-in-the
+    """
+    import codecs
+    import latexcodec  # noqa
+    from pybtex.markup import LaTeXParser
+
+    if not isinstance(latex, str):
+        latex = codecs.decode(latex, 'ulatex')
+
+    return LaTeXParser(latex).parse()
+
+
+class BibliographyFormat(str, Enum):
+    plaintext = "plaintext"
+    html = "html"
+    latex = "latex"
+    markdown = "markdown"
+
+    def __str__(self):
+        return self.value
+
+
+class BibliographyStyle(str, Enum):
+    plain = "plain"
+    unsrt = "unsrt"
+    alpha = "alpha"
+    unsrtalpha = "unsrtalpha"
+
+    def __str__(self):
+        return self.value
+
+
+@app.command()
+@patch.object(pybtex.richtext.Text, 'from_latex', from_latex)
+def bibliography(
+    style:BibliographyStyle="plain", 
+    output:BibliographyFormat="plaintext",
+):
+    engine = PybtexEngine()
+    bibliography_string = engine.format_from_files(
+        bib_files_or_filenames=[BIBTEX_PATH], 
+        style=str(style), 
+        output_backend=str(output),
+    )
+    print(bibliography_string)
 
 
 click_command = typer.main.get_command(app)
