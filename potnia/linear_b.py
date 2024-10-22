@@ -2,6 +2,7 @@ import re
 import yaml
 from functools import reduce
 
+from .data import read_data
 from .mapper import Mapper
 
 
@@ -11,25 +12,18 @@ def load_rules(file_path: str, rule_type: str):
 
     Parameters:
     file_path (str): Path to the YAML file.
-    rule_type (str): The type of rules to load: 'transliteration', 'regularisation', or 'ignore'.
+    rule_type (str): The type of rules to load: 'transliteration', 'regularization', or 'ignore'.
 
     Returns:
     Depending on the rule_type:
     - 'transliteration': Returns patterns, complex_symbols, special_chars_pattern, restore_patterns.
-    - 'regularisation': Returns corrected_patterns.
+    - 'regularization': Returns corrected_patterns.
     - 'ignore': Returns patterns_to_ignore.
     """
     with open(file_path, 'r', encoding='utf8') as f:
         rules = yaml.safe_load(f)
 
-    if rule_type == 'transliteration':
-        patterns = rules.get('patterns', [])
-        complex_symbols = rules.get('complex_symbols', {})
-        special_chars_pattern = rules.get('special_chars_pattern', '')
-        restore_patterns = rules.get('restore_patterns', [])
-        return patterns, complex_symbols, special_chars_pattern, restore_patterns
-
-    elif rule_type == 'regularisation':
+    if rule_type == 'regularization':
         # Correct the double escaping of backslashes
         corrected_patterns = [
             (re.sub(r'\\\\', r'\\', pattern), replacement) 
@@ -45,12 +39,52 @@ def load_rules(file_path: str, rule_type: str):
         raise ValueError(f"Unknown rule_type: {rule_type}")
 
 
+def load_regularization_rules() -> list:
+    """
+    Loads regularization rules from the YAML file.
+
+    Returns:
+        corrected_patterns.
+    """
+    rules = read_data("rules/regularization_rules_linear_b.yaml")
+
+    corrected_patterns = [
+        (re.sub(r'\\\\', r'\\', pattern), replacement) 
+        for pattern, replacement in rules.get('patterns', [])
+    ]
+    return corrected_patterns
+    
+
+
+def load_transliteration_rules() -> tuple[list, dict, str, list]:
+    """
+    Loads transliteration rules from the YAML file.
+
+    Returns:
+        patterns, complex_symbols, special_chars_pattern, restore_patterns.    
+    """
+    rules = read_data("rules/transliteration_rules_linear_b.yaml")
+
+    patterns = rules.get('patterns', [])
+    complex_symbols = rules.get('complex_symbols', {})
+    special_chars_pattern = rules.get('special_chars_pattern', '')
+    restore_patterns = rules.get('restore_patterns', [])
+    return patterns, complex_symbols, special_chars_pattern, restore_patterns
+
+
+
 class LinearBMapper(Mapper):
-    syllabograms = ("syllabograms_common", "syllabograms_unique_linear_b")
-    logograms = ("logograms_common", "logograms_unique_linear_b")
+    syllabograms = (
+        "syllabograms_common", 
+        "syllabograms_unique_linear_b",
+    )
+    logograms = (
+        "logograms_common", 
+        "logograms_unique_linear_b",
+    )
 
     # Load ignore patterns using the unified function
-    patterns_to_ignore = load_rules("potnia/rules/ignore_patterns.yaml", "ignore")
+    patterns_to_ignore = load_rules("potnia/data/rules/ignore_patterns_linear_b.yaml", "ignore")
 
     def tokenize_transliteration(self, text: str) -> list[str]:
         """
@@ -64,9 +98,7 @@ class LinearBMapper(Mapper):
         """
         
         # Load transliteration rules
-        patterns, complex_symbols, special_chars_pattern, restore_patterns = load_rules(
-            "potnia/rules/transliteration_rules.yaml", "transliteration"
-        )
+        patterns, complex_symbols, special_chars_pattern, restore_patterns = load_transliteration_rules()
 
         # Reverse the complex_symbols dictionary
         reversed_symbols = {v: k for k, v in complex_symbols.items()}
@@ -100,8 +132,8 @@ class LinearBMapper(Mapper):
         return tokenized if tokenized else [""]
 
     def regularize(self, text: str) -> str:
-        # Load regularisation rules
-        patterns = load_rules("potnia/rules/regularisation_rules.yaml", "regularisation")
+        # Load regularization rules
+        patterns = load_regularization_rules()
 
         # Apply each pattern replacement in order
         for pattern, replacement in patterns:

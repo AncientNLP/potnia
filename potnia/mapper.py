@@ -27,7 +27,12 @@ class Mapper:
         return re.findall(r'[^\s-]+|\s+', text)
 
     def to_transliteration(self, text:str) -> str:
-        return "".join([self.unicode_to_transliteration_dict.get(token, token) for token in self.tokenize_unicode(text)])
+        return "".join(
+            [
+                self.unicode_to_transliteration_dict.get(token, token) 
+                for token in self.tokenize_unicode(text)
+            ]
+        )
 
     def to_unicode(self, text:str, regularize:bool=False) -> str:
         tokens = self.tokenize_transliteration(text)
