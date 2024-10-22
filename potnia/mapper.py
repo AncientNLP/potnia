@@ -32,10 +32,16 @@ class Mapper:
 
         # Load transliteration rules
         transliteration_rules = read_data(*self.transliteration_rules)
-        self.transliteration_patterns = transliteration_rules.get('patterns', [])
+        self.transliteration_patterns = [ 
+            (re.compile(pattern),replacement) 
+            for pattern, replacement in transliteration_rules.get('patterns', [])
+        ]
         self.complex_symbols = transliteration_rules.get('complex_symbols', {})
-        self.special_chars_pattern = transliteration_rules.get('special_chars_pattern', '')
-        self.restore_patterns = transliteration_rules.get('restore_patterns', [])
+        self.special_chars_pattern = re.compile(transliteration_rules.get('special_chars_pattern', ''))
+        self.restore_patterns = [ 
+            (re.compile(pattern),replacement) 
+            for pattern, replacement in transliteration_rules.get('restore_patterns', [])
+        ]
 
         # Reverse the complex_symbols dictionary
         self.reversed_symbols = {v: k for k, v in self.complex_symbols.items()}
@@ -53,19 +59,19 @@ class Mapper:
 
         # Apply each pattern replacement in order
         for pattern, replacement in self.transliteration_patterns:
-            text = re.sub(pattern, replacement, text)
+            text = pattern.sub(replacement, text)
 
         # Handle space replacement with a placeholder
         space_placeholder = "\uE000"  # Placeholder for spaces
         text = text.replace(" ", space_placeholder)
 
         # Tokenize using the special characters pattern
-        tokens = re.split(self.special_chars_pattern, text)
+        tokens = self.special_chars_pattern.split(text)
 
         # Apply processing to each token and filter out empty tokens
         tokenized = [
             " " if tok == space_placeholder else
-            reduce(lambda t, p: re.sub(p[0], p[1], t), self.restore_patterns, tok)
+            reduce(lambda t, p: p[0].sub(p[1], t), self.restore_patterns, tok)
             for tok in tokens if tok and tok != "-"
         ]
 
@@ -98,7 +104,7 @@ class Mapper:
             string = pattern.sub(replacement, string)
 
         for regex in self.regex_to_ignore:
-            string = re.sub(regex, "", string)
+            string = regex.sub("", string)
         string = re.sub(r'\s+', ' ', string)
         string = re.sub('mut','',string)
         return string.strip()
