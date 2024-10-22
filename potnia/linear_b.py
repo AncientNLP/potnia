@@ -6,20 +6,6 @@ from .data import read_data
 from .mapper import Mapper
 
 
-
-def load_ignore_patterns_rules() -> list[str]:
-    """
-    Loads ignore patterns rules from the YAML file.
-
-    Returns:
-        patterns_to_ignore.
-    """
-    rules = read_data("rules/ignore_patterns_linear_b.yaml")
-
-    patterns_to_ignore = rules.get('patterns_to_ignore', [])
-    return patterns_to_ignore
-
-
 def load_regularization_rules() -> list:
     """
     Loads regularization rules from the YAML file.
@@ -63,7 +49,8 @@ class LinearBMapper(Mapper):
         "logograms_common", 
         "logograms_unique_linear_b",
     )
-    patterns_to_ignore = load_ignore_patterns_rules()
+    patterns_to_ignore = ("rules/ignore_patterns_linear_b.yaml",)
+    xx = "xx"
 
     def tokenize_transliteration(self, text: str) -> list[str]:
         """

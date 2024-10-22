@@ -5,7 +5,7 @@ from .data import read_data
 class Mapper:
     syllabograms:tuple[str] = tuple()
     logograms:tuple[str] = tuple()
-    patterns_to_ignore = []
+    patterns_to_ignore:tuple[str] = tuple()
     
     def __init__(self):
         self.syllabograms_dict = read_data(*self.syllabograms)
@@ -15,7 +15,8 @@ class Mapper:
         for k, v in self.transliteration_to_unicode_dict.items():
             if v not in self.unicode_to_transliteration_dict:
                 self.unicode_to_transliteration_dict[v] = k
-        self.regex_to_ignore = [re.compile(pattern) for pattern in self.patterns_to_ignore]
+        patterns_to_ignore_dict = read_data(*self.patterns_to_ignore)
+        self.regex_to_ignore = [re.compile(pattern) for pattern in patterns_to_ignore_dict.get("patterns_to_ignore", [])]
 
     def tokenize_unicode(self, text:str) -> list[str]:
         words = ['-'.join(word) for word in text.split()]
