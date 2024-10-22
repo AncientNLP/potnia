@@ -6,6 +6,7 @@ from potnia import (
     hittite_mapper, 
     luwian_mapper, 
     akkadian_mapper,
+    arabic_mapper,
 )
 from guigaga import gui
 from pybtex import PybtexEngine
@@ -55,6 +56,14 @@ def akkadian(text: list[str], regularize:bool=False):
     if isinstance(text, list):
         text = " ".join(text)
     print(akkadian_mapper(text, regularize=regularize))
+
+
+@app.command()
+def arabic(text: list[str], regularize:bool=False):
+    """ Converts a Arabic text to Unicode. """
+    if isinstance(text, list):
+        text = " ".join(text)
+    print(arabic_mapper(text, regularize=regularize))
 
 
 @app.command()

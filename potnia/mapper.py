@@ -4,11 +4,11 @@ from functools import reduce
 from .data import read_data
 
 class Mapper:
-    syllabograms:tuple[str] = tuple()
-    logograms:tuple[str] = tuple()
-    patterns_to_ignore:tuple[str] = tuple()
-    regularization_rules:tuple[str] = tuple()
-    transliteration_rules:tuple[str] = tuple()
+    syllabograms:str|tuple[str]|None = None
+    logograms:str|tuple[str]|None = None
+    patterns_to_ignore:str|tuple[str]|None = None
+    regularization_rules:str|tuple[str]|None = None
+    transliteration_rules:str|tuple[str]|None = None
     
     def __init__(self):
         self.syllabograms_dict = read_data(self.syllabograms)
