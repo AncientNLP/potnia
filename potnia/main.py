@@ -1,6 +1,12 @@
 import typer
 from enum import Enum
-from potnia import linear_a_mapper, linear_b_mapper, hittite_mapper, luwian_mapper
+from potnia import (
+    linear_a_mapper, 
+    linear_b_mapper, 
+    hittite_mapper, 
+    luwian_mapper, 
+    akkadian_mapper,
+)
 from guigaga import gui
 from pybtex import PybtexEngine
 
@@ -41,6 +47,14 @@ def luwian(text: list[str], regularize:bool=False):
     if isinstance(text, list):
         text = " ".join(text)
     print(luwian_mapper(text, regularize=regularize))
+
+
+@app.command()
+def akkadian(text: list[str], regularize:bool=False):
+    """ Converts a Akkadian text to Unicode. """
+    if isinstance(text, list):
+        text = " ".join(text)
+    print(akkadian_mapper(text, regularize=regularize))
 
 
 @app.command()
