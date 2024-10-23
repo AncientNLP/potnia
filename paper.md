@@ -101,7 +101,7 @@ Potnia is implemented in Python with an extensible architecture centered around 
     print(unicode_text)  # Output: 𐀡𐀴𐀛𐀊
     ```
     -->
-5. **Comprehensive Testing:** Pytest fixtures allow us to define test cases as lines in YAML files, which have enabled us to consisely add over 150 test examples, covering a broad range of edge cases. The code coverage of the tests is 100%.
+5. **Comprehensive Testing:** Pytest fixtures allow us to define test cases as lines in YAML files which allowed us to consisely add over almost 300 test examples, covering a broad range of edge cases. The code coverage of the tests is 100%.
 <!-- Test cases, defined in YAML files, cover various scripts like Linear B and Linear A, ensure acc
 
     ```python
@@ -111,6 +111,9 @@ Potnia is implemented in Python with an extensible architecture centered around 
         assert result == expected
     ```
 This design makes Potnia easily extendable, with Linear B fully supported and work underway for other scripts like Linear A and Akkadian. -->
+
+6. **Versatile Interface Options** Users can interact with Potnia as a Python library, or through the command line interface (CLI) or through the graphical user interface (GUI).
+
 
 # Research Application
 

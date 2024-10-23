@@ -83,6 +83,40 @@ To tokenize transliterated Linear B texts without converting it to Unicode, use 
     [']', 'wa', ' ', 'VIR', ' ', '1', ' ', 'MUL', ' ', '2', ' ', "'", 'ko', 'wa', ' ', '1', "'", ' ', 'ko', 'wo', ' ', '1']
     
 
+Command Line Interface (CLI)
+============================
+
+Potnia also provides a command line interface (CLI).
+
+To convert transliterated Linear B to Unicode, use the following command:
+
+.. code-block:: bash
+
+    potnia linear-b "a-ri-to-jo"
+
+To regularize the text, use the following command:
+
+.. code-block:: bash
+
+    potnia linear-b "e-ke-qe ]-o-na-to , ke-ke-me-na⌞ ⌟ko-to-na GRA qs ] vac." --regularize
+
+To see the full set of commands available in the CLI, use the following command:
+
+.. code-block:: bash
+
+    potnia --help
+
+Graphical User Interface (GUI)
+==============================
+
+Potnia also provides a graphical user interface (GUI). To start it run
+
+.. code-block:: bash
+
+    potnia gui
+
+This will show a link in the terminal that you can click on to open the GUI in your browser.
+
 .. end-quickstart
 
 Credits
