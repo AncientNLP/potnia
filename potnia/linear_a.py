@@ -3,7 +3,7 @@ from .mapper import Mapper
 
 @dataclass
 class LinearAMapper(Mapper):
-    config:str = "linear_a"
+    config:str = "linear_a.yaml"
 
 
     def tokenize_transliteration(self, input_string:str) -> list[str]:
