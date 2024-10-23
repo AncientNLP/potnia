@@ -1,19 +1,22 @@
 import re
+from dataclasses import dataclass
 from .mapper import Mapper
 
-
+@dataclass
 class LinearBMapper(Mapper):
-    syllabograms = (
-        "syllabograms_common", 
-        "syllabograms_unique_linear_b",
-    )
-    logograms = (
-        "logograms_common", 
-        "logograms_unique_linear_b",
-    )
-    patterns_to_ignore = "rules/ignore_patterns_linear_b.yaml"
-    regularization_rules = "rules/regularization_rules_linear_b.yaml"
-    transliteration_rules = "rules/transliteration_rules_linear_b.yaml"
+    config:str = "linear_b"
+
+    # syllabograms = (
+    #     "syllabograms_common", 
+    #     "syllabograms_unique_linear_b",
+    # )
+    # logograms = (
+    #     "logograms_common", 
+    #     "logograms_unique_linear_b",
+    # )
+    # patterns_to_ignore = "rules/ignore_patterns_linear_b.yaml"
+    # regularization_rules = "rules/regularization_rules_linear_b.yaml"
+    # transliteration_rules = "rules/transliteration_rules_linear_b.yaml"
 
     def regularize(self, text: str) -> str:
         text = super().regularize(text)

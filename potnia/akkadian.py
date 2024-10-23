@@ -1,8 +1,10 @@
 from .mapper import Mapper
+from dataclasses import dataclass
 
+
+@dataclass
 class AkkadianMapper(Mapper):
-    syllabograms = "syllabograms_akkadian_cuneiform"
-    logograms = None
+    config:str = "akkadian"
 
 
 akkadian_mapper = AkkadianMapper()

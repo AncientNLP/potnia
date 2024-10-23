@@ -1,9 +1,8 @@
+from dataclasses import dataclass
 from .mapper import Mapper
 
+@dataclass
 class ArabicMapper(Mapper):
-    syllabograms = "arabic_symbols"
-    transliteration_rules = "rules/transliteration_rules_arabic.yaml"
-    logograms = None
-
+    config:str = "arabic"
 
 arabic_mapper = ArabicMapper()

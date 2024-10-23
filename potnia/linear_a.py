@@ -1,8 +1,9 @@
+from dataclasses import dataclass
 from .mapper import Mapper
 
+@dataclass
 class LinearAMapper(Mapper):
-    syllabograms = ("syllabograms_common", "syllabograms_unique_linear_a")
-    logograms = ("logograms_common", "logograms_unique_linear_a")
+    config:str = "linear_a"
 
 
     def tokenize_transliteration(self, input_string:str) -> list[str]:

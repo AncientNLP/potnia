@@ -1,46 +1,46 @@
 import re
 from functools import reduce
+from pathlib import Path
+from dataclasses import dataclass
 
 from .data import read_data
 
-class Mapper:
-    syllabograms:str|tuple[str]|None = None
-    logograms:str|tuple[str]|None = None
-    patterns_to_ignore:str|tuple[str]|None = None
-    regularization_rules:str|tuple[str]|None = None
-    transliteration_rules:str|tuple[str]|None = None
-    
-    def __init__(self):
-        self.syllabograms_dict = read_data(self.syllabograms)
-        self.logograms_dict = read_data(self.syllabograms)
-        self.transliteration_to_unicode_dict = read_data(self.syllabograms, self.logograms)
+@dataclass
+class Mapper():
+    config:str
+
+    def __post_init__(self):
+        if isinstance(self.config, (Path,str)):
+            self.config = read_data(self.config)
+        if not self.config:
+            return
+
+        self.transliteration_to_unicode_dict = self.config.get('mappings', {})
         self.unicode_to_transliteration_dict = {}
         for k, v in self.transliteration_to_unicode_dict.items():
             if v not in self.unicode_to_transliteration_dict:
                 self.unicode_to_transliteration_dict[v] = k
 
         # Load patterns to ignore                
-        patterns_to_ignore_dict = read_data(self.patterns_to_ignore)
-        self.regex_to_ignore = [re.compile(pattern) for pattern in patterns_to_ignore_dict.get("patterns_to_ignore", [])]
+        patterns_to_ignore = self.config.get('patterns_to_ignore', [])
+        self.regex_to_ignore = [re.compile(pattern) for pattern in patterns_to_ignore]
 
         # Load regularization rules
-        regularization_rules = read_data(self.regularization_rules)
         self.regularization_regex = [
             (re.compile(re.sub(r'\\\\', r'\\', pattern)), replacement) 
-            for pattern, replacement in regularization_rules.get('patterns', [])
+            for pattern, replacement in self.config.get('regularization', [])
         ]
 
         # Load transliteration rules
-        transliteration_rules = read_data(self.transliteration_rules)
         self.transliteration_patterns = [ 
             (re.compile(pattern),replacement) 
-            for pattern, replacement in transliteration_rules.get('patterns', [])
+            for pattern, replacement in self.config.get('tokenization', [])
         ]
-        self.complex_symbols = transliteration_rules.get('complex_symbols', {})
-        self.special_chars_pattern = re.compile(transliteration_rules.get('special_chars_pattern', ''))
+        self.complex_symbols = self.config.get('complex_symbols', {})
+        self.special_chars_pattern = re.compile(self.config.get('special_chars_pattern', ''))
         self.restore_patterns = [ 
             (re.compile(pattern),replacement) 
-            for pattern, replacement in transliteration_rules.get('restore_patterns', [])
+            for pattern, replacement in self.config.get('restore_patterns', [])
         ]
 
         # Reverse the complex_symbols dictionary
