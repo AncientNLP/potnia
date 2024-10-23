@@ -1,8 +1,9 @@
-
+from dataclasses import dataclass
 from .hittite import HittiteMapper
 
+@dataclass
 class LuwianMapper(HittiteMapper):
-    syllabograms = "syllabograms_luwian_hieroglyphs.yaml"
+    config:str = "luwian.yaml"
 
 
 luwian_mapper = LuwianMapper()
