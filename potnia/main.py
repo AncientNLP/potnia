@@ -100,6 +100,7 @@ def bibliography(
     style:BibliographyStyle="plain", 
     output:BibliographyFormat="plaintext",
 ):
+    """ Displays the bibliography. """
     engine = PybtexEngine()
     bibliography_string = engine.format_from_files(
         bib_files_or_filenames=[BIBTEX_PATH], 
