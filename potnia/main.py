@@ -9,7 +9,10 @@ from potnia import (
     arabic_mapper,
 )
 from guigaga import gui
+from guigaga.themes import Theme
 from pybtex import PybtexEngine
+import gradio as gr
+from guigaga.guigaga import GUIGAGA    
 
 from .data import DATA_DIR
 
@@ -17,9 +20,12 @@ BIBTEX_PATH = DATA_DIR / "potnia.bib"
 
 app = typer.Typer()
 
+TEXT_ARGUMENT = typer.Argument(help="The transliterated text to be converted to Unicode.")
+REGULARIZATION_DEFAULT = typer.Option(False, help="Whether or not to regularize the output.")
+
 
 @app.command()
-def linear_a(text: list[str], regularize:bool=False):
+def linear_a(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT):
     """ Converts a Linear A text to Unicode. """
     if isinstance(text, list):
         text = " ".join(text)
@@ -27,7 +33,7 @@ def linear_a(text: list[str], regularize:bool=False):
 
 
 @app.command()
-def linear_b(text: list[str], regularize:bool=False):
+def linear_b(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT):
     """ Converts a Linear B text to Unicode. """
     if isinstance(text, list):
         text = " ".join(text)
@@ -35,7 +41,7 @@ def linear_b(text: list[str], regularize:bool=False):
 
 
 @app.command()
-def hittite(text: list[str], regularize:bool=False):
+def hittite(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT):
     """ Converts a Hittite text to Unicode. """
     if isinstance(text, list):
         text = " ".join(text)
@@ -43,7 +49,7 @@ def hittite(text: list[str], regularize:bool=False):
 
 
 @app.command()
-def luwian(text: list[str], regularize:bool=False):
+def luwian(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT):
     """ Converts a Luwian text to Unicode. """
     if isinstance(text, list):
         text = " ".join(text)
@@ -51,7 +57,7 @@ def luwian(text: list[str], regularize:bool=False):
 
 
 @app.command()
-def akkadian(text: list[str], regularize:bool=False):
+def akkadian(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT):
     """ Converts a Akkadian text to Unicode. """
     if isinstance(text, list):
         text = " ".join(text)
@@ -59,7 +65,7 @@ def akkadian(text: list[str], regularize:bool=False):
 
 
 @app.command()
-def arabic(text: list[str], regularize:bool=False):
+def arabic(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT):
     """ Converts a Arabic text to Unicode. """
     if isinstance(text, list):
         text = " ".join(text)
@@ -110,5 +116,21 @@ def bibliography(
     print(bibliography_string)
 
 
-click_command = typer.main.get_command(app)
-cli = gui()(click_command)
+@app.callback()
+def potnia():
+    """
+    <img src="https://raw.githubusercontent.com/AncientNLP/potnia/main/docs/_static/img/PotniaLogo.png" alt="Potnia Logo" width="500"/>
+
+    Potnia is an open-source Python library designed to convert Romanized transliterations of ancient texts into Unicode representations of ther respective native scripts.
+    """
+
+
+@app.command()    
+def gui(ctx: typer.Context):    
+    gui = GUIGAGA(
+        typer.main.get_group(app), 
+        click_context=ctx,
+        theme=Theme.monochrome,
+    )
+    gui.launch()    
+
