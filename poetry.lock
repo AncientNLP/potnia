@@ -623,13 +623,13 @@ websockets = ">=10.0,<13.0"
 
 [[package]]
 name = "guigaga"
-version = "0.0.4"
+version = "0.0.5"
 description = ""
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "guigaga-0.0.4-py3-none-any.whl", hash = "sha256:6c30e14faf7a676594f81eb32ec1359f67302453e8c16444f912767fda60f70f"},
-    {file = "guigaga-0.0.4.tar.gz", hash = "sha256:d561ca46184a454043bae7ba121bb901f80d2251a7846f4d88052f8eb78d80ed"},
+    {file = "guigaga-0.0.5-py3-none-any.whl", hash = "sha256:20efe1f49ccd1ff79ee2bfcac42ba0c62eb12c4d0c6e6b472d9aee213c4f3332"},
+    {file = "guigaga-0.0.5.tar.gz", hash = "sha256:2c5070325b45b846c47c60e6c12ddae2dd811b361f8da6a590ee548dcd5a1ea1"},
 ]
 
 [package.dependencies]
@@ -2424,4 +2424,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "ecbabe8a7fd21ffc4f7b1adbf8e474e87015641e70996360d97b4d4801d8fdf5"
+content-hash = "56928ec24b20002594269af1f09fb947f5cefe636c140b03319b477dfccab37d"
