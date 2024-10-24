@@ -1,9 +1,9 @@
-"al-kitāb" : "ٱلكِتاب"
-"al-salām" : "ٱلسَلام"
+"al-kitāb" : "الكِتاب"
+"al-salām" : "السَلام"
 naʿam: "نَعَم"           # Yes
 lā: "لا"                 # No
-ṣabāḥu al-ḫayr: "صَباحُ ٱلخَير"  # Good morning
-masāʾu al-ḫayr: "مَساءُ ٱلخَير"  # Good evening
+ṣabāḥu al-ḫayr: "صَباحُ الخَير"  # Good morning
+masāʾu al-ḫayr: "مَساءُ الخَير"  # Good evening
 ṣadīq: "صَديق"                   # Friend (male)
 kayfa ḥāluka: "كَيفَ حالُكَ"     # How are you (to a male)
 kayfa ḥāluki: "كَيفَ حالُكِ"     # How are you (to a female)
@@ -14,10 +14,10 @@ marḥaban: "مَرحَبًا"      # Hello
 mā ismuka: "ما اسمُكَ"           # What is your name (to a male)
 mā ismuki: "ما اسمُكِ"           # What is your name (to a female)
 ʾanā min: "أنا مِن"              # I am from
-ʾayna al-ḥammāmu: "أينَ ٱلحَمّامُ"  # Where is the bathroom
-hal tatakallamu al-inglīziyya: "هَل تَتَكَلَّمُ ٱلإنجليزِيَّ"  # Do you speak English (to a male)
-hal tatakallamīna al-inglīziyya: "هَل تَتَكَلَّمينَ ٱلإنجليزِيَّ"  # Do you speak English (to a female)
+ʾayna al-ḥammāmu: "أينَ الحَمّامُ"  # Where is the bathroom
+hal tatakallamu al-inglīziyya: "هَل تَتَكَلَّمُ الإنجليزِيَّ"  # Do you speak English (to a male)
+hal tatakallamīna al-inglīziyya: "هَل تَتَكَلَّمينَ الإنجليزِيَّ"  # Do you speak English (to a female)
 mā al-ʿamalu: "ما العَمَلُ"       # What is the work
-anā atakallamu al-ʿarabiyya: "أنَا أَتَكَلَّمُ العَرَبِيَّةَ"  # I speak Arabic
+anā atakallamu al-ʿarabiyya: "أنا أتَكَلَّمُ العَرَبِيَّ"  # I speak Arabic
 ṣadīqatun: "صَديقَةٌ"                # Friend (female)
 

@@ -26,7 +26,7 @@ class ArabicMapper(Mapper):
         text = re.sub(r'\bʾa', 'أ', text)
 
         # definite article
-        text = re.sub(r'أl-', "ٱل", text)
+        text = re.sub(r'أl-', "ال", text)
 
         text = super().to_unicode(text, regularize)
 
