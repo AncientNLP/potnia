@@ -38,7 +38,7 @@ Potnia is an open-source Python library designed to convert Romanized transliter
 
 <!-- Potnia bridges this gap by providing a flexible framework for converting transliterations into Unicode. By enabling tokenization and processing in the original script, Potnia can optimize tasks such as textual restoration and machine learning-based analysis. The library currently supports the conversion of Linear B texts, with future expansions planned for Linear A, Sumero-Akkadian cuneiform, Hittite cuneiform, Luwian hieroglyphs, and Etruscan. This tool can offer significant value to both computational linguistics and digital humanities, enabling researchers to work with ancient texts in their native script. -->
 
-Potnia bridges this gap by providing a flexible framework for converting transliterations into Unicode. By enabling tokenization and processing in the original script, Potnia can optimize tasks such as textual restoration and machine learning-based analysis. The library provides robust support for Linear B texts and is architecturally designed to accommodate additional scripts including Linear A, Sumero-Akkadian cuneiform, Hittite cuneiform, Luwian hieroglyphs, and Etruscan. This tool can offer significant value to both computational linguistics and digital humanities, enabling researchers to work with ancient texts in their native script.
+Potnia bridges this gap by providing a flexible framework for converting transliterations into Unicode. By enabling tokenization and processing in the original script, Potnia can optimize tasks such as textual restoration and machine learning-based analysis. The library provides robust support for Linear B texts and is architecturally designed to accommodate additional scripts including Linear A, Sumero-Akkadian cuneiform, Hittite cuneiform, Luwian hieroglyphs, and Etruscan. This tool can offer significant value to both computational linguistics and digital humanities, enabling researchers to work with ancient texts in their native script. The library provides robust support for Linear B, Arabic, Hittite, Luwian, and Linear A texts. While Linear B has the most comprehensive test cases and is the most robust, the tool can also be used effectively for the other supported languages. The architectural flexibility of Potnia makes it easy to accommodate additional scripts, offering significant value to both computational linguistics and digital humanities by enabling researchers to work with ancient texts in their native scripts.
 
 # Statement of Need
 
@@ -63,7 +63,6 @@ These are the primary gaps we have aimed to address through the development of P
 Potnia is implemented in Python with an extensible architecture centered around the Mapper class, which converts transliterated texts into Unicode representations. and is designed to handle the complexities of ancient scripts through a flexible and customizable framework.
 
 ## Key Features
-
 
 1. **YAML-Based Mapping Specification:**  Potnia stores script-specific signs (e.g. letters, syllabograms, logograms, numerals and determinatives) in YAML files, allowing easy updates and additions (fig. \ref{fig:syllabograms}). This approach ensures scalability when integrating new scripts like Linear A and Sumero-Akkadian cuneiform.
 
