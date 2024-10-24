@@ -65,7 +65,7 @@ Potnia is implemented in Python with an extensible architecture centered around 
 ## Key Features
 
 
-1. **YAML-Based Mapping Specification:**  Potnia stores script-specific signs (e.g. letters, syllabograms, logograms, numerals and determinatives) in YAML files, allowing easy updates and additions (fig. \ref{fig:syllabograms}). This approach ensures scalability when integrating new scripts like Linear A and Sumero-Akkadian cuneiform.
+1. **YAML-Based Mapping Specification:**  Potnia stores script-specific signs (e.g. letters, syllabograms, logograms, numerals and determinatives) in YAML files, allowing easy updates and additions (fig. \ref{fig:syllabograms}). This approach ensures scalability when integrating new scripts like Linear A and Sumero-Akkadian cuneiform. The Arabic implementation follow the convetions of the Deutsches Institut für Normung (DIN) 31635 transliteration system [@DIN31635]. This is because of the broad use of this standard in academic literature and another popular transliteration system created by Timothy Buckwalter can already be converted us in the PyArabic package [@Zerrouki2023].
 
 ![Example of YAML mapping specification.\label{fig:syllabograms}](docs/_static/img/syllabograms.png){ width=50% }
 
@@ -101,7 +101,7 @@ Potnia is implemented in Python with an extensible architecture centered around 
     print(unicode_text)  # Output: 𐀡𐀴𐀛𐀊
     ```
     -->
-5. **Comprehensive Testing:** Pytest fixtures allow us to define test cases as lines in YAML files which allowed us to consisely add over almost 300 test examples, covering a broad range of edge cases. The code coverage of the tests is 100%.
+5. **Comprehensive Testing:** Pytest fixtures allow us to define test cases as lines in YAML files which allowed us to consisely add over almost 350 test examples, covering a broad range of edge cases. The code coverage of the tests is 100%.
 <!-- Test cases, defined in YAML files, cover various scripts like Linear B and Linear A, ensure acc
 
     ```python
@@ -112,7 +112,9 @@ Potnia is implemented in Python with an extensible architecture centered around 
     ```
 This design makes Potnia easily extendable, with Linear B fully supported and work underway for other scripts like Linear A and Akkadian. -->
 
-6. **Versatile Interface Options** Users can interact with Potnia as a Python library, or through the command line interface (CLI) or through the graphical user interface (GUI).
+6. **Versatile Interface Options** Users can interact with Potnia as a Python library, or through the command line interface (CLI) or through the graphical user interface (GUI) (fig. \ref{fig:potnia-gui})
+
+![Example of using the Potnia GUI.\label{fig:potnia-gui}](docs/_static/img/potnia-gui.png){ width=80% }
 
 
 # Research Application

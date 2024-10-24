@@ -109,7 +109,9 @@ To see the full set of commands available in the CLI, use the following command:
 Graphical User Interface (GUI)
 ==============================
 
-Potnia also provides a graphical user interface (GUI). To start it run
+.. image:: https://raw.githubusercontent.com/AncientNLP/potnia/main/docs/_static/img/potnia-gui.png
+
+Potnia also provides a graphical user interface (GUI). To start it, run:
 
 .. code-block:: bash
 
