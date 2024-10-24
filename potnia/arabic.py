@@ -17,12 +17,22 @@ class ArabicMapper(Mapper):
         text = re.sub(r'(\w\w)in\b', r'\1'+'\u064D', text)
         # if word ends with 'an' then make it fatatan
         text = re.sub(r'(\w\w)an\b', r'\1'+'\u064Bا', text)
+        # if word starts with 'i' or 'a' then make it an alif with hamza
+        text = re.sub(r'\b[i]', 'إ', text)
+        text = re.sub(r'-[i]', "-إ", text)
+        text = re.sub(r'\b[a]', 'أ', text)
+        text = re.sub(r'-[a]', "-أ", text)
+
+        text = re.sub(r'\bʾa', 'أ', text)
+
         # definite article
-        text = re.sub(r'al-', "ٱل", text)
-        # if word starts with 'i' then make it fataan alif
-        text = re.sub(r'\b[ia]', 'ا', text)
+        text = re.sub(r'أl-', "ٱل", text)
 
         text = super().to_unicode(text, regularize)
+
+        # fix the word 'اسم' if it is written as 'إسم'
+        text = re.sub(r"إسم", "اسم", text)
+
         arabic_consonants_with_shadda = [
             'ب', 'ت', 'ث', 'ج', 'ح', 'خ', 'د', 'ذ', 'ر', 'ز', 'س', 'ش', 
             'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ك', 'ل', 'م', 'ن', 
