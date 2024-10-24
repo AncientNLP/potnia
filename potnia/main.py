@@ -131,6 +131,7 @@ def gui(ctx: typer.Context):
         typer.main.get_group(app), 
         click_context=ctx,
         theme=Theme.monochrome,
+        allow_file_download=False,
     )
     gui.launch()    
 

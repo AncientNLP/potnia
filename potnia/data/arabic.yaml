@@ -35,6 +35,3 @@ mappings:
   a: َ  # Fatha (short 'a' sound)
   i: ِ  # Kasra (short 'i' sound)
   u: ُ  # Damma (short 'u' sound)
-
-complex_symbols:
-  'al-': 'ال'
