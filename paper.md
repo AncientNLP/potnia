@@ -67,7 +67,7 @@ Potnia is implemented in Python with an extensible architecture centered around 
 1. **YAML-Based Mapping and Rule Specification:**
 Each language in Potnia (e.g., Linear B, Arabic, Hittite) is configured via a single YAML file that contains syllabograms, logograms, and rules for transliteration and regularization. This unified structure simplifies updates, scales easily for new languages, and eliminates the need for multiple hardcoded files (fig. \ref{fig:syllabograms}). The Arabic implementation follow the convetions of the Deutsches Institut für Normung (DIN) 31635 transliteration system [@DIN31635]. This is because of the broad use of this standard in academic literature and another popular transliteration system created by Timothy Buckwalter can already be converted us in the PyArabic package [@Zerrouki2023].
 
-![Example of YAML mapping specification.\label{fig:syllabograms}](docs/_static/img/syllabograms.png){ width=50% }
+![Example of YAML mapping specification.\label{fig:syllabograms}](docs/_static/img/mappings.png){ width=50% }
 
 <!--
     ```yaml
