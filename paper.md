@@ -79,13 +79,13 @@ Each language in Potnia (e.g., Linear B, Arabic, Hittite) is configured via a si
     ```
 -->
 
-2. **Regular Expressions for Complex Text:** Regular expressions are used to manage uncertain readings, special symbols, and compound tokens. This enables accurate tokenization and conversion of transliterated texts.
+2. **Tokenization:** The tokenize_transliteration method applies complex symbol replacements and regular expressions to transliterated text based on the rules specified in the YAML file. This tokenization process ensures that the text is split accurately into its meaningful components, handling special symbols and spacing using placeholders, and preparing the text for Unicode conversion.
 
-3. **Custom Tokenization and Unicode Conversion:** Potnia provides a flexible tokenization system tailored to each script’s unique structure. The ``to_unicode`` method converts transliterations into Unicode based on mappings stored in YAML files (fig. \ref{fig:potnia-example}).
+3. **Transliteration to Unicode and Back:** Potnia uses the to_unicode and to_transliteration methods to convert between transliterated text and its Unicode representation. The mappings are loaded from the YAML file, allowing flexibility across languages. The to_unicode method converts transliterated text into its corresponding Unicode signs (fig. \ref{fig:potnia-example}), while the to_transliteration method does the reverse, ensuring round-trip conversion.
 
 ![Example of using Potnia.\label{fig:potnia-example}](docs/_static/img/potnia-example.png){ width=80% }
 
-4. **Regularisation of Text:** The regularize method cleans the output by handling missing elements and unnecessary tags, refining the text for downstream use.
+4. **Regularization of Text:** The regularize method applies a series of regular expression rules to clean and normalize the Unicode output. It removes unnecessary tags, ignores patterns specified in the YAML file (e.g., annotations or uncertain characters), and ensures that only the essential characters are retained. This step ensures the output is refined and ready for downstream tasks.
 
 <!--
     ```python
