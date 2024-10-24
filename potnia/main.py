@@ -4,7 +4,7 @@ from potnia import (
     linear_a_mapper, 
     linear_b_mapper, 
     hittite_mapper, 
-    luwian_mapper, 
+    # luwian_mapper, 
     akkadian_mapper,
     arabic_mapper,
 )
@@ -43,12 +43,12 @@ def hittite(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAUL
     print(hittite_mapper(text, regularize=regularize))
 
 
-@app.command()
-def luwian(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT):
-    """ Converts a Luwian text to Unicode. """
-    if isinstance(text, list):
-        text = " ".join(text)
-    print(luwian_mapper(text, regularize=regularize))
+# @app.command()
+# def luwian(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT):
+#     """ Converts a Luwian text to Unicode. """
+#     if isinstance(text, list):
+#         text = " ".join(text)
+#     print(luwian_mapper(text, regularize=regularize))
 
 
 @app.command()
