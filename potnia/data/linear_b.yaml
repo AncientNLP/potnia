@@ -82,7 +82,7 @@ mappings:
   ######      Syllabograms Unique to Linear B         ########
   ############################################################
 
-  ###### 
+  ## Sound values known
   a₂: 𐁀
   a2: 𐁀
   a₃: 𐁁
@@ -98,7 +98,7 @@ mappings:
   twe: 𐁌
   two: 𐁍
 
-  # SOUND VALUES UNKNOWN
+  ## Sound values unknown
   "*18": 𐁐
   "*19": 𐁑
   # *35 missing unicode sign?
@@ -106,116 +106,16 @@ mappings:
   "*83": 𐁛
   "*89": 𐁝
 
-  # DOUBTFUL VALUES (NOT IN LiBER TEXTS)
+  # Doubtful sound values
   "*56": 𐁖 # potential sound value 'pa₃'
   "*64": 𐁘 # potential sound value 'swi'
   "*65": 𐀎 # potential sound value 'ju'
   "*79": 𐁙 # potential sound value 'zu'
   "*82": 𐁚 # potential sound value 'swa'
 
-  # SPECIAL CHARACTERS FOR LiBER
-  # "[" : "%"
-  # "]" : "%"
-
   ############################################################
-  ##### Logograms Common Between Linear A and Linear B #######
+  #####                  Logograms                     #######
   ############################################################
-
-  #SigLA
-  AB01: 𐘀
-  AB02: 𐘁
-  AB03: 𐘂
-  AB04: 𐘃
-  AB05: 𐘄
-  AB06: 𐘅
-  AB07: 𐘆
-  AB08: 𐘇
-  AB09: 𐘈
-  AB10: 𐘉
-  AB11: 𐘊
-  AB13: 𐘋
-  AB16: 𐘌
-  AB17: 𐘍
-  AB20: 𐘎
-  AB21: 𐘏 #OVIS
-  AB21f: 𐘐 #OVIS
-  AB21m: 𐘑 #OVIS
-  AB22: 𐘒 #CAP
-  AB22f: 𐘓 #CAP
-  AB22m: 𐘔 #CAP
-  AB23: 𐘕 #BOS
-  AB23m: 𐘖 #BOS
-  AB24: 𐘗
-  AB26: 𐘘
-  AB27: 𐘙
-  AB28: 𐘚
-  AB28B: 𐘛
-  AB29: 𐘜
-  AB30: 𐘝 #FIC
-  AB31: 𐘞
-  AB34: 𐘟
-  AB37: 𐘠
-  AB38: 𐘡
-  AB39: 𐘢
-  AB40: 𐘣
-  AB41: 𐘤
-  AB44: 𐘥
-  AB45: 𐘦
-  AB46: 𐘧
-  AB47: 𐘨
-  AB48: 𐘩
-  AB49: 𐘪
-  AB50: 𐘫
-  AB51: 𐘬
-  AB53: 𐘭
-  AB54: 𐘮 #TELA
-  AB55: 𐘯
-  AB56: 𐘰
-  AB57: 𐘱
-  AB58: 𐘲
-  AB59: 𐘳
-  AB60: 𐘴
-  AB61: 𐘵
-  AB65: 𐘶
-  AB66: 𐘷
-  AB67: 𐘸
-  AB69: 𐘹
-  AB70: 𐘺
-  AB73: 𐘻
-  AB74: 𐘼
-  AB76: 𐘽
-  AB77: 𐘾
-  AB78: 𐘿
-  AB79: 𐙀
-  AB80: 𐙁
-  AB81: 𐙂
-  AB82: 𐙃
-  AB85: 𐙄 #SUS
-  AB86: 𐙅
-  AB87: 𐙆
-  AB100/VIR: 𐙇 #CHECK SIGLA
-  AB118: 𐙈
-  AB120: 𐙉 #GRA
-  AB120b: 𐙊 #GRA
-  AB122: 𐙋 #OLIV
-  AB123: 𐙌 #AROM
-  AB131a: 𐙍 #VIN
-  AB131b: 𐙎 #VIN
-  AB131c: 𐙏 #VIN
-  AB164a: 𐙐
-  AB164b: 𐙐
-  AB164c: 𐙐
-  AB164d: 𐙐
-  AB171: 𐙑
-  AB180: 𐙒
-  AB188: 𐙓
-  AB191: 𐙔
-  AB302: 𐙖 #OLE #CHECK SIGLA
-
-  ############################################################
-  ######        Logograms Unique to Linear B          ########
-  ############################################################
-
   # PEOPLE AND ANIMALS
   VIR: 𐂀 # man
   MUL: 𐂁 # woman
@@ -633,7 +533,6 @@ mappings:
   "OVIS]:f": 𐂆
   "OVIS:": 𐀥
   "ME<±RI>": 𐂙
-
 
 
 patterns_to_ignore:

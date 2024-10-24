@@ -2,7 +2,6 @@ mappings:
   ############################################################
   ###### Syllabograms Common to Linear A and Linear B ########
   ############################################################
-  # LB SOUND VALUES KNOWN
   a: 𐀀
   e: 𐀁
   i: 𐀂
@@ -42,7 +41,8 @@ mappings:
   pu2: 𐁆
   qa: 𐀣
   qe: 𐀤
-  qi: 𐀥
+  qi: 𐀥 #𐘏?
+  qif: 𐘐
   qo: 𐀦
   ra: 𐀨
   ra₂: 𐁈
@@ -71,21 +71,22 @@ mappings:
   ze: 𐀽
   zo: 𐀿
 
-  # LB SOUND VALUES UNKNOWN
   "*22": 𐁒
+  "*22f": 𐘓
   "*34": 𐁓
   "*47": 𐁔
   "*49": 𐁕
+  "*56": 𐘰
+  "*72": "?" #FIND # 𐘽 ?
+  "*79": 𐙀
+  "*82": 𐙃
   "*86": 𐁜
+  "*118": 𐙈
 
   ############################################################
   ######      Syllabograms Unique to Linear A         ########
   ############################################################
-
-  # SPECIAL CHARACTERS FOR SigLA
-  #"[?]": "?"
-
-  # SYLLABOGRAMS
+  "*100": 𐙇
   "*123": 𐙌
   "*131a": 𐙍
   "*131b": 𐙎
@@ -130,12 +131,11 @@ mappings:
   A363: 𐚗
   A364: 𐚘
 
-
   ############################################################
   ##### Logograms Common Between Linear A and Linear B #######
   ############################################################
 
-  #SigLA
+  # LOGOGRAMS attested in Linear A and Linear B (SigLA codes)
   AB01: 𐘀
   AB02: 𐘁
   AB03: 𐘂
@@ -151,21 +151,21 @@ mappings:
   AB16: 𐘌
   AB17: 𐘍
   AB20: 𐘎
-  AB21: 𐘏 #OVIS
-  AB21f: 𐘐 #OVIS
-  AB21m: 𐘑 #OVIS
-  AB22: 𐘒 #CAP
-  AB22f: 𐘓 #CAP
-  AB22m: 𐘔 #CAP
-  AB23: 𐘕 #BOS
-  AB23m: 𐘖 #BOS
+  "AB21/OVIS": 𐘏 #OVIS
+  "AB21/OVISf": 𐘐 #OVIS
+  "AB21/OVISm": 𐘑 #OVIS
+  "AB22/CAP": 𐘒 #CAP
+  "AB22/CAPf": 𐘓 #CAP
+  "AB22/CAPm": 𐘔 #CAP
+  "AB23/BOS": 𐘕 #BOS
+  "AB23/BOSm": 𐘖 #BOS
   AB24: 𐘗
   AB26: 𐘘
   AB27: 𐘙
   AB28: 𐘚
   AB28B: 𐘛
   AB29: 𐘜
-  AB30: 𐘝 #FIC
+  "AB30/FIC": 𐘝 #FIC
   AB31: 𐘞
   AB34: 𐘟
   AB37: 𐘠
@@ -182,7 +182,7 @@ mappings:
   AB50: 𐘫
   AB51: 𐘬
   AB53: 𐘭
-  AB54: 𐘮 #TELA
+  "AB54/TELA": 𐘮 #TELA
   AB55: 𐘯
   AB56: 𐘰
   AB57: 𐘱
@@ -204,18 +204,18 @@ mappings:
   AB80: 𐙁
   AB81: 𐙂
   AB82: 𐙃
-  AB85: 𐙄 #SUS
+  "AB85/SUS": 𐙄
   AB86: 𐙅
   AB87: 𐙆
-  AB100/VIR: 𐙇 #CHECK SIGLA
+  AB100/VIR: 𐙇
   AB118: 𐙈
-  AB120: 𐙉 #GRA
-  AB120b: 𐙊 #GRA
-  AB122: 𐙋 #OLIV
+  "AB120:/GRA": 𐙉
+  "AB120/GRAb": 𐙊
+  "AB122/OLIV": 𐙋
   AB123: 𐙌 #AROM
-  AB131a: 𐙍 #VIN
-  AB131b: 𐙎 #VIN
-  AB131c: 𐙏 #VIN
+  AB131/VINa: 𐙍
+  AB131/VINb: 𐙎
+  AB131/VINc: 𐙏
   AB164a: 𐙐
   AB164b: 𐙐
   AB164c: 𐙐
@@ -224,16 +224,9 @@ mappings:
   AB180: 𐙒
   AB188: 𐙓
   AB191: 𐙔
-  AB302: 𐙖 #OLE #CHECK SIGLA
+  AB302/OLE: 𐙖
 
-  ############################################################
-  ######        Logograms Unique to Linear A          ########
-  ############################################################
-
-  # OTHER CHARACTERS
-  #"[?]": "?"
-
-  # LOGOGRAMS
+  # LOGOGRAMS only attested in Linear A
   A302: 𐙖
   A303: 𐙗
   A304: 𐙘
@@ -258,8 +251,7 @@ mappings:
   A369: 𐚝
   A370: 𐚞
   A371: 𐚟
-
-  # VASES
+  ## Vases
   A400VAS: 𐚠
   A401VAS: 𐚡
   A402VAS: 𐚢
@@ -283,7 +275,7 @@ mappings:
   A417VAS: 𐚱
   A418VAS: 𐚲
 
-  # TRANSACTIONAL
+  # TRANSACTIONAL SIGNS
   A307: 𐙛
   A318: 𐙪
   A319: 𐙫
@@ -292,49 +284,49 @@ mappings:
 
   # FRACTIONS
   A701: 𐝀
-  A: 𐝀
+  # A: 𐝀
   A702: 𐝁
-  B: 𐝁
+  # B: 𐝁
   A703: 𐝂
-  D: 𐝂
+  # D: 𐝂
   A704: 𐝃
-  E: 𐝃
+  # E: 𐝃
   A705: 𐝄
-  F: 𐝄
+  # F: 𐝄
   A706: 𐝅
-  H: 𐝅
+  # H: 𐝅
   A707: 𐝆
-  J: 𐝆
+  # J: 𐝆
   A708: 𐝇
-  K: 𐝇
+  # K: 𐝇
   A709: 𐝈
-  L: 𐝈
-  A709-2: 𐝉
-  L2: 𐝉
-  A709-3: 𐝊
-  L3: 𐝊
-  A709-4: 𐝋
-  L4: 𐝋
-  A709-6: 𐝌
-  L6: 𐝌
+  # L: 𐝈
+  A7092: 𐝉
+  # L2: 𐝉
+  A7093: 𐝊
+  # L3: 𐝊
+  A7094: 𐝋
+  # L4: 𐝋
+  A7096: 𐝌
+  # L6: 𐝌
   A710: 𐝍
-  W: 𐝍
+  # W: 𐝍
   A711: 𐝎
-  X: 𐝎
+  # X: 𐝎
   A712: 𐝏
-  Y: 𐝏
+  # Y: 𐝏
   A713: 𐝐
-  OMEGA: 𐝐
+  OMEGA: 𐝐 # CHECK
   A714: 𐝑
-  ABB: 𐝑
+  # ABB: 𐝑
   A715: 𐝒
-  BB: 𐝒
+  # BB: 𐝒
   A717: 𐝓
-  DD: 𐝓
+  # DD: 𐝓
   A726: 𐝔
-  EYYY: 𐝔
+  # EYYY: 𐝔
   A732: 𐝕
-  JE: 𐝕
+  #bJE: 𐝕
 
   # LIGATURES
   A311: 𐙡
@@ -464,8 +456,7 @@ mappings:
   A644: 𐜤
   A645: 𐜥
   A646: 𐜦
-
-  # COMPOUND SIGNS (VASES)
+  ## Vases
   A648VAS: 𐜧
   A649VAS: 𐜨
   A651VAS: 𐜩

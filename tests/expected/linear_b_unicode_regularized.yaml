@@ -1,5 +1,5 @@
 # Test LB.R.1:
-# Scenario: Test that blank spaces act as word separators within text in regularized scenarios (except for in specific scenarios).
+# Scenario: Test that blank spaces act as word separators within text in regularized scenarios (except for in specific scenarios, e.g. between a domesticated animal ideogram and a sex indicator).
 # Requirements mapping:
     # LB.1-x: Tokenise each blank space (including Unicode '\u00a0') and use to distinguish individual words. Represent as is in both annotated and regularised output. 
         # This should occur in all but the specified exception scenarios (see LB.1-a–d).
@@ -15,8 +15,8 @@
 
     "a-ri-to-jo" : "𐀀𐀪𐀵𐀍"
 
-# Test LB.R.2
-# Scenario: Check that blank spaces after * and before and after '+' are removed in regularized scenarios.
+# Test LB.R.3
+# Scenario: Test that blank spaces after * and before and after '+' are removed in regularized scenarios.
 # Requirements mapping:
     # LB.1-a: If a blank space appears after '*', then remove that space in both the annotated and regularized outputs.
     # LB.1-b: If a blank space appears before/after '+', then remove both those spaces in both the annotated and regularized outputs.
@@ -44,7 +44,7 @@
 # Test LB.R.6
 # Scenario: Test that ':' is not printed in regularized scenarios.
 # Requirements mapping: 
-    # LB.7: Tokenise each instance of ':'. Represent this symbol as is in the annotated output, but do not include in the regularised output.
+    # LB.7: Tokenise each instance of ':'. Represent this symbol as is in the annotated output, but do not include in the regularized output.
 
     "a-ta-ti-nu  :  si-wa-[" : "𐀀𐀲𐀴𐀝 𐀯𐀷%"
 
@@ -84,17 +84,17 @@
     "] <OVIS:m> 69 OVIS:f 30 [ ]-e-ke-me-de , / tu-ni-ja , pa OVIS:m 1" : "% 𐂇 69 𐂆 30 % %𐀁𐀐𐀕𐀆 𐀶𐀛𐀊 𐀞 𐂇 1" # https://liber.cnr.it/tablet/view/3172?wl=12765
 
 # Test LB.R.12
-# Scenario: Test that half brackets (i.e. i.e. ' ⌞' and '⌟', or '\u2e24' and '\u2e25') are not printed in regularized scenarios.
+# Scenario: Test that half brackets (i.e. ' ⌞' and '⌟', or '\u2e24' and '\u2e25') are not printed in regularized scenarios.
 # Requirements mapping:
-    # LB.15: Tokenise each instance of half brackets (i.e. ' ⌞' and '⌟', or '\u2e24' and '\u2e25'). Represent these symbols as is in the annotated output. Do not include these symbols in the reguarised ouput.
+    # LB.15: Tokenise each instance of lower half brackets (i.e. ' ⌞' and '⌟', or '\u2e24' and '\u2e25'). Represent these symbols as is in the annotated output. Do not include these symbols in the reguarised ouput.
     
     "du-to\u2e24 \u2e25 / r\u0323u\u0323-ki-to" : "𐀉𐀵 𐀬𐀑𐀵"
     "e-ke-qe ]-o-na-to , ke-ke-me-na⌞ ⌟ko-to-na GRA qs ] vac.": "𐀁𐀐𐀤 %𐀃𐀙𐀵 𐀐𐀐𐀕𐀙 𐀒𐀵𐀙 𐂎 % %"
 
 # Test LB.R.13
-# Scenario: Test that  '⌜' and '⌝' are not printed in regularized scenarios.
+# Scenario: Test that upper half brackets (i.e. '⌜' and '⌝') are not printed in regularized scenarios.
 # Requirements mapping
-    # LB.16: Tokenise each instance of half brackets (i.e. ' ⌜' and '⌝'). Represent these symbols as is in the annotated output. Do not include these symbols in the reguarised ouput.
+    # LB.16: Tokenise each instance of upper half brackets (i.e. ' ⌜' and '⌝'). Represent these symbols as is in the annotated output. Do not include these symbols in the reguarised ouput.
 
     "]2 OLIV T 2 ] OLIV T 1 to]-ko-do-mo HORD[ ]Z 3 VIR 20[ pi-ri-e-te-re HORD[ ]Z 3 VIR 5 pa-te-ko-to⌜ ⌝HORD[ ]V 2 [ vacat qa-ra2-te , o[-pi-me-]ne[ ]OLIV 6 pa-ka , o-pi-me-ne , [ OLIV qs pa-te-ko-to , o-pi-me-ne[ ]HORD 1 [ pi-ri-e-te-si , o-pi-me-ne[ ]HORD 1 T 4[ to-ko-do-mo , o-pi-me-ne[ ]HORD 7[ ]5 vac." : "%2 𐂐 𐄼 2 % 𐂐 𐄼 1 𐀵%𐀒𐀈𐀗 𐂏% %𐄿 3 𐂀 20% 𐀠𐀪𐀁𐀳𐀩 𐂏% %𐄿 3 𐂀 5 𐀞𐀳𐀒𐀵 𐂏% %𐄾 2 % 𐀣𐁈𐀳 𐀃%𐀠𐀕%𐀚% %𐂐 6 𐀞𐀏 𐀃𐀠𐀕𐀚 % 𐂐 % 𐀞𐀳𐀒𐀵 𐀃𐀠𐀕𐀚% %𐂏 1 % 𐀠𐀪𐀁𐀳𐀯 𐀃𐀠𐀕𐀚% %𐂏 1 𐄼 4% 𐀵𐀒𐀈𐀗 𐀃𐀠𐀕𐀚% %𐂏 7% %5"
 
@@ -144,7 +144,7 @@
     "] vacat v. ] 1" : "% % 1"
 
 # Test LB.R.20
-# Scenario: Test that 'vest.' is handled as a wildcard in regularized scenarios, and that Unicode is treated as a blank space.
+# Scenario: Test that 'vest.' is handled as a wildcard in regularized scenarios, and that Unicode '\u00a0' is treated as a blank space.
 # Requirements mapping:
     # LB.1-x: Tokenise each blank space (including Unicode '\u00a0') and use to distinguish individual words. Represent as is in both annotated and regularised output. 
         # This should occur in all but the specified exception scenarios (see LB.1-a–d).
@@ -198,9 +198,7 @@
     # LB.32: Tokenise each instance of 'fragmentum C'. Represent this text as is in the annotated output, but do not include in the regularised output.
     # LB.33: Tokenise each instance of 'fragmentum D'. Represent this text as is in the annotated output, but do not include in the regularised output.
 
-# Why .1, .2 etc?
-
-    "fragmentum A fragmentum B sup. mut. sup. mut. ]-na 1 i-[ .1 ]so-i-[ ko-wa   1[  ]ku-mi-[•]-du 1[ inf. mut. vac. [ vac. [ fragmentum C fragmentum D sup. mut. .1 sup. mut. ]di-mi[ .2 ]vac. ]*56-za[ .3 ]vac. inf. mut. inf. mut." : "%𐀙 1 𐀂% .1 %𐀰𐀂% 𐀒𐀷 1% %𐀓𐀖%𐀉 1% % % .1 %𐀇𐀖% .2 % %𐁖𐀼% .3 %"
+    "fragmentum A fragmentum B sup. mut. sup. mut. ]-na 1 i-[ ]so-i-[ ko-wa   1[ ]ku-mi-[•]-du 1[ inf. mut. vac. [ vac. [ fragmentum C fragmentum D sup. mut. sup. mut. ]di-mi[ ]vac. ]*56-za[ ]vac. inf. mut. inf. mut." : "%𐀙 1 𐀂% %𐀰𐀂% 𐀒𐀷 1% %𐀓𐀖%𐀉 1% % % %𐀇𐀖% % %𐁖𐀼% %"
 
 # Test LB.R.27
 # Scenario: Test that 'deest' is not printed in regularized scenarios.

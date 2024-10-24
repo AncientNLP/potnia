@@ -1,5 +1,5 @@
 # Test LB.A.1:
-# Scenario: Test that blank spaces act as word separators within text in annotated scenarios (except for in specific scenarios).
+# Scenario: Test that blank spaces act as word separators within text in annotated scenarios (except for in specific scenarios, e.g. between a domesticated animal ideogram and a sex indicator).
 # Requirements mapping:
     # LB.1-x: Tokenise each blank space (including Unicode '\u00a0') and use to distinguish individual words. Represent as is in both annotated and regularised output. 
         # This should occur in all but the specified exception scenarios (see LB.1-a–d).
@@ -15,7 +15,7 @@
     
     "a-ri-to-jo" : "𐀀𐀪𐀵𐀍"
 
-# Test LB.A.4
+# Test LB.A.3
 # Scenario: Test that blank spaces after * and before and after '+' are removed in annotated scenarios.
 # Requirements mapping:
     # LB.1-a: If a blank space appears after '*', then remove that space in both the annotated and regularized outputs.
@@ -46,7 +46,7 @@
 # Requirements mapping: 
     # LB.7: Tokenise each instance of ':'. Represent this symbol as is in the annotated output, but do not include in the regularised output.
 
-    "a-ta-ti-nu  :  si-wa-[" : '𐀀𐀲𐀴𐀝  :  𐀯𐀷['
+    "a-ta-ti-nu  :  si-wa-[" : "𐀀𐀲𐀴𐀝  :  𐀯𐀷["
 
 # Test LB.A.7
 # Scenario: Test that single quotation marks are correctly printed in annotated scenarios.
@@ -63,7 +63,7 @@
     "] ko-wo / m\u0323e\u0323[-zo] 1 ko-wo / me-wi-jo 2 [" : "] 𐀒𐀺 / 𐀕[𐀿] 1 𐀒𐀺 / 𐀕𐀹𐀍 2 ["
 
 # Test LB.A.9
-# Scenario: Check that '?' is not printed in regularized scenarios.
+# Scenario: Test that '?' is correctly printed in annoted scenarios.
 # Requirements mapping:
     # LB.12: Tokenise each instance of '?'. Represent this symbol as is in the annotated output, but do not include in the regularised output.
 
@@ -83,20 +83,18 @@
     
     "] <OVIS:m> 69 OVIS:f 30 [ ]-e-ke-me-de , / tu-ni-ja , pa OVIS:m 1" : "] <𐂇> 69 𐂆 30 [ ]𐀁𐀐𐀕𐀆 , / 𐀶𐀛𐀊 , 𐀞 𐂇 1" # https://liber.cnr.it/tablet/view/3172?wl=12765
 
-    # "]-o-pe-ro *209VAS 'ME<±RI>' 5 [" : "]𐀃𐀟𐀫 𐃨 𐂙 5" # https://liber.cnr.it/tablet/view/4215?wl=23278
-
 # Test LB.A.12
-# Scenario: Test that half brackets (i.e. i.e. '⸤' and '⸥', or '\u2e24' and '\u2e25') are correctly printed in annotated scenarios.
+# Scenario: Test that lower half brackets (i.e. '⸤' and '⸥', or '\u2e24' and '\u2e25') are correctly printed in annotated scenarios.
 # Requirements mapping:
-    # LB.15: Tokenise each instance of half brackets (i.e. '⸤' and '⸥', or '\u2e24' and '\u2e25'). Represent these symbols as is in the annotated output. Do not include these symbols in the reguarised ouput.
+    # LB.15: Tokenise each instance of lower half brackets (i.e. '⸤' and '⸥', or '\u2e24' and '\u2e25'). Represent these symbols as is in the annotated output. Do not include these symbols in the reguarised ouput.
     
     "du-to\u2e24 \u2e25 / r\u0323u\u0323-ki-to" : "𐀉𐀵⸤ ⸥ / 𐀬𐀑𐀵"
     "e-ke-qe ]-o-na-to , ke-ke-me-na⌞ ⌟ko-to-na GRA qs ] vac.": "𐀁𐀐𐀤 ]𐀃𐀙𐀵 , 𐀐𐀐𐀕𐀙⌞ ⌟𐀒𐀵𐀙 𐂎 qs ] vac."
 
 # Test LB.A.13
-# Scenario: Test that  '⌜' and '⌝' are correctly printed in annotated scenarios.
+# Scenario: Test that upper half brackets (i.e. '⌜' and '⌝') are correctly printed in annotated scenarios.
 # Requirements mapping
-    # LB.16: Tokenise each instance of half brackets (i.e. ' ⌜' and '⌝'). Represent these symbols as is in the annotated output. Do not include these symbols in the reguarised ouput.
+    # LB.16: Tokenise each instance of upper half brackets (i.e. ' ⌜' and '⌝'). Represent these symbols as is in the annotated output. Do not include these symbols in the reguarised ouput.
 
     "]2 OLIV T 2 ] OLIV T 1 to]-ko-do-mo HORD[ ]Z 3 VIR 20[ pi-ri-e-te-re HORD[ ]Z 3 VIR 5 pa-te-ko-to⌜ ⌝HORD[ ]V 2 [ vacat qa-ra2-te , o[-pi-me-]ne[ ]OLIV 6 pa-ka , o-pi-me-ne , [ OLIV qs pa-te-ko-to , o-pi-me-ne[ ]HORD 1 [ pi-ri-e-te-si , o-pi-me-ne[ ]HORD 1 T 4[ to-ko-do-mo , o-pi-me-ne[ ]HORD 7[ ]5 vac." : "]2 𐂐 𐄼 2 ] 𐂐 𐄼 1 𐀵]𐀒𐀈𐀗 𐂏[ ]𐄿 3 𐂀 20[ 𐀠𐀪𐀁𐀳𐀩 𐂏[ ]𐄿 3 𐂀 5 𐀞𐀳𐀒𐀵 ⌜   ⌝ 𐂏[ ]𐄾 2 [ vacat 𐀣𐁈𐀳 , 𐀃[𐀠𐀕]𐀚[ ]𐂐 6 𐀞𐀏 , 𐀃𐀠𐀕𐀚 , [ 𐂐 qs 𐀞𐀳𐀒𐀵 , 𐀃𐀠𐀕𐀚[ ]𐂏 1 [ 𐀠𐀪𐀁𐀳𐀯 , 𐀃𐀠𐀕𐀚[ ]𐂏 1 𐄼 4[ 𐀵𐀒𐀈𐀗 , 𐀃𐀠𐀕𐀚[ ]𐂏 7[ ]5 vac."
 
@@ -146,7 +144,7 @@
     "] vacat v. ] 1" : "] vacat v. ] 1"
 
 # Test LB.A.20
-# Scenario: Test that 'vest.' and 'vac.' are correctly printed in annotated scenarios, and that Unicode is treated as a blank space.
+# Scenario: Test that 'vest.' is correctly printed in annotated scenarios, and that Unicode '\u00a0' is treated as a blank space.
 # Requirements mapping:
     # LB.1-x: Tokenise each blank space (including Unicode '\u00a0') and use to distinguish individual words. Represent as is in both annotated and regularised output. 
         # This should occur in all but the specified exception scenarios (see LB.1-a–d).
@@ -167,6 +165,73 @@
     # LB.27: Tokenise each instance of 'vestigia?'. Represent this text as is in the annotated output, and represent as wildcard (i.e. '%') in regularised output.
 
     "su-ma-no / ti-ri-to [ vestigia? ] vacat" : "𐀱𐀔𐀜 / 𐀴𐀪𐀵 [ vestigia? ] vacat"
+
+# Test LB.A.23
+# Scenario: Test that 'qs' (i.e. 'quantum sufficit') is correctly printed in annoted scenarios.
+# Requirements mapping:
+    # LB.28: Tokenise each instance of 'qs'. Represent this text as is in the annotated output, but represent as wildcard (i.e. '%') in regularised output.
+
+    "]-ke-ke-me-na-[ , ko-]-to-na GRA qs ] vac." : "]𐀐𐀐𐀕𐀙[ , 𐀒]𐀵𐀙 𐂎 qs ] vac."
+
+# Test LB.A.24
+# Scenario: Test that 'fragmentum separatum', 'α', 'β', 'γ' and 'δ'  are correctly printed in annotated scenarios.
+# Requirements mapping:
+    # LB.29: Tokenise each instance of 'fragmentum separatum'. Represent this text as is in the annotated output, but do not include in the regularised output.
+    # LB.53: Tokenise each instance of 'α'. Represent this text as is in the annotated output, but do not include in the regularised output.
+    # LB.54: Tokenise each instance of 'β'. Represent this text as is in the annotated output, but do not include in the regularised output.
+    # LB.55: Tokenise each instance of 'γ'. Represent this text as is in the annotated output, but do not include in the regularised output.
+    # LB.56: Tokenise each instance of 'δ'. Represent this text as is in the annotated output, but do not include in the regularised output.
+
+    # "da-we-u[-pi ]a-ko[ da-we-u-pi , a[ da-we-u-pi , ka[ da-we-u-pi , e-[ a3-zo-wo[ da-we[-u-]pi ⌞ ⌟wo[ da-we-u-pi , e-ke[ da-we-u[-pi a-re[ a-zo[ inf. mut. fragmentum separatum α sup. mut. ]  OVIS:f X 15 [ fragmentum separatum β ] , ka[ fragmentum separatum γ sup. mut. ]no-wo[ fragmentum separatum δ sup. mut. ]ma-jo-wo-[ inf. mut." : "𐀅𐀸𐀄[𐀠 ]𐀀𐀒[ 𐀅𐀸𐀄𐀠 , 𐀀[ 𐀅𐀸𐀄𐀠 , 𐀏[ 𐀅𐀸𐀄𐀠 , 𐀁[ , 𐁁𐀿𐀺[ 𐀅𐀸[𐀄]𐀠  ⌞ ⌟𐀺[ 𐀅𐀸𐀄𐀠 , 𐀁𐀐[ 𐀅𐀸𐀄[𐀠 𐀀𐀩[ 𐀀𐀿[ inf. mut. fragmentum separatum α sup. mut. ]  𐂆 X 15 [ fragmentum separatum β ] 𐀏[ fragmentum separatum γ sup. mut. ]𐀜𐀺[ fragmentum separatum δ sup. mut. ]𐀔𐀍𐀺[ inf. mut."
+
+# Test LB.A.25
+# Scenario: Test that 'fragmentum A' and 'fragmentum B' are correctly printed in annotated scenarios.
+# Requirements mapping:
+    # LB.30: Tokenise each instance of 'fragmentum A'. Represent this text as is in the annotated output, but do not include in the regularised output.
+    # LB.31: Tokenise each instance of 'fragmentum B'. Represent this text as is in the annotated output, but do not include in the regularised output.
+
+    "fragmentum A fragmentum B vacat [ sup. mut. e-me-si-jo-jo-[ ] 3-[ pa-na-so GRA 100-[ ]-vac.-[ ta-ra-qo GRA [ inf. mut. ta-u-pa-du-we GRA-[ a-ro-ja-[ pu-na-so-[ inf. mut." : "fragmentum A fragmentum B vacat [ sup. mut. 𐀁𐀕𐀯𐀍𐀍[ ] 3[ 𐀞𐀙𐀰 𐂎 100[ ]vac.[ 𐀲𐀨𐀦 𐂎 [ inf. mut. 𐀲𐀄𐀞𐀉𐀸 𐂎[ 𐀀𐀫𐀊[ 𐀢𐀙𐀰[ inf. mut."
+
+# Test LB.A.26
+# Scenario: Test that 'fragmentum C' and 'fragmentum D' are correctly printed in annotated scenarios.
+# Requirements mapping:
+    # LB.32: Tokenise each instance of 'fragmentum C'. Represent this text as is in the annotated output, but do not include in the regularised output.
+    # LB.33: Tokenise each instance of 'fragmentum D'. Represent this text as is in the annotated output, but do not include in the regularised output.
+
+    "fragmentum A fragmentum B sup. mut. sup. mut. ]-na 1 i-[ ]so-i-[ ko-wa   1[ ]ku-mi-[•]-du 1[ inf. mut. vac. [ vac. [ fragmentum C fragmentum D sup. mut. sup. mut. ]di-mi[ ]vac. ]*56-za[ ]vac. inf. mut. inf. mut." : "fragmentum A fragmentum B sup. mut. sup. mut. ]𐀙 1 𐀂[ ]𐀰𐀂[ 𐀒𐀷   1[ ]𐀓𐀖[•]𐀉 1[ inf. mut. vac. [ vac. [ fragmentum C fragmentum D sup. mut. sup. mut. ]𐀇𐀖[ ]vac. ]𐁖𐀼[ ]vac. inf. mut. inf. mut."
+
+# Test LB.A.27
+# Scenario: Test that 'deest' is correctly printed in annotated scenarios.
+# Requirements mapping:
+    # LB.34: Tokenise each instance of 'deest'. Represent this text as is in the annotated output, but do not include in the regularised output.
+
+    "sup. mut. ]-deest-[ inf. mut." : "sup. mut. ]deest[ inf. mut."
+
+# Test LB.A.28
+# Scenario: Test that 'prior pars sine regulis' and '•' are correctly printed in annotated scenarios.
+# Requirements mapping
+    # LB.35: Tokenise each instance of 'prior pars sine regulis'. Represent this text as is in the annotated output, but do not include in the regularised output.
+    # LB.57: Tokenise each instance of '•'. Represent this text as is in the annotated output, and represent as wildcard (i.e. '%') in regularised output.
+
+    "]-ke-ra2-u-na , e-ra[ ]• po-se-da-o-ne⌞ ⌟re-ko-no 6 [ *146 18[ ] LANA 2 M 2[ A±RE±PA V 4[ ]• 1 OVIS:m 1 OVIS:f 1 CAP:f[ qs SUS+KA 2 SUS:f 4[ ]• 1 FAR T 1 V [ qs VIN 5 TELA [ ] 1 TELA+PA 1 vac. vac. vac. [ ]3[ ]-we-e-a2[ inf. mut. v. prior pars sine regulis ]e-ke-me-de , do[ ]du-ru-wo-qo deest vac. vac. vac. vac. vac. vac." : "]𐀐𐁈𐀄𐀙 , 𐀁𐀨[ ]• 𐀡𐀮𐀅𐀃𐀚⌞ ⌟𐀩𐀒𐀜 6 [ 𐂞 18[ ] 𐂝 2 𐄸 2[ 𐂘 𐄾 4[ ]• 1 𐂇 1 𐂆 1 𐂈[ qs 𐁂+𐀏 2 𐂊 4[ ]• 1 𐀎 𐄼 1 𐄾 [ qs 𐂖 5 𐂧 [ ] 1 𐂧+𐀞 1 vac. vac. vac. [ ]3[ ]𐀸𐀁𐁀[ inf. mut. v. prior pars sine regulis ]𐀁𐀐𐀕𐀆 , 𐀈[ ]𐀉𐀬𐀺𐀦 deest vac. vac. vac. vac. vac. vac."
+
+# Test LB.A.29
+# Scenario: Test that 'reliqua pars sine regulis' is correctly printed in annotated scenarios.
+# Requirements mapping
+    # LB.36: Tokenise each instance of 'reliqua pars sine regulis'. Represent this text as is in the annotated output, but do not include in the regularised output.
+
+    "sup. mut. ]-vest.-[ ]-na-ro GRA 5 ]--do-we-i , ma-so-qe GRA 8 ] vac. ] GRA 402 OLIV+A 52 reliqua pars sine regulis" : "sup. mut. ]vest.[ ]𐀙𐀫 𐂎 5 ]𐀈𐀸𐀂 , 𐀔𐀰𐀤 𐂎 8 ] vac. ] 𐂎 402 𐂐+𐀀 52 reliqua pars sine regulis"
+
+# Test LB.R.30
+# Scenario: Test that 'angustum' and '[•~]' are correctly printed in annotated scenarios.
+# Requirements mapping
+    # LB.37: Tokenise each instance of 'angustum'. Represent this text as is in the annotated output, but do not include in the regularised output.
+    # LB.59: Tokenise each instance of '[•~]'. Represent this text as is in the annotated output, and represent a single wildcard (i.e. '%') in regularised output.
+    
+    # "]we-ke , ke-tu-wo-e o-two-we-o , ke-ro-si-ja a3-nu-me-no VIR 1[ o-two-we-o , ke-ro-si-ja qo-te-ro VIR[ 1 o-two-we-o , ke-ro-si-ja , a2-e-ta [VIR 1 o-two-we-o , ke-ro-si-ja , o-du-*56-ro [VIR 1 a-pi-jo-to , ke-ro-si-ja , ku-te-re-u VIR[ 1 a-pi-jo-to , ke-ro-si-ja , o-wo-to VIR 1 a-pi-jo-to , ke-ro-si-ja , a-ra-i-jo VIR 1 a-pi-jo[-to ] ke-ro-si-ja , ri-zo VIR 1 ta-we[-si-jo-]jo , ke-ro-si-ja , wa-[ ] VIR 1 ta-we-si[-jo-]jo , ke-ro-si-ja , [ ] VIR 1 ta-we-si-jo-jo , ke-ro-si-ja [ ]wa-ne-u VIR 1 a-pi-qo[-ta-o] , ke-ro-si-ja , a3-so-ni-jo VIR 1 a[-pi-qo-ta-o ] ke-ro-si-ja , a[ ]te VIR[ 1 ]ke-ro-si-ja , 
+    # a[ ] VIR 1 ke-ro-]si-ja , [•~]me-ka-[•] VIR 1 a-[ ke-ro-]si-ja , o-pa-[ ]vac.[ VIR 1 vac.[ ] vac. vac. [ ] vac. v. ta-we-si-jo-jo , ke-ro-si-ja , te-wa[ VIR 1 ta-]we-si-jo-jo , ke-ro-si-ja , tu-ru-we-u VIR 1 ] angustum ta-]we-si-jo-jo , ke-ro-si VIR 20 a-pi-qo-ta-o , ke-ro-si-ja VIR 17 a-pi-o-to , ke-ro-si-ja VIR [1]8⌟ o-to-wo[-o ke-]ro-si-ja VIR [1]4 angustum [ ] [ ] ka-ma-e[-we] VIR 10" : 
+    # "]𐀸𐀐 , 𐀐𐀶𐀺𐀁 𐀃𐁍𐀸𐀃 , 𐀐𐀫𐀯𐀊 𐁁𐀝𐀕𐀜 𐂀 1[ 𐀃𐁍𐀸𐀃 , 𐀐𐀫𐀯𐀊 𐀦𐀳𐀫 𐂀[ 1 𐀃𐁍𐀸𐀃 , 𐀐𐀫𐀯𐀊 , 𐁀𐀁𐀲 [𐂀 1 𐀃𐁍𐀸𐀃 , 𐀐𐀫𐀯𐀊 , 𐀃𐀉𐁖𐀫 [𐂀 1 𐀀𐀠𐀍𐀵 , 𐀐𐀫𐀯𐀊 , 𐀓𐀳𐀩𐀄 𐂀[ 1 𐀀𐀠𐀍𐀵 , 𐀐𐀫𐀯𐀊 , 𐀃𐀺𐀵 𐂀 1 𐀀𐀠𐀍𐀵 , 𐀐𐀫𐀯𐀊 , 𐀀𐀨𐀂𐀍 𐂀 1 𐀀𐀠𐀍[𐀵 ] 𐀐𐀫𐀯𐀊 , 𐀪𐀿 𐂀 1 𐀲𐀸[𐀯𐀍]𐀍 , 𐀐𐀫𐀯𐀊 , 𐀷[ ] 𐂀 1 𐀲𐀸𐀯[𐀍]𐀍 , 𐀐𐀫𐀯𐀊 [ ] 𐂀 1 𐀲𐀸𐀯𐀍𐀍 , 𐀐𐀫𐀯𐀊 [ ]𐀷𐀚𐀄 𐂀 1 𐀀𐀠𐀦[𐀲𐀃] , 𐀐𐀫𐀯𐀊 , 𐁁𐀰𐀛𐀍 𐂀 1 𐀀[𐀠𐀦𐀲𐀃 ] 𐀐𐀫𐀯𐀊 , 𐀀[ ]𐀳 𐂀[ 1 ]𐀐𐀫𐀯𐀊 , 
+    # 𐀀[ ] 𐂀 1 𐀐𐀫]𐀯𐀊 , 𐀕𐀏% 𐂀 1 𐀀% 𐀐𐀫%𐀯𐀊 𐀃𐀞% %% 𐂀 1 % % % % 𐀲𐀸𐀯𐀍𐀍 𐀐𐀫𐀯𐀊 𐀳𐀷% 𐂀 1 𐀲%𐀸𐀯𐀍𐀍 𐀐𐀫𐀯𐀊 𐀶𐀬𐀸𐀄 𐂀 1 % 𐀲%𐀸𐀯𐀍𐀍 𐀐𐀫𐀯 𐂀 20 𐀀𐀠𐀦𐀲𐀃 𐀐𐀫𐀯𐀊 𐂀 17 𐀀𐀠𐀃𐀵 𐀐𐀫𐀯𐀊 𐂀 %1%8 𐀃𐀵𐀺%𐀃 𐀐%𐀫𐀯𐀊 𐂀 %1%4 % % % % 𐀏𐀔𐀁%𐀸% 𐂀 10"
 
 
 # Test LB.A.10
@@ -236,14 +301,12 @@
 
     "]r\u0323o\u0323 , / da-mo GRA [ ]8 OLIV+ A 12" : "]𐀫 , / 𐀅𐀗 𐂎 [ ]8 𐂐+𐀀 12"
 
-
 # Test LB.A.21
 # Scenario: Check that 'deest' is printed in annotated scenarios.
 # Requirements mapping:
     # LB.23: Tokenise each instance of 'deest'. Represent this text as is in the annotated output, but do not include in the regularised output.
 
     "] deest [" : "] deest ["
-
 
 # Test LB.A.23
 # Scenario: Check that '[•]' is printed in annotated scenarios.
