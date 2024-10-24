@@ -1,5 +1,5 @@
 import typer
-from enum import Enum
+from pybtex import PybtexEngine
 from potnia import (
     linear_a_mapper, 
     linear_b_mapper, 
@@ -8,12 +8,7 @@ from potnia import (
     akkadian_mapper,
     arabic_mapper,
 )
-from guigaga import gui
-from guigaga.themes import Theme
-from pybtex import PybtexEngine
-import gradio as gr
-from guigaga.guigaga import GUIGAGA    
-
+from .enums import BibliographyStyle, BibliographyFormat
 from .data import DATA_DIR
 
 BIBTEX_PATH = DATA_DIR / "potnia.bib"
@@ -81,26 +76,6 @@ def bibtex():
     print(bibtex_str)
 
 
-class BibliographyFormat(str, Enum):
-    plaintext = "plaintext"
-    html = "html"
-    latex = "latex"
-    markdown = "markdown"
-
-    def __str__(self):
-        return self.value
-
-
-class BibliographyStyle(str, Enum):
-    plain = "plain"
-    unsrt = "unsrt"
-    alpha = "alpha"
-    unsrtalpha = "unsrtalpha"
-
-    def __str__(self):
-        return self.value
-
-
 @app.command()
 def bibliography(
     style:BibliographyStyle="plain", 
@@ -127,6 +102,9 @@ def potnia():
 
 @app.command()    
 def gui(ctx: typer.Context):    
+    """ Launches the Potnia GUI. """
+    from guigaga.themes import Theme
+    from guigaga.guigaga import GUIGAGA    
     gui = GUIGAGA(
         typer.main.get_group(app), 
         click_context=ctx,
