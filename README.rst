@@ -81,7 +81,6 @@ To tokenize transliterated Linear B texts without converting it to Unicode, use 
 
     >>> linear_b_mapper.tokenize_transliteration("]wa VIR 1 MUL 2 'ko-wa 1' ko-wo 1")
     [']', 'wa', ' ', 'VIR', ' ', '1', ' ', 'MUL', ' ', '2', ' ', "'", 'ko', 'wa', ' ', '1', "'", ' ', 'ko', 'wo', ' ', '1']
-    
 
 Command Line Interface (CLI)
 ============================
@@ -119,6 +118,68 @@ Potnia also provides a graphical user interface (GUI). To start it, run:
 
 This will show a link in the terminal that you can click on to open the GUI in your browser.
 
+
+Adding New Scripts to Potnia
+============================
+
+Potnia allows for the easy integration of new ancient scripts by using a single YAML file per language. This file will contain the mappings for syllabograms, logograms (if applicable), transliteration rules, and regularization patterns. Below are the steps for adding a new script, along with examples.
+
+Steps to Add a New Language
+----------------------------
+
+1. **Create a Single YAML Mapping and Rules File**: Define the mappings for syllabograms, logograms (if applicable), and the rules for transliteration and regularization. Here's an example for Linear B:
+
+   .. code-block:: yaml
+
+      mappings:
+        syllabograms:
+            a: 𐀀
+            e: 𐀁
+            i: 𐀂
+        logograms:
+            VIR: 𐂀  # man
+            MUL: 𐂁  # woman
+        transliteration:
+            - ['ro2', '𐁊']
+        regularization:
+            - ['\\[•~\\]', '']  # Remove uncertain readings
+            - ['\\bqs\\b', '%']  # Handle missing elements
+
+2. **Add the New Mapper Class**: Create a `Mapper` class that points to the new YAML file. For example:
+
+   .. code-block:: python
+
+      from dataclasses import dataclass
+      from .mapper import Mapper
+
+      @dataclass
+      class NewScriptMapper(Mapper):
+          config: str = "new_script"  # Refers to the YAML file name
+
+      new_script_mapper = NewScriptMapper()
+
+3. **Write Test Cases**: Add test cases to ensure that the new language’s transliteration and Unicode mapping work as expected. Example:
+
+   .. code-block:: yaml
+
+      test_newscript.yaml:
+      "a-e-i": "𐀀𐀁𐀂"
+      "VIR MUL": "𐂀𐂁"
+
+4. **Usage Example**: Once the new language is added, it can be used as follows:
+
+   .. code-block:: python
+
+      from potnia import new_script_mapper
+
+      # Convert transliterated text to Unicode
+      new_script_mapper("a-e-i")
+
+      # Regularize text
+      new_script_mapper("a-[•~]", regularize=True)
+
+This approach centralizes all configuration for a given script into a single YAML file, simplifying the process of adding new languages while maintaining Potnia's flexible and modular design.
+    
 .. end-quickstart
 
 Credits

@@ -38,7 +38,7 @@ Potnia is an open-source Python library designed to convert Romanized transliter
 
 <!-- Potnia bridges this gap by providing a flexible framework for converting transliterations into Unicode. By enabling tokenization and processing in the original script, Potnia can optimize tasks such as textual restoration and machine learning-based analysis. The library currently supports the conversion of Linear B texts, with future expansions planned for Linear A, Sumero-Akkadian cuneiform, Hittite cuneiform, Luwian hieroglyphs, and Etruscan. This tool can offer significant value to both computational linguistics and digital humanities, enabling researchers to work with ancient texts in their native script. -->
 
-Potnia bridges this gap by providing a flexible framework for converting transliterations into Unicode. By enabling tokenization and processing in the original script, Potnia can optimize tasks such as textual restoration and machine learning-based analysis. The library provides robust support for Linear B texts and is architecturally designed to accommodate additional scripts including Linear A, Sumero-Akkadian cuneiform, Hittite cuneiform, Luwian hieroglyphs, and Etruscan. This tool can offer significant value to both computational linguistics and digital humanities, enabling researchers to work with ancient texts in their native script.
+Potnia bridges this gap by providing a flexible framework for converting transliterations into Unicode. By enabling tokenization and processing in the original script, Potnia can optimize tasks such as textual restoration and machine learning-based analysis. The library provides robust support for Linear B texts and is architecturally designed to accommodate additional scripts including Linear A, Sumero-Akkadian cuneiform, Hittite cuneiform, Luwian hieroglyphs, and Etruscan. This tool can offer significant value to both computational linguistics and digital humanities, enabling researchers to work with ancient texts in their native script. The library provides robust support for Linear B, Arabic, Hittite, Luwian, and Linear A texts. While Linear B has the most comprehensive test cases and is the most robust, the tool can also be used effectively for the other supported languages. The architectural flexibility of Potnia makes it easy to accommodate additional scripts, offering significant value to both computational linguistics and digital humanities by enabling researchers to work with ancient texts in their native scripts.
 
 # Statement of Need
 
@@ -60,12 +60,12 @@ These are the primary gaps we have aimed to address through the development of P
 
 # Implementation
 
-Potnia is implemented in Python with an extensible architecture centered around the Mapper class, which converts transliterated texts into Unicode representations. and is designed to handle the complexities of ancient scripts through a flexible and customizable framework.
+Potnia is implemented in Python with an extensible architecture centered around the Mapper class, which converts transliterated texts into Unicode representations. It is designed to handle the complexities of ancient scripts through a flexible and customizable framework.
 
 ## Key Features
 
-
-1. **YAML-Based Mapping Specification:**  Potnia stores script-specific signs (e.g. letters, syllabograms, logograms, numerals and determinatives) in YAML files, allowing easy updates and additions (fig. \ref{fig:syllabograms}). This approach ensures scalability when integrating new scripts like Linear A and Sumero-Akkadian cuneiform. The Arabic implementation follow the convetions of the Deutsches Institut für Normung (DIN) 31635 transliteration system [@DIN31635]. This is because of the broad use of this standard in academic literature and another popular transliteration system created by Timothy Buckwalter can already be converted us in the PyArabic package [@Zerrouki2023].
+1. **YAML-Based Mapping and Rule Specification:**
+Each language in Potnia (e.g., Linear B, Arabic, Hittite) is configured via a single YAML file that contains syllabograms, logograms, and rules for transliteration and regularization. This unified structure simplifies updates, scales easily for new languages, and eliminates the need for multiple hardcoded files (fig. \ref{fig:syllabograms}). The Arabic implementation follow the convetions of the Deutsches Institut für Normung (DIN) 31635 transliteration system [@DIN31635]. This is because of the broad use of this standard in academic literature and another popular transliteration system created by Timothy Buckwalter can already be converted us in the PyArabic package [@Zerrouki2023].
 
 ![Example of YAML mapping specification.\label{fig:syllabograms}](docs/_static/img/syllabograms.png){ width=50% }
 
@@ -79,13 +79,13 @@ Potnia is implemented in Python with an extensible architecture centered around 
     ```
 -->
 
-2. **Regular Expressions for Complex Text:** Regular expressions are used to manage uncertain readings, special symbols, and compound tokens. This enables accurate tokenization and conversion of transliterated texts.
+2. **Tokenization:** The tokenize_transliteration method applies complex symbol replacements and regular expressions to transliterated text based on the rules specified in the YAML file. This tokenization process ensures that the text is split accurately into its meaningful components, handling special symbols and spacing using placeholders, and preparing the text for Unicode conversion.
 
-3. **Custom Tokenization and Unicode Conversion:** Potnia provides a flexible tokenization system tailored to each script’s unique structure. The ``to_unicode`` method converts transliterations into Unicode based on mappings stored in YAML files (fig. \ref{fig:potnia-example}).
+3. **Transliteration to Unicode and Back:** Potnia uses the to_unicode and to_transliteration methods to convert between transliterated text and its Unicode representation. The mappings are loaded from the YAML file, allowing flexibility across languages. The to_unicode method converts transliterated text into its corresponding Unicode signs (fig. \ref{fig:potnia-example}), while the to_transliteration method does the reverse, ensuring round-trip conversion.
 
 ![Example of using Potnia.\label{fig:potnia-example}](docs/_static/img/potnia-example.png){ width=80% }
 
-4. **Regularisation of Text:** The regularize method cleans the output by handling missing elements and unnecessary tags, refining the text for downstream use.
+4. **Regularization of Text:** The regularize method applies a series of regular expression rules to clean and normalize the Unicode output. It removes unnecessary tags, ignores patterns specified in the YAML file (e.g., annotations or uncertain characters), and ensures that only the essential characters are retained. This step ensures the output is refined and ready for downstream tasks.
 
 <!--
     ```python
