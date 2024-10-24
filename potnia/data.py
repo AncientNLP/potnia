@@ -1,12 +1,11 @@
 import yaml
-from typing import Dict
 from pathlib import Path
 from functools import cache
 
 DATA_DIR = Path(__file__).parent / "data"
 
 @cache
-def read_data_yaml_cached(filename: str) -> Dict[str, str]:
+def read_data_yaml_cached(filename: str) -> dict[str, str]:
     path = DATA_DIR / filename
     if not path.suffix:
         path = path.with_suffix(".yaml")
@@ -19,16 +18,7 @@ def read_data_yaml_cached(filename: str) -> Dict[str, str]:
     return result or dict()
 
 
-def read_data(*args: str|tuple[str]) -> Dict[str, str]:
-    filenames = []
-    for arg in args:
-        if isinstance(arg, str):
-            filenames.append(arg)
-        elif arg is None:
-            continue
-        else:
-            filenames.extend(arg)
-    
+def read_data(*filenames) -> dict[str, str]:
     result = dict()
     for filename in filenames:
         result.update(read_data_yaml_cached(filename))

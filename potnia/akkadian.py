@@ -1,5 +1,5 @@
-from .mapper import Mapper
 from dataclasses import dataclass
+from .mapper import Mapper
 
 
 @dataclass
