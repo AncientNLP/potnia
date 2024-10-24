@@ -60,11 +60,12 @@ These are the primary gaps we have aimed to address through the development of P
 
 # Implementation
 
-Potnia is implemented in Python with an extensible architecture centered around the Mapper class, which converts transliterated texts into Unicode representations. and is designed to handle the complexities of ancient scripts through a flexible and customizable framework.
+Potnia is implemented in Python with an extensible architecture centered around the Mapper class, which converts transliterated texts into Unicode representations. It is designed to handle the complexities of ancient scripts through a flexible and customizable framework.
 
 ## Key Features
 
-1. **YAML-Based Mapping Specification:**  Potnia stores script-specific signs (e.g. letters, syllabograms, logograms, numerals and determinatives) in YAML files, allowing easy updates and additions (fig. \ref{fig:syllabograms}). This approach ensures scalability when integrating new scripts like Linear A and Sumero-Akkadian cuneiform.
+1. **YAML-Based Mapping and Rule Specification:**
+Each language in Potnia (e.g., Linear B, Arabic, Hittite) is configured via a single YAML file that contains syllabograms, logograms, and rules for transliteration and regularization. This unified structure simplifies updates, scales easily for new languages, and eliminates the need for multiple hardcoded files (fig. \ref{fig:syllabograms}).
 
 ![Example of YAML mapping specification.\label{fig:syllabograms}](docs/_static/img/syllabograms.png){ width=50% }
 
