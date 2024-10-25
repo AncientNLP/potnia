@@ -1,10 +1,10 @@
-from dataclasses import dataclass
-from .mapper import Mapper
+# from dataclasses import dataclass
+# from .mapper import Mapper
 
 
-@dataclass
-class AkkadianMapper(Mapper):
-    config:str = "akkadian"
+# @dataclass
+# class AkkadianMapper(Mapper):
+#     config:str = "akkadian"
 
 
-akkadian_mapper = AkkadianMapper()
+# akkadian_mapper = AkkadianMapper()

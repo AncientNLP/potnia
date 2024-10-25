@@ -5,7 +5,7 @@ from potnia import (
     linear_b_mapper, 
     hittite_mapper, 
     # luwian_mapper, 
-    akkadian_mapper,
+    # akkadian_mapper,
     arabic_mapper,
 )
 from .enums import BibliographyStyle, BibliographyFormat
@@ -51,12 +51,12 @@ def hittite(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAUL
 #     print(luwian_mapper(text, regularize=regularize))
 
 
-@app.command()
-def akkadian(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT):
-    """ Converts a Akkadian text to Unicode. """
-    if isinstance(text, list):
-        text = " ".join(text)
-    print(akkadian_mapper(text, regularize=regularize))
+# @app.command()
+# def akkadian(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT):
+#     """ Converts a Akkadian text to Unicode. """
+#     if isinstance(text, list):
+#         text = " ".join(text)
+#     print(akkadian_mapper(text, regularize=regularize))
 
 
 @app.command()

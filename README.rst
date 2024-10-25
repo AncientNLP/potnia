@@ -30,7 +30,13 @@ Potnia
 
 Potnia is an open-source Python library designed to convert Romanized transliterations of ancient texts into Unicode representations of ther respective native scripts.
 
-Currently the conversion of transliterated Linear B texts into a Unicode representation of the script is fully supported, with functionality for Linear A, Sumero-Akkadian cuneiform, Hittite cuneiform, Luwian hieroglyphs and Etruscan in development.
+Currently, the scripts supported by Potnia are:
+- Linear A
+- Linear B
+- Hittite cuneiform
+- Arabic
+
+Functionality for Luwian hieroglyphs, Sumero-Akkadian cuneiform and Etruscan is in development.
 
 Contributions are welcome! Please see the `CONTRIBUTING.rst <CONTRIBUTING.rst>`_ file for more information.
 
@@ -122,9 +128,9 @@ This will show a link in the terminal that you can click on to open the GUI in y
 Adding New Scripts to Potnia
 ============================
 
-Potnia allows for the easy integration of new ancient scripts by using a single YAML file per language. This file will contain the mappings for syllabograms, logograms (if applicable), transliteration rules, and regularization patterns. Below are the steps for adding a new script, along with examples.
+Potnia allows for the easy integration of new ancient scripts by using a single YAML file per script. This file will contain the mappings for syllabograms, logograms (if applicable), transliteration rules, and regularization patterns. Below are the steps for adding a new script, along with examples.
 
-Steps to Add a New Language
+Steps to Add a New Script
 ----------------------------
 
 1. **Create a Single YAML Mapping and Rules File**: Define the mappings for syllabograms, logograms (if applicable), and the rules for transliteration and regularization. Here's an example for Linear B:
@@ -158,7 +164,7 @@ Steps to Add a New Language
 
       new_script_mapper = NewScriptMapper()
 
-3. **Write Test Cases**: Add test cases to ensure that the new language’s transliteration and Unicode mapping work as expected. Example:
+3. **Write Test Cases**: Add test cases to ensure that the new script's transliteration and Unicode mapping work as expected. Example:
 
    .. code-block:: yaml
 
@@ -166,7 +172,7 @@ Steps to Add a New Language
       "a-e-i": "𐀀𐀁𐀂"
       "VIR MUL": "𐂀𐂁"
 
-4. **Usage Example**: Once the new language is added, it can be used as follows:
+4. **Usage Example**: Once the new script is added, it can be used as follows:
 
    .. code-block:: python
 
@@ -178,7 +184,7 @@ Steps to Add a New Language
       # Regularize text
       new_script_mapper("a-[•~]", regularize=True)
 
-This approach centralizes all configuration for a given script into a single YAML file, simplifying the process of adding new languages while maintaining Potnia's flexible and modular design.
+This approach centralizes all configuration for a given script into a single YAML file, simplifying the process of adding new scripts while maintaining Potnia's flexible and modular design.
     
 .. end-quickstart
 

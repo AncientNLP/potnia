@@ -36,13 +36,18 @@ bibliography: paper.bib
 
 Potnia is an open-source Python library designed to convert Romanized transliterations of ancient texts into their respective Unicode representations. Significant progress has been made in the digitization of ancient language corpora. However, many of these datasets are solely presented in transliterated form, even though the necessary Unicode blocks exist to render them using their native script. This restriction to using transliterated datasets for certain ancient scripts has the potential to limit the precision of linguistic analysis via machine learning.
 
-<!-- Potnia bridges this gap by providing a flexible framework for converting transliterations into Unicode. By enabling tokenization and processing in the original script, Potnia can optimize tasks such as textual restoration and machine learning-based analysis. The library currently supports the conversion of Linear B texts, with future expansions planned for Linear A, Sumero-Akkadian cuneiform, Hittite cuneiform, Luwian hieroglyphs, and Etruscan. This tool can offer significant value to both computational linguistics and digital humanities, enabling researchers to work with ancient texts in their native script. -->
+Potnia bridges this gap by providing a flexible framework for converting transliterations into Unicode. By enabling tokenization and processing in the original script, Potnia can optimize tasks such as textual restoration and machine learning-based analysis. The library currently supports:
 
-Potnia bridges this gap by providing a flexible framework for converting transliterations into Unicode. By enabling tokenization and processing in the original script, Potnia can optimize tasks such as textual restoration and machine learning-based analysis. The library provides robust support for Linear B texts and is architecturally designed to accommodate additional scripts including Linear A, Sumero-Akkadian cuneiform, Hittite cuneiform, Luwian hieroglyphs, and Etruscan. This tool can offer significant value to both computational linguistics and digital humanities, enabling researchers to work with ancient texts in their native script. The library provides robust support for Linear B, Arabic, Hittite, Luwian, and Linear A texts. While Linear B has the most comprehensive test cases and is the most robust, the tool can also be used effectively for the other supported languages. The architectural flexibility of Potnia makes it easy to accommodate additional scripts, offering significant value to both computational linguistics and digital humanities by enabling researchers to work with ancient texts in their native scripts.
+  - Linear A
+  - Linear B
+  - Hittite cuneiform
+  - Arabic
+
+While Linear B has the most comprehensive test cases and is the most robust, the tool can also be used effectively for the other scripts. This tool can offer significant value to both computational linguistics and digital humanities, enabling researchers to work with ancient texts in their native script. The architectural flexibility of Potnia makes it easy to accommodate additional scripts, offering significant value to both computational linguistics and digital humanities by enabling researchers to work with ancient texts in their native scripts.
 
 # Statement of Need
 
-While machine learning has increasingly been applied to the study of ancient languages [@sommerschieldMachineLearningAncient2023], much of this progress has involved working with transliterated texts, rather than native script formats [@luoNeuralDeciphermentMinimumcost2019; @papavassileiouGenerativeModelMycenaean2023; @fetayaRestorationFragmentaryBabylonian2020; @peronocacciafocoNewApproachDecipherment2021]. Although Unicode standards exist for many ancient scripts, transliterated texts remain prevalent due to historical digitization practices.
+While machine learning has increasingly been applied to the study of ancient texts [@sommerschieldMachineLearningAncient2023], much of this progress has involved working with transliterated texts, rather than native script formats [@luoNeuralDeciphermentMinimumcost2019; @papavassileiouGenerativeModelMycenaean2023; @fetayaRestorationFragmentaryBabylonian2020; @peronocacciafocoNewApproachDecipherment2021]. Although Unicode standards exist for many ancient scripts, transliterated texts remain prevalent due to historical digitization practices.
 
 Transliteration is the process of converting text from its original script into a different script, using systematic processes. It allows those who can understand the secondary script to comprehend the orthography and the approximate pronunciation of the original text. Prior to the gradual introduction of relevant Unicode blocks since the 1990s [@Hossain2024], it was also usually necessary for representing non-Latin scripts on Western computational systems, which were largely confined to letters of the Latin alphabet and a small number of special characters.
 
@@ -52,65 +57,32 @@ Transliteration has an important place in aiding new learners of an ancient scri
   - changing opinions on particular sign values over time, introducing possible differences between older and newer transliterations (e.g. ![Linear B sign 'qa'](docs/_static/img/LBsign_qa_large.png){height="11pt"} in the Linear B script changing from the previously suggested value of 'pa\textsubscript{2}' to 'qa')[@chadwickDocumentsMycenaeanGreek1973, pp. 391–92];
   - and the way in which transliteration obscures polyvalency in scripts, where a single sign can represent multiple different values (e.g. ![Cuneiform sign 'ḫar'](docs/_static/img/Csign_har_large.png){height="11pt"} in Hittite cuneiform can represent three different syllables, transliterated as 'ḫar', 'ḫur' and 'mur', as well as acting as a logogram for three different words, 'ring', 'thick' and 'lung').
 
-For language modelling tasks, we therefore suggest that representations of texts in their native form are preferable to achieve the most accurate results. A number of digitized corpora for well-resourced and widely studied ancient languages are now available in Unicode representations of their native script, including a corpus of ancient Greek [@canonicalgreek], classical Hebrew [@sefaria_project], Syriac [@digital_syriac] and Arabic [@openiti]. However, many other online text corpora remain restricted to Romanized translisterations (despite the availability of relevant Unicode standards), presumably due to considerations around ease, system limitations and accessibility, e.g. Linear B [@auroraDAMOSDatabaseMycenaean2015], Ugaritic [@prosser2019ras] and Sumero-Akkadian cuneiform [@cdli2024]. For this latter group of scripts, current tools capable of converting transliterated ancient texts to the corresponding Unicode appear limited to a handful of individual scripts, such as the various to implementations of 'Cuneify' [@tinney2019cuneify] that handle Sumero-Akkadian cuneiform, the PHP script 'UnicodeConverter', for Egyptian hieroglyphs [@ilintomich2021unicodeconverter], or 'Anatolian Hieroglyphics (Luwian) generation' tool for Luwian hieroglyphs [@senior2023anatoliangenerator], the latter only available to use through a basic online graphical user interface.
+For language modelling tasks, we therefore suggest that representations of texts in their native form are preferable to achieve the most accurate results. A number of digitized corpora for well-resourced and widely studied ancient languages are now available in Unicode representations of their native script, including a corpus of ancient Greek [@canonicalgreek], classical Hebrew [@sefaria_project], Syriac [@digital_syriac] and Arabic [@openiti]. However, many other online text corpora remain restricted to Romanized translisterations (despite the availability of relevant Unicode standards), presumably due to considerations around ease, system limitations and accessibility, e.g. Linear B [@auroraDAMOSDatabaseMycenaean2015], Ugaritic [@prosser2019ras] and Sumero-Akkadian cuneiform [@cdli2024]. For this latter group of scripts, current tools capable of converting transliterated ancient texts to the corresponding Unicode appear limited to a handful of individual scripts, such as the various to implementations of 'Cuneify' [@tinney2019cuneify] that handle Sumero-Akkadian cuneiform, the PHP script 'UnicodeConverter', for Egyptian hieroglyphs [@ilintomich2021unicodeconverter], or 'Anatolian Hieroglyphics (Luwian) generation' tool for Luwian hieroglyphs [@senior2023anatoliangenerator], the latter only available to use through a basic online graphical user interface. While the PyArabic package [@Zerrouki2023] is able to convert Arabic text to and from the popular Timothy Buckwalter transliteration system, Potnia provides a complementary functionality for the Deutsches Institut für Normung (DIN) 31635 transliteration system [@DIN31635] which is widely used in academic literature.
 
 In addition, such transliterations of ancient texts are often heavily annotated, with special characters used to denote a range of features including uncertain readings, missing or damaged elements, erasures, non-textual marks, and annotations by modern transliterators pertaining to structural or physical elements of the document. If not removed or handled appropriately, these have the potential to introduce further noise into language models. 
 
-These are the primary gaps we have aimed to address through the development of Potnia. The library's focus on ancient languages and its extensible architecture make it a valuable asset for researchers working with digitized ancient corpora. It is also equipped to provide specific handling of these elements, with tailored tokenization and regularization rules pertaining to both script-specific and corpus-specific conventions. Potnia therefore enables a key pre-processing step in the language modelling pipeline, with the resulting Unicode outputs of ancient texts enabling more accurate and nuanced computational analysis of these texts in downstream modelling tasks.
+These are the primary gaps we have aimed to address through the development of Potnia. The library's focus on ancient scripts and its extensible architecture make it a valuable asset for researchers working with digitized ancient corpora. It is also equipped to provide specific handling of these elements, with tailored tokenization and regularization rules pertaining to both script-specific and corpus-specific conventions. Potnia therefore enables a key pre-processing step in the language modelling pipeline, with the resulting Unicode outputs of ancient texts enabling more accurate and nuanced computational analysis of these texts in downstream modelling tasks.
 
 # Implementation
 
-Potnia is implemented in Python with an extensible architecture centered around the Mapper class, which converts transliterated texts into Unicode representations. It is designed to handle the complexities of ancient scripts through a flexible and customizable framework.
+Potnia is implemented in Python with an extensible architecture centered around the `Mapper` class, which converts transliterated texts into Unicode representations. It is designed to handle the complexities of ancient scripts through a flexible and customizable framework.
 
 ## Key Features
 
 1. **YAML-Based Mapping and Rule Specification:**
-Each language in Potnia (e.g., Linear B, Arabic, Hittite) is configured via a single YAML file that contains syllabograms, logograms, and rules for transliteration and regularization. This unified structure simplifies updates, scales easily for new languages, and eliminates the need for multiple hardcoded files (fig. \ref{fig:syllabograms}). The Arabic implementation follow the convetions of the Deutsches Institut für Normung (DIN) 31635 transliteration system [@DIN31635]. This is because of the broad use of this standard in academic literature and another popular transliteration system created by Timothy Buckwalter can already be converted us in the PyArabic package [@Zerrouki2023].
+Each script in Potnia (e.g., Linear A, Linear B, Arabic, Hittite cuneiform) is configured via a single YAML file that contains syllabograms, logograms, and rules for transliteration and regularization. This unified structure simplifies updates, scales easily for new scripts, and eliminates the need for  hardcoded source files (fig. \ref{fig:mappings}).
 
-![Example of YAML mapping specification.\label{fig:syllabograms}](docs/_static/img/mappings.png){ width=50% }
+![Example of YAML mapping specification.\label{fig:mappings}](docs/_static/img/mappings.png){ width=50% }
 
-<!--
-    ```yaml
-    syllabograms:
-      ja: 𐀊
-      ni: 𐀛
-      po: 𐀡
-      ti: 𐀴
-    ```
--->
+2. **Tokenization:** The `tokenize_transliteration` method applies complex symbol replacements and regular expressions to transliterated text based on the rules specified in the YAML file. This tokenization process ensures that the text is split accurately into its meaningful components, handling special symbols and spacing using placeholders, and preparing the text for Unicode conversion.
 
-2. **Tokenization:** The tokenize_transliteration method applies complex symbol replacements and regular expressions to transliterated text based on the rules specified in the YAML file. This tokenization process ensures that the text is split accurately into its meaningful components, handling special symbols and spacing using placeholders, and preparing the text for Unicode conversion.
-
-3. **Transliteration to Unicode and Back:** Potnia uses the to_unicode and to_transliteration methods to convert between transliterated text and its Unicode representation. The mappings are loaded from the YAML file, allowing flexibility across languages. The to_unicode method converts transliterated text into its corresponding Unicode signs (fig. \ref{fig:potnia-example}), while the to_transliteration method does the reverse, ensuring round-trip conversion.
+3. **Transliteration to Unicode:** Potnia uses the `to_unicode` method to convert the transliterated text to its Unicode representation (fig. \ref{fig:potnia-example}).
 
 ![Example of using Potnia.\label{fig:potnia-example}](docs/_static/img/potnia-example.png){ width=80% }
 
 4. **Regularization of Text:** The regularize method applies a series of regular expression rules to clean and normalize the Unicode output. It removes unnecessary tags, ignores patterns specified in the YAML file (e.g., annotations or uncertain characters), and ensures that only the essential characters are retained. This step ensures the output is refined and ready for downstream tasks.
 
-<!--
-    ```python
-    from potnia import linear_b_mapper
-    text = "po-ti-ni-ja"
-
-    # Tokenisation Example
-    tokens = linear_b_mapper.tokenize_transliteration(text)
-    print(tokens)  # Output: ['po', 'ti', 'ni', 'ja']
-
-    # Unicode Mapping
-    unicode_text = linear_b_mapper(text)
-    print(unicode_text)  # Output: 𐀡𐀴𐀛𐀊
-    ```
-    -->
-5. **Comprehensive Testing:** Pytest fixtures allow us to define test cases as lines in YAML files which allowed us to consisely add over almost 350 test examples, covering a broad range of edge cases. The code coverage of the tests is 100%.
-<!-- Test cases, defined in YAML files, cover various scripts like Linear B and Linear A, ensure acc
-
-    ```python
-    @pytest.mark.parametrize("test_input,expected", expected("linear_b_unicode_regularized"))
-    def test_linear_b_unicode_regularized(test_input, expected):
-        result = linear_b_mapper(test_input, regularize=True)
-        assert result == expected
-    ```
-This design makes Potnia easily extendable, with Linear B fully supported and work underway for other scripts like Linear A and Akkadian. -->
+5. **Comprehensive Testing:** Pytest fixtures allow us to define test cases as lines in YAML files which allowed us to consisely add around 350 test examples, covering a broad range of edge cases. The code coverage of the tests is 100%.
 
 6. **Versatile Interface Options** Users can interact with Potnia as a Python library, or through the command line interface (CLI) or through the graphical user interface (GUI) (fig. \ref{fig:potnia-gui})
 
@@ -125,65 +97,14 @@ Potnia’s design and functionality address the following challenges in the anal
 
 2. **Integration with Research Workflows:** Researchers can easily incorporate Potnia into their existing workflows. For example, in a typical research scenario, Potnia could be used to preprocess a corpus of Linear B texts before feeding them into a machine learning model for further analysis.
 
-<!-- 
-![Example of using Potnia to preprocess a Linear B dataset.\label{fig:downstream-example}](docs/_static/img/downstream-example.png){ width=100% }
--->
-
-<!-- 
-    ```python
-    from potnia import linear_b_mapper
-    import pandas as pd
-    from sklearn.feature_extraction.text import CountVectorizer
-
-    # Load corpus
-    corpus = pd.read_csv('linear_b_corpus.csv')
-
-    # Convert transliterations to Unicode
-    corpus['unicode_text'] = corpus['transliterated_text'].apply(lambda x: linear_b_mapper(x, regularize=True))
-
-    # Perform further analysis (e.g., bag-of-words representation)
-    vectorizer = CountVectorizer()
-    bow_matrix = vectorizer.fit_transform(corpus['unicode_text'])
-
-    # Continue with machine learning tasks...
-    ```
--->
-<!-- 
-Potnia’s functionality is being used as part of a larger project aimed at deciphering the Linear A script. We are using Potnia to convert Romanized transliterations of Linear B tablets into Unicode datasets, and will extend this capability to Linear A. The resulting datasets will be used to train language-specific models for tasks such as text generation and masked language modeling. Future models developed using this library will be released for public use, supporting downstream tasks such as decipherment, textual restoration, and palaeographic analysis.  -->
-
 As part of a broader initiative to develop language models for ancient language research, Potnia serves as a foundational component by converting Romanized transliterations of Linear B texts into Unicode datasets for computational analysis. These datasets enable the development of language-specific models supporting tasks such as text generation, restoration, and vector embedding analysis. The library's modular design facilitates its application to additional ancient scripts, contributing to broader research initiatives in computational philology.
 
 # Availability
 
 Potnia is open-source software released under the Apache 2.0 license. It is available through [PyPI](https://pypi.org/project/potnia/) and [GitHub](https://github.com/AncientNLP/potnia). We welcome contributions from the community and adhere to the Contributor Covenant Code of Conduct. Documentation is available at [https://ancientnlp.github.io/potnia/](https://ancientnlp.github.io/potnia/).
 
-<!-- 
-# Citations
-
-Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
-
-If you want to cite a software repository URL (e.g. something on GitHub without a preferred
-citation) then you can do it with the example BibTeX entry below for @fidgit.
-
-For a quick reference, the following citation commands can be used:
-- `@author:2001`  ->  "Author et al. (2001)"
-- `[@author:2001]` -> "(Author et al., 2001)"
-- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
-
-# Figures
-
-Figures can be included like this:
-![Caption for example figure.\label{fig:example}](figure.png)
-and referenced from text using \autoref{fig:example}.
-
-Figure sizes can be customized by adding an optional second parameter:
-![Caption for example figure.](figure.png){ width=20% } -->
-
 # Acknowledgements
 
-We acknowledge support from Brent Davis, Kim Doyle, Man-Hua (Kate) Chu, Anhui (Ellie) Situ and Stavroula (Stephie) Nikoloudis. This research was supported by The University of Melbourne’s Research Computing Services.
-
+We acknowledge support from Wytamma Wirth, Brent Davis, Kim Doyle, Man-Hua (Kate) Chu, Anhui (Ellie) Situ, Ekaterina Vylomova, Chris Guest and Stavroula (Stephie) Nikoloudis. This research was supported by The University of Melbourne’s Research Computing Services.
 
 # References

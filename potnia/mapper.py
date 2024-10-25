@@ -12,8 +12,7 @@ class Mapper():
     def __post_init__(self):
         if isinstance(self.config, (Path,str)):
             self.config = read_data(self.config)
-        if not self.config:
-            return
+        assert self.config, f"Configuration not found"
 
         self.transliteration_to_unicode_dict = self.config.get('mappings', {})
         self.unicode_to_transliteration_dict = {}
