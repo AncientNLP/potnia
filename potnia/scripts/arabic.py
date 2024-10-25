@@ -1,9 +1,9 @@
 import re
 from dataclasses import dataclass
-from .mapper import Mapper
+from ..script import Script
 
 @dataclass
-class ArabicMapper(Mapper):
+class Arabic(Script):
     config:str = "arabic"
 
     def to_unicode(self, text:str, regularize:bool=False) -> str:
@@ -44,4 +44,4 @@ class ArabicMapper(Mapper):
         return text
 
 
-arabic_mapper = ArabicMapper()
+arabic = Arabic()

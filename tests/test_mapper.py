@@ -1,3 +1,3 @@
-from potnia.mapper import Mapper
+from potnia.script import Script
 
 

@@ -67,8 +67,8 @@ To convert transliterated Linear B to Linear B Unicode, use the following code:
 
 .. code-block:: python
 
-    >>> from potnia import linear_b_mapper
-    >>> linear_b_mapper("a-ri-to-jo")
+    >>> from potnia import linear_b
+    >>> linear_b("a-ri-to-jo")
     '𐀀𐀪𐀵𐀍'
 
 
@@ -76,7 +76,7 @@ If you wish to regularize the text to remove additional annotations present in t
 
 .. code-block:: python
 
-    >>> linear_b_mapper("e-ke-qe ]-o-na-to , ke-ke-me-na⌞ ⌟ko-to-na GRA qs ] vac.", regularize=True)
+    >>> linear_b("e-ke-qe ]-o-na-to , ke-ke-me-na⌞ ⌟ko-to-na GRA qs ] vac.", regularize=True)
     '𐀁𐀐𐀤 %𐀃𐀙𐀵 𐀐𐀐𐀕𐀙 𐀒𐀵𐀙 𐂎 %'
 
 Note that uncertain/missing signs or sections of text are presently being replaced with a wildcard '%' character.
@@ -85,7 +85,7 @@ To tokenize transliterated Linear B texts without converting it to Unicode, use 
 
 .. code-block:: python
 
-    >>> linear_b_mapper.tokenize_transliteration("]wa VIR 1 MUL 2 'ko-wa 1' ko-wo 1")
+    >>> linear_b.tokenize_transliteration("]wa VIR 1 MUL 2 'ko-wa 1' ko-wo 1")
     [']', 'wa', ' ', 'VIR', ' ', '1', ' ', 'MUL', ' ', '2', ' ', "'", 'ko', 'wa', ' ', '1', "'", ' ', 'ko', 'wo', ' ', '1']
 
 Command Line Interface (CLI)
@@ -151,18 +151,18 @@ Steps to Add a New Script
             - ['\\[•~\\]', '']  # Remove uncertain readings
             - ['\\bqs\\b', '%']  # Handle missing elements
 
-2. **Add the New Mapper Class**: Create a `Mapper` class that points to the new YAML file. For example:
+2. **Add the New Script Class**: Create a `Script` class that points to the new YAML file. For example:
 
    .. code-block:: python
 
       from dataclasses import dataclass
-      from .mapper import Mapper
+      from .script import Script
 
       @dataclass
-      class NewScriptMapper(Mapper):
+      class NewScript(Script):
           config: str = "new_script"  # Refers to the YAML file name
 
-      new_script_mapper = NewScriptMapper()
+      new_script = NewScript()
 
 3. **Write Test Cases**: Add test cases to ensure that the new script's transliteration and Unicode mapping work as expected. Example:
 
@@ -176,13 +176,13 @@ Steps to Add a New Script
 
    .. code-block:: python
 
-      from potnia import new_script_mapper
+      from potnia import new_script
 
       # Convert transliterated text to Unicode
-      new_script_mapper("a-e-i")
+      new_script("a-e-i")
 
       # Regularize text
-      new_script_mapper("a-[•~]", regularize=True)
+      new_script("a-[•~]", regularize=True)
 
 This approach centralizes all configuration for a given script into a single YAML file, simplifying the process of adding new scripts while maintaining Potnia's flexible and modular design.
     

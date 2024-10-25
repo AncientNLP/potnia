@@ -1,43 +1,43 @@
 # ISSUE 1
 
-linear_b_mapper.tokenize_transliteration("]-o-pe-ro *209VAS 'ME<±RI>' 5 [")
+linear_b.tokenize_transliteration("]-o-pe-ro *209VAS 'ME<±RI>' 5 [")
 # We want to see MERI as a single token
 [']', 'o', 'pe', 'ro', ' ', '*209VAS', ' ', "'", 'ME', '<', '±RI', '>', "'", ' ', '5', ' ', '[']
 
-linear_b_mapper("]-o-pe-ro *209VAS 'ME<±RI>' 5 [", regularize=True)
+linear_b("]-o-pe-ro *209VAS 'ME<±RI>' 5 [", regularize=True)
 '%𐀃𐀟𐀫 𐃨 𐀕±RI 5 %'
 
 # ISSUE 2
 
-linear_b_mapper("]-i-to , / da-nwa ME±RI *209VAS+A 16 *172 8", regularize=True)
+linear_b("]-i-to , / da-nwa ME±RI *209VAS+A 16 *172 8", regularize=True)
 '%𐀂𐀵 𐀅𐁅 𐂙 𐃨+𐀀 16 𐂴 8' but should get "%𐀂𐀵 𐀅𐁅 𐂙 𐃨+𐀀 16 𐂹 8"
 
 # ISSUE 3
 
-linear_b_mapper.tokenize_transliteration("pa-si-te-o-i / me-ri *209VAS 1 da-pu2-ri-to-jo , / po-ti-ni-ja 'me-ri' *209VAS 1")
+linear_b.tokenize_transliteration("pa-si-te-o-i / me-ri *209VAS 1 da-pu2-ri-to-jo , / po-ti-ni-ja 'me-ri' *209VAS 1")
 ['pa', 'si', 'te', 'o', 'i', ' ', '/', ' ', 'me', 'ri', ' ', '*209VAS', ' ', '1', ' ', 'da', 'pu2', 'ri', 'to', 'jo', ' ', ',', ' ', '/', ' ', 'po', 'ti', 'ni', 'ja', ' ', "'", 'me', 'ri', "'", ' ', '*209VAS', ' ', '1']
 
-linear_b_mapper("pa-si-te-o-i / me-ri *209VAS 1 da-pu2-ri-to-jo , / po-ti-ni-ja 'me-ri' *209VAS 1", regular
+linear_b("pa-si-te-o-i / me-ri *209VAS 1 da-pu2-ri-to-jo , / po-ti-ni-ja 'me-ri' *209VAS 1", regular
 ize=True)
 '𐀞𐀯𐀳𐀃𐀂 𐀕𐀪 𐃨 1 𐀅pu2𐀪𐀵𐀍 𐀡𐀴𐀛𐀊 𐀕𐀪 𐃨 1' pu2 is not mapped? 
 
 # ISSUE 4
 
-linear_b_mapper("a-ka--[ ]--jo-jo , me-no-[ da-pu2-ri-[-to-jo ]-po-ti-ni-ja ri *166+WE 22-[", regularize=Tr
+linear_b("a-ka--[ ]--jo-jo , me-no-[ da-pu2-ri-[-to-jo ]-po-ti-ni-ja ri *166+WE 22-[", regularize=Tr
 ue)
 '𐀀𐀏% %𐀍𐀍 𐀕𐀜% 𐀅pu2𐀪%𐀵𐀍 %𐀡𐀴𐀛𐀊 𐀪 𐂮+𐀸 22%' Again pu2 not mapped? 
 
 # ISSUE 5 
-linear_b_mapper("a-ka--[ ]--jo-jo , me-no-[ da-pu2-ri-[-to-jo ]-po-ti-ni-ja ri *166+WE 22-[", regularize=Tr
+linear_b("a-ka--[ ]--jo-jo , me-no-[ da-pu2-ri-[-to-jo ]-po-ti-ni-ja ri *166+WE 22-[", regularize=Tr
 ue)
 '𐀀𐀏% %𐀍𐀍 𐀕𐀜% 𐀅pu2𐀪%𐀵𐀍 %𐀡𐀴𐀛𐀊 𐀪 𐂮+𐀸 22%'
 
 # ISSUE 6
-linear_b_mapper("] e-ko-so OVIS:m 100 LANA [ ]-da-ro , / X LANA [ lat. inf. ]-a3 [", regularize=True)
+linear_b("] e-ko-so OVIS:m 100 LANA [ ]-da-ro , / X LANA [ lat. inf. ]-a3 [", regularize=True)
 '% 𐀁𐀒𐀰 𐂇 100 𐂝 % %𐀅𐀫 𐂝 % %a3 %' is a3 mapping broken? 
 
 # ISSUE 7
-linear_b_mapper("fragmentum A fragmentum B vacat [ sup. mut. e-me-si-jo-jo-[ ] 3-[ pa-na-so GRA 100-[ ]-vac.-[ ta-ra-qo GRA [ inf. mut. ta-u-pa-du-we GRA-[ a-ro-ja-[ pu-na-so-[ inf. mut.", regularize=True)
+linear_b("fragmentum A fragmentum B vacat [ sup. mut. e-me-si-jo-jo-[ ] 3-[ pa-na-so GRA 100-[ ]-vac.-[ ta-ra-qo GRA [ inf. mut. ta-u-pa-du-we GRA-[ a-ro-ja-[ pu-na-so-[ inf. mut.", regularize=True)
 '𐀀 % 𐀁𐀕𐀯𐀍𐀍% % 3% 𐀞𐀙𐀰 𐂎 100% %% 𐀲𐀨𐀦 𐂎 % 𐀲𐀄𐀞𐀉𐀸 𐂎% 𐀀𐀫𐀊% 𐀢𐀙𐀰%' but should be "% % 𐀁𐀕𐀯𐀍𐀍% % 3% 𐀞𐀙𐀡 𐂎 100% %% 𐀲𐀨𐀦 𐂎 % 𐀲𐀄𐀞𐀉𐀸 𐂎% 𐀀𐀫𐀊% 𐀢𐀙𐀰%"
 
 # ISSUE 8

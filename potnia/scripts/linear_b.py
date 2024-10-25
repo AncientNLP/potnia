@@ -1,9 +1,9 @@
 import re
 from dataclasses import dataclass
-from .mapper import Mapper
+from ..script import Script
 
 @dataclass
-class LinearBMapper(Mapper):
+class LinearB(Script):
     config:str = "linear_b"
 
     # syllabograms = (
@@ -29,4 +29,4 @@ class LinearBMapper(Mapper):
         return text
 
 
-linear_b_mapper = LinearBMapper()
+linear_b = LinearB()

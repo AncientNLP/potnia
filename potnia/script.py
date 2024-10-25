@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from .data import read_data
 
 @dataclass
-class Mapper():
+class Script():
     config:str
 
     def __post_init__(self):

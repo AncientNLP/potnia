@@ -1,13 +1,12 @@
 import typer
 from pybtex import PybtexEngine
-from potnia import (
-    linear_a_mapper, 
-    linear_b_mapper, 
-    hittite_mapper, 
-    # luwian_mapper, 
-    # akkadian_mapper,
-    arabic_mapper,
-)
+from potnia import linear_a as linear_a_script
+from potnia import linear_b as linear_b_script
+from potnia import hittite as hittite_script
+from potnia import arabic as arabic_script
+# from potnia import luwian as luwian_script
+# from potnia import akkadian as akkadian_script
+
 from .enums import BibliographyStyle, BibliographyFormat
 from .data import DATA_DIR
 
@@ -24,7 +23,7 @@ def linear_a(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAU
     """ Converts a Linear A text to Unicode. """
     if isinstance(text, list):
         text = " ".join(text)
-    print(linear_a_mapper(text, regularize=regularize))
+    print(linear_a_script(text, regularize=regularize))
 
 
 @app.command()
@@ -32,7 +31,7 @@ def linear_b(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAU
     """ Converts a Linear B text to Unicode. """
     if isinstance(text, list):
         text = " ".join(text)
-    print(linear_b_mapper(text, regularize=regularize))
+    print(linear_b_script(text, regularize=regularize))
 
 
 @app.command()
@@ -40,7 +39,7 @@ def hittite(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAUL
     """ Converts a Hittite text to Unicode. """
     if isinstance(text, list):
         text = " ".join(text)
-    print(hittite_mapper(text, regularize=regularize))
+    print(hittite_script(text, regularize=regularize))
 
 
 # @app.command()
@@ -48,7 +47,7 @@ def hittite(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAUL
 #     """ Converts a Luwian text to Unicode. """
 #     if isinstance(text, list):
 #         text = " ".join(text)
-#     print(luwian_mapper(text, regularize=regularize))
+#     print(luwian_script(text, regularize=regularize))
 
 
 # @app.command()
@@ -56,7 +55,7 @@ def hittite(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAUL
 #     """ Converts a Akkadian text to Unicode. """
 #     if isinstance(text, list):
 #         text = " ".join(text)
-#     print(akkadian_mapper(text, regularize=regularize))
+#     print(akkadian_script(text, regularize=regularize))
 
 
 @app.command()
@@ -64,7 +63,7 @@ def arabic(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT
     """ Converts a Arabic text to Unicode. """
     if isinstance(text, list):
         text = " ".join(text)
-    print(arabic_mapper(text, regularize=regularize))
+    print(arabic_script(text, regularize=regularize))
 
 
 @app.command()

@@ -1,8 +1,8 @@
 from dataclasses import dataclass
-from .mapper import Mapper
+from ..script import Script
 
 @dataclass
-class LinearAMapper(Mapper):
+class LinearA(Script):
     config:str = "linear_a.yaml"
 
 
@@ -45,4 +45,4 @@ class LinearAMapper(Mapper):
         return tokens
 
 
-linear_a_mapper = LinearAMapper()
+linear_a = LinearA()

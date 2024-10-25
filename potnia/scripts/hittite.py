@@ -1,9 +1,9 @@
 from dataclasses import dataclass
-from .mapper import Mapper
+from ..script import Script
 
 
 @dataclass
-class HittiteMapper(Mapper):
+class Hittite(Script):
     config:str = "hittite"
 
     def tokenize_transliteration(self, input_string:str) -> list[str]:
@@ -38,4 +38,4 @@ class HittiteMapper(Mapper):
 
 
 
-hittite_mapper = HittiteMapper()
+hittite = Hittite()

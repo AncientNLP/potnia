@@ -1,12 +1,12 @@
-from .linear_a import linear_a_mapper
-from .linear_b import linear_b_mapper
-from .hittite import hittite_mapper
-
-from .arabic import arabic_mapper
+from .script import Script
+from .scripts.linear_a import linear_a, LinearA
+from .scripts.linear_b import linear_b, LinearB
+from .scripts.hittite import hittite, Hittite
+from .scripts.arabic import arabic, Arabic
 
 
 # Luwian is currently a work in progress
-# from .luwian import luwian_mapper 
+# from .luwian import luwian 
 
 # Akkadian is currently a work in progress
-# from .akkadian import akkadian_mapper
+# from .akkadian import akkadian

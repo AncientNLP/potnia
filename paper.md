@@ -65,7 +65,7 @@ These are the primary gaps we have aimed to address through the development of P
 
 # Implementation
 
-Potnia is implemented in Python with an extensible architecture centered around the `Mapper` class, which converts transliterated texts into Unicode representations. It is designed to handle the complexities of ancient scripts through a flexible and customizable framework.
+Potnia is implemented in Python with an extensible architecture centered around the `Script` class, which converts transliterated texts into Unicode representations. It is designed to handle the complexities of ancient scripts through a flexible and customizable framework.
 
 ## Key Features
 
