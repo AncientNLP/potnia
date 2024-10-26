@@ -1,0 +1,411 @@
+mappings:
+  # V syllabograms
+  "a": 𒀀
+  "e": 𒂊
+  "i": 𒄿
+  "u": 𒌋
+  "ú": 𒌑
+  "ia": 𒅀
+
+  # CV syllabograms
+  "ba": 𒁀
+  "be": 𒁁
+  "bi": 𒁉
+  "bu": 𒁍
+
+  "pa": 𒉺
+  "pé": 𒁉
+  "pí": 𒁉
+  "pu": 𒁍
+
+  "da": 𒁕
+  "de": 𒁲
+  "di": 𒁲
+  "du": 𒁺
+
+  "ta": 𒋫
+  "te": 𒋼
+  "ti": 𒋾
+  "tu": 𒌅
+
+  "ga": 𒂵
+  "ge": 𒄀
+  "gi": 𒄀
+  "gu": 𒄖
+
+  "ka": 𒅗
+  "ke": 𒆠
+  "ki": 𒆠
+  "ku": 𒆪
+
+  "ḫa": 𒄩
+  "ḫe": 𒄭
+  "ḫé": 𒃶
+  "ḫi": 𒄭
+  "ḫu": 𒄷
+
+  "la": 𒆷
+  "le": 𒇷
+  "li": 𒇷
+  "lu": 𒇻
+
+  "ma": 𒈠
+  "me": 𒈨
+  "mé": 𒈪
+  "mi": 𒈪
+  "mu": 𒈬
+
+  "na": 𒈾
+  "ne": 𒉈
+  "né": 𒉌
+  "ni": 𒉌
+  "nu": 𒉡
+
+  "ra": 𒊏
+  "re": 𒊑
+  "ri": 𒊑
+  "ru": 𒊒
+
+  "ša": 𒊭
+  "še": 𒊺
+  "ši": 𒅆
+  "šu": 𒋗
+  "šú": 𒋙
+
+  "wa": 𒉿
+  "wi5": 𒃾
+
+  "ya": 𒅀
+
+  "za": 𒍝
+  "ze": 𒍣
+  "zé": 𒍢
+  "zi": 𒍣
+  "zu": 𒍪
+
+  # VC syllabograms
+  "ab": 𒀊
+  "ap": 𒀊
+  "eb": 𒅁
+  "ep": 𒅁
+  "ib": 𒅁
+  "ip": 𒅁
+  "ub": 𒌒 
+  "up": 𒌒
+
+  "ad": 𒀜
+  "at": 𒀜
+  "ed": 𒀉
+  "et": 𒀉
+  "id": 𒀉
+  "it": 𒀉
+  "ud": 𒌓 
+  "ut": 𒌓
+
+  "ag": 𒀝 
+  "ak": 𒀝
+  "eg": 𒅅
+  "ek": 𒅅
+  "ig": 𒅅
+  "ik": 𒅅
+  "ug": 𒊌
+  "uk": 𒊌
+
+  "aḫ": 𒄴
+  "eḫ": 𒄴
+  "iḫ": 𒄴
+  "uḫ": 𒄴
+
+  "al": 𒀠
+  "el": 𒂖
+  "il": 𒅋
+  "ul": 𒌌 # Check
+
+  "am": 𒄠
+  "em": 𒅎
+  "im": 𒅎
+  "um": 𒌝
+
+  "an": 𒀭
+  "en": 𒂗
+  "in": 𒅔
+  "un": 𒌦
+
+  "ar": 𒅈
+  "er": 𒅕
+  "ir": 𒅕
+  "ur": 𒌨
+  "úr": 𒌫
+
+  "aš": 𒀸
+  "eš": 𒌍
+  "eš": 𒐁
+  "iš": 𒅖
+  "uš": 𒍑
+
+  "az": 𒊍
+  "ez": 𒄑
+  "iz": 𒄑
+  "uz": 𒊻
+
+  # CVC syllabograms
+  "ḫal": 𒄬
+  "ḫab": 𒆸
+  "ḫap": 𒆸
+  "ḫaš": 𒋻
+  "ḫad": 𒉺
+  "ḫat": 𒉺
+  "PA": 𒉺 # sceptre
+  "ḫul": "??"
+  "ḪUL": "??" # evil # Find
+  "ḫub": 𒄽
+  "ḫup": 𒄽
+  "ḫar": 𒄯
+  "ḪAR": 𒄯 # ring
+  "ḫur": 𒄯
+  "ḪUR": 𒄯 # thick
+  "MUR": 𒄯 # lung
+  "gal": 𒃲
+  "GAL": 𒃲 # great
+  "kal": 𒆗
+  "gal9": 𒆗
+  "kam": 𒄰
+  "gám": 𒄰
+  "TU7": 𒄰 # soup
+  "kán": 𒃷
+  "gán": 𒃷
+  "GÁN": 𒃷 # field
+  "kab": 𒆏
+  "kap": 𒆏
+  "gáb": 𒆏
+  "gáp": 𒆏
+  "KAB": 𒆏 # left
+  "kar": "??" # find
+  "KAR": "??" # find # But actually find
+  "kàr": 𒃼
+  "gàr": 𒃼
+  "kaš": 𒁉
+  "gáš": 𒁉
+  "KAŠ": 𒁉 # beer
+  "kad": 𒃰
+  "gad": 𒃰
+  "gat": 𒃰
+  "GAD": 𒃰 # linen
+  "gaz": 𒄤
+  "GAZ": 𒄤 # kill
+  "kib": "??" # Find
+  "kir": 𒄫
+  "gir": 𒄫
+  "kiš": 𒆧
+  "KIŠ": 𒆧 # world
+  "kid": 𒃰
+  "t9": 𒃰
+  "kal": 𒆗
+  "KAL": 𒆗 # strong
+  "kul": 𒆰
+  "KUL": 𒆰 # offspring
+  "kúl": 𒄢
+  "gul": 𒄢
+  "GUL": 𒄢 # break
+  "kum": 𒄣
+  "gum": 𒄣
+  "kur": 𒆳
+  "KUR": 𒆳 # land
+  "kùr": 𒄥
+  "gur": 𒄥
+  "lal": 𒇲
+  "LAL": 𒇲 # bind
+  "lam": 𒇴
+  "lig": 𒌨
+  "lik": 𒌨
+  "liš": 𒇺
+  "LIŠ": 𒇺 # spoon
+  "luḫ": 𒈛
+  "LUḪ": 𒈛 # minister
+  "lum": 𒈝
+  "maḫ": 𒈤
+  "MAḪ": 𒈤 # great
+  "man": "??" # Find
+  "mar": 𒈥
+  "maš": 𒈦
+  "MAŠ": 𒈦 # half
+  "meš": "𒌍" # check
+  "mil": 𒅖
+  "mel": 𒅖
+  "miš": 𒈩
+  "mur": 𒄯
+  "mut": 𒅜
+  "MUD": 𒅜 # blood
+  "nam": 𒉆
+  "NAM": 𒉆 # district
+  "nab": 𒀮
+  "nap": 𒀮
+  "nir": 𒉪
+  "niš": "??" # Find
+  "pal": 𒁄
+  "bal": 𒁄
+  "pár": 𒈦
+  "bar": 𒈦
+  "paš": "??" # Find
+  "pád": 𒁁
+  "pát": 𒁁
+  "píd": 𒁁
+  "pít": 𒁁
+  "píl": 𒉋
+  "bíl": 𒉋
+  "GIBIL": 𒉋 # new
+  "pir": "??" # Find
+  "piš": 𒄫
+  "biš": 𒄫
+  "pùš": 𒄫
+  "pur": "??" # Find
+  "bur": "??" # Find
+  "rad": 𒋥
+  "rat": 𒋥
+  "riš": 𒊕
+  "šaḫ": 𒋚
+  "ŠUBUR": 𒋚 # pig
+  "šag": 𒊕
+  "šak": 𒊕
+  "SAG": 𒊕 # head
+  "šal": 𒊩
+  "MUNUS": 𒊩 # woman
+  "šam": 𒌑
+  "šàm": "??" # Find
+  "šab": "??" # Find
+  "šap": "??" # Find
+  "šar": 𒊬
+  "SAR": 𒊬 # plant
+  "šìp": "??" # Find
+  "šir": 𒋓
+  "ŠIR": 𒋓 # testicles
+  "šum": 𒋳
+  "šur": 𒋩
+  "taḫ": 𒈭
+  "daḫ": 𒈭
+  "túḫ": 𒈭
+  "tág": 𒁖
+  "ták": 𒁖
+  "dag": 𒁖
+  "dak": 𒁖
+  "tal": 𒊑
+  "dal": 𒊑
+  "tám": 𒁮
+  "dam": 𒁮
+  "DAM": 𒁮 # wife
+  "tan": 𒆗
+  "dan": 𒆗
+  "tab": 𒋰
+  "tap": 𒋰
+  "dáb": 𒋰
+  "dáp": 𒋰
+  "TAB": 𒋰 # 2
+  "tar": 𒋻
+  "táš": 𒁹
+  "dáš": 𒁹
+  "tiš": 𒁹
+  "diš": 𒁹
+  "tàš": 𒀾
+  "tin": 𒁷
+  "tén": 𒁷
+  "tim": 𒁴
+  "dim": 𒁴
+  "dir": 𒊑
+  "DIR": 𒊑 # red
+  "tir": 𒌁
+  "ter": 𒌁
+  "TIR": 𒌁 # forest
+  "tíš": "??" # Find
+  "túl": 𒇥
+  "tum": 𒌈
+  "dum": 𒌈
+  "tub": 𒁾
+  "dub": 𒁾
+  "dup": 𒁾
+  "DUB": 𒁾 # clay tablet
+  "túr": 𒄙
+  "dur": 𒄙
+  "DUR": 𒄙 # strip
+  "zul": 𒂄
+  "zum": 𒍮
+
+# Logograms
+  "DIŠ": 𒁹 # (ᵐ) # male personal names
+  "DIDLI": 𒀸 # (suffixed) # plural or collective
+  "DIDLI ḪI.A": 𒀸𒄭𒀀 # (suffixed) # plural
+  "DINGIR": 𒀭 # (ᴰ) # "deity"
+  "DUG": 𒂁 # "vessel"
+  "É": 𒂍 # "house"
+  "GAD": 𒃰 # "linen, cloth"
+  "GI": 𒄀 # "tube; reed"
+  "GIŠ": 𒄑 # "wood"
+  "GUD": 𒄞 # "bovid"
+  "ḪUR.SAG": 𒄯𒊕 # "mountain"
+  "ÍD": 𒀀𒇉 # "river"
+  "IM": 𒅎 # "clay"
+  "ITU": 𒌚 # "month"
+  "KÁ": 𒆍
+  "KU6": 𒄩 # "fish"
+  "KUR": 𒆳 # "land"
+  "KUŠ": 𒋢 # "hide, fur"
+  "LÚ": 𒇽 # "man"
+  "MEŠ": 𒌍 # (suffixed) # plural
+  "MEŠ ḪI.A": 𒌍𒄭𒀀 # (suffixed) # plural
+  "MUL": 𒀯 # "star"
+  "MUNUS": 𒊩 # (ᶠ) # "woman" # female personal name
+  "MUŠ": 𒈲 # "serpent"
+  "MUŠEN": 𒄷 # (suffixed) # "bird"
+  "NA₄": 𒉌𒌓 # "stone"
+  "NINDA": 𒃻 # "bread"
+  "PÚ": 𒇥 # "source"
+  "SAR": 𒊬 # (suffixed) # "plant"
+  "SI": 𒋛 # "horn"
+  "SÍG": 𒋠 # "wool"
+  "TU7": 𒄰 # "soup"
+  "TÚG": 𒌆 # "garment"
+  "Ú": 𒌑 # "plant"
+  "URU": 𒌷 # "city"
+  "URUDU": 𒍐 # "copper"
+  "UZU": 𒍜 # "meat"
+
+  # Determinatives
+
+  "(DIŠ)": 𒁹 # (ᵐ) # male personal names
+  "(DIDLI)": 𒀸 # (suffixed) # plural or collective
+  "(DIDLI ḪI.A)": 𒀸𒄭𒀀 # (suffixed) # plural
+  "(DINGIR)": 𒀭 # (ᴰ) # "deity"
+  "(DUG)": 𒂁 # "vessel"
+  "(É)": 𒂍 # "house"
+  "(GAD)": 𒃰 # "linen, cloth"
+  "(GI)": 𒄀 # "tube; reed"
+  "(GIŠ)": 𒄑 # "wood"
+  "(GUD)": 𒄞 # "bovid"
+  "(ḪI.A)": 𒄭𒀀 # (suffixed) # plural
+  "(ḪUR.SAG)": 𒄯𒊕 # "mountain"
+  "(ÍD)": 𒀀𒇉 # "river"
+  "(IM)": 𒅎 # "clay"
+  "(ITU)": 𒌚 # "month"
+  "(KAM)": 𒄰 # (suffixed) # numerals
+  "(KI)": 𒆠 # (suffixed) # in 0.6% of toponyms[5]
+  "(KU6)": 𒄩 # "fish"
+  "(KUR)": 𒆳 # "land"
+  "(KUŠ)": 𒋢 # "hide, fur"
+  "(LÚ)": 𒇽 # "man"
+  "(MEŠ)": 𒌍 # (suffixed) # plural
+  "(MEŠ ḪI.A)": 𒌍𒄭𒀀 # (suffixed) # plural
+  "(MUL)": 𒀯 # "star"
+  "(MUNUS)": 𒊩 # (ᶠ) # "woman" # female personal name
+  "(MUŠ)": 𒈲 # "serpent"
+  "(MUŠEN)": 𒄷 # (suffixed) # "bird"
+  "(NA₄)": 𒉌𒌓 # "stone"
+  "(NINDA)": 𒃻 # "bread"
+  "(PÚ)": 𒇥 # "source"
+  "(SAR)": 𒊬 # (suffixed) # "plant"
+  "(SI)": 𒋛 # "horn"
+  "(SÍG)": 𒋠 # "wool"
+  "(TU7)": 𒄰 # "soup"
+  "(TÚG)": 𒌆 # "garment"
+  "(Ú)": 𒌑 # "plant"
+  "(URU)": 𒌷 # "city"
+  "(URUDU)": 𒍐 # "copper"
+  "(UZU)": 𒍜 # "meat"

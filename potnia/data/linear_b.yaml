@@ -1,0 +1,629 @@
+mappings:
+  ############################################################
+  ###### Syllabograms Common to Linear A and Linear B ########
+  ############################################################
+  # LB SOUND VALUES KNOWN
+  a: 𐀀
+  e: 𐀁
+  i: 𐀂
+  o: 𐀃
+  u: 𐀄
+  da: 𐀅
+  de: 𐀆
+  di: 𐀇
+  do: 𐀈
+  du: 𐀉
+  ja: 𐀊
+  je: 𐀋
+  jo: 𐀍
+  ju: 𐀎
+  ka: 𐀏
+  ke: 𐀐
+  ki: 𐀑
+  ko: 𐀒
+  ku: 𐀓
+  ma: 𐀔
+  me: 𐀕
+  mi: 𐀖
+  mo: 𐀗
+  mu: 𐀘
+  na: 𐀙
+  ne: 𐀚
+  ni: 𐀛
+  "no": 𐀜
+  nu: 𐀝
+  nwa: 𐁅
+  pa: 𐀞
+  pe: 𐀟
+  pi: 𐀠
+  po: 𐀡
+  pu: 𐀢
+  pu₂: 𐁆
+  pu2: 𐁆
+  qa: 𐀣
+  qe: 𐀤
+  qi: 𐀥
+  qo: 𐀦
+  ra: 𐀨
+  ra₂: 𐁈
+  ra2: 𐁈
+  re: 𐀩
+  ri: 𐀪
+  ro: 𐀫
+  ru: 𐀬
+  sa: 𐀭
+  se: 𐀮
+  si: 𐀯
+  so: 𐀰
+  su: 𐀱
+  ta: 𐀲
+  ta₂: 𐁋
+  ta2: 𐁋
+  te: 𐀳
+  ti: 𐀴
+  to: 𐀵
+  tu: 𐀶
+  wa: 𐀷
+  we: 𐀸
+  wi: 𐀹
+  wo: 𐀺
+  za: 𐀼
+  ze: 𐀽
+  zo: 𐀿
+
+  # LB SOUND VALUES UNKNOWN
+  "*22": 𐁒
+  "*34": 𐁓
+  "*47": 𐁔
+  "*49": 𐁕
+  "*86": 𐁜
+
+  ############################################################
+  ######      Syllabograms Unique to Linear B         ########
+  ############################################################
+
+  ## Sound values known
+  a₂: 𐁀
+  a2: 𐁀
+  a₃: 𐁁
+  a3: 𐁁
+  au: 𐁂
+  dwe: 𐁃
+  dwo: 𐁄
+  pte: 𐁇
+  ra₃: 𐁉
+  ra3: 𐁉
+  ro₂: 𐁊
+  ro2: 𐁊
+  twe: 𐁌
+  two: 𐁍
+
+  ## Sound values unknown
+  "*18": 𐁐
+  "*19": 𐁑
+  # *35 missing unicode sign?
+  "*63": 𐁗
+  "*83": 𐁛
+  "*89": 𐁝
+
+  # Doubtful sound values
+  "*56": 𐁖 # potential sound value 'pa₃'
+  "*64": 𐁘 # potential sound value 'swi'
+  "*65": 𐀎 # potential sound value 'ju'
+  "*79": 𐁙 # potential sound value 'zu'
+  "*82": 𐁚 # potential sound value 'swa'
+
+  ############################################################
+  #####                  Logograms                     #######
+  ############################################################
+  # PEOPLE AND ANIMALS
+  VIR: 𐂀 # man
+  MUL: 𐂁 # woman
+  CERV: 𐂂 # deer
+  EQU: 𐂃 # horse
+  EQUx: 𐂃 # horse
+  EQU:x: 𐂃 # horse
+  EQUf: 𐂄 # female horse
+  EQU:f: 𐂄 # female horse
+  EQUm: 𐂅 # male horse
+  EQU:m: 𐂅 # male horse
+  OVIS: 𐀥 # sheep
+  OVISx: 𐀥 # sheep
+  OVIS:x: 𐀥 # sheep
+  OVISf: 𐂆 # female sheep
+  OVIS:f: 𐂆 # female sheep
+  OVISm: 𐂇 # male sheep
+  OVIS:m: 𐂇 # male sheep
+  CAP: 𐁒 # goat
+  CAPx: 𐁒 # goat
+  CAP:x: 𐁒 # goat
+  CAPf: 𐂈 # female goat
+  CAP:f: 𐂈 # female goat
+  CAPm: 𐂉 # male goat
+  CAP:m: 𐂉 # male goat
+  SUS: 𐁂 # pig
+  SUSx: 𐁂 # pig
+  SUS:x: 𐁂 # pig
+  SUSf: 𐂊 # female pig
+  SUS:f: 𐂊 # female pig
+  SUSm: 𐂋 # male pig
+  SUS:m: 𐂋 # male pig
+  BOS: 𐀘 # cattle
+  BOSx: 𐀘 # cattle
+  BOS:x: 𐀘 # cattle
+  BOSf: 𐂌 # female cattle
+  BOS:f: 𐂌 # female cattle
+  BOSm: 𐂍 # male cattle
+  BOS:m: 𐂍 # male cattle
+
+  # DRY COMMODITIES
+  GRA: 𐂎 # wheat or barley
+  HORD: 𐂏 # barley
+  OLIV: 𐂐 # olive
+  AROM: 𐂑 # spice
+  CYP: 𐂒 # cyperus
+  PYC: 𐂒 # cyperus
+  KA+PO: 𐂓 # fruit?
+  KA±PO: 𐂓 # fruit?
+  KA+NA+KO: 𐂔 # saffron
+  KA±NA±KO: 𐂔 # saffron
+  CROC: 𐁉 # saffron
+  FAR: 𐀎 # flour
+
+  # LIQUID COMMODITIES
+  OLE: 𐂕 # olive oil
+  VIN: 𐂖 # wine
+  "*132": 𐂗
+  A+RE+PA: 𐂘 # ointment
+  A±RE±PA: 𐂘 # ointment
+  ME+RI: 𐂙 # honey
+  ME±RI: 𐂙 # honey
+  ME<±RI>: 𐂙 # honey
+
+  # METALS
+  AES: 𐂚 # bronze
+  AUR: 𐂛 # gold
+  "*142": 𐂜
+
+  # OTHER MATERIALS AND ITEMS
+  LANA: 𐂝 # wool
+  "*146": 𐂞 # linen garment?
+  "*146;2": 𐂞² # linen garment?
+  "*146+PE": 𐂞+𐀟 # linen garment?
+  "*150": 𐂟
+  CORN: 𐂠 # horn (wild goat)
+  "*152": 𐂡 # oxhinde
+  "*153": 𐂢  # sheepskin
+  "*154": 𐂣 # hide?
+  TU+RO₂: 𐂤 # cheese
+  TU±RO2 : 𐂤 # cheese
+  "*157": 𐂥
+  "*158": 𐂦
+  TELA: 𐂧 # cloth
+  "*160": 𐂨
+  "*161": 𐂩
+  TUN: 𐂪 # breastplate
+  ARM: 𐂫 # armour
+  "*164": 𐂬
+  "*165": 𐂭
+  "*166": 𐂮
+  "*167": 𐂯 # ingot
+  "*168": 𐂰
+  "*169": 𐂱
+  "*170": 𐂲
+  "*171": 𐂳
+  "*172": 𐂴 # honeycomb?
+  LUNA: 𐂵 # month's ration?
+  "*174": 𐂶
+  ARB: 𐂷 # tree
+  "*177": 𐂸
+  "*178": 𐂹
+  "*179": 𐂺
+  "*180": 𐂻 # parchment?
+  "*181": 𐂼
+  "*182": 𐂽
+  "*183": 𐂾
+  "*184": 𐂿
+  "*185": 𐃀
+  "*189": 𐃁
+  "*190": 𐃂
+  GAL: 𐃃 # helmet
+  "*220": 𐃄 # footstool
+  ALV: 𐃅 # bathtub
+  HAS: 𐃆 # spear
+  SAG: 𐃇 # arrow
+  "*232": 𐃈
+  PUG: 𐃉 # dagger
+  "*234": 𐃊
+  GUP: 𐃋 # dagger
+  BIG: 𐃌 # chariot
+  CUR: 𐃍 # chariot
+  CAPS: 𐃎 # chariot frame
+  ROTA: 𐃏 # wheel
+  "*245": 𐃐 # chariot part?
+  "*246": 𐃑 # chariot part?
+  DI+PTE: 𐃒 # parchment?
+  DI±PTE: 𐃒 # parchment?
+  "*248": 𐃓
+  "*249": 𐃔
+  "*251": 𐃕
+  "*252": 𐃖
+  "*253": 𐃗
+  JAC: 𐃘 # javelin or dart
+  "*255": 𐃙
+  "*256": 𐃚 # bow?
+  "*257": 𐃛
+  "*258": 𐃜
+  "*259": 𐃝
+
+  # VESSELS
+  "*155VAS": 𐃞 # basket?
+  "*200VAS": 𐃟
+  "*201VAS": 𐃠 # tripod
+  "*202VAS": 𐃡
+  "*203VAS": 𐃢
+  "*204VAS": 𐃣
+  "*205VAS": 𐃤
+  "*206VAS": 𐃥 # hydria
+  "*207VAS": 𐃦
+  "*208VAS": 𐃧 # patera
+  "*208aVAS": 𐃧 # patera
+  "*208bVAS": 𐃧 # patera
+  "*209VAS": 𐃨 # amphora
+  "*210VAS": 𐃩
+  "*211VAS": 𐃪
+  "*212VAS": 𐃫 
+  "*213VAS": 𐃬 # lanx
+  "*214VAS": 𐃭
+  "*215VAS": 𐃮 # kylix
+  "*216VAS": 𐃯
+  "*217VAS": 𐃰
+  "*218VAS": 𐃱
+  "*219VAS": 𐃲
+  "*221VAS": 𐃳
+  "*222VAS": 𐃴
+  "*226VAS": 𐃵 # washing ware shet
+  "*227VAS": 𐃶 # rhyton
+  "*228VAS": 𐃷 # ligula
+  "*229VAS": 𐃸 # ladle
+  "*250VAS": 𐃹
+  "*305VAS": 𐃺
+
+  # METRIC SYMBOLS
+  Z: 𐄿 # volume measure
+  V: 𐄾 # volume measure
+  T: 𐄼 # dry measure
+  S: 𐄽 # liquid measure
+  Q: 𐄻 # weight measure
+  P: 𐄺 # weight measure
+  N: 𐄹 # weight measure
+  M: 𐄸 # weight measure
+  L: 𐄷 # talent
+
+  # COMPOSITE IDEOGRAMS WITHOUT DESIGNATED UNICODE SIGNS
+  OVIS+TA: 𐀥+𐀲 # stabled sheep
+  SUS+KA: 𐁂+𐀏 # wild boar
+  SUS+SI: 𐁂+𐀯 # fattened pigs
+  BOS+SI: 𐀘+𐀯 # fattened cattle
+  CAP+E: 𐁒+𐀁 # kid (goat)
+  EQU+QE: 𐂃+𐀤 
+  GRA+Q: 𐂎+𐄻
+  GRA+PE: 𐂎+𐀟
+  OLIV+A: 𐂐+𐀀 # wild olive
+  OLIV+TI: 𐂐+𐀴 # domestic olive
+  AROM+CYP: 𐂑+𐂒 # cyperus
+  AROM+PYC: 𐂑+𐂒 # cyperus
+  AROM+KO: 𐂑+𐀒 # coriander
+  CYP+KU: 𐂒+𐀓 # cyperus
+  CYP+O: 𐂒+𐀡 # cyperus (variant)
+  CYP+PA: 𐂒+𐀞 # cyperus (variant)
+  CYP+QA: 𐂒+𐀣 # cyperus (variant)
+  PYC+KU: 𐂒+𐀓 # cyperus
+  PYC+O: 𐂒+𐀡 # cyperus (variant)
+  PYC+PA: 𐂒+𐀞 # cyperus (variant)
+  PYC+QA: 𐂒+𐀣 # cyperus (variant)
+  OLE+A: 𐂕+𐀀 # wild oil?
+  OLE+O: 𐂕+𐀃
+  OLE+PA: 𐂕+𐀞 # sage-scented oil?
+  OLE+RA: 𐂕+𐀨
+  OLE+SI: 𐂕+𐀯
+  OLE+WE: 𐂕+𐀸 # oil suitable for annointing
+  ROTA+TE: 𐃏+𐀳 # wheel with border or flange
+  TUN+KI: 𐂪+𐀑
+  TUN+QE: 𐂪+𐀤 # type of corselet
+  TUN+RI: 𐂪+𐀪
+  TELA+KU: 𐂧+𐀓
+  TELA+PA: 𐂧+𐀞 # pharwos cloth
+  TELA+PU: 𐂧+𐀢
+  TELA+TE: 𐂧+𐀳
+  "*166+WE": 𐂮+𐀸
+  "*167+PE": 𐂯+𐀟
+  "*168+SE": 𐂰+𐀮
+  "*172+KE": 𐂴+𐀐
+  "*172+KE+RO2": 𐂴+𐀐+𐂤
+  "*180+DI": 𐂻+𐀇
+  "*155VAS+DI": 𐃞+𐀇
+  "*155VAS+NI": 𐃞+𐀛
+  "*202VAS+DI": 𐃡+𐀇
+  "*209VAS+A": 𐃨+𐀀 # amphora (plural)
+  "*210VAS+KA": 𐃩+𐀏 # stirrup jar (plural)
+  "*211VAS+PO": 𐃪+𐂓
+  "*212VAS+U": 𐃫+𐀄
+  "*213VAS+U": 𐃬+𐀄
+  "*214VAS+U": 𐃭+𐀄
+  "*214VAS+DI": 𐃭+𐀇
+  "AUR+*213VAS": 𐂛+𐃬
+
+  # SYLLABOGRAMS AS IDEOGRAMS
+  A: 𐀀
+  E: 𐀁 # ginger grass? # kid (goat)?
+  I: 𐀂
+  O: 𐀃
+  U: 𐀄
+  DA: 𐀅 # male steward
+  DE: 𐀆 # bundle (used to measure ginger grass)
+  DI: 𐀇
+  DO: 𐀈
+  DU: 𐀉
+  JA: 𐀊
+  JE: 𐀋
+  JO: 𐀍
+  JU: 𐀎
+  KA: 𐀏
+  KE: 𐀐
+  KI: 𐀑
+  KO: 𐀒 # coriander # piglet?
+  KU: 𐀓 # cumin
+  MA: 𐀔 # fennel
+  ME: 𐀕
+  MI: 𐀖 # mint
+  MO: 𐀗 # single
+  MU: 𐀘
+  NA: 𐀙
+  NE: 𐀚
+  NI: 𐀛 # figs
+  NO: 𐀜
+  NU: 𐀝
+  PA: 𐀞
+  PE: 𐀟
+  PI: 𐀠
+  PO: 𐀡
+  PU: 𐀢
+  QA: 𐀣
+  QE: 𐀤
+  QI: 𐀥
+  QO: 𐀦
+  RA: 𐀨
+  RE: 𐀩
+  RI: 𐀪 # flax
+  RO: 𐀫
+  RU: 𐀬
+  SA: 𐀭 # sesame
+  SE: 𐀮
+  SI: 𐀯
+  SO: 𐀰
+  SU: 𐀱
+  TA: 𐀲 # female steward
+  TE: 𐀳
+  TI: 𐀴
+  TO: 𐀵
+  TU: 𐀶
+  WA: 𐀷
+  WE: 𐀸 # yearling (animal)
+  WI: 𐀹
+  WO: 𐀺
+  ZA: 𐀼
+  ZE: 𐀽 # pair
+  ZO: 𐀿
+  A₂: 𐁀
+  A2: 𐁀
+  A₃: 𐁁
+  A3: 𐁁
+  AU: 𐁂
+  DWE: 𐁃
+  DWO: 𐁄
+  NWA: 𐁅
+  PU₂: 𐁆
+  PU2: 𐁆
+  PTE: 𐁇
+  RA₂: 𐁈
+  RA2: 𐁈
+  RA₃: 𐁉
+  RA3: 𐁉
+  RO₂: 𐁊
+  RO2: 𐁊
+  TA₂: 𐁋
+  TA2: 𐁋
+  TWE: 𐁌
+  TWO: 𐁍
+
+  # TELA CASES
+  TELAx: 𐂧ˣ
+  TELA;x: 𐂧ˣ
+  TELA1: 𐂧¹ 
+  TELA;1: 𐂧¹  
+  TELA2: 𐂧²
+  TELA;2: 𐂧²
+  TELA3: 𐂧³
+  TELA;3: 𐂧³
+  TELA4: 𐂧⁴
+  TELA;4: 𐂧⁴    
+  TELAx+KU: 𐂧ˣ+𐀓
+  TELA;x+KU: 𐂧ˣ+𐀓
+  TELA1+KU: 𐂧¹+𐀓
+  TELA;1+KU: 𐂧¹+𐀓
+  TELA2+KU: 𐂧²+𐀓
+  TELA;2+KU: 𐂧²+𐀓
+  TELA3+KU: 𐂧³+𐀓
+  TELA;3+KU: 𐂧³+𐀓
+  TELA4+KU: 𐂧⁴+𐀓
+  TELA;4+KU: 𐂧⁴+𐀓
+  TELAx+PA: 𐂧ˣ+𐀞
+  TELA;x+PA: 𐂧ˣ+𐀞
+  TELA1+PA: 𐂧¹+𐀞
+  TELA;1+PA: 𐂧¹+𐀞
+  TELA2+PA: 𐂧²+𐀞
+  TELA;2+PA: 𐂧²+𐀞
+  TELA3+PA: 𐂧³+𐀞
+  TELA;3+PA: 𐂧³+𐀞
+  TELA4+PA: 𐂧⁴+𐀞
+  TELA;4+PA: 𐂧⁴+𐀞
+  TELAx+PO: 𐂧ˣ+𐀡
+  TELA;x+PO: 𐂧ˣ+𐀡
+  TELA1+PO: 𐂧¹+𐀡
+  TELA;1+PO: 𐂧¹+𐀡
+  TELA2+PO: 𐂧²+𐀡
+  TELA;2+PO: 𐂧²+𐀡
+  TELA3+PO: 𐂧³+𐀡
+  TELA;3+PO: 𐂧³+𐀡
+  TELA4+PO: 𐂧⁴+𐀡
+  TELA;4+PO: 𐂧⁴+𐀡
+  TELAx+PU: 𐂧ˣ+𐀢
+  TELA;x+PU: 𐂧ˣ+𐀢
+  TELA1+PU: 𐂧¹+𐀢
+  TELA;1+PU: 𐂧¹+𐀢
+  TELA2+PU: 𐂧²+𐀢
+  TELA;2+PU: 𐂧²+𐀢
+  TELA3+PU: 𐂧³+𐀢
+  TELA;3+PU: 𐂧³+𐀢
+  TELA4+PU: 𐂧⁴+𐀢
+  TELA;4+PU: 𐂧⁴+𐀢
+  TELAx+TE: 𐂧ˣ+𐀳
+  TELA;x+TE: 𐂧ˣ+𐀳
+  TELA1+TE: 𐂧¹+𐀳
+  TELA;1+TE: 𐂧¹+𐀳
+  TELA2+TE: 𐂧²+𐀳
+  TELA;2+TE: 𐂧²+𐀳
+  TELA3+TE: 𐂧³+𐀳
+  TELA;3+TE: 𐂧³+𐀳
+  TELA4+TE: 𐂧⁴+𐀳
+  TELA;4+TE: 𐂧⁴+𐀳
+  TELAx+ZO: 𐂧ˣ+𐀿
+  TELA;x+ZO: 𐂧ˣ+𐀿
+  TELA1+ZO: 𐂧¹+𐀿
+  TELA;1+ZO: 𐂧¹+𐀿
+  TELA2+ZO: 𐂧²+𐀿
+  TELA;2+ZO: 𐂧²+𐀿
+  TELA3+ZO: 𐂧³+𐀿
+  TELA;3+ZO: 𐂧³+𐀿
+  TELA4+ZO: 𐂧⁴+𐀿
+  TELA;4+ZO: 𐂧⁴+𐀿
+
+  #EXCEPTION SCENARIOS
+  "TELA;1+": 𐂧¹+
+  "TELA[;1+TE": 𐂧¹%+𐀳
+  "TELA-[;1+TE": 𐂧¹%+𐀳
+  "TELA[;1]+TE": 𐂧¹%+𐀳
+  "TELA-[;1]-+TE": 𐂧¹%+𐀳
+  "TELA[;1": 𐂧¹%
+  "TELA;6+": 𐂧⁶+
+  "TELA;4+": 𐂧⁴+
+  "TELA;2+": 𐂧²+
+  "TELA;+": 𐂧+
+  "TELA;" : 𐂧
+  "*164;1": 𐂬¹
+  "+DI": +𐀇
+  "+WE": +𐀸
+  "+TE": +𐀳
+  "+TA": +𐀲
+  "OVIS[:m": 𐂇
+  "OVIS]:m": 𐂇
+  "OVIS]-:m": 𐂇
+  "OVIS[:f": 𐂆
+  "OVIS]:f": 𐂆
+  "OVIS:": 𐀥
+  "ME<±RI>": 𐂙
+
+
+patterns_to_ignore:
+  - "vacat\\s*\\.?"
+  - "lat\\s*\\."
+  - "inf\\s*\\."
+  - "i\\s*\\."
+  - "mut\\s*\\."
+  - "sup\\s*\\."
+  - "vac\\s*\\."
+  - "v\\s*\\."
+  - "vestigia"
+  - "l\\s*\\."
+  - "s\\s*\\."
+  - "Graffito"
+  - "[\\/\\,\\'\\?]"
+  - "⟦.*?⟧"
+  - "deest"
+  - "[⸤⸥]"
+  - "[\\u231e\\u231f]"  # Ignore characters ⌞ and ⌟
+
+
+regularization:
+  - ['\\|', '']
+  - [':', '']
+  - ['r\\.', '']
+  - ['\\[•~\\]', '']
+  - ['⌜', '']
+  - ['⌝', '']
+  - ['mutila', '']
+  - ['\\[?•~•~•~•\\]?', '%%%%']
+  - ['\\[?•~•~•\\]?', '%%%']
+  - ['\\[?•~•~\\]?', '%%']
+  - ['\\[?•~•\\]?', '%%']  # Corrected this line
+  - ['\\<|\\>', '']
+  - ['\\[ \\]', '[ ]']
+  - ['ro2', '𐁊']
+  - ['vestigia', '%']
+  - ['\\bqs\\b', '%']
+  - ['vest\\s*\\.', '%']
+  - ['\\[•\\]', '%']
+  - ['supra sigillum|CMS \\w+\\d+[A-Z]* \\d+', '']
+  - ['reliqua pars sine regulis', '']
+  - ['[αβγ]', '']
+  - ['v\\.→', '']
+  - ['v\\.↓', '']
+  - ['v\\.', '']
+  - ['\\b(vacat|sup. mut.|inf. mut.|deest|X|fragmentum A|fragmentum B|graffito|angustum|prior pars sine regulis|fragmentum C|fragmentum D|fragmentum separatum|α|β|γ|δ|sigillum|)\\b', '']  # Corrected this line
+  - ['\\b(x|m|f)\\b', '']
+  - ['[\\[\\]]', '%']
+  - ['=[^ ]*', '']
+  - ['•', '%']
+  - ['●', '']
+  - ['dex.', '']
+  - ['sin.', '']
+
+tokenization:
+  - ['\u00a0', ' ']  # Replace non-breaking space with regular space
+  - ['\u0323', '']   # Remove specific character (e.g., dot below)
+  - ['</em>', '']    # Remove HTML closing emphasis tag
+  - ['<em>', '']     # Remove HTML opening emphasis tag
+  - ['\|([^|]+)\|', '|\1|']  # Special handling to ensure pipes are treated as separate tokens
+  - ['ME<±RI>', 'ME±RI']  # Handle specific compound tokens like 'ME<±RI>'
+  - ['--', '-']  # Normalize the text by replacing double dashes with a single dash
+  - ['\b(EQU|SUS|OVIS|BOS|CAP)\s+(x|m|f)\b', '\1\2']  # Combine animal ideograms followed by 'x', 'm', or 'f' without space
+  - ['⌜', ' ⌜ ']  # Explicit tokenization for half brackets
+  - ['⌝', ' ⌝ ']
+  - ['mutila', ' mutila ']  # Handle 'mutila'
+  - ['fragmentum A', 'fragmentum_A']  # Preprocess 'fragmentum A' and 'fragmentum B' to ensure they are not split
+  - ['fragmentum B', 'fragmentum_B']
+  - ['\b(BOS|SUS|OVIS|CAP|EQU)\s([mf])\b', '\1\2']  # Combine terms with 'm' or 'f'
+  - ['\](?=[^\s])', ']-']  # Pre-process ']' and '[' for special handling
+  - ['(?<=[^\s])\[', '-[']
+  - ['TELA\s+(?=[1234x]\b)', 'TELA']  # Handle specific cases
+  - ['TELA\s+(\d+)', 'TELA \1']  # Handle other numbers with space
+  - ['\* (\d+)', '*\1']  # Combine '*' with the following numeral
+  - ['\+ ([^\s]+)', '+\1']  # Combine '+' with surrounding ideograms
+  - ['([^\s]) \+', '\1+']  # Ensure '+' is properly attached
+  - ['([^\s]+) VAS', '\1VAS']  # Attach 'VAS' properly
+  - ['\b(vac|vest|l|s|lat|inf|mut|sup|i)\s?\.', '\1.']  # Ignore or modify specific patterns
+  - ['\b(supra sigillum|reliqua pars sine regulis|vacat)\b', '\1']  # Explicit tokenization
+
+complex_symbols:
+  'TELA-[;1+TE': 'PLACEHOLDER_TELA1'
+  'TELA;1+TE': 'PLACEHOLDER_TELA2'
+  'TELA-[;1]-+TE': 'PLACEHOLDER_TELA3'
+  'OVIS]-:m': 'PLACEHOLDER_OVIS'
+
+special_chars_pattern: "(\\[|\\]|\\,|\\'|\\u27e6|\\u27e7|-|\\?|<|>|⌞|⌟|⸤|⸥|\\||\ue000)"
+
+restore_patterns:
+  - ['fragmentum_A', 'fragmentum A']
+  - ['fragmentum_B', 'fragmentum B']
+  - ['ME±RI', 'ME<±RI>']

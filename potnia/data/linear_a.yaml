@@ -1,0 +1,581 @@
+mappings:
+  ############################################################
+  ###### Syllabograms Common to Linear A and Linear B ########
+  ############################################################
+  a: 𐀀
+  e: 𐀁
+  i: 𐀂
+  o: 𐀃
+  u: 𐀄
+  da: 𐀅
+  de: 𐀆
+  di: 𐀇
+  do: 𐀈
+  du: 𐀉
+  ja: 𐀊
+  je: 𐀋
+  jo: 𐀍
+  ju: 𐀎
+  ka: 𐀏
+  ke: 𐀐
+  ki: 𐀑
+  ko: 𐀒
+  ku: 𐀓
+  ma: 𐀔
+  me: 𐀕
+  mi: 𐀖
+  mo: 𐀗
+  mu: 𐀘
+  na: 𐀙
+  ne: 𐀚
+  ni: 𐀛
+  "no": 𐀜
+  nu: 𐀝
+  nwa: 𐁅
+  pa: 𐀞
+  pe: 𐀟
+  pi: 𐀠
+  po: 𐀡
+  pu: 𐀢
+  pu₂: 𐁆
+  pu2: 𐁆
+  qa: 𐀣
+  qe: 𐀤
+  qi: 𐀥 #𐘏?
+  qif: 𐘐
+  qo: 𐀦
+  ra: 𐀨
+  ra₂: 𐁈
+  ra2: 𐁈
+  re: 𐀩
+  ri: 𐀪
+  ro: 𐀫
+  ru: 𐀬
+  sa: 𐀭
+  se: 𐀮
+  si: 𐀯
+  so: 𐀰
+  su: 𐀱
+  ta: 𐀲
+  ta₂: 𐁋
+  ta2: 𐁋
+  te: 𐀳
+  ti: 𐀴
+  to: 𐀵
+  tu: 𐀶
+  wa: 𐀷
+  we: 𐀸
+  wi: 𐀹
+  wo: 𐀺
+  za: 𐀼
+  ze: 𐀽
+  zo: 𐀿
+
+  "*22": 𐁒
+  "*22f": 𐘓
+  "*34": 𐁓
+  "*47": 𐁔
+  "*49": 𐁕
+  "*56": 𐘰
+  "*72": "?" #FIND # 𐘽 ?
+  "*79": 𐙀
+  "*82": 𐙃
+  "*86": 𐁜
+  "*118": 𐙈
+
+  ############################################################
+  ######      Syllabograms Unique to Linear A         ########
+  ############################################################
+  "*100": 𐙇
+  "*123": 𐙌
+  "*131a": 𐙍
+  "*131b": 𐙎
+  "*164a": 𐙐
+  "*180": 𐙒
+  "*188": 𐙓
+  A301: 𐙕
+  A305: 𐙙
+  A309a: 𐙝
+  A309b: 𐙞
+  A309c: 𐙟
+  A310: 𐙠
+  A312: 𐙢
+  A314: 𐙦
+  A320: 𐙬
+  A321: 𐙭
+  A322: 𐙮
+  A323: 𐙯
+  A324: 𐙰
+  A325: 𐙱
+  A327: 𐙳
+  A328: 𐙴
+  A329: 𐙵
+  A331: 𐙷
+  A333: 𐙹
+  A340: 𐚀
+  A342: 𐚂
+  A345: 𐚅
+  A349: 𐚉
+  A350: 𐚊
+  A352: 𐚌
+  A353: 𐚍
+  A354: 𐚎
+  A355: 𐚏
+  A356: 𐚐
+  A357: 𐚑
+  A358: 𐚒
+  A359: 𐚓
+  A360: 𐚔
+  A361: 𐚕
+  A362: 𐚖
+  A363: 𐚗
+  A364: 𐚘
+
+  ############################################################
+  ##### Logograms Common Between Linear A and Linear B #######
+  ############################################################
+
+  # LOGOGRAMS attested in Linear A and Linear B (SigLA codes)
+  AB01: 𐘀
+  AB02: 𐘁
+  AB03: 𐘂
+  AB04: 𐘃
+  AB05: 𐘄
+  AB06: 𐘅
+  AB07: 𐘆
+  AB08: 𐘇
+  AB09: 𐘈
+  AB10: 𐘉
+  AB11: 𐘊
+  AB13: 𐘋
+  AB16: 𐘌
+  AB17: 𐘍
+  AB20: 𐘎
+  "AB21/OVIS": 𐘏 #OVIS
+  "AB21/OVISf": 𐘐 #OVIS
+  "AB21/OVISm": 𐘑 #OVIS
+  "AB22/CAP": 𐘒 #CAP
+  "AB22/CAPf": 𐘓 #CAP
+  "AB22/CAPm": 𐘔 #CAP
+  "AB23/BOS": 𐘕 #BOS
+  "AB23/BOSm": 𐘖 #BOS
+  AB24: 𐘗
+  AB26: 𐘘
+  AB27: 𐘙
+  AB28: 𐘚
+  AB28B: 𐘛
+  AB29: 𐘜
+  "AB30/FIC": 𐘝 #FIC
+  AB31: 𐘞
+  AB34: 𐘟
+  AB37: 𐘠
+  AB38: 𐘡
+  AB39: 𐘢
+  AB40: 𐘣
+  AB41: 𐘤
+  AB44: 𐘥
+  AB45: 𐘦
+  AB46: 𐘧
+  AB47: 𐘨
+  AB48: 𐘩
+  AB49: 𐘪
+  AB50: 𐘫
+  AB51: 𐘬
+  AB53: 𐘭
+  "AB54/TELA": 𐘮 #TELA
+  AB55: 𐘯
+  AB56: 𐘰
+  AB57: 𐘱
+  AB58: 𐘲
+  AB59: 𐘳
+  AB60: 𐘴
+  AB61: 𐘵
+  AB65: 𐘶
+  AB66: 𐘷
+  AB67: 𐘸
+  AB69: 𐘹
+  AB70: 𐘺
+  AB73: 𐘻
+  AB74: 𐘼
+  AB76: 𐘽
+  AB77: 𐘾
+  AB78: 𐘿
+  AB79: 𐙀
+  AB80: 𐙁
+  AB81: 𐙂
+  AB82: 𐙃
+  "AB85/SUS": 𐙄
+  AB86: 𐙅
+  AB87: 𐙆
+  AB100/VIR: 𐙇
+  AB118: 𐙈
+  "AB120:/GRA": 𐙉
+  "AB120/GRAb": 𐙊
+  "AB122/OLIV": 𐙋
+  AB123: 𐙌 #AROM
+  AB131/VINa: 𐙍
+  AB131/VINb: 𐙎
+  AB131/VINc: 𐙏
+  AB164a: 𐙐
+  AB164b: 𐙐
+  AB164c: 𐙐
+  AB164d: 𐙐
+  AB171: 𐙑
+  AB180: 𐙒
+  AB188: 𐙓
+  AB191: 𐙔
+  AB302/OLE: 𐙖
+
+  # LOGOGRAMS only attested in Linear A
+  A302: 𐙖
+  A303: 𐙗
+  A304: 𐙘
+  A306: 𐙚
+  A308: 𐙜
+  A315: 𐙧
+  A316: 𐙨
+  A317: 𐙩
+  A332: 𐙸
+  A334: 𐙺
+  A335: 𐙻
+  A336: 𐙼
+  A338: 𐙾
+  A339: 𐙿
+  A343: 𐚃
+  A344: 𐚄
+  A347: 𐚇
+  A365: 𐚙
+  A366: 𐚚
+  A367: 𐚛
+  A368: 𐚜
+  A369: 𐚝
+  A370: 𐚞
+  A371: 𐚟
+  ## Vases
+  A400VAS: 𐚠
+  A401VAS: 𐚡
+  A402VAS: 𐚢
+  A403VAS: 𐚣
+  A404VAS: 𐚤
+  A405VAS: 𐚥
+  A406VAS: 𐚦
+  A407VAS: 𐚧
+  A408VAS: 𐚨
+  A409VAS: 𐚩
+  A410VAS: 𐚪
+  A411VAS: 𐚫
+  A411VASa: 𐚫
+  A411VASb: 𐚫
+  A411VASc: 𐚫
+  A412VAS: 𐚬
+  A413VAS: 𐚭
+  A414VAS: 𐚮
+  A415VAS: 𐚯
+  A416VAS: 𐚰
+  A417VAS: 𐚱
+  A418VAS: 𐚲
+
+  # TRANSACTIONAL SIGNS
+  A307: 𐙛
+  A318: 𐙪
+  A319: 𐙫
+  A326: 𐙲
+  A346: 𐚆
+
+  # FRACTIONS
+  A701: 𐝀
+  # A: 𐝀
+  A702: 𐝁
+  # B: 𐝁
+  A703: 𐝂
+  # D: 𐝂
+  A704: 𐝃
+  # E: 𐝃
+  A705: 𐝄
+  # F: 𐝄
+  A706: 𐝅
+  # H: 𐝅
+  A707: 𐝆
+  # J: 𐝆
+  A708: 𐝇
+  # K: 𐝇
+  A709: 𐝈
+  # L: 𐝈
+  A7092: 𐝉
+  # L2: 𐝉
+  A7093: 𐝊
+  # L3: 𐝊
+  A7094: 𐝋
+  # L4: 𐝋
+  A7096: 𐝌
+  # L6: 𐝌
+  A710: 𐝍
+  # W: 𐝍
+  A711: 𐝎
+  # X: 𐝎
+  A712: 𐝏
+  # Y: 𐝏
+  A713: 𐝐
+  OMEGA: 𐝐 # CHECK
+  A714: 𐝑
+  # ABB: 𐝑
+  A715: 𐝒
+  # BB: 𐝒
+  A717: 𐝓
+  # DD: 𐝓
+  A726: 𐝔
+  # EYYY: 𐝔
+  A732: 𐝕
+  #bJE: 𐝕
+
+  # LIGATURES
+  A311: 𐙡
+  A313a: 𐙣
+  A313b: 𐙤
+  A313c: 𐙥
+  A330: 𐙶
+  A337: 𐙽
+  A341: 𐚁
+  A348: 𐚈
+  A351: 𐚋
+
+  # COMPOUND SIGNS
+  A501: 𐚳
+  A502: 𐚴
+  A503: 𐚵
+  A504: 𐚶
+  A505: 𐚷
+  A506: 𐚸
+  A508: 𐚹
+  A509: 𐚺
+  A510: 𐚻
+  A511: 𐚼
+  A512: 𐚽
+  A513: 𐚾
+  A515: 𐚿
+  A516: 𐛀
+  A520: 𐛁
+  A521: 𐛂
+  A523: 𐛃
+  A524: 𐛄
+  A525: 𐛅
+  A526: 𐛆
+  A527: 𐛇
+  A528: 𐛈
+  A529: 𐛉
+  A530: 𐛊
+  A531: 𐛋
+  A532: 𐛌
+  A534: 𐛍
+  A535: 𐛎
+  A536: 𐛏
+  A537: 𐛐
+  A538: 𐛑
+  A539: 𐛒
+  A540: 𐛓
+  A541: 𐛔
+  A542: 𐛕
+  A545: 𐛖
+  A547: 𐛗
+  A548: 𐛘
+  A549: 𐛙
+  A550: 𐛚
+  A551: 𐛛
+  A552: 𐛜
+  A553: 𐛝
+  A554: 𐛞
+  A555: 𐛟
+  A556: 𐛠
+  A557: 𐛡
+  A559: 𐛢
+  A563: 𐛣
+  A564: 𐛤
+  A565: 𐛥
+  A566: 𐛦
+  A568: 𐛧
+  A569: 𐛨
+  A570: 𐛩
+  A571: 𐛪
+  A572: 𐛫
+  A573: 𐛬
+  A574: 𐛭
+  A575: 𐛮
+  A576: 𐛯
+  A577: 𐛰
+  A578: 𐛱
+  A579: 𐛲
+  A580: 𐛳
+  A581: 𐛴
+  A582: 𐛵
+  A583: 𐛶
+  A584: 𐛷
+  A585: 𐛸
+  A586: 𐛹
+  A587: 𐛺
+  A588: 𐛻
+  A589: 𐛼
+  A591: 𐛽
+  A592: 𐛾
+  A594: 𐛿
+  A595: 𐜀
+  A596: 𐜁
+  A598: 𐜂
+  A600: 𐜃
+  A601: 𐜄
+  A602: 𐜅
+  A603: 𐜆
+  A604: 𐜇
+  A606: 𐜈
+  A608: 𐜉
+  A609: 𐜊
+  A610: 𐜋
+  A611: 𐜌
+  A612: 𐜍
+  A613: 𐜎
+  A614: 𐜏
+  A615: 𐜐
+  A616: 𐜑
+  A617: 𐜒
+  A618: 𐜓
+  A619: 𐜔
+  A620: 𐜕
+  A621: 𐜖
+  A622: 𐜗
+  A623: 𐜘
+  A624: 𐜙
+  A626: 𐜚
+  A627: 𐜛
+  A628: 𐜜
+  A629: 𐜝
+  A634: 𐜞
+  A637: 𐜟
+  A638: 𐜠
+  A640: 𐜡
+  A642: 𐜢
+  A643: 𐜣
+  A644: 𐜤
+  A645: 𐜥
+  A646: 𐜦
+  ## Vases
+  A648VAS: 𐜧
+  A649VAS: 𐜨
+  A651VAS: 𐜩
+  A652VAS: 𐜪
+  A653VAS: 𐜫
+  A654VAS: 𐜬
+  A655VAS: 𐜭
+  A656VAS: 𐜮
+  A657VAS: 𐜯
+  A658VAS: 𐜰
+  A659VAS: 𐜱
+  A660VAS: 𐜲
+  A661VAS: 𐜳
+  A662VAS: 𐜴
+  A663VAS: 𐜵
+  A664VAS: 𐜶
+
+  # ADDITIONAL SIGNS
+  A800: 𐝠
+  A801: 𐝡
+  A802: 𐝢
+  A803: 𐝣
+  A804: 𐝤
+  A805: 𐝥
+  A806: 𐝦
+  A807: 𐝧
+
+patterns_to_ignore:
+  - "vacat\\s*\\.?"
+  - "lat\\s*\\."
+  - "inf\\s*\\."
+  - "i\\s*\\."
+  - "mut\\s*\\."
+  - "sup\\s*\\."
+  - "vac\\s*\\."
+  - "v\\s*\\."
+  - "vestigia"
+  - "l\\s*\\."
+  - "s\\s*\\."
+  - "Graffito"
+  - "[\\/\\,\\'\\?]"
+  - "⟦.*?⟧"
+  - "deest"
+  - "[⸤⸥]"
+  - "[\\u231e\\u231f]"  # Ignore characters ⌞ and ⌟
+
+
+regularization:
+  - ['\\[\\?\\]', '%']
+  - ['\\[unclassified\\]', '%']  # Maps `[unclassified]` to `%`
+  - ['[?]','%']
+  - ['\\|', '']
+  - [':', '']
+  - ['r\\.', '']
+  - ['\\[•~\\]', '']
+  - ['⌜', '']
+  - ['⌝', '']
+  - ['mutila', '']
+  - ['\\[?•~•~•~•\\]?', '%%%%']
+  - ['\\[?•~•~•\\]?', '%%%']
+  - ['\\[?•~•~\\]?', '%%']
+  - ['\\[?•~•\\]?', '%%']  # Corrected this line
+  - ['\\<|\\>', '']
+  - ['\\[ \\]', '[ ]']
+  - ['ro2', '𐁊']
+  - ['vestigia', '%']
+  - ['\\bqs\\b', '%']
+  - ['vest\\s*\\.', '%']
+  - ['\\[•\\]', '%']
+  - ['supra sigillum|CMS \\w+\\d+[A-Z]* \\d+', '']
+  - ['reliqua pars sine regulis', '']
+  - ['[αβγ]', '']
+  - ['v\\.→', '']
+  - ['v\\.↓', '']
+  - ['v\\.', '']
+  - ['\\b(vacat|sup. mut.|inf. mut.|deest|X|fragmentum A|fragmentum B|graffito|angustum|prior pars sine regulis|fragmentum C|fragmentum D|fragmentum separatum|α|β|γ|δ|sigillum|)\\b', '']  # Corrected this line
+  - ['\\b(x|m|f)\\b', '']
+  - ['[\\[\\]]', '%']
+  - ['=[^ ]*', '']
+  - ['•', '%']
+  - ['●', '']
+  - ['dex.', '']
+  - ['sin.', '']
+
+tokenization:
+  - ['\u00a0', ' ']  # Replace non-breaking space with regular space
+  - ['\u0323', '']   # Remove specific character (e.g., dot below)
+  - ['</em>', '']    # Remove HTML closing emphasis tag
+  - ['<em>', '']     # Remove HTML opening emphasis tag
+  - ['\|([^|]+)\|', '|\1|']  # Special handling to ensure pipes are treated as separate tokens
+  - ['ME<±RI>', 'ME±RI']  # Handle specific compound tokens like 'ME<±RI>'
+  - ['--', '-']  # Normalize the text by replacing double dashes with a single dash
+  - ['\b(EQU|SUS|OVIS|BOS|CAP)\s+(x|m|f)\b', '\1\2']  # Combine animal ideograms followed by 'x', 'm', or 'f' without space
+  - ['⌜', ' ⌜ ']  # Explicit tokenization for half brackets
+  - ['⌝', ' ⌝ ']
+  - ['mutila', ' mutila ']  # Handle 'mutila'
+  - ['fragmentum A', 'fragmentum_A']  # Preprocess 'fragmentum A' and 'fragmentum B' to ensure they are not split
+  - ['fragmentum B', 'fragmentum_B']
+  - ['\b(BOS|SUS|OVIS|CAP|EQU)\s([mf])\b', '\1\2']  # Combine terms with 'm' or 'f'
+  - ['\](?=[^\s])', ']-']  # Pre-process ']' and '[' for special handling
+  - ['(?<=[^\s])\[', '-[']
+  - ['TELA\s+(?=[1234x]\b)', 'TELA']  # Handle specific cases
+  - ['TELA\s+(\d+)', 'TELA \1']  # Handle other numbers with space
+  - ['\* (\d+)', '*\1']  # Combine '*' with the following numeral
+  - ['\+ ([^\s]+)', '+\1']  # Combine '+' with surrounding ideograms
+  - ['([^\s]) \+', '\1+']  # Ensure '+' is properly attached
+  - ['([^\s]+) VAS', '\1VAS']  # Attach 'VAS' properly
+  - ['\b(vac|vest|l|s|lat|inf|mut|sup|i)\s?\.', '\1.']  # Ignore or modify specific patterns
+  - ['\b(supra sigillum|reliqua pars sine regulis|vacat)\b', '\1']  # Explicit tokenization
+
+complex_symbols:
+  'TELA-[;1+TE': 'PLACEHOLDER_TELA1'
+  'TELA;1+TE': 'PLACEHOLDER_TELA2'
+  'TELA-[;1]-+TE': 'PLACEHOLDER_TELA3'
+  'OVIS]-:m': 'PLACEHOLDER_OVIS'
+
+special_chars_pattern: "(\\[|\\]|\\,|\\'|\\u27e6|\\u27e7|-|\\?|<|>|⌞|⌟|⸤|⸥|\\||\ue000)"
+
+restore_patterns:
+  - ['fragmentum_A', 'fragmentum A']
+  - ['fragmentum_B', 'fragmentum B']
+  - ['ME±RI', 'ME<±RI>']  

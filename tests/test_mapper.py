@@ -1,8 +1,3 @@
-from potnia.mapper import Mapper
+from potnia.script import Script
 
-
-def test_tokenize_transliteration():
-    mapper = Mapper()
-    text = "a-ke-re-si-ja"
-    assert mapper.tokenize_transliteration(text) == ['a', 'ke', 're', 'si', 'ja']
 

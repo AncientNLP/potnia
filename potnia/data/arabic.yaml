@@ -1,0 +1,39 @@
+mappings:
+  b : ب
+  t : ت
+  ṯ : ث
+  g : ج
+  j : ج
+  ǧ : ج
+  ḥ : ح
+  ḫ : خ
+  d : د
+  ḏ : ذ
+  r : ر
+  z : ز
+  s : س
+  š : ش
+  ṣ : ص
+  ḍ : ض
+  ṭ : ط
+  ẓ : ظ
+  ʿ : ع
+  ġ : غ
+  f : ف
+  q : ق
+  k : ك
+  l : ل
+  m : م
+  n : ن
+  h : ه
+  w : و
+  y : ي
+  ỳ : ى
+  ā : ا
+  ī : ي
+  ū : و
+  ʾ : ء
+
+  a: َ  # Fatha (short 'a' sound)
+  i: ِ  # Kasra (short 'i' sound)
+  u: ُ  # Damma (short 'u' sound)

@@ -30,7 +30,13 @@ Potnia
 
 Potnia is an open-source Python library designed to convert Romanized transliterations of ancient texts into Unicode representations of ther respective native scripts.
 
-Currently the conversion of transliterated Linear B texts into a Unicode representation of the script is fully supported, with functionality for Linear A, Sumero-Akkadian cuneiform, Hittite cuneiform, Luwian hieroglyphs and Etruscan in development.
+Currently, the scripts supported by Potnia are:
+- Linear A
+- Linear B
+- Hittite cuneiform
+- Arabic
+
+Functionality for Luwian hieroglyphs, Sumero-Akkadian cuneiform and Etruscan is in development.
 
 Contributions are welcome! Please see the `CONTRIBUTING.rst <CONTRIBUTING.rst>`_ file for more information.
 
@@ -61,8 +67,8 @@ To convert transliterated Linear B to Linear B Unicode, use the following code:
 
 .. code-block:: python
 
-    >>> from potnia import linear_b_mapper
-    >>> linear_b_mapper("a-ri-to-jo")
+    >>> from potnia import linear_b
+    >>> linear_b("a-ri-to-jo")
     '𐀀𐀪𐀵𐀍'
 
 
@@ -70,7 +76,7 @@ If you wish to regularize the text to remove additional annotations present in t
 
 .. code-block:: python
 
-    >>> linear_b_mapper("e-ke-qe ]-o-na-to , ke-ke-me-na⌞ ⌟ko-to-na GRA qs ] vac.", regularize=True)
+    >>> linear_b("e-ke-qe ]-o-na-to , ke-ke-me-na⌞ ⌟ko-to-na GRA qs ] vac.", regularize=True)
     '𐀁𐀐𐀤 %𐀃𐀙𐀵 𐀐𐀐𐀕𐀙 𐀒𐀵𐀙 𐂎 %'
 
 Note that uncertain/missing signs or sections of text are presently being replaced with a wildcard '%' character.
@@ -79,67 +85,45 @@ To tokenize transliterated Linear B texts without converting it to Unicode, use 
 
 .. code-block:: python
 
-    >>> linear_b_mapper.tokenize_transliteration("]wa VIR 1 MUL 2 'ko-wa 1' ko-wo 1")
+    >>> linear_b.tokenize_transliteration("]wa VIR 1 MUL 2 'ko-wa 1' ko-wo 1")
     [']', 'wa', ' ', 'VIR', ' ', '1', ' ', 'MUL', ' ', '2', ' ', "'", 'ko', 'wa', ' ', '1', "'", ' ', 'ko', 'wo', ' ', '1']
 
-## Adding New Scripts to Potnia
+Command Line Interface (CLI)
+============================
 
-Potnia allows for the easy integration of new ancient scripts by using a single YAML file per language. This file will contain the mappings for syllabograms, logograms (if applicable), transliteration rules, and regularization patterns. Below are the steps for adding a new script, along with examples.
+Potnia also provides a command line interface (CLI).
 
-### Steps to Add a New Language
+To convert transliterated Linear B to Unicode, use the following command:
 
-1. **Create a Single YAML Mapping and Rules File**: Define the mappings for syllabograms, logograms (if applicable), and the rules for transliteration and regularization. Here's an example for Linear B:
+.. code-block:: bash
 
-   .. code-block:: yaml
+    potnia linear-b "a-ri-to-jo"
 
-      mappings:
-        syllabograms:
-            a: 𐀀
-            e: 𐀁
-            i: 𐀂
-        logograms:
-            VIR: 𐂀  # man
-            MUL: 𐂁  # woman
-        transliteration:
-            - ['ro2', '𐁊']
-        regularization:
-            - ['\\[•~\\]', '']  # Remove uncertain readings
-            - ['\\bqs\\b', '%']  # Handle missing elements
+To regularize the text, use the following command:
 
-2. **Add the New Mapper Class**: Create a `Mapper` class that points to the new YAML file. For example:
+.. code-block:: bash
 
-   .. code-block:: python
+    potnia linear-b "e-ke-qe ]-o-na-to , ke-ke-me-na⌞ ⌟ko-to-na GRA qs ] vac." --regularize
 
-      from dataclasses import dataclass
-      from .mapper import Mapper
+To see the full set of commands available in the CLI, use the following command:
 
-      @dataclass
-      class NewScriptMapper(Mapper):
-          config: str = "new_script"  # Refers to the YAML file name
+.. code-block:: bash
 
-      new_script_mapper = NewScriptMapper()
+    potnia --help
 
-3. **Write Test Cases**: Add test cases to ensure that the new language’s transliteration and Unicode mapping work as expected. Example:
+Graphical User Interface (GUI)
+==============================
 
-   .. code-block:: yaml
+.. image:: https://raw.githubusercontent.com/AncientNLP/potnia/main/docs/_static/img/potnia-gui.png
 
-      test_newscript.yaml:
-      "a-e-i": "𐀀𐀁𐀂"
-      "VIR MUL": "𐂀𐂁"
+Potnia also provides a graphical user interface (GUI). To start it, run:
 
-4. **Usage Example**: Once the new language is added, it can be used as follows:
+.. code-block:: bash
 
-   .. code-block:: python
+    potnia gui
 
-      from potnia import new_script_mapper
+This will show a link in the terminal that you can click on to open the GUI in your browser.
 
-      # Convert transliterated text to Unicode
-      new_script_mapper("a-e-i")
-
-      # Regularize text
-      new_script_mapper("a-[•~]", regularize=True)
-
-This approach centralizes all configuration for a given script into a single YAML file, simplifying the process of adding new languages while maintaining Potnia's flexible and modular design.
     
 .. end-quickstart
 

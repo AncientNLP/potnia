@@ -1,9 +1,10 @@
-from .mapper import Mapper
+from dataclasses import dataclass
+from ..script import Script
 
-class LinearAMapper(Mapper):
-    syllabograms = ("syllabograms_common", "syllabograms_unique_linear_a")
-    logograms = ("logograms_common", "logograms_unique_linear_a")
 
+@dataclass
+class Hittite(Script):
+    config:str = "hittite"
 
     def tokenize_transliteration(self, input_string:str) -> list[str]:
         tokens = []
@@ -13,15 +14,6 @@ class LinearAMapper(Mapper):
         while i < len(input_string):
             char = input_string[i]
 
-            # Check for special sequences like "[?]"
-            if char == '[' and i + 1 < len(input_string) and input_string[i + 1] == '?':
-                if token:
-                    tokens.append(token)
-                tokens.append("[?]")
-                token = ""
-                i += 3  # Skip past "[?]"
-                continue
-
             # Handle characters ']', '[', and ' '
             if char in '[] ':
                 if token:
@@ -29,7 +21,7 @@ class LinearAMapper(Mapper):
                     token = ""
                 tokens.append(char)
             # Handle other characters
-            elif char == '-':
+            elif char in ['-','‑']:
                 if token:
                     tokens.append(token)
                     token = ""
@@ -44,4 +36,6 @@ class LinearAMapper(Mapper):
         return tokens
 
 
-linear_a_mapper = LinearAMapper()
+
+
+hittite = Hittite()

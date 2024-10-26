@@ -1,0 +1,463 @@
+# WORK IN PROGRESS
+
+mappings:
+  a: 𔗷
+  á: 𔐓
+  aₓ : 𔗨 # uncertain sound value
+  i:  𔓯
+  í: 𔕐
+  u: 𔑻
+
+  ha: 𔓷
+  ha: 𔔁 # uncertain sound value
+  há: 𔓟
+  haₓ: 𔕡
+  hi: 𔗒
+  hí: 𔕘
+  hu: 𔕙
+  hú: 𔖈
+
+  hwa: 𔘰
+  hwi: 𔘰
+  hwiₓ: 𔓎
+
+  ka: 𔗧
+  ká: 𔐾
+  ki: 𔗳
+  ki₄: 𔔓
+  kiₓ: 𔔓
+  ku: 𔗜
+  kwa: 𔕰
+  kwi: 𔕰
+
+  la: 𔓊
+  la: 𔗲 # issue with duplicate; to verify
+  laₓ: 𔗽
+  li: 𔔹
+  li: 𔗲 # issue with duplicate; to verify
+  lí: 𔒖
+  lì: 𔕇
+  lu: 𔗲
+
+  ma: 𔒅
+  má: 𔖘
+  mà: 𔕖
+  maₓ: 𔕖, 𔘅 # split into two
+  mi: 𔖻
+  mí: 𔗘
+  mì: 𔖷
+  mu: 𔑿, 𔖛, 𔑾, 𔒀 # split into multiple? unclear
+
+  na: 𔐤
+  ná: 𔕵
+  ni: 𔗐
+  ní: 𔓵
+  nì: 𔐽
+  niₓ: 𔗴
+  nu: 𔒴
+  nú: 𔖿
+
+  pa: 𔕸, 𔔁 ?
+  pá: 𔘅
+  paₓ: 𔓐
+  pi: 𔑉
+  pu: 𔕯
+  pú: 𔗣
+  ra: 𔖱
+  ri: 𔖱
+  ru: 𔗑
+  rú: 𔑳, 𔑵
+  ur: 𔖙
+
+  sa: 𔗔
+  sá: 𔗦
+  sà: 𔑷
+  sa₄: 𔗆
+  sa₅: 𔕮
+  sa₆: 𔔀
+  sa₇: 𔕣
+  sa₈: 𔖭
+  si: 𔓉
+  sí ?: 𔗾
+  su: 𔖢
+  sú: 𔒂
+  sù: 𔗵
+  us: 𔗚
+
+  ta: 𔑰
+  tá: 𔐞
+  tà: 𔐬
+  ta₄: 𔕦
+  ta₅: 𔓇
+  ta₆: 𔑛
+  taₓ: 𔐭
+  ti: 𔑣
+  tí: 𔘟
+  tì ?: 𔕦
+  ti₄ ?: 𔓇
+  tu: 𔑡, 𔑢
+  tú: 𔕬
+  tù: 𔕭
+  tu₄: 𔔈
+
+  wa: 𔗬
+  wá: 𔓁
+  wà: 𔓀
+  wa₄: 𔓬
+  wa₅: 𔓩
+  wa₆: 𔓤
+  wa₇: 𔕁
+  wa₉: 𔔻
+  wi: 𔒻
+  wi: 𔗬
+  wí: 𔓁
+  wì: 𔓀
+  wi₄: 𔓬
+  wi₅: 𔓩
+  wi₆: 𔓤
+  wi₇: 𔕁
+  wi₉: 𔔻
+
+  ia: 𔓱
+  iá: 𔕑
+  ià: 𔖬
+
+  za: 𔖪, 𔖩
+  zá: 𔕹
+  zà: 𔕼
+  za₄: 𔒈
+  zaₓ: 𔕽
+  zi: 𔖩
+  zí: 𔕠
+  zì: 𔕻
+  zi₄: 𔒚
+  zu ?: 𔗥, 𔕀
+  zú: 𔗵
+
+  a+ra: 𔗸
+  a+ri: 𔗸
+  a+tá: 𔐷
+  ara: 𔒟
+  ara: 𔒠
+  ari: 𔒟
+  # ari: 𔒠
+  hara: 𔕆
+  hari: 𔕆
+  hur: 𔗹
+
+  i+ra: 𔓰
+  # i+ri: 𔓰
+  # kar: 𔕢
+  "la+ra+a": 𔓍
+  pari: 𔐎
+  ra+a: 𔗸
+  ri+i: 𔓰
+  sara: 𔕕
+  sari: 𔕕
+  tal: 𔖞
+  tana: 𔗢
+  tapa: 𔒋
+  tár: 𔖤
+  taraₓ: 𔖤
+  tariₓ: 𔖤
+  tara: 𔖹
+  tari: 𔖹
+  zuwa: 𔕀
+
+  IUDEX+ra: 𔖤
+  IUDEX+ri: 𔖤
+
+
+  ADORARE: 𔐅
+  AEDIFICARE: 𔔘, 𔒐
+  AEDIFICIUM : 𔔖
+  AEDIFICIUM.PONERE : 𔔘, 𔒐
+  #AEDIFICIUM+MINUS : VASTUS) : 𔔗
+  ALA : 𔑗
+  AMPLECTI : 𔐈, 𔗱
+  ANIMAL : 𔗈
+  ANNUS : 𔕺
+  ANNUS+ANNUS : 𔖁
+  AQUA : 𔓳, 𔓴
+  AQUILA : 𔒟
+  ARGENTUM : 𔔣, 𔔤, 𔔦
+  ARHA : 𔓸, 𔓹
+  ASCIA : 𔔼
+  ASINUS : 𔑯, 𔒍
+  ASINUS₂ : 𔑱
+  AUDIRE : 𔑒, 𔓅
+  AURIGA : 𔕄
+  AURIS+TU+MI : 𔑒, 𔓅
+  AVIS : 𔒚
+  AVIS₂ : 𔒞
+  AVIS₃ : 𔒜
+  AVIS₄ : 𔒟
+  AVIS₅ : 𔒝
+  AVISₓ : 𔒡
+  AVUS : 𔕳
+  BESTIA : 𔑫
+  BIBERE : 𔐇
+  BONUS : 𔕧 (2nd mil.), 𔓀
+  BONUS₂ : 𔖢
+  BOS : 𔑺
+  BOS₂ : 𔑼
+  BOS+MI : 𔑾
+  BOS.MI : 𔒀
+  BOS₂.MI : 𔒁
+  BRACCHIUM : 𔐡
+  CAELUM : 𔓑
+  CANIS : 𔑬
+  CANIS₂ : 𔑭
+  CAPERE : 𔐫
+  CAPERE+SCALPRUM : 𔕲
+  CAPERE₂ : 𔐮, 𔒣
+  CAPERE₂.CAPERE₂ : 𔐭
+  CAPRA : 𔑶
+  CAPRA₂ : 𔑸
+  CAPRA2A : 𔑹
+  CAPUT : 𔐉
+  CAPUT+SCALPRUM : 𔐊
+  CASTRUM : 𔔉, 𔔊, 𔔋
+  CENTUM : 𔗃, 𔕂, 𔕔
+  CERVUS : 𔑳
+  CERVUS₂ : 𔑴
+  CERVUS₃ : 𔑵
+  CONTRACTUS : 𔖅
+  COR : 𔖂
+  CORNU : 𔒂
+  CORNU+CAPUT : 𔙀
+  CRUS : 𔑛
+  CRUS₂ : 𔑝
+  CRUS.CRUS : 𔑟, 𔑠
+  CRUS+FLUMEN : 𔑜
+  CRUX : 𔕛
+  CUBITUM : 𔔕
+  CULTER : 𔕿
+  CUM : 𔑀
+  CURRUS : 𔕃
+  DARE : 𔑈
+  DARE.DARE : 𔑊
+  DECEM : 𔗁
+  DELERE : 𔔚
+  DEUS : 𔖖
+  DEUS.DOMUS : 𔔛
+  (DEUS)VIA+TERRA : 𔓧
+  DIES : 𔖓, 𔖔, 𔖕
+  DOMINA : 𔐏
+  DOMINUS : 𔖺
+  DOMUS : 𔔙
+  DOMUS+MINUS : 𔔚
+  DOMUS+SCALA : 𔔞, 𔔟
+  DOMUS+X : 𔔝
+  EDERE : 𔐆
+  EGO : 𔐀, 𔘞 ?
+  EGO₂ : 𔐁
+  ENSIS : 𔐻
+  EQUUS : 𔑮
+  EUNUCHUS : 𔘑, 𔘐
+  EUNUCHUS₂ : ??
+  EXERCITUS : 𔔰
+  FALX ? : 𔘝
+  FEMINA : 𔑘, 𔗌
+  FILIA : 𔐱
+  FILIUS : 𔐰
+  FILIUS.NEPOS : 𔕒
+  FINES : 𔓸
+  FINES+ha : 𔓹
+  FLAMMAE ? : 𔘔, 𔗅, 𔘖
+  FLUMEN : 𔓳, 𔓴
+  FONS : 𔓶
+  FORTIS : 𔐝
+  FRATER : 𔐰
+  FRATER₂ : 𔔷
+  FRONS : 𔐚, 𔒉
+  FULGUR : 𔓣
+  FUSUS : 𔕗
+  GAZELLA : 𔑶
+  GENUFLECTERE : 𔑞
+  GRYLLUS : 𔒑
+  HÁ+LI : 𔓠
+  HALA : 𔕈
+  HALI : 𔕈
+  HALPA : 𔑞
+  HANA : 𔘮
+  HASTARIUS : 𔓈
+  HATTI : 𔓟
+  HATTI+li : 𔓠
+  HEROS : 𔐕
+  HORDEUM : 𔓎, 𔗻, 𔗼
+  HORREUM ? : 𔔡, 𔔢
+  HUR : 𔗹
+  HWI : 𔘰
+  IANUS : 𔒯
+  INFANS : 𔐰
+  INFRA : 𔐾, 𔐿
+  IRA : 𔐘
+  IŠUWA(URBS) : 𔔃
+  IUDEX : 𔖣
+  IUDEX.LA : 𔔸
+  IUSTITIA : 𔖣
+  IUSTITIA.LA : 𔔸
+  LA+LA : 𔓋
+  LAPIS : 𔔮
+  LAPIS+SCALPRUM : 𔔭
+  LECTUS : 𔕓
+  LEO : 𔑪
+  LEO₂ : 𔑫
+  LEO+MONS.TU+LEO : 𔓭
+  LEPUS : 𔒋
+  LEPUS₂ : 𔒌
+  LIₓ : 𔒗
+  LIBARE : 𔐜
+  LIBATIO : 𔒤
+  LIGARE : 𔐠
+  LIGNUM : 𔖰, 𔓄
+  LINGERE : 𔒈
+  LINGUA : 𔓊
+  LINGUA+CLAVUS : 𔓌
+  LIS : 𔐘
+  LITUUS : 𔖫
+  LITUUS+Á/LITUUS+á : 𔐔
+  LITUUS+na : 𔐥
+  LITUUS+u : 𔒊
+  LOCUS : 𔓤, 𔕝
+  LOQUI : 𔐖
+  LUNA : 𔓜
+  MAₓ : 𔒃
+  MAGNUS : 𔖙
+  MAGNUS.DOMINA : 𔐐
+  MAGNUS.DOMUS : 𔔜
+  MAGNUS.FILIA : 𔐴
+  MAGNUS.REX : 𔐒
+  MALLEUS : 𔔻
+  MALUS : 𔖟
+  MALUS₂ : 𔖠
+  MANDARE : 𔑊
+  MANUS : 𔑁, 𔑂, 𔑂
+  MANUS.CULTER : 𔐺
+  MANUS+CULTER : 𔐻
+  MANUS+MINUS ? (LONGUS) : 𔑄, 𔑍
+  MATER : 𔑘, 𔗌
+  MENSA : 𔕊
+  MENSA₂ : 𔕋
+  MÍ.REGIO : 𔔇
+  MILLE : 𔗄
+  MINISTRARE ? : 𔓐
+  MINUS : 𔖮
+  MONS : 𔓬
+  MONS₂ : 𔐃
+  MONS.SARPA : 𔕍, 𔕎
+  MORI : 𔖯
+  MURUS ? : 𔔎
+  NEG : 𔕴
+  NEG₂ : 𔕵
+  NEG₃ : 𔕶
+  NEPOS : 𔕒
+  OCCIDENS : 𔖬
+  OCULUS : 𔐙
+  OMNIS(+MI) : 𔖝
+  OMNIS₂ : 𔗣
+  ORIENS : 𔓛
+  OVIS : 𔒇
+  OVIS₂ : 𔘺
+  PANIS : 𔓐
+  PANIS.SCUTELLA : 𔗛
+  PASTOR : 𔗫
+  PES : 𔑣
+  PES₂ : 𔑦
+  PES₂.PES : 𔑩
+  PES₂.PES₂ : 𔑨
+  PES.SCALA.ROTAE : 𔑤, 𔑥, 𔑧
+  PINCERNA : 𔖆, 𔖍, 𔖎, 𔖏, 𔘻
+  PISCIS : 𔒥
+  PITHOS : 𔕾
+  PITHOS.SCUTELLA/PITHOS : 𔕺
+  POCULUM : 𔖇
+  PODIUM : 𔔪
+  PONERE : 𔑇
+  PORTA : 𔔏, 𔔐
+  PORTA₂ : 𔔑
+  POST : 𔐣
+  PRAE : 𔐍, 𔐎
+  PROPHETA ? : 𔙀
+  PUGNUS : 𔐨, 𔐪, 𔐯
+  PUGNUS+PUGNUS : 𔐠
+  PUGNUS+URBS : 𔐹
+  PUGNUS+X : 𔐩
+  PURUS : 𔕩, 𔕪
+  REGIO : 𔔆
+  REL : 𔕰
+  REX : 𔐑
+  REX.FILIA : 𔐳
+  REX.FILIUS : 𔐲
+  REX.INFANS : 𔐲
+  ROTA : 𔕈
+  SACERDOS : 𔖐
+  SACERDOS₂ : 𔖥
+  SARA : 𔕕
+  SARI : 𔕕
+  SARMA : 𔑙, 𔑚
+  SARMA₂ : 𔑙, 𔑚
+  SARPA : 𔕋
+  SCALPRUM : 𔔯
+  SCRIBA : 𔕭
+  SCUTELLA : 𔗆
+  SCUTUM : 𔔳
+  SERVUS : 𔖷
+  SIGILLUM : 𔕮
+  SOL : 𔓚, 𔘈, 𔘊
+  SOL₂ : 𔓙
+  SOL₂.MENSA : 𔕌
+  SOL₂.THRONUS : 𔕌
+  SOLIUM : 𔕐
+  SPHINX : 𔒒
+  STATUA : 𔐌
+  STELE : 𔔭
+  SUB : 𔐾, 𔐿
+  SUPER : 𔔱 (earlier variant), 𔑏
+  TÁ (?) : 𔐞
+  TAL (?) : 𔖞
+  TALA (?) : 𔖞
+  TANA (?) : 𔗢
+  TELIPINU : 𔒲
+  TERRA : 𔓤, 𔕝
+  TEŠUB : 𔕥
+  THRONUS : 𔕊
+  THRONUS : 𔕋
+  THRONUS₂ : 𔕏
+  TONITRUS : 𔓢
+  TURRIS ? : 𔔍
+  UNGULA : 𔒗
+  UNUS : 𔖭
+  UR : 𔖙
+  URBS : 𔔂
+  URBS+li : 𔔅
+  URBS-li : 𔔅
+  URBS-RA+li : 𔔄
+  URBS-RI?+li : 𔔄
+  URBS+RA-li : 𔔄
+  URBS+RI?-li : 𔔄
+  URCEUS : 𔖆, 𔖍, 𔖎, 𔖏, 𔘻
+  US : 𔗚
+  # VACUUS : : 𔔗
+
+  VAS : 𔖂
+  VASTUS : 𔔗
+  VIA : 𔓾, 𔑕, 𔓿
+  VIA+TERRA.SCALPRUM : 𔓥
+  VIA+TERRA+SCALPRUM : 𔓦
+  VINUM : 𔒻
+  VIR : 𔕟 (earlier variant), 𔕠
+  VIR₂ : 𔖶 (word separator)
+  VIR₂.MINUS : 𔖯
+  VITA : 𔖡
+  VITELLUS : 𔒃
+  VITIS : 𔒻
+
+  2 : 𔖳
+  3 : 𔖸
+  4 : 𔖻
+  5 : 𔖼
+  8 : 𔖽
+  9 : 𔖿
+  12 : 𔘍
