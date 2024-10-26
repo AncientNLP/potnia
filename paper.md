@@ -82,7 +82,7 @@ Each script in Potnia (e.g., Linear A, Linear B, Arabic, Hittite cuneiform) is c
 
 4. **Regularization of Text:** The regularize method applies a series of regular expression rules to clean and normalize the Unicode output. It removes unnecessary tags, ignores patterns specified in the YAML file (e.g., annotations or uncertain characters), and ensures that only the essential characters are retained. This step ensures the output is refined and ready for downstream tasks.
 
-5. **Comprehensive Testing:** Pytest fixtures allow us to define test cases as lines in YAML files which allowed us to consisely add around 350 test examples, covering a broad range of edge cases. The code coverage of the tests is 100%.
+5. **Comprehensive Testing:** Pytest fixtures allow us to define test cases as lines in YAML files which allowed us to consisely add over 360 test examples, covering a broad range of edge cases. The code coverage of the tests is 100%.
 
 6. **Versatile Interface Options** Users can interact with Potnia as a Python library, or through the command line interface (CLI) or through the graphical user interface (GUI) (fig. \ref{fig:potnia-gui})
 
