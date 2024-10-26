@@ -31,6 +31,7 @@ Potnia
 Potnia is an open-source Python library designed to convert Romanized transliterations of ancient texts into Unicode representations of ther respective native scripts.
 
 Currently, the scripts supported by Potnia are:
+
 - Linear A
 - Linear B
 - Hittite cuneiform
