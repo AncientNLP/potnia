@@ -7,3 +7,5 @@
 
 # Test that '[unclassified]' is correctly tokenized as a single token
 "[unclassified] *180 A339 *100" : "[unclassified] 𐙒 𐙿 𐙇" # https://sigla.phis.me/document/PH%2012a/
+
+"ka-di[unclassified] *180 A339 *100" : "𐀏𐀇[unclassified] 𐙒 𐙿 𐙇"
