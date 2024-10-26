@@ -506,6 +506,7 @@ patterns_to_ignore:
 
 regularization:
   - ['\\[\\?\\]', '%']
+  - ['\\[unclassified\\]', '%']  # Maps `[unclassified]` to `%`
   - ['[?]','%']
   - ['\\|', '']
   - [':', '']

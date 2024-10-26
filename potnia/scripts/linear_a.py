@@ -6,7 +6,7 @@ class LinearA(Script):
     config:str = "linear_a.yaml"
 
 
-    def tokenize_transliteration(self, input_string:str) -> list[str]:
+    def tokenize_transliteration(self, input_string: str) -> list[str]:
         tokens = []
         token = ""
         i = 0
@@ -14,14 +14,22 @@ class LinearA(Script):
         while i < len(input_string):
             char = input_string[i]
 
-            # Check for special sequences like "[?]"
-            if char == '[' and i + 1 < len(input_string) and input_string[i + 1] == '?':
-                if token:
-                    tokens.append(token)
-                tokens.append("[?]")
-                token = ""
-                i += 3  # Skip past "[?]"
-                continue
+            # Check for special sequences like "[?]" and "[unclassified]"
+            if char == '[':
+                if input_string[i:i + 3] == '[?]':
+                    if token:
+                        tokens.append(token)
+                    tokens.append("[?]")
+                    token = ""
+                    i += 3  # Skip past "[?]"
+                    continue
+                elif input_string[i:i + 14] == '[unclassified]':
+                    if token:
+                        tokens.append(token)
+                    tokens.append("[unclassified]")
+                    token = ""
+                    i += 14  # Skip past "[unclassified]"
+                    continue
 
             # Handle characters ']', '[', and ' '
             if char in '[] ':
