@@ -228,7 +228,7 @@
     # LB.37: Tokenise each instance of 'angustum'. Represent this text as is in the annotated output, but do not include in the regularised output.
     # LB.59: Tokenise each instance of '[•~]'. Represent this text as is in the annotated output, and represent a single wildcard (i.e. '%') in regularised output.
     
-    "]we-ke , ke-tu-wo-e o-two-we-o , ke-ro-si-ja a3-nu-me-no VIR 1[ o-two-we-o , ke-ro-si-ja qo-te-ro VIR[ 1 o-two-we-o , ke-ro-si-ja , a2-e-ta [VIR 1 o-two-we-o , ke-ro-si-ja , o-du-*56-ro [VIR 1 a-pi-jo-to , ke-ro-si-ja , ku-te-re-u VIR[ 1 a-pi-jo-to , ke-ro-si-ja , o-wo-to VIR 1 a-pi-jo-to , ke-ro-si-ja , a-ra-i-jo VIR 1 a-pi-jo[-to ] ke-ro-si-ja , ri-zo VIR 1 ta-we[-si-jo-]jo , ke-ro-si-ja , wa-[ ] VIR 1 ta-we-si[-jo-]jo , ke-ro-si-ja , [ ] VIR 1 ta-we-si-jo-jo , ke-ro-si-ja [ ]wa-ne-u VIR 1 a-pi-qo[-ta-o] , ke-ro-si-ja , a3-so-ni-jo VIR 1 a[-pi-qo-ta-o ] ke-ro-si-ja , a[ ]te VIR[ 1 ]ke-ro-si-ja , a[ ] VIR 1 ke-ro-]si-ja , [•~]me-ka-[•] VIR 1 a-[ ke-ro-]si-ja , o-pa-[ ]vac.[ VIR 1 vac.[ ] vac. vac. [ ] vac. v. ta-we-si-jo-jo , ke-ro-si-ja , te-wa[ VIR 1 ta-]we-si-jo-jo , ke-ro-si-ja , tu-ru-we-u VIR 1 ] angustum ta-]we-si-jo-jo , ke-ro-si VIR 20 a-pi-qo-ta-o , ke-ro-si-ja VIR 17 a-pi-o-to , ke-ro-si-ja VIR [1]8⌟ o-to-wo[-o ke-]ro-si-ja VIR [1]4 angustum [ ] [ ] ka-ma-e[-we] VIR 10" : "%𐀸𐀐 𐀐𐀶𐀺𐀁 𐀃𐁍𐀸𐀃 𐀐𐀫𐀯𐀊 𐁁𐀝𐀕𐀜 𐂀 1% 𐀃𐁍𐀸𐀃 𐀐𐀫𐀯𐀊 𐀦𐀳𐀫 𐂀% 1 𐀃𐁍𐀸𐀃 𐀐𐀫𐀯𐀊 𐁀𐀁𐀲 %𐂀 1 𐀃𐁍𐀸𐀃 𐀐𐀫𐀯𐀊 𐀃𐀉𐁖𐀫 %𐂀 1 𐀀𐀠𐀍𐀵 𐀐𐀫𐀯𐀊 𐀓𐀳𐀩𐀄 𐂀% 1 𐀀𐀠𐀍𐀵 𐀐𐀫𐀯𐀊 𐀃𐀺𐀵 𐂀 1 𐀀𐀠𐀍𐀵 𐀐𐀫𐀯𐀊 𐀀𐀨𐀂𐀍 𐂀 1 𐀀𐀠𐀍%𐀵 % 𐀐𐀫𐀯𐀊 𐀪𐀿 𐂀 1 𐀲𐀸%𐀯𐀍%𐀍 𐀐𐀫𐀯𐀊 𐀷% % 𐂀 1 𐀲𐀸𐀯%𐀍%𐀍 𐀐𐀫𐀯𐀊 % % 𐂀 1 𐀲𐀸𐀯𐀍𐀍 𐀐𐀫𐀯𐀊 % %𐀷𐀚𐀄 𐂀 1 𐀀𐀠𐀦%𐀲𐀃% 𐀐𐀫𐀯𐀊 𐁁𐀰𐀛𐀍 𐂀 1 𐀀%𐀠𐀦𐀲𐀃 % 𐀐𐀫𐀯𐀊 𐀀% %𐀳 𐂀% 1 %𐀐𐀫𐀯𐀊 𐀀% % 𐂀 1 𐀐𐀫%𐀯𐀊 𐀕𐀏% 𐂀 1 𐀀% 𐀐𐀫%𐀯𐀊 𐀃𐀞% %% 𐂀 1 % % % % 𐀲𐀸𐀯𐀍𐀍 𐀐𐀫𐀯𐀊 𐀳𐀷% 𐂀 1 𐀲%𐀸𐀯𐀍𐀍 𐀐𐀫𐀯𐀊 𐀶𐀬𐀸𐀄 𐂀 1 % 𐀲%𐀸𐀯𐀍𐀍 𐀐𐀫𐀯 𐂀 20 𐀀𐀠𐀦𐀲𐀃 𐀐𐀫𐀯𐀊 𐂀 17 𐀀𐀠𐀃𐀵 𐀐𐀫𐀯𐀊 𐂀 %1%8 𐀃𐀵𐀺%𐀃 𐀐%𐀫𐀯𐀊 𐂀 %1%4 % % % % 𐀏𐀔𐀁%𐀸% 𐂀 10"
+    "a[ ]te VIR[ 1 ]ke-ro-si-ja , a[ ] VIR 1 ke-ro-]si-ja , [•~]me-ka-[•] VIR 1 a-[ ke-ro-]si-ja , o-pa-[ ]vac.[ VIR 1 vac.[ ] vac. vac. [ ] vac. v. ta-we-si-jo-jo , ke-ro-si-ja , te-wa[ VIR 1 ta-]we-si-jo-jo , ke-ro-si-ja , tu-ru-we-u VIR 1 ] angustum ta-]we-si-jo-jo , ke-ro-si VIR 20 a-pi-qo-ta-o , ke-ro-si-ja VIR 17 a-pi-o-to , ke-ro-si-ja VIR [1]8⌟ o-to-wo[-o ke-]ro-si-ja VIR [1]4 angustum [ ] [ ] ka-ma-e[-we] VIR 10" : "𐀀% %𐀳 𐂀% 1 %𐀐𐀫𐀯𐀊 𐀀% % 𐂀 1 𐀐𐀫%𐀯𐀊 𐀕𐀏% 𐂀 1 𐀀% 𐀐𐀫%𐀯𐀊 𐀃𐀞% %% 𐂀 1 % % % % 𐀲𐀸𐀯𐀍𐀍 𐀐𐀫𐀯𐀊 𐀳𐀷% 𐂀 1 𐀲%𐀸𐀯𐀍𐀍 𐀐𐀫𐀯𐀊 𐀶𐀬𐀸𐀄 𐂀 1 % 𐀲%𐀸𐀯𐀍𐀍 𐀐𐀫𐀯 𐂀 20 𐀀𐀠𐀦𐀲𐀃 𐀐𐀫𐀯𐀊 𐂀 17 𐀀𐀠𐀃𐀵 𐀐𐀫𐀯𐀊 𐂀 %1%8 𐀃𐀵𐀺%𐀃 𐀐%𐀫𐀯𐀊 𐂀 %1%4 % % % % 𐀏𐀔𐀁%𐀸% 𐂀 10"
 
 # Test LB.R.31
 # Scenario: Test that 'graffito' is not printed in regularized scenarios.
@@ -338,7 +338,7 @@
     "]po-[\u2022] , / [ OVIS m ] 40 o OVIS m 20" : "%𐀡% % 𐂇 % 40 𐀃 𐂇 20"
 
 # Test LB.R.45
-# Scenario: Test that '•~•' is is converted to two wildcards, i.e. '%%', in regularized scenarios.
+# Scenario: Test that '•~•' is converted to two wildcards, i.e. '%%', in regularized scenarios.
 # Requirements mapping:
     # LB.60: Tokenise each instance of '•~•'. Represent this text as is in the annotated output, and represent as two wildcards (i.e. '%%') in regularised output.
 
@@ -403,9 +403,9 @@
     "fragmentum A sup. mut. ] X MUL 1 ]--u-ra MUL 1 X ]-na MUL 1 tu-ka-na X MUL 1 ]-ma MUL 1 te-qa-ja MUL 1 ]-ja MUL 1-[ ]-ja-mu-ta MUL 1-[ ]--ta2-no-[ inf. mut." : "% 𐂁 1 %𐀄𐀨 𐂁 1 %𐀙 𐂁 1 𐀶𐀏𐀙 𐂁 1 %𐀔 𐂁 1 𐀳𐀣𐀊 𐂁 1 %𐀊 𐂁 1% %𐀊𐀘𐀲 𐂁 1% %𐁋𐀜%"
 
 # Test LB.R.54
-# Scenario: Test that '|' is not printed in either annotated or regularized scenarios.
+# Scenario: Test that '|' is not printed in regularized scenarios.
 # Requirements mapping:
-    # LB.70: Ignore each instance of '|'. Do not represent this string in either the annotated or the regularised output.
+    # LB.70: Tokenise each instance of '|'. Represent this sign as is in the annotated output, but do not include in the regularised output.
 
     "α ]a3-wo-re-u-|si|-si β do-ke γ [•]-ja-wo-ne" : "%𐁁𐀺𐀩𐀄𐀯𐀯 𐀈𐀐 %𐀊𐀺𐀚"
 
@@ -430,7 +430,6 @@
 
 # Test LB.R.57
 # Scenario: Test that spaces are removed after 'TELA' and before either a '1', '2', '3', '4' or 'x', and the correct sign/s are printed in regularized scenarios.
-# Would be good if we could get this to only apply to LiBER test
 # Requirements mapping:
     # LB.1-d: If a blank space appears after 'TELA' and before either a '1', '2', '3', '4' or 'x', then remove that space in both the annotated and regularized outputs.
     

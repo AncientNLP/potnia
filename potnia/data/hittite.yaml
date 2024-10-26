@@ -5,6 +5,7 @@ mappings:
   "i": 𒄿
   "u": 𒌋
   "ú": 𒌑
+  "ia": 𒅀
 
   # CV syllabograms
   "ba": 𒁀
@@ -228,7 +229,7 @@ mappings:
   "mar": 𒈥
   "maš": 𒈦
   "MAŠ": 𒈦 # half
-  "meš": "??" # Find
+  "meš": "𒌍" # check
   "mil": 𒅖
   "mel": 𒅖
   "miš": 𒈩
@@ -328,8 +329,7 @@ mappings:
   "zul": 𒂄
   "zum": 𒍮
 
-  # Determinatives
-
+# Logograms
   "DIŠ": 𒁹 # (ᵐ) # male personal names
   "DIDLI": 𒀸 # (suffixed) # plural or collective
   "DIDLI ḪI.A": 𒀸𒄭𒀀 # (suffixed) # plural
@@ -340,19 +340,17 @@ mappings:
   "GI": 𒄀 # "tube; reed"
   "GIŠ": 𒄑 # "wood"
   "GUD": 𒄞 # "bovid"
-  "ḪI.A": 𒄭𒀀 # (suffixed) # plural
   "ḪUR.SAG": 𒄯𒊕 # "mountain"
   "ÍD": 𒀀𒇉 # "river"
   "IM": 𒅎 # "clay"
   "ITU": 𒌚 # "month"
-  "KAM": 𒄰 # (suffixed) # numerals
-  "KI": 𒆠 # (suffixed) # in 0.6% of toponyms[5]
+  "KÁ": 𒆍
   "KU6": 𒄩 # "fish"
   "KUR": 𒆳 # "land"
   "KUŠ": 𒋢 # "hide, fur"
   "LÚ": 𒇽 # "man"
-  "MEŠ": 𒈨𒌍 # (suffixed) # plural
-  "MEŠ ḪI.A": 𒈨𒌍𒄭𒀀 # (suffixed) # plural
+  "MEŠ": 𒌍 # (suffixed) # plural
+  "MEŠ ḪI.A": 𒌍𒄭𒀀 # (suffixed) # plural
   "MUL": 𒀯 # "star"
   "MUNUS": 𒊩 # (ᶠ) # "woman" # female personal name
   "MUŠ": 𒈲 # "serpent"
@@ -369,3 +367,45 @@ mappings:
   "URU": 𒌷 # "city"
   "URUDU": 𒍐 # "copper"
   "UZU": 𒍜 # "meat"
+
+  # Determinatives
+
+  "(DIŠ)": 𒁹 # (ᵐ) # male personal names
+  "(DIDLI)": 𒀸 # (suffixed) # plural or collective
+  "(DIDLI ḪI.A)": 𒀸𒄭𒀀 # (suffixed) # plural
+  "(DINGIR)": 𒀭 # (ᴰ) # "deity"
+  "(DUG)": 𒂁 # "vessel"
+  "(É)": 𒂍 # "house"
+  "(GAD)": 𒃰 # "linen, cloth"
+  "(GI)": 𒄀 # "tube; reed"
+  "(GIŠ)": 𒄑 # "wood"
+  "(GUD)": 𒄞 # "bovid"
+  "(ḪI.A)": 𒄭𒀀 # (suffixed) # plural
+  "(ḪUR.SAG)": 𒄯𒊕 # "mountain"
+  "(ÍD)": 𒀀𒇉 # "river"
+  "(IM)": 𒅎 # "clay"
+  "(ITU)": 𒌚 # "month"
+  "(KAM)": 𒄰 # (suffixed) # numerals
+  "(KI)": 𒆠 # (suffixed) # in 0.6% of toponyms[5]
+  "(KU6)": 𒄩 # "fish"
+  "(KUR)": 𒆳 # "land"
+  "(KUŠ)": 𒋢 # "hide, fur"
+  "(LÚ)": 𒇽 # "man"
+  "(MEŠ)": 𒌍 # (suffixed) # plural
+  "(MEŠ ḪI.A)": 𒌍𒄭𒀀 # (suffixed) # plural
+  "(MUL)": 𒀯 # "star"
+  "(MUNUS)": 𒊩 # (ᶠ) # "woman" # female personal name
+  "(MUŠ)": 𒈲 # "serpent"
+  "(MUŠEN)": 𒄷 # (suffixed) # "bird"
+  "(NA₄)": 𒉌𒌓 # "stone"
+  "(NINDA)": 𒃻 # "bread"
+  "(PÚ)": 𒇥 # "source"
+  "(SAR)": 𒊬 # (suffixed) # "plant"
+  "(SI)": 𒋛 # "horn"
+  "(SÍG)": 𒋠 # "wool"
+  "(TU7)": 𒄰 # "soup"
+  "(TÚG)": 𒌆 # "garment"
+  "(Ú)": 𒌑 # "plant"
+  "(URU)": 𒌷 # "city"
+  "(URUDU)": 𒍐 # "copper"
+  "(UZU)": 𒍜 # "meat"
