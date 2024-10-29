@@ -110,6 +110,5 @@ def gui(ctx: typer.Context, share:bool=False):
         theme=Theme.monochrome,
         allow_file_download=False,
     )
-    breakpoint()
-    gui.launch()    
+    gui.launch(launch_kwargs={"share": share})    
 
