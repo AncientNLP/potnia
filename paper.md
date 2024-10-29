@@ -76,7 +76,7 @@ Each script in Potnia (e.g., Linear A, Linear B, Arabic, Hittite cuneiform) is c
 
 2. **Tokenization:** The `tokenize_transliteration` method applies complex symbol replacements and regular expressions to transliterated text based on the rules specified in the YAML file. This tokenization process ensures that the text is split accurately into its meaningful components, handling special symbols and spacing using placeholders, and preparing the text for Unicode conversion.
 
-3. **Transliteration to Unicode:** Potnia uses the `to_unicode` method to convert the transliterated text to its Unicode representation (fig. \ref{fig:potnia-example}).
+3. **Transliteration to Unicode:** Potnia uses the `__call__` method to convert the transliterated text to its Unicode representation (fig. \ref{fig:potnia-example}).
 
 ![Example of using Potnia.\label{fig:potnia-example}](docs/_static/img/potnia-example.png){ width=80% }
 

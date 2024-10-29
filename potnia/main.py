@@ -100,7 +100,7 @@ def potnia():
 
 
 @app.command()    
-def gui(ctx: typer.Context):    
+def gui(ctx: typer.Context, share:bool=False):    
     """ Launches the Potnia GUI. """
     from guigaga.themes import Theme
     from guigaga.guigaga import GUIGAGA    
@@ -110,5 +110,6 @@ def gui(ctx: typer.Context):
         theme=Theme.monochrome,
         allow_file_download=False,
     )
+    breakpoint()
     gui.launch()    
 

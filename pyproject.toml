@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "potnia"
-version = "0.3.0"
+version = "0.3.1"
 description = "Potnia is an open-source Python library designed to convert Romanized transliterations of ancient texts into Unicode representations of ther respective native scripts.."
 authors = ["Emily Tour <esmtour@gmail.com>", "Kabir Manandhar Shrestha", "Robert Turnbull"]
 license = "Apache-2.0"

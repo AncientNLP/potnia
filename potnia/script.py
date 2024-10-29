@@ -52,7 +52,6 @@ class Script():
         return list(text)
 
     def tokenize_transliteration(self, text:str) -> list[str]:
-        print("Reached")
         # Replace complex symbols with placeholders
         for symbol, placeholder in self.complex_symbols.items():
             text = text.replace(symbol, placeholder)
