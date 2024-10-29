@@ -102,12 +102,17 @@ def potnia():
 @app.command()    
 def gui(ctx: typer.Context, share:bool=False):    
     """ Launches the Potnia GUI. """
-    from guigaga.themes import Theme
+    import gradio as gr
     from guigaga.guigaga import GUIGAGA    
+    theme = gr.themes.Soft(
+        primary_hue="rose",
+        secondary_hue="pink",
+        text_size="lg",
+    )
     gui = GUIGAGA(
         typer.main.get_group(app), 
         click_context=ctx,
-        theme=Theme.monochrome,
+        theme=theme,
         allow_file_download=False,
     )
     gui.launch(launch_kwargs={"share": share})    
