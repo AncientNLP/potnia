@@ -73,7 +73,8 @@ To convert transliterated Linear B to Linear B Unicode, use the following code:
     '𐀀𐀪𐀵𐀍'
 
 
-If you wish to regularize the text to remove additional annotations present in the `LiBER <https://liber.cnr.it/index>` and  `DĀMOS <https://damos.hf.uio.no/about/content/>`` transliterations, use the following code:
+If you wish to regularize the text to remove additional annotations present in the `LiBER <https://liber.cnr.it/index>`_ 
+and  `DĀMOS <https://damos.hf.uio.no/about/content/>`_ transliteration, use the following code:
 
 .. code-block:: python
 
