@@ -19,6 +19,7 @@ Welcome to potnia's documentation!
    quickstart
    linear_b
    additions
+   api
    credits
 
 Indices and tables

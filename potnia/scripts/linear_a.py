@@ -3,10 +3,28 @@ from ..script import Script
 
 @dataclass
 class LinearA(Script):
+    """
+    Class for handling text transliteration and unicode conversion for Linear A.
+
+    To use the singleton instance, import like so:
+    ``from potnia import linear_a``
+
+    Attributes:
+        config (str): Path to the configuration file or configuration data in string format. 
+                      By default, it uses the 'linear_a.yaml file in the 'data' directory.
+    """
     config:str = "linear_a.yaml"
 
-
     def tokenize_transliteration(self, input_string: str) -> list[str]:
+        """
+        Tokenizes transliterated text according to specific patterns.
+
+        Args:
+            text (str): Input text in transliterated format.
+
+        Returns:
+            list[str]: List of tokens
+        """
         tokens = []
         token = ""
         i = 0

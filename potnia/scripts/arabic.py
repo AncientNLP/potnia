@@ -7,6 +7,9 @@ class Arabic(Script):
     """
     Class for handling text transliteration and unicode conversion to Arabic.
 
+    To use the singleton instance, import like so:
+    ``from potnia import arabic``
+
     Uses the DIN 31635 standard for Arabic transliteration.
 
     If you need the Tim Buckwalter transliteration system, then use the PyArabic library.

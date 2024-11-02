@@ -4,6 +4,19 @@ from ..script import Script
 
 @dataclass
 class LinearB(Script):
+    """
+    Class for handling text transliteration and unicode conversion for Linear B.
+
+    To use the singleton instance, import like so:
+    ``from potnia import linear_b``
+
+    Designed especially for texts from DĀMOS (Database of Mycenaean at Oslo): https://damos.hf.uio.no/
+    and LiBER (Linear B Electronic Resources): https://liber.cnr.it/
+
+    Attributes:
+        config (str): Path to the configuration file or configuration data in string format. 
+                      By default, it uses the 'linear_a.yaml file in the 'data' directory.
+    """
     config:str = "linear_b"
 
     def regularize(self, text: str) -> str:
