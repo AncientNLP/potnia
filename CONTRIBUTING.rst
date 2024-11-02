@@ -8,6 +8,24 @@ These practices are subject to change based on the decisions of the team.
 - Python code should be formatted using black with the settings in pyproject.toml. The maximum line length is 120 characters.
 - Contributions should be commited to a new branch and will be merged with main only after tests and documentation are complete.
 
+Installation
+==================
+
+To install Potnia for development, run the following command:
+
+.. code-block:: bash
+
+    git clone https://github.com/AncientNLP/potnia.git
+    cd potnia
+
+Make sure that poetry is installed on your system. If not, see the `instructions <https://python-poetry.org/docs/#installation>`_.
+
+Then install the dependencies using poetry:
+
+.. code-block:: bash
+
+    poetry install
+
 
 Testing
 ==================

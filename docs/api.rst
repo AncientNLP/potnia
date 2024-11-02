@@ -2,18 +2,18 @@
 API Reference
 =======================
 
-------------------------------
+
 Abstract Base Class: `Script`
-------------------------------
+=============================
 
 .. autoclass:: potnia.script.Script
     :members:
     :undoc-members:
     :show-inheritance:
 
-------------------------------
+
 Scripts Available
-------------------------------
+==================
 
 Linear A
 --------
