@@ -20,6 +20,7 @@ Welcome to potnia's documentation!
    linear_b
    additions
    api
+   contributing
    credits
 
 Indices and tables
