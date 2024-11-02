@@ -7,9 +7,17 @@ from .data import read_data
 
 @dataclass
 class Script():
+    """
+    The abstract base class for handling text transliteration and unicode conversion.
+
+    Attributes:
+        config (str): Path to the configuration file or configuration data in YAML format.
+    """
     config:str
 
     def __post_init__(self):
+        """Initializes configuration and sets up mappings, patterns, and regularization rules."""
+
         if isinstance(self.config, (Path,str)):
             self.config = read_data(self.config)
         assert self.config, f"Configuration not found"
@@ -46,12 +54,30 @@ class Script():
         self.reversed_symbols = {v: k for k, v in self.complex_symbols.items()}
 
     def tokenize_unicode(self, text:str) -> list[str]:
-        words = ['-'.join(word) for word in text.split()]
-        text = ' '.join(words)
+        """
+        Tokenizes unicode text according to specific patterns.
 
+        By default, it tokenizes each character as a separate token.
+        This method can be overridden in subclasses to provide more complex tokenization.
+
+        Args:
+            text (str): Input text in unicode format.
+
+        Returns:
+            list[str]: List of tokens
+        """
         return list(text)
 
     def tokenize_transliteration(self, text:str) -> list[str]:
+        """
+        Tokenizes transliterated text according to specific patterns.
+
+        Args:
+            text (str): Input text in transliterated format.
+
+        Returns:
+            list[str]: List of tokens
+        """
         # Replace complex symbols with placeholders
         for symbol, placeholder in self.complex_symbols.items():
             text = text.replace(symbol, placeholder)
@@ -81,14 +107,37 @@ class Script():
         return tokenized if tokenized else [""]
 
     def to_transliteration(self, text:str) -> str:
+        """
+        Converts unicode text to transliteration format.
+
+        NB. This function may not work as expected for all scripts/languages
+        because there may not be a one-to-one mapping between unicode and transliteration.
+
+        Args:
+            text (str): Input text in unicode format.
+
+        Returns:
+            str: Transliterated text.
+        """
+        tokens = self.tokenize_unicode(text)
         return "".join(
             [
                 self.unicode_to_transliteration_dict.get(token, token) 
-                for token in self.tokenize_unicode(text)
+                for token in tokens
             ]
         )
 
     def to_unicode(self, text:str, regularize:bool=False) -> str:
+        """
+        Converts transliterated text to unicode format.
+
+        Args:
+            text (str): Input text in transliterated format.
+            regularize (bool, optional): Whether to apply regularization. Defaults to False.
+
+        Returns:
+            str: Text converted to unicode format, optionally regularized.
+        """
         tokens = self.tokenize_transliteration(text)
         result = "".join([self.transliteration_to_unicode_dict.get(token, token) for token in tokens])
         if regularize:
@@ -96,9 +145,28 @@ class Script():
         return result
 
     def __call__(self, text:str, regularize:bool=False) -> str:
+        """
+        Allows the class instance to be called as a function for unicode conversion.
+
+        Args:
+            text (str): Input text in transliterated format.
+            regularize (bool, optional): Whether to apply regularization. Defaults to False.
+
+        Returns:
+            str: Text converted to unicode format, optionally regularized.
+        """
         return self.to_unicode(text, regularize=regularize)
     
     def regularize(self, string: str) -> str:
+        """
+        Applies regularization rules to a given string.
+
+        Args:
+            string (str): Text string to be regularized.
+
+        Returns:
+            str: Regularized text string.
+        """
         for pattern, replacement in self.regularization_regex:
             string = pattern.sub(replacement, string)
 

@@ -6,19 +6,16 @@ from ..script import Script
 class LinearB(Script):
     config:str = "linear_b"
 
-    # syllabograms = (
-    #     "syllabograms_common", 
-    #     "syllabograms_unique_linear_b",
-    # )
-    # logograms = (
-    #     "logograms_common", 
-    #     "logograms_unique_linear_b",
-    # )
-    # patterns_to_ignore = "rules/ignore_patterns_linear_b.yaml"
-    # regularization_rules = "rules/regularization_rules_linear_b.yaml"
-    # transliteration_rules = "rules/transliteration_rules_linear_b.yaml"
-
     def regularize(self, text: str) -> str:
+        """
+        Applies regularization rules to a given string.
+
+        Args:
+            string (str): Text string to be regularized.
+
+        Returns:
+            str: Regularized text string.
+        """
         text = super().regularize(text)
 
         # Ensure there are informative characters left in the text
@@ -27,6 +24,20 @@ class LinearB(Script):
             return ""
 
         return text
+
+    def tokenize_unicode(self, text:str) -> list[str]:
+        """
+        Tokenizes a unicode string by splitting and joining words with dashes.
+
+        Args:
+            text (str): Input text in unicode format.
+
+        Returns:
+            list[str]: List of tokenized strings.
+        """
+        words = ['-'.join(word) for word in text.split()]
+        text = ' '.join(words)
+        return list(text)
 
 
 linear_b = LinearB()

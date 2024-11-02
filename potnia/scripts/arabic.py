@@ -4,9 +4,30 @@ from ..script import Script
 
 @dataclass
 class Arabic(Script):
+    """
+    Class for handling text transliteration and unicode conversion to Arabic.
+
+    Uses the DIN 31635 standard for Arabic transliteration.
+
+    If you need the Tim Buckwalter transliteration system, then use the PyArabic library.
+
+    Attributes:
+        config (str): Path to the configuration file or configuration data in string format. 
+                      By default, it uses the 'arabic.yaml file in the 'data' directory.
+    """
     config:str = "arabic"
 
     def to_unicode(self, text:str, regularize:bool=False) -> str:
+        """
+        Converts transliterated text to unicode format.
+
+        Args:
+            text (str): Input text in transliterated format.
+            regularize (bool, optional): Whether to apply regularization. Defaults to False.
+
+        Returns:
+            str: Text converted to unicode format, optionally regularized.
+        """
         # if word ends with 'atun' then make it damataan with taa marbuta
         text = re.sub(r'(\w\w)atun\b', r'\1'+'َ\u0629\u064C', text)
         # if word has uʾ then make it a hamza on top of waw
