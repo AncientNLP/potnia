@@ -101,7 +101,7 @@ As part of a broader initiative to develop language models for ancient language 
 
 # Availability
 
-Potnia is open-source software released under the Apache 2.0 license. It is available through [PyPI](https://pypi.org/project/potnia/) and [GitHub](https://github.com/AncientNLP/potnia). We welcome contributions from the community and adhere to the Contributor Covenant Code of Conduct. Documentation is available at [https://ancientnlp.github.io/potnia/](https://ancientnlp.github.io/potnia/).
+Potnia is open-source software released under the Apache 2.0 license. It is available through PyPI [https://pypi.org/project/potnia/](https://pypi.org/project/potnia/) and Github [https://github.com/AncientNLP/potnia](https://github.com/AncientNLP/potnia). We welcome contributions from the community and adhere to the Contributor Covenant Code of Conduct. Documentation is available at [https://ancientnlp.github.io/potnia/](https://ancientnlp.github.io/potnia/).
 
 # Acknowledgements
 
