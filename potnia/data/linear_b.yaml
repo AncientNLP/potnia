@@ -167,6 +167,7 @@ mappings:
   KA±PO: 𐂓 # fruit?
   KA+NA+KO: 𐂔 # saffron
   KA±NA±KO: 𐂔 # saffron
+  KANAKO: 𐂔 # saffron
   CROC: 𐁉 # saffron
   FAR: 𐀎 # flour
 
@@ -526,6 +527,7 @@ mappings:
   "+WE": +𐀸
   "+TE": +𐀳
   "+TA": +𐀲
+  "OLE+": 𐂕+
   "OVIS[:m": 𐂇
   "OVIS]:m": 𐂇
   "OVIS]-:m": 𐂇
