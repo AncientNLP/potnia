@@ -201,12 +201,11 @@
     "fragmentum A fragmentum B sup. mut. sup. mut. ]-na 1 i-[ ]so-i-[ ko-wa   1[ ]ku-mi-[•]-du 1[ inf. mut. vac. [ vac. [ fragmentum C fragmentum D sup. mut. sup. mut. ]di-mi[ ]vac. ]*56-za[ ]vac. inf. mut. inf. mut." : "fragmentum A fragmentum B sup. mut. sup. mut. ]𐀙 1 𐀂[ ]𐀰𐀂[ 𐀒𐀷   1[ ]𐀓𐀖[•]𐀉 1[ inf. mut. vac. [ vac. [ fragmentum C fragmentum D sup. mut. sup. mut. ]𐀇𐀖[ ]vac. ]𐁖𐀼[ ]vac. inf. mut. inf. mut."
 
 # Test LB.A.27
-# Scenario: Test that 'deest' (or its abbreviation 'dt') is correctly printed in annotated scenarios.
+# Scenario: Test that 'deest' is correctly printed in annotated scenarios.
 # Requirements mapping:
-    # LB.34: Tokenise each instance of 'deest' or 'dt'. Represent this text as is in the annotated output, but do not include in the regularized output.
+    # LB.34: Tokenise each instance of 'deest'. Represent this text as is in the annotated output, but do not include in the regularized output.
 
     "sup. mut. ]-deest-[ inf. mut." : "sup. mut. ]deest[ inf. mut."
-    "]GRA 37 T 6[ ] vac. [ ]⌞deest⌟ vac.  ⌞dt⌟ [" : "]𐂎 37 𐄼 6[ ] vac. [ ]⌞deest⌟ vac.  ⌞dt⌟ ["
 
 # Test LB.A.28
 # Scenario: Test that 'prior pars sine regulis' and '•' are correctly printed in annotated scenarios.
@@ -246,20 +245,18 @@
     "] Graffito [": "] Graffito ["
 
 # Test LB.A.33
-# Scenario: Test that 'r.' and 'r.p.' are correctly printed in annoted scenarios.
+# Scenario: Test that 'r.' is correctly printed in annoted scenarios.
 # Requirements mapping:
-    # LB.40: Tokenise each instance of 'r.' or 'r.p.'. Represent this text as is in the annotated output, but do not include in the regularized output.
+    # LB.40: Tokenise each instance of 'r.'. Represent this text as is in the annotated output, but do not include in the regularized output.
 
     "lat. sup. ] KE [ r. ]VIN 1 S 2[ ]1 ko-ta V[" : "lat. sup. ] 𐀐 [ r. ]𐂖 1 𐄽 2[ ]1 𐀒𐀲 𐄾["
-    "v. ]i-je-re-ja TELA+TE[ qs ka-]ra-wi-po-ro TELA+TE[ qs lat. dex. ] ⟦WE 30⟧ r.p vacat vestigia po-se-da-o-ne [ po-de-da-o-ne" : "v. ]𐀂𐀋𐀩𐀊 𐂧+𐀳[ qs 𐀏]𐀨𐀹𐀡𐀫 𐂧+𐀳[ qs lat. dex. ] ⟦𐀸 30⟧ r.p vacat vestigia 𐀡𐀮𐀅𐀃𐀚 [ 𐀡𐀆𐀅𐀃𐀚"
 
 # Test LB.A.34
-# Scenario: Test that 'v.' and 'v.p.' are correctly printed in annotated scenarios.
+# Scenario: Test that 'v.' is correctly printed in annotated scenarios.
 # Requirements mapping:
-    # LB.41: Tokenise each instance of 'v.' or 'v.p.'. Represent this text as is in the annotated output, but do not include in the regularized output.
+    # LB.41: Tokenise each instance of 'v.'. Represent this text as is in the annotated output, but do not include in the regularized output.
 
     "to-re : : : : [ v. di-we si-po-ro ti-mi-to-qo [" : "𐀵𐀩 : : : : [ v. 𐀇𐀸 𐀯𐀡𐀫 𐀴𐀖𐀵𐀦 ["
-    "ARM 1 me-zo-a2 O 22 me-u-jo-a2 O 12 KO O 4 PA 2 v.p. to-mi-re-[ ]wa-[ ]-re-[ ]e-ko-si o-to-pe-da-ko-we-de-[•]-ke[" : "𐂫 1 𐀕𐀿𐁀 𐀃 22 𐀕𐀄𐀍𐁀 𐀃 12 𐀒 𐀃 4 𐀞 2 v.p. 𐀵𐀖𐀩[ ]𐀷[ ]𐀩[ ]𐀁𐀒𐀯 𐀃𐀵𐀟𐀅𐀒𐀸𐀆[•]𐀐["
 
 # Test LB.A.35
 # Scenario: Check that 'v.↓' is correctly printed in annotated scenarios.

@@ -165,7 +165,6 @@ mappings:
   PYC: 𐂒 # cyperus
   KA+PO: 𐂓 # fruit?
   KA±PO: 𐂓 # fruit?
-  KANAKO: 𐂔 # saffron
   KA+NA+KO: 𐂔 # saffron
   KA±NA±KO: 𐂔 # saffron
   CROC: 𐁉 # saffron
@@ -527,7 +526,6 @@ mappings:
   "+WE": +𐀸
   "+TE": +𐀳
   "+TA": +𐀲
-  "OLE+": 𐂕+
   "OVIS[:m": 𐂇
   "OVIS]:m": 𐂇
   "OVIS]-:m": 𐂇
