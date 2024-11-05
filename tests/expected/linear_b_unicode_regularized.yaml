@@ -201,11 +201,12 @@
     "fragmentum A fragmentum B sup. mut. sup. mut. ]-na 1 i-[ ]so-i-[ ko-wa   1[ ]ku-mi-[•]-du 1[ inf. mut. vac. [ vac. [ fragmentum C fragmentum D sup. mut. sup. mut. ]di-mi[ ]vac. ]*56-za[ ]vac. inf. mut. inf. mut." : "%𐀙 1 𐀂% %𐀰𐀂% 𐀒𐀷 1% %𐀓𐀖%𐀉 1% % % %𐀇𐀖% % %𐁖𐀼% %"
 
 # Test LB.R.27
-# Scenario: Test that 'deest' is not printed in regularized scenarios.
+# Scenario: Test that 'deest' (or its abbreviation, 'dt') is not printed in regularized scenarios.
 # Requirements mapping:
-    # LB.34: Tokenise each instance of 'deest'. Represent this text as is in the annotated output, but do not include in the regularised output.
+    # LB.34: Tokenise each instance of 'deest' or 'dt'. Represent this text as is in the annotated output, but do not include in the regularised output.
 
     "sup. mut. ]-deest-[ inf. mut." : ""
+    "]GRA 37 T 6[ ] vac. [ ]⌞deest⌟ vac.  ⌞dt⌟ [" : "%𐂎 37 𐄼 6% % % % %"
 
 # Test LB.R.28
 # Scenario: Test that 'prior pars sine regulis' is not printed in regularized scenarios, and that any '•' are converted to single wildcards (i.e. '%').
@@ -245,19 +246,21 @@
     "] Graffito [": ""
 
 # Test LB.R.33
-# Scenario: Test that 'r.' is not printed in regularized scenarios.
+# Scenario: Test that 'r.' and 'r.p' are not printed in regularized scenarios.
 # Requirements mapping:
-    # LB.40: Tokenise each instance of 'r.'. Represent this text as is in the annotated output, but do not include in the regularised output.
+    # LB.40: Tokenise each instance of 'r.' or 'r.p'. Represent this text as is in the annotated output, but do not include in the regularised output.
 
     "lat. sup. ] KE [ r. ]VIN 1 S 2[ ]1 ko-ta V[" : "% 𐀐 % %𐂖 1 𐄽 2% %1 𐀒𐀲 𐄾%"
+    "v. ]i-je-re-ja TELA+TE[ qs ka-]ra-wi-po-ro TELA+TE[ qs lat. dex. ] ⟦WE 30⟧ r.p vacat vestigia po-se-da-o-ne [ po-de-da-o-ne" : "%𐀂𐀋𐀩𐀊 𐂧+𐀳% % 𐀏%𐀨𐀹𐀡𐀫 𐂧+𐀳% % % % 𐀡𐀮𐀅𐀃𐀚 % 𐀡𐀆𐀅𐀃𐀚"
 
 # Test LB.R.34
-# Scenario: Test that 'v.' is not printed in regularized scenarios.
+# Scenario: Test that 'v.' and 'v.p' are not printed in regularized scenarios.
 # Requirements mapping:
-    # LB.41: Tokenise each instance of 'v.'. Represent this text as is in the annotated output, but do not include in the regularised output.
+    # LB.41: Tokenise each instance of 'v.' or 'v.p'. Represent this text as is in the annotated output, but do not include in the regularised output.
 
     "to-re : : : : [ v. di-we si-po-ro ti-mi-to-qo [" : "𐀵𐀩 % 𐀇𐀸 𐀯𐀡𐀫 𐀴𐀖𐀵𐀦 %"
-    
+    "ARM 1 me-zo-a2 O 22 me-u-jo-a2 O 12 KO O 4 PA 2 v.p to-mi-re-[ ]wa-[ ]-re-[ ]e-ko-si o-to-pe-da-ko-we-de-[•]-ke[" : "𐂫 1 𐀕𐀿𐁀 𐀃 22 𐀕𐀄𐀍𐁀 𐀃 12 𐀒 𐀃 4 𐀞 2 𐀵𐀖𐀩% %𐀷% %𐀩% %𐀁𐀒𐀯 𐀃𐀵𐀟𐀅𐀒𐀸𐀆%𐀐%"
+
 # Test LB.R.35
 # Scenario: Test that 'v.↓' is not printed in regularized scenarios.
 # Requirements mapping:
