@@ -456,7 +456,7 @@
 # Test LB.U.59
 # Scenario: Check that the mappings for 'exception scenarios' are working as expected for regularized scenarios.
 # Requirements mapping:
-    # Handled as individual fringe cases via mapping, no specific requirements.
+    # Handled as individual fringe cases via special rule + mapping combo, no specific requirements.
 
     "sup. mut. ?OVIS]-:m [" : "𐂇 %"
     "]-si 1 tu 1 ki-zo 1 MUL 3 TELA-[;1+TE ]-a-ma-no--[ ]-1 o-ri-mo MUL 3 TELA;1+TE 1 pu-zo , ti-no , pi-ja-mu-nu MUL-[ ]-ni-ta , o-sa-po-to MUL 3 TELA-[;1]-+TE 1 [ ] vac. [" : "%𐀯 1 𐀶 1 𐀑𐀿 1 𐂁 3 𐂧¹%+𐀳 %𐀀𐀔𐀜% %1 𐀃𐀪𐀗 𐂁 3 𐂧¹+𐀳 1 𐀢𐀿 𐀴𐀜 𐀠𐀊𐀘𐀝 𐂁% %𐀛𐀲 𐀃𐀭𐀡𐀵 𐂁 3 𐂧¹%+𐀳 1 % % %"
@@ -464,14 +464,21 @@
 # Test LB.R.60
 # Scenario: Check that special mapping for 'ME±RI' with interrupting angle brackets, i.e. 'ME<±RI>', is working as expected for regularized scenarios.
 # Requirements mapping:
-    # Handled as individual fringe cases via mapping, no specific requirements.
-    # Check with Kabir how this has been handled in code.
+    # Handled as individual fringe cases via special rule + mapping combo, no specific requirements.
     
     "]-o-pe-ro *209VAS 'ME<±RI>' 5 [" : "%𐀃𐀟𐀫 𐃨 𐂙 5 %" # https://liber.cnr.it/tablet/view/4215?wl=23278
     "]-i-to , / da-nwa ME±RI *209VAS+A 16 *172 8" : "%𐀂𐀵 𐀅𐁅 𐂙 𐃨+𐀀 16 𐂴 8" # regression test for regular 'ME±RI'
 
+# Test LB.U.61
+# Scenario: Check that special handling rules for 'TELA;+', 'TELA[;1+TE' and '' TELA[;1]+TE' are working as expected for regularized scenarios.
+# Requirements mapping:
+    # Handled as individual fringe cases via special rule + mapping combo, no specific requirements.
+
+    "sup. mut. ]si[ ]re-ja TELA;x+[•][ ]do-si [" : "%𐀯% %𐀩𐀊 𐂧+%% %𐀈𐀯 %"
+    "]si 1 tu 1 ki-zo 1 MUL 3 TELA[;1+TE ]a-ma-no-[ ]1 o-ri-mo MUL 3 TELA;1+TE 1 pu-zo , ti-no , pi-ja-mu-nu MUL[ ]ni-ta , o-sa-po-to MUL 3 TELA[;1]+TE 1 [ ] vac. [" : "%𐀯 1 𐀶 1 𐀑𐀿 1 𐂁 3 𐂧¹%+𐀳 %𐀀𐀔𐀜% %1 𐀃𐀪𐀗 𐂁 3 𐂧¹+𐀳 1 𐀢𐀿 𐀴𐀜 𐀠𐀊𐀘𐀝 𐂁% %𐀛𐀲 𐀃𐀭𐀡𐀵 𐂁 3 𐂧¹%+𐀳 1 % % %"
+
 # NEW SCENARIO
-# Test LB.R.61
+# Test LB.R.62
     # NEW REQUIREMENT: Tokenise each instance of 'sin.'. Represent this text as is in the annotated output, but do not include in the regularized output.
     
     "ku-ro-ro2 AROM 13 T 5 KA±PO 4 *157 28 LANA 5 me-po 6 S 1 V 4 ko-ri-jo-da-na AROM 21 i-re-we[ ] T 2 v. ta-we-si-jo-jo , ke-ro-si-ja VIR 20[ a-pi-qo-o , ke-ro-si-ja VIR 17 [ a-pi-o-to , ke-ro-si-ja VIR 18 o-to-wo-o , ke-ro-si-ja VIR 13 lat. sin. ka-ma-e-we VIR 10" : "𐀓𐀫𐁊 𐂑 13 𐄼 5 𐂓 4 𐂥 28 𐂝 5 𐀕𐀡 6 𐄽 1 𐄾 4 𐀒𐀪𐀍𐀅𐀙 𐂑 21 𐀂𐀩𐀸% % 𐄼 2 𐀲𐀸𐀯𐀍𐀍 𐀐𐀫𐀯𐀊 𐂀 20% 𐀀𐀠𐀦𐀃 𐀐𐀫𐀯𐀊 𐂀 17 % 𐀀𐀠𐀃𐀵 𐀐𐀫𐀯𐀊 𐂀 18 𐀃𐀵𐀺𐀃 𐀐𐀫𐀯𐀊 𐂀 13 𐀏𐀔𐀁𐀸 𐂀 10"
