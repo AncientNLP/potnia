@@ -565,6 +565,7 @@ regularization:
   - ['⌜', '']
   - ['⌝', '']
   - ['mutila', '']
+  - ['dt','']
   - ['\\[?•~•~•~•\\]?', '%%%%']
   - ['\\[?•~•~•\\]?', '%%%']
   - ['\\[?•~•~\\]?', '%%']
@@ -590,8 +591,10 @@ regularization:
   - ['●', '']
   - ['dex.', '']
   - ['sin.', '']
+  - [' p','']
 
 tokenization:
+
   - ['\u00a0', ' ']  # Replace non-breaking space with regular space
   - ['\u0323', '']   # Remove specific character (e.g., dot below)
   - ['</em>', '']    # Remove HTML closing emphasis tag
