@@ -81,6 +81,8 @@ class Script():
         # Replace complex symbols with placeholders
         for symbol, placeholder in self.complex_symbols.items():
             text = text.replace(symbol, placeholder)
+            
+        print(text)
 
         # Apply each pattern replacement in order
         for pattern, replacement in self.transliteration_patterns:

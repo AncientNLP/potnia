@@ -516,6 +516,7 @@ mappings:
   "TELA-[;1+TE": 𐂧¹%+𐀳
   "TELA[;1]+TE": 𐂧¹%+𐀳
   "TELA-[;1]-+TE": 𐂧¹%+𐀳
+  "TELA;x+": 𐂧+
   "TELA[;1": 𐂧¹%
   "TELA;6+": 𐂧⁶+
   "TELA;4+": 𐂧⁴+
@@ -625,6 +626,8 @@ complex_symbols:
   'TELA;1+TE': 'PLACEHOLDER_TELA2'
   'TELA-[;1]-+TE': 'PLACEHOLDER_TELA3'
   'OVIS]-:m': 'PLACEHOLDER_OVIS'
+  'TELA[;1+TE': 'PLACEHOLDER_TELA5'
+  'TELA[;1]+TE': 'PLACEHOLDER_TELA_6'
 
 special_chars_pattern: "(\\[|\\]|\\,|\\'|\\u27e6|\\u27e7|-|\\?|<|>|⌞|⌟|⸤|⸥|\\||\ue000)"
 
