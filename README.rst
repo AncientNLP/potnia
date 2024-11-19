@@ -26,6 +26,11 @@ Potnia
 .. |git3moji badge| image:: https://img.shields.io/badge/git3moji-%E2%9A%A1%EF%B8%8F%F0%9F%90%9B%F0%9F%93%BA%F0%9F%91%AE%F0%9F%94%A4-fffad8.svg
     :target: https://robinpokorny.github.io/git3moji/
 
+.. |JOSS badge| image:: https://joss.theoj.org/papers/7641150c49e996a21fa0f4dc3aadb258/status.svg
+    :target: https://joss.theoj.org/papers/7641150c49e996a21fa0f4dc3aadb258
+
+
+
 
 
 Potnia is an open-source Python library designed to convert Romanized transliterations of ancient texts into Unicode representations of ther respective native scripts.
