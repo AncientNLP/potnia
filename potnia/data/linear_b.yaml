@@ -8,6 +8,7 @@ mappings:
   i: 𐀂
   o: 𐀃
   u: 𐀄
+  au: 𐁂
   da: 𐀅
   de: 𐀆
   di: 𐀇
@@ -63,6 +64,7 @@ mappings:
   ti: 𐀴
   to: 𐀵
   tu: 𐀶
+  twe: 𐁌
   wa: 𐀷
   we: 𐀸
   wi: 𐀹
@@ -87,7 +89,6 @@ mappings:
   a2: 𐁀
   a₃: 𐁁
   a3: 𐁁
-  au: 𐁂
   dwe: 𐁃
   dwo: 𐁄
   pte: 𐁇
@@ -95,7 +96,6 @@ mappings:
   ra3: 𐁉
   ro₂: 𐁊
   ro2: 𐁊
-  twe: 𐁌
   two: 𐁍
 
   ## Sound values unknown
@@ -159,8 +159,8 @@ mappings:
   # DRY COMMODITIES
   GRA: 𐂎 # wheat or barley
   HORD: 𐂏 # barley
-  OLIV: 𐂐 # olive
-  AROM: 𐂑 # spice
+  OLIV: 𐂐 # olives
+  AROM: 𐂑 # spices
   CYP: 𐂒 # cyperus
   PYC: 𐂒 # cyperus
   KA+PO: 𐂓 # fruit?

@@ -1,488 +1,481 @@
 mappings:
   ############################################################
-  ###### Syllabograms Common to Linear A and Linear B ########
+  ######  Signs Common to Linear A and Linear B ########
   ############################################################
-  a: 𐀀
-  e: 𐀁
-  i: 𐀂
-  o: 𐀃
-  u: 𐀄
-  da: 𐀅
-  de: 𐀆
-  di: 𐀇
-  do: 𐀈
-  du: 𐀉
-  ja: 𐀊
-  je: 𐀋
-  jo: 𐀍
-  ju: 𐀎
-  ka: 𐀏
-  ke: 𐀐
-  ki: 𐀑
-  ko: 𐀒
-  ku: 𐀓
-  ma: 𐀔
-  me: 𐀕
-  mi: 𐀖
-  mo: 𐀗
-  mu: 𐀘
-  na: 𐀙
-  ne: 𐀚
-  ni: 𐀛
-  "no": 𐀜
-  nu: 𐀝
-  nwa: 𐁅
-  pa: 𐀞
-  pe: 𐀟
-  pi: 𐀠
-  po: 𐀡
-  pu: 𐀢
-  pu₂: 𐁆
-  pu2: 𐁆
-  qa: 𐀣
-  qe: 𐀤
-  qi: 𐀥 #𐘏?
-  qif: 𐘐
-  qo: 𐀦
-  ra: 𐀨
-  ra₂: 𐁈
-  ra2: 𐁈
-  re: 𐀩
-  ri: 𐀪
-  ro: 𐀫
-  ru: 𐀬
-  sa: 𐀭
-  se: 𐀮
-  si: 𐀯
-  so: 𐀰
-  su: 𐀱
-  ta: 𐀲
-  ta₂: 𐁋
-  ta2: 𐁋
-  te: 𐀳
-  ti: 𐀴
-  to: 𐀵
-  tu: 𐀶
-  wa: 𐀷
-  we: 𐀸
-  wi: 𐀹
-  wo: 𐀺
-  za: 𐀼
-  ze: 𐀽
-  zo: 𐀿
 
-  "*22": 𐁒
-  "*22f": 𐘓
-  "*34": 𐁓
-  "*47": 𐁔
-  "*49": 𐁕
-  "*56": 𐘰
-  "*72": "?" #FIND # 𐘽 ?
-  "*79": 𐙀
+  # SYLLABOGRAMS (LOWERCASE)
+  a: 𐘇
+  e: 𐘡
+  i: 𐘚
+  o: 𐘵
+  u: 𐘉
+  au: 𐙄 #also SUS
+  da: 𐘀
+  de: 𐘦
+  di: 𐘆
+  du: 𐘬
+  ja: 𐘱
+  je: 𐘧
+  ju: 𐘶
+  ka: 𐘾
+  ke: 𐘥
+  ki: 𐘸
+  ko: 𐘺
+  ku: 𐙂
+  ma: 𐙁
+  me: 𐘋
+  mi: 𐘻
+  mu: 𐘕
+  na: 𐘅
+  ne: 𐘗
+  ni: 𐘝 #also FIC
+  nu: 𐘯
+  nwa: 𐘩
+  pa: 𐘂
+  pi: 𐘢
+  po: 𐘊
+  pu: 𐘫
+  pu₂: 𐘜
+  qa: 𐘌
+  qe: 𐘿
+  qi: 𐘏 #also OVIS
+  qif: 𐘐 #also OVISf
+  ra: 𐘴
+  ra₂: 𐘽
+  ra2: 𐘽
+  re: 𐘙
+  ri: 𐀪 𐘭
+  ro: 𐘁
+  ru: 𐘘
+  sa: 𐘞
+  se: 𐘈
+  si: 𐘤
+  su: 𐘲
+  ta: 𐘳
+  ta₂: 𐘷
+  ta2: 𐘷
+  te: 𐘃
+  ti: 𐘠
+  to: 𐘄
+  tu: 𐘹
+  twe: 𐙆
+  wa: 𐘮
+  wi: 𐘣
+  za: 𐘍
+  ze: 𐘼
+  zo: 𐘎
+
+  # SYLLABOGRAMS (UPPERCASE)
+  A: 𐘇
+  E: 𐘡
+  I: 𐘚
+  O: 𐘵
+  U: 𐘉
+  AU: 𐙄 #also SUS
+  DA: 𐘀
+  DE: 𐘦
+  DI: 𐘆
+  DU: 𐘬
+  JA: 𐘱
+  JE: 𐘧
+  JU: 𐘶
+  KA: 𐘾
+  KE: 𐘥
+  KI: 𐘸
+  KO: 𐘺
+  KU: 𐙂
+  MA: 𐙁
+  ME: 𐘋
+  MI: 𐘻
+  MU: 𐘕
+  NA: 𐘅
+  NE: 𐘗
+  NI: 𐘝 #also FIC
+  NU: 𐘯
+  NWA: 𐘩
+  PA: 𐘂
+  PI: 𐘢
+  PO: 𐘊
+  PU: 𐘫
+  PU₂: 𐘜
+  QA: 𐘌
+  QE: 𐘿
+  QI: 𐘏 #also OVIS
+  QIf: 𐘐 #also OVISf
+  RA: 𐘴
+  RA₂: 𐘽
+  RA2: 𐘽
+  RE: 𐘙
+  RI: 𐀪 𐘭
+  RO: 𐘁
+  RU: 𐘘
+  SA: 𐘞
+  SE: 𐘈
+  SI: 𐘤
+  SU: 𐘲
+  TA: 𐘳
+  TA₂: 𐘷
+  TA2: 𐘷
+  TE: 𐘃
+  TI: 𐘠
+  TO: 𐘄
+  TU: 𐘹
+  TWE: 𐙆
+  WA: 𐘮
+  WI: 𐘣
+  ZA: 𐘍
+  ZE: 𐘼
+  ZO: 𐘎
+
+  # SYLLABOGRAMS (SOUND VALUES UNKNOWN)
+  "*22f": 𐘓 #also CAPf
+  "*22F": 𐘓 #also CAPf
+  "*22m": 𐘔 #also CAPm
+  "*22M": 𐘔 #also CAPm
+  "*23m": 𐘖 #also BOSm
+  "*23M": 𐘖 #also BOSm
+  "*34": 𐘟
+  "*47": 𐘨
+  "*49": 𐘪
   "*82": 𐙃
-  "*86": 𐁜
+  "*86": 𐙅
   "*118": 𐙈
 
+  # LOGOGRAMS
+  # PEOPLE AND ANIMALS
+  VIR: 𐙇 # human
+  OVIS: 𐘏 # sheep
+  OVISf: 𐘐 # female sheep
+  OVISm: 𐘑 # male sheep
+  CAP: 𐘒 # goat
+  CAPf: 𐘓 # female goat
+  CAPm: 𐘔 # male goat
+  SUS: 𐙄 # pig
+  BOS: 𐘕 # cattle
+  BOSm": 𐘖 # male cattle
+
+  # DRY COMMODITIES
+  GRA: 𐙉 # wheat or barley
+  OLIV: 𐙋 # olives
+  AROM: 𐙌 # spice
+  CYP: 𐙗 # cyperus
+  FIC: 𐘝 # figs
+
+  # LIQUID COMMODITIES
+  OLE: 𐙖 # olive oil
+  VIN: 𐙍 # wine
+  VINa: 𐙍 # wine (variant a)
+  VINb: 𐙎 # wine (variant b)
+  VINc: 𐙏 # wine (variant c)
+
+  # OTHER MATERIALS AND ITEMS
+  GAL: 𐙔
+  HIDE: 𐙒
+  TELA: 𐘮 # cloth
+
+
   ############################################################
-  ######      Syllabograms Unique to Linear A         ########
+  ######      Signs Unique to Linear A       ########
   ############################################################
-  "*100": 𐙇
-  "*123": 𐙌
-  "*131a": 𐙍
-  "*131b": 𐙎
-  "*164a": 𐙐
-  "*180": 𐙒
+
+  # OTHER MATERIALS AND ITEMS
+  "*131B": 𐙎
+  "*131C": 𐙏
+  "*164": 𐙐
+  "*171": 𐙑
   "*188": 𐙓
-  A301: 𐙕
-  A305: 𐙙
-  A309a: 𐙝
-  A309b: 𐙞
-  A309c: 𐙟
-  A310: 𐙠
-  A312: 𐙢
-  A314: 𐙦
-  A320: 𐙬
-  A321: 𐙭
-  A322: 𐙮
-  A323: 𐙯
-  A324: 𐙰
-  A325: 𐙱
-  A327: 𐙳
-  A328: 𐙴
-  A329: 𐙵
-  A331: 𐙷
-  A333: 𐙹
-  A340: 𐚀
-  A342: 𐚂
-  A345: 𐚅
-  A349: 𐚉
-  A350: 𐚊
-  A352: 𐚌
-  A353: 𐚍
-  A354: 𐚎
-  A355: 𐚏
-  A356: 𐚐
-  A357: 𐚑
-  A358: 𐚒
-  A359: 𐚓
-  A360: 𐚔
-  A361: 𐚕
-  A362: 𐚖
-  A363: 𐚗
-  A364: 𐚘
 
-  ############################################################
-  ##### Logograms Common Between Linear A and Linear B #######
-  ############################################################
+  ## VASES
+  "*400VAS": 𐚠
+  "*400-VS": 𐚠 #special tokenisation rules
+  "*401VAS": 𐚡
+  "*401-VS": 𐚡 #special tokenisation rules
+  "*402VAS": 𐚢
+  "*402-VS": 𐚢 #special tokenisation rules
+  "*403VAS": 𐚣
+  "*403-VS": 𐚣 #special tokenisation rules
+  "*404VAS": 𐚤
+  "*404-VS": 𐚤 #special tokenisation rules
+  "*405VAS": 𐚥
+  "*405-VS": 𐚥 #special tokenisation rules
+  "*406VAS": 𐚦
+  "*406-VS": 𐚦 #special tokenisation rules
+  "*407VAS": 𐚧
+  "*407-VS": 𐚧 #special tokenisation rules
+  "*408VAS": 𐚨
+  "*408-VS": 𐚨 #special tokenisation rules
+  "*409VAS": 𐚩
+  "*409-VS": 𐚩 #special tokenisation rules
+  "*410VAS": 𐚪
+  "*410-VS": 𐚪 #special tokenisation rules
+  "*411VAS": 𐚫
+  "*411-VS": 𐚫 #special tokenisation rules
+  "*411VASa": 𐚫
+  "*411VASb": 𐚫
+  "*411VASc": 𐚫
+  "*412VAS": 𐚬
+  "*412-VS": 𐚬 #special tokenisation rules
+  "*413VAS": 𐚭
+  "*413-VS": 𐚭 #special tokenisation rules
+  "*414VAS": 𐚮
+  "*414-VS": 𐚮 #special tokenisation rules
+  "*415VAS": 𐚯
+  "*415-VS": 𐚯 #special tokenisation rules
+  "*416VAS": 𐚰
+  "*416-VS": 𐚰 #special tokenisation rules
+  "*417VAS": 𐚱
+  "*417-VS": 𐚱 #special tokenisation rules
+  "*418VAS": 𐚲
+  "*418-VS": 𐚲 #special tokenisation rules
 
-  # LOGOGRAMS attested in Linear A and Linear B (SigLA codes)
-  AB01: 𐘀
-  AB02: 𐘁
-  AB03: 𐘂
-  AB04: 𐘃
-  AB05: 𐘄
-  AB06: 𐘅
-  AB07: 𐘆
-  AB08: 𐘇
-  AB09: 𐘈
-  AB10: 𐘉
-  AB11: 𐘊
-  AB13: 𐘋
-  AB16: 𐘌
-  AB17: 𐘍
-  AB20: 𐘎
-  "AB21/OVIS": 𐘏 #OVIS
-  "AB21/OVISf": 𐘐 #OVIS
-  "AB21/OVISm": 𐘑 #OVIS
-  "AB22/CAP": 𐘒 #CAP
-  "AB22/CAPf": 𐘓 #CAP
-  "AB22/CAPm": 𐘔 #CAP
-  "AB23/BOS": 𐘕 #BOS
-  "AB23/BOSm": 𐘖 #BOS
-  AB24: 𐘗
-  AB26: 𐘘
-  AB27: 𐘙
-  AB28: 𐘚
-  AB28B: 𐘛
-  AB29: 𐘜
-  "AB30/FIC": 𐘝 #FIC
-  AB31: 𐘞
-  AB34: 𐘟
-  AB37: 𐘠
-  AB38: 𐘡
-  AB39: 𐘢
-  AB40: 𐘣
-  AB41: 𐘤
-  AB44: 𐘥
-  AB45: 𐘦
-  AB46: 𐘧
-  AB47: 𐘨
-  AB48: 𐘩
-  AB49: 𐘪
-  AB50: 𐘫
-  AB51: 𐘬
-  AB53: 𐘭
-  "AB54/TELA": 𐘮 #TELA
-  AB55: 𐘯
-  AB56: 𐘰
-  AB57: 𐘱
-  AB58: 𐘲
-  AB59: 𐘳
-  AB60: 𐘴
-  AB61: 𐘵
-  AB65: 𐘶
-  AB66: 𐘷
-  AB67: 𐘸
-  AB69: 𐘹
-  AB70: 𐘺
-  AB73: 𐘻
-  AB74: 𐘼
-  AB76: 𐘽
-  AB77: 𐘾
-  AB78: 𐘿
-  AB79: 𐙀
-  AB80: 𐙁
-  AB81: 𐙂
-  AB82: 𐙃
-  "AB85/SUS": 𐙄
-  AB86: 𐙅
-  AB87: 𐙆
-  AB100/VIR: 𐙇
-  AB118: 𐙈
-  "AB120:/GRA": 𐙉
-  "AB120/GRAb": 𐙊
-  "AB122/OLIV": 𐙋
-  AB123: 𐙌 #AROM
-  AB131/VINa: 𐙍
-  AB131/VINb: 𐙎
-  AB131/VINc: 𐙏
-  AB164a: 𐙐
-  AB164b: 𐙐
-  AB164c: 𐙐
-  AB164d: 𐙐
-  AB171: 𐙑
-  AB180: 𐙒
-  AB188: 𐙓
-  AB191: 𐙔
-  AB302/OLE: 𐙖
+  # OTHER SIGNS
+  # various applications as syllabograms, logograms, or ligatures
+  "*301": 𐙕
+  "*303": 𐙗
+  "*304": 𐙘
+  "*305": 𐙙
+  "*306": 𐙚
+  "*307": 𐙛
+  "*308": 𐙜
+  "*309": 𐙝
+  "*309A": 𐙝
+  "*309B": 𐙞
+  "*309C": 𐙟
+  "*310": 𐙠
+  "*311": 𐙡
+  "*312": 𐙢
+  "*313a": 𐙣
+  "*313b": 𐙤
+  "*313c": 𐙥
+  "*314": 𐙦
+  "*315": 𐙧
+  "*316": 𐙨
+  "*317": 𐙩
+  "*318": 𐙪
+  "*319": 𐙫
+  "*904": 𐙫
+  "*320": 𐙬
+  "*321": 𐙭
+  "*322": 𐙮
+  "*323": 𐙯
+  "*324": 𐙰
+  "*325": 𐙱
+  "*326": 𐙲
+  "*327": 𐙳
+  "*328": 𐙴
+  "*329": 𐙵
+  "*330": 𐙶
+  "*331": 𐙷
+  "*332": 𐙸
+  "*333": 𐙹
+  "*334": 𐙺
+  "*335": 𐙻
+  "*336": 𐙼
+  "*337": 𐙽
+  "*338": 𐙾
+  "*339": 𐙿
+  "*340": 𐚀
+  "*341": 𐚁
+  "*342": 𐚂
+  "*343": 𐚃
+  "*344": 𐚄
+  "*345": 𐚅
+  "*346": 𐚆
+  "*347": 𐚇
+  "*348": 𐚈
+  "*349": 𐚉
+  "*350": 𐚊
+  "*351": 𐚋
+  "*352": 𐚌
+  "*353": 𐚍
+  "*354": 𐚎
+  "*355": 𐚏
+  "*356": 𐚐
+  "*357": 𐚑
+  "*358": 𐚒
+  "*359": 𐚓
+  "*360": 𐚔
+  "*361": 𐚕
+  "*362": 𐚖
+  "*363": 𐚗
+  "*364": 𐚘
+  "*365": 𐚙
+  "*366": 𐚚
+  "*367": 𐚛
+  "*368": 𐚜
+  "*369": 𐚝
+  "*370": 𐚞
+  "*371": 𐚟
 
-  # LOGOGRAMS only attested in Linear A
-  A302: 𐙖
-  A303: 𐙗
-  A304: 𐙘
-  A306: 𐙚
-  A308: 𐙜
-  A315: 𐙧
-  A316: 𐙨
-  A317: 𐙩
-  A332: 𐙸
-  A334: 𐙺
-  A335: 𐙻
-  A336: 𐙼
-  A338: 𐙾
-  A339: 𐙿
-  A343: 𐚃
-  A344: 𐚄
-  A347: 𐚇
-  A365: 𐚙
-  A366: 𐚚
-  A367: 𐚛
-  A368: 𐚜
-  A369: 𐚝
-  A370: 𐚞
-  A371: 𐚟
-  ## Vases
-  A400VAS: 𐚠
-  A401VAS: 𐚡
-  A402VAS: 𐚢
-  A403VAS: 𐚣
-  A404VAS: 𐚤
-  A405VAS: 𐚥
-  A406VAS: 𐚦
-  A407VAS: 𐚧
-  A408VAS: 𐚨
-  A409VAS: 𐚩
-  A410VAS: 𐚪
-  A411VAS: 𐚫
-  A411VASa: 𐚫
-  A411VASb: 𐚫
-  A411VASc: 𐚫
-  A412VAS: 𐚬
-  A413VAS: 𐚭
-  A414VAS: 𐚮
-  A415VAS: 𐚯
-  A416VAS: 𐚰
-  A417VAS: 𐚱
-  A418VAS: 𐚲
-
-  # TRANSACTIONAL SIGNS
-  A307: 𐙛
-  A318: 𐙪
-  A319: 𐙫
-  A326: 𐙲
-  A346: 𐚆
+  # SPECIAL CHARACTERS
+    "double mina": 𐝂𐝂
+    "?": 𐝁𐝁
 
   # FRACTIONS
-  A701: 𐝀
-  # A: 𐝀
-  A702: 𐝁
-  # B: 𐝁
-  A703: 𐝂
-  # D: 𐝂
-  A704: 𐝃
-  # E: 𐝃
-  A705: 𐝄
-  # F: 𐝄
-  A706: 𐝅
-  # H: 𐝅
-  A707: 𐝆
-  # J: 𐝆
-  A708: 𐝇
-  # K: 𐝇
-  A709: 𐝈
-  # L: 𐝈
-  A7092: 𐝉
-  # L2: 𐝉
-  A7093: 𐝊
-  # L3: 𐝊
-  A7094: 𐝋
-  # L4: 𐝋
-  A7096: 𐝌
-  # L6: 𐝌
-  A710: 𐝍
-  # W: 𐝍
-  A711: 𐝎
-  # X: 𐝎
-  A712: 𐝏
-  # Y: 𐝏
-  A713: 𐝐
-  OMEGA: 𐝐 # CHECK
-  A714: 𐝑
-  # ABB: 𐝑
-  A715: 𐝒
-  # BB: 𐝒
-  A717: 𐝓
-  # DD: 𐝓
-  A726: 𐝔
-  # EYYY: 𐝔
-  A732: 𐝕
-  #bJE: 𐝕
-
-  # LIGATURES
-  A311: 𐙡
-  A313a: 𐙣
-  A313b: 𐙤
-  A313c: 𐙥
-  A330: 𐙶
-  A337: 𐙽
-  A341: 𐚁
-  A348: 𐚈
-  A351: 𐚋
+  "¹⁄₆": 𐝀
+  "¹⁄₅": 𐝂
+  "¹⁄₄": 𐝃
+  "¹⁄₈": 𐝄
+  "³⁄₈": 𐝃𐝄 #HT16
+  "⁄₆": 𐝅
+  "¹⁄₂": 𐝆
+  "¹⁄₁₆": 𐝇
+  "³⁄₄": 𐝕
+  ".3": 𐝎 #HT123+124a
+  "double mina": 𐝂𐝂
+  "?": 𐝁𐝁
+  # L: 𐝈 #PH10
+  # L2: 𐝉 #ZA11a
+  # L3: 𐝊 #KN28b
+  # L4: 𐝋 #HT33
+  # L6: 𐝌 #KH76
+  # W: 𐝍 #KH21
+  # Y: 𐝏 #PH26
+  # 𐝅𐝇 #HT34
 
   # COMPOUND SIGNS
-  A501: 𐚳
-  A502: 𐚴
-  A503: 𐚵
-  A504: 𐚶
-  A505: 𐚷
-  A506: 𐚸
-  A508: 𐚹
-  A509: 𐚺
-  A510: 𐚻
-  A511: 𐚼
-  A512: 𐚽
-  A513: 𐚾
-  A515: 𐚿
-  A516: 𐛀
-  A520: 𐛁
-  A521: 𐛂
-  A523: 𐛃
-  A524: 𐛄
-  A525: 𐛅
-  A526: 𐛆
-  A527: 𐛇
-  A528: 𐛈
-  A529: 𐛉
-  A530: 𐛊
-  A531: 𐛋
-  A532: 𐛌
-  A534: 𐛍
-  A535: 𐛎
-  A536: 𐛏
-  A537: 𐛐
-  A538: 𐛑
-  A539: 𐛒
-  A540: 𐛓
-  A541: 𐛔
-  A542: 𐛕
-  A545: 𐛖
-  A547: 𐛗
-  A548: 𐛘
-  A549: 𐛙
-  A550: 𐛚
-  A551: 𐛛
-  A552: 𐛜
-  A553: 𐛝
-  A554: 𐛞
-  A555: 𐛟
-  A556: 𐛠
-  A557: 𐛡
-  A559: 𐛢
-  A563: 𐛣
-  A564: 𐛤
-  A565: 𐛥
-  A566: 𐛦
-  A568: 𐛧
-  A569: 𐛨
-  A570: 𐛩
-  A571: 𐛪
-  A572: 𐛫
-  A573: 𐛬
-  A574: 𐛭
-  A575: 𐛮
-  A576: 𐛯
-  A577: 𐛰
-  A578: 𐛱
-  A579: 𐛲
-  A580: 𐛳
-  A581: 𐛴
-  A582: 𐛵
-  A583: 𐛶
-  A584: 𐛷
-  A585: 𐛸
-  A586: 𐛹
-  A587: 𐛺
-  A588: 𐛻
-  A589: 𐛼
-  A591: 𐛽
-  A592: 𐛾
-  A594: 𐛿
-  A595: 𐜀
-  A596: 𐜁
-  A598: 𐜂
-  A600: 𐜃
-  A601: 𐜄
-  A602: 𐜅
-  A603: 𐜆
-  A604: 𐜇
-  A606: 𐜈
-  A608: 𐜉
-  A609: 𐜊
-  A610: 𐜋
-  A611: 𐜌
-  A612: 𐜍
-  A613: 𐜎
-  A614: 𐜏
-  A615: 𐜐
-  A616: 𐜑
-  A617: 𐜒
-  A618: 𐜓
-  A619: 𐜔
-  A620: 𐜕
-  A621: 𐜖
-  A622: 𐜗
-  A623: 𐜘
-  A624: 𐜙
-  A626: 𐜚
-  A627: 𐜛
-  A628: 𐜜
-  A629: 𐜝
-  A634: 𐜞
-  A637: 𐜟
-  A638: 𐜠
-  A640: 𐜡
-  A642: 𐜢
-  A643: 𐜣
-  A644: 𐜤
-  A645: 𐜥
-  A646: 𐜦
-  ## Vases
-  A648VAS: 𐜧
-  A649VAS: 𐜨
-  A651VAS: 𐜩
-  A652VAS: 𐜪
-  A653VAS: 𐜫
-  A654VAS: 𐜬
-  A655VAS: 𐜭
-  A656VAS: 𐜮
-  A657VAS: 𐜯
-  A658VAS: 𐜰
-  A659VAS: 𐜱
-  A660VAS: 𐜲
-  A661VAS: 𐜳
-  A662VAS: 𐜴
-  A663VAS: 𐜵
-  A664VAS: 𐜶
+  "*86+*188": 𐛦
+  "*86+'*188'": 𐛥
+  "*188+KU": 𐜇
+  "*301+*311": 𐜈
+  "*304+[ ]": 𐜜
+  "*304+PA": 𐜝
+  "*306+MI": 𐜞
+  "*307+*301": 𐜟
+  "*307+*387": 𐜠
+  "*316+KI": 𐜡
+  "*318+[ ]": 𐜢
+  "*330+DA": 𐜣
+  "*330+SA": 𐜤
+  "*337+*188": 𐜥
+  "*341+PI": 𐜦
+  "*401+[ ]": 𐜨
+  "*401+*304": 𐜫
+  "*401+RO": 𐜪
+  "*401+RU": 𐜩
+  "*402+A": 𐜬
+  "*405+Ω": 𐜭
+  "*406VAS+KE": 𐜮
+  "*412+E": 𐜰
+  "*413+SU": 𐜲
+  "*414+[ ]": 𐜳
+  "*414+A": 𐜯
+  "*414+F": 𐜴
+  "*416+L2": 𐜵
+  "*418+L2": 𐜶
+  "*516": 𐛀
+  "*528": 𐛈
+  # *531: 𐛋
+  "*539": 𐛒
+  "*554": 𐛞
+  "*556": 𐛠
+  "*557": 𐛡
+  "*559": 𐛢
+  "*560": 𐛢
+  "*563": 𐛣
+  "*648": 𐜧
+  "*659": 𐜱
+  "CAPm+KU": 𐚾
+  "CYP+D": 𐜙
+  "CYP+E": 𐜚
+  "CYP+K": 𐜛
+  "DA+*301": 𐚵
+  "DA+RE+SE": 𐚴
+  "DA+RO": 𐚳
+  "DI+QE": 𐚸
+  "DU+[ ]": 𐛍
+  "E+[ ]": 𐛅
+  "E+KA": 𐛆
+  "GRA+DA": 𐛬
+  "GRA+B": 𐛳
+  "GRA+BOSm": 𐛯
+  "GRA+E": 𐛴
+  "GRA+F": 𐛵
+  "GRA+H": 𐛶
+  "GRA+K+L": 𐛷
+  "GRA+KU": 𐛲
+  "GRA+L2": 𐛸
+  "GRA+L4+L4": 𐛹
+  "GRA+PA": 𐛭
+  "GRA+QE": 𐛱
+  "GRA+QIf": 𐛮
+  "HIDE+[?]": 𐙒
+  "HIDE+B": 𐜅
+  "HIDE+L":  𐜆
+  "HIDE+SA+B": 𐜃
+  "HIDE+SA+L": 𐜄
+  "I+*301": 𐛁
+  "JA+RU": 𐛑
+  "JU+*317+QE": 𐛕
+  "KI+MU": 𐛖
+  "KU+[ ]": 𐛤
+  "MI+*301": 𐛝
+  "MI+JA": 𐛘
+  "MI+JA+[ ]": 𐛙
+  "MI+JA+I": 𐛛
+  "MI+JA+KA": 𐛜
+  "MI+JA+RU": 𐛚
+  "OLE+A": 𐜊
+  "OLE+DI": 𐜉
+  "OLE+E": 𐜎
+  #"OLE+KI": 𐜒
+  "OLE+KI": 𐜓
+  "OLE+KI+ME": 𐜕
+  "OLE+KI+U": 𐜔
+  "OLE+MI": 𐜗
+  "OLE+NE": 𐜍
+  "OLE+QE+DI": 𐜘
+  "OLE+QIf": 𐜌
+  "OLE+RA": 𐜑
+  "OLE+RI": 𐜏
+  "OLE+TA": 𐜐
+  "OLE+TU": 𐜖
+  "OLE+U": 𐜋
+  "*OLIV+TU": 𐛺
+  "PA3+QE": 𐛐
+  "QA2+[?]+PU": 𐚻
+  "QA2+[?]+RE": 𐚹
+  "QA2+[?]+PU+RE": 𐚼
+  "QA2+[?]+RE+PU": 𐚺
+  "QE+GRA+PA": 𐛟
+  "QI+SI": 𐚽
+  "RA+KA": 𐛔
+  "RE+SE": 𐚿
+  "RO+RO": 𐚶
+  "SA+MU+KU": 𐛂
+  "SI+ME": 𐛊 #check, 𐛋
+  "SI+SE": 𐛉
+  "SI+TA2": 𐛌
+  "SU+MI": 𐛓
+  "TE+RO": 𐚷
+  "TELA+KU": 𐛎
+  "TELA+*312": 𐛏
+  "TI+*412VAS": 𐛄
+  "TI+A": 𐛃
+  "TU+RO": 𐛗
+  "VIN+KA": 𐜁
+  "VIN+RA": 𐛿
+  "VIN+SA": 𐛼
+  "VIN+TE": 𐛻
+  "VIN+WA": 𐛾
+  "VINb+WI": 𐜂
+  "VIR+[?]": 𐙇
+  "VIR+KA": 𐛧
+  "VIR+*307": 𐛨
+  "VIR+*313a": 𐛩
+  "VIR+*313b": 𐛪
+  "VIR+*313c": 𐛫
+  "WI+ZE": 𐛇
 
   # ADDITIONAL SIGNS
-  A800: 𐝠
-  A801: 𐝡
-  A802: 𐝢
-  A803: 𐝣
-  A804: 𐝤
-  A805: 𐝥
-  A806: 𐝦
-  A807: 𐝧
+  "*800": 𐝠
+  "*801": 𐝡 #check
+  "*802": 𐝢
+  "*803": 𐝣 #check
+  "*804": 𐝤 #check
+  "*805": 𐝥
+  "*806": 𐝦
+  "*807": 𐝧 #check
 
 patterns_to_ignore:
   - "vacat\\s*\\.?"

@@ -1,9 +1,28 @@
-# Test that syllabograms and logograms are correctly converted to Unicode, that spaces work as word separators, and that hyphens act to join syllables within a word
-"ka-di AB131/VINa 3 ku-ro AB131/VINa 78 A594 17" : "𐀏𐀇 𐙍 3 𐀓𐀫 𐙍 78 𐛿 17" # https://sigla.phis.me/document/ZA%2015b/
+# Test that signs are correctly converted to Unicode, that spaces work as word separators, and that hyphens act to join syllables within a word.
+# Test that the special square character is tokenized, and converted to a wildcard character ('%') in regularized output.
+# Test that '—' is tokenized, but not included in regularized output.
+#HT49b
+    "𐝫  KU  I-KI TA  —  𐝫  KA  𐝫" : "% 𐙂 𐘚𐘸 𐘳 % 𐘾 %" #HT49b
 
-# Test that ']' and '[' are correctly converted to wildcard characters ('%')
-# Test that '[?]'' is correctly converted to a wildcard character ('%')
-"]pa-ri-de ]a-si-*118 ]ku-ka-[?][" : "%𐀞𐀪𐀆 %𐀀𐀯𐙈 %𐀓𐀏%%" # https://sigla.phis.me/document/KH%2099/index-7.html
+# Test that '≈' is tokenized, but not included in regularized output.
+    "165 ≈ ¹⁄₆  KI-RO" : "165 𐝅 𐘸𐘁" #HT93b
 
-# Test that '[unclassified]' is correctly converted to a wildcard character ('%')
-"[unclassified] *180 A339 *100" : "% 𐙒 𐙿 𐙇" # https://sigla.phis.me/document/PH%2012a/
+# Test that 'double mina' is tokenized, so that it can be picked up by the correct YAML mapping.
+# Test that '?' is tokenized, so that it can be picked up by the correct YAML mapping.
+# Test that '𐄁' is tokenized, but not included in regularized output
+    "DA-RE-KU 𐄁  KU-*321 𐄁 GRA+PA 2 double mina  GRA 2 double mina  OLE+KI ?  OLIV ¹⁄₄  𐝫" : "𐘀𐘙𐙂 𐄁 𐙂𐙭 𐄁 𐛭 2 𐝂𐝂 𐙉 2 𐝂𐝂 𐜓 𐝁𐝁 𐙋 𐝃 %" #ZA18a
+
+# Test that '+' signs concatenate the signs on either side into a single token. This includes when the '+' sign is followed by a '[?]'' or '[ ]'.
+# There can be multiple '+' signs in a single token.
+# Make sure not to break legitimate cases where there is a '?' by itself, or a '[' that's not part of this pattern (see test cases immediately above and below).
+    "QA-TI-DA-TE 𐄁 OLE+DI 5  *304 5  QE-TU-NE 𐄁 QA2+[?]+PU 1  E 30  *560 𐄁 *118 5  CYP+E 3  NI 1  QA2+[?]+PU+RE ¹⁄₁₆  DA-I 50" : "𐘌𐘠𐘀𐘃 𐄁 𐜉 5 𐙘 5 𐘿𐘹𐘗 𐄁 𐚻 1 𐘡 30 𐛢 𐄁 𐙈 5 𐜚 3 𐘝 1 𐚼 𐝇 𐘀𐘚 50" #HT12
+    "𐝫  *401+[ ]  5  I-KU-PI  *131C 1  KU 22  SI  DA+*301 *131C 1  RO+RO[" : "% 𐜨 5 𐘚𐙂𐘢 𐙏 1 𐙂 22 𐘤 𐚵 𐙏 1 𐚶%"
+
+# Test that '[' is tokenized and treated as a wildcard character ('%')' in regularized output.
+# And doesn't break above rule RE: '+[ ]' or +'[?]'
+    "𐝫  *307+*301[  𐝫" : "% 𐜟% %" #KH42
+    "*560-RE 2  WI+ZE[  𐝫" : "𐛢𐘙 2 𐛇% %" #KH43
+    "𐝫  *401+[ ]  5  I-KU-PI  *131C 1  KU 22  SI  DA+*301 *131C 1  RO+RO[" : "% 𐜨 5 𐘚𐙂𐘢 𐙏 1 𐙂 22 𐘤 𐚵 𐙏 1 𐚶%" #KH18
+
+# Test that LA signs included in transliteration are tokenized, and printed as is in regularized output (e.g 𐝃, 𐝉, 𐝋)
+    "SA-RA₂ 𐄁 *401+*304  QA2+[?]+RE+PU 1 ¹⁄₄  QA2+[?]+RE 𐝉𐝋𐝫  3  E+KA 𐝃𐝉  MI+JA+KA ¹⁄₅  *305 90  *341+PI 100  PA3+QE 100" : "𐘞𐘽 𐄁 𐜫 𐚺 1 𐝃 𐚹 𐝉𐝋% 3 𐛆 𐝃𐝉 𐛜 𐝂 𐙙 90 𐜦 100 𐛐 100" #HT33
