@@ -1,5 +1,5 @@
 # Test that signs are correctly converted to Unicode, that spaces work as word separators, and that hyphens act to join syllables within a word.
-# Test that the special square character is tokenized, and converted to a wildcard character ('%') in regularized output.
+# Test that the 'special square character' is tokenized, and converted to a wildcard character ('%') in regularized output.
 # Test that '—' is tokenized, but not included in regularized output.
 #HT49b
     "𐝫  KU  I-KI TA  —  𐝫  KA  𐝫" : "% 𐙂 𐘚𐘸 𐘳 % 𐘾 %" #HT49b
