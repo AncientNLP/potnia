@@ -66,6 +66,7 @@ mappings:
   za: 𐘍
   ze: 𐘼
   zo: 𐘎
+  zu: 𐙀
 
   # SYLLABOGRAMS (UPPERCASE)
   A: 𐘇
@@ -96,6 +97,8 @@ mappings:
   NU: 𐘯
   NWA: 𐘩
   PA: 𐘂
+  PA₃: 𐘰
+  PA3: 𐘰
   PI: 𐘢
   PO: 𐘊
   PU: 𐘫
