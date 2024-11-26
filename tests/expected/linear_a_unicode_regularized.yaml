@@ -31,7 +31,10 @@
     # Note that '*403-VS' is currently being tokenized as '*403VS', presumaby because the '-' is being treated as syllable separator and being stripped out. Therefore the mappings aren't working.
     # i.e. '% % 𐘀𐘁𐘂 *403VS 1 𐙄 1 𐘒 3 𐛞𐙈 3 𐛎 2 𐛏 1' >> are we better to handle in code or in mappings?
     "𐝫  𐝫  DA-RO-PA *403-VS 1  AU 1  CAP 3  *554-*118 3  TELA+KU 2  TELA+*312 1" : "% % 𐘀𐘁𐘂 𐚣 1 𐙄 1 𐘒 3 𐛞𐙈 3 𐛎 2 𐛏 1" #HT38
-    "*412+E 2  *659 3  *404-VS" : "𐜰 2 𐜱 3 𐚤"
+    "*412+E 2  *659 3  *404-VS" : "𐜰 2 𐜱 3 𐚤" #MA10c
 
 # Test that "*903" is tokenized, but is not included in regularized scenarios (actually a checkmark '𐄂')
-    "*903-I-DU-WI *47  QE-DE-MI-NU 𐄁" : "𐘚𐘬𐘣 𐘨 𐘿𐘦𐘻𐘯"
+    "*903-I-DU-WI *47  QE-DE-MI-NU 𐄁" : "𐘚𐘬𐘣 𐘨 𐘿𐘦𐘻𐘯" #MA1a
+
+# Test that '|' is tokenized, but not included in regularized output.
+    "|||||||||||||" : "" #PH 11
