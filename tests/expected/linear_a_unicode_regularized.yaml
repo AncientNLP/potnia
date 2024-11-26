@@ -15,7 +15,7 @@
 # Test that '+' signs concatenate the signs on either side into a single token. This includes when the '+' sign is followed by a '[?]'' or '[ ]'.
 # There can be multiple '+' signs in a single token.
 # Make sure not to break legitimate cases where there is a '?' by itself, or a '[' that's not part of this pattern (see test cases immediately above and below).
-    "QA-TI-DA-TE 𐄁 OLE+DI 5  *304 5  QE-TU-NE 𐄁 QA2+[?]+PU 1  E 30  *560 𐄁 *118 5  CYP+E 3  NI 1  QA2+[?]+PU+RE ¹⁄₁₆  DA-I 50" : "𐘌𐘠𐘀𐘃 𐄁 𐜉 5 𐙘 5 𐘿𐘹𐘗 𐄁 𐚻 1 𐘡 30 𐛢 𐄁 𐙈 5 𐜚 3 𐘝 1 𐚼 𐝇 𐘀𐘚 50" #HT12
+    "QA-TI-DA-TE 𐄁 OLE+DI 5  *304 5  QE-TU-NE 𐄁 QA2+[?]+PU 1  E 30  *560 𐄁 *118 5  CYP+E 3  NI 1  QA2+[?]+PU+RE ¹⁄₁₆  DA-I 50" : "𐘌𐘠𐘀𐘃 𐜉 5 𐙘 5 𐘿𐘹𐘗 𐚻 1 𐘡 30 𐛢 𐙈 5 𐜚 3 𐘝 1 𐚼 𐝇 𐘀𐘚 50" #HT12
     "𐝫  *401+[ ]  5  I-KU-PI  *131C 1  KU 22  SI  DA+*301 *131C 1  RO+RO[" : "% 𐜨 5 𐘚𐙂𐘢 𐙏 1 𐙂 22 𐘤 𐚵 𐙏 1 𐚶%"
 
 # Test that '[' is tokenized and treated as a wildcard character ('%')' in regularized output.
@@ -25,7 +25,7 @@
     "𐝫  *401+[ ]  5  I-KU-PI  *131C 1  KU 22  SI  DA+*301 *131C 1  RO+RO[" : "% 𐜨 5 𐘚𐙂𐘢 𐙏 1 𐙂 22 𐘤 𐚵 𐙏 1 𐚶%" #KH18
 
 # Test that LA signs included in transliteration are tokenized, and printed as is in regularized output (e.g 𐝃, 𐝉, 𐝋)
-    "SA-RA₂ 𐄁 *401+*304  QA2+[?]+RE+PU 1 ¹⁄₄  QA2+[?]+RE 𐝉𐝋𐝫  3  E+KA 𐝃𐝉  MI+JA+KA ¹⁄₅  *305 90  *341+PI 100  PA3+QE 100" : "𐘞𐘽 𐄁 𐜫 𐚺 1 𐝃 𐚹 𐝉𐝋% 3 𐛆 𐝃𐝉 𐛜 𐝂 𐙙 90 𐜦 100 𐛐 100" #HT33
+    "SA-RA₂ 𐄁 *401+*304  QA2+[?]+RE+PU 1 ¹⁄₄  QA2+[?]+RE 𐝉𐝋𐝫  3  E+KA 𐝃𐝉  MI+JA+KA ¹⁄₅  *305 90  *341+PI 100  PA3+QE 100" : "𐘞𐘽 𐜫 𐚺 1 𐝃 𐚹 𐝉𐝋% 3 𐛆 𐝃𐝉 𐛜 𐝂 𐙙 90 𐜦 100 𐛐 100" #HT33
 
 # Test that vessel codes (e.g. '*403-VS') are tokenized, and correctly mapped in regularized scenarios
     # Note that '*403-VS' is currently being tokenized as '*403VS', presumaby because the '-' is being treated as syllable separator and being stripped out. Therefore the mappings aren't working.

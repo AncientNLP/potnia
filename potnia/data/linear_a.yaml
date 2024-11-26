@@ -514,11 +514,15 @@ patterns_to_ignore:
 
 
 regularization:
+  - ['𐄁',''] 
+  - ['\*903',''] 
+  - ['\\|+', '']
   - ['—','']
   - ['≈','']
   - ['[\\[\\]]', '%']
+  # - ['(?<!\[)\[(?!\s\])|(?<!\[\s)\](?!\])', '%']
   - ['\U0001076b','%']
-
+  
 tokenization:
   - ['double mina','double_mina']
   
@@ -528,6 +532,15 @@ complex_symbols:
   "QA2+[?]+PU": 'PLACEHOLDER_QA1'
   "QA2+[?]+RE": 'PLACEHOLDER_QA2'
   "*401+[ ]": 'PLACEHOLDER_401'
+  "VIR+[?]": 'PLACEHOLDER_Q1'
+  "HIDE+[?]": 'PLACEHOLDER_Q2'
+  "*304+[ ]": 'PLACEHOLDER_B1'
+  "*318+[ ]": 'PLACEHOLDER_B2'
+  "*414+[ ]": 'PLACEHOLDER_B3'
+  "MI+JA+[ ]": 'PLACEHOLDER_B4'
+  "KU+[ ]": 'PLACEHOLDER_B5'
+  "DU+[ ]": 'PLACEHOLDER_B6'
+  "E+[ ]": 'PLACEHOLDER_B7'
 
 special_chars_pattern: "(\\[|\\]|\\,|\\'|\\u27e6|\\u27e7|-|\\?|<|>|⌞|⌟|⸤|⸥|\\||\ue000)"
 

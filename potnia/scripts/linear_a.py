@@ -58,6 +58,22 @@ class LinearA(Script):
                     i += 14  # Skip past "[unclassified]"
                     continue
 
+            # Handle 'VAS' or 'VS' after '*XXX' patterns
+            if char == '*':
+                # Look ahead to check for patterns like '*XXXVAS' or '*XXX-VS'
+                end_index = i + 1
+                while end_index < len(input_string) and input_string[end_index].isalnum():
+                    end_index += 1
+
+                # Check if the pattern ends with 'VAS' or '-VS'
+                if input_string[end_index:end_index + 3] == 'VAS' or input_string[end_index:end_index + 3] == '-VS':
+                    if token:
+                        tokens.append(token)
+                    tokens.append(input_string[i:end_index + 3])  # Add the whole '*XXXVAS' or '*XXX-VS' token
+                    token = ""
+                    i = end_index + 3  # Skip past the pattern
+                    continue
+
             # Handle characters ']', '[', and ' '
             if char in '[] ':
                 if token:
@@ -80,7 +96,7 @@ class LinearA(Script):
         # Apply processing to each token and filter out empty tokens
         tokens = [
             reduce(lambda t, p: p[0].sub(p[1], t), self.restore_patterns, tok)
-            for tok in tokens if tok and tok != "-"
+            for tok in tokens if tok
         ]
             
                     # Restore complex symbols using the reversed dictionary
