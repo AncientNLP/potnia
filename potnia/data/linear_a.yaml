@@ -32,6 +32,8 @@ mappings:
   nu: 𐘯
   nwa: 𐘩
   pa: 𐘂
+  pa₃: 𐘰
+  pa3: 𐘰
   pi: 𐘢
   po: 𐘊
   pu: 𐘫
@@ -126,14 +128,20 @@ mappings:
   ZA: 𐘍
   ZE: 𐘼
   ZO: 𐘎
+  ZU: 𐙀
 
   # SYLLABOGRAMS (SOUND VALUES UNKNOWN)
+  "*21f": 𐘐 #also OVISf
+  "*21F": 𐘐 #also OVISf
+  "*21m": 𐘑 #also OVISm
+  "*21M": 𐘑 #also OVISm
   "*22f": 𐘓 #also CAPf
   "*22F": 𐘓 #also CAPf
   "*22m": 𐘔 #also CAPm
   "*22M": 𐘔 #also CAPm
   "*23m": 𐘖 #also BOSm
   "*23M": 𐘖 #also BOSm
+  "*28B": 𐘛
   "*34": 𐘟
   "*47": 𐘨
   "*49": 𐘪
@@ -253,7 +261,6 @@ mappings:
   "*317": 𐙩
   "*318": 𐙪
   "*319": 𐙫
-  "*904": 𐙫
   "*320": 𐙬
   "*321": 𐙭
   "*322": 𐙮
@@ -315,6 +322,7 @@ mappings:
   "¹⁄₆": 𐝀
   "¹⁄₅": 𐝂
   "¹⁄₄": 𐝃
+  "¹⁄₃": 𐝁
   "¹⁄₈": 𐝄
   "³⁄₈": 𐝃𐝄 #HT16
   "⁄₆": 𐝅
@@ -468,15 +476,27 @@ mappings:
   "VIR+*313c": 𐛫
   "WI+ZE": 𐛇
 
+  # DAMAGED COMPOUND SIGNS
+  "HIDE+": 𐙒+
+  "VIR+": 𐙇+
+  "*304+": 𐙘+
+
   # ADDITIONAL SIGNS
   "*800": 𐝠
-  "*801": 𐝡 #check
+  "*801": 𐝡
   "*802": 𐝢
-  "*803": 𐝣 #check
-  "*804": 𐝤 #check
+  "*803": 𐝣
+  "*804": 𐝤
   "*805": 𐝥
   "*806": 𐝦
-  "*807": 𐝧 #check
+  "*807": 𐝧
+  "*809": "%" #LAXYZ only and hapax; unclear what sign should be
+  "*810": "%" #LAXYZ only and hapax;, unclear what sign should be
+  "*811": "%" #LAXYZ only and hapax; unclear what sign should be
+  "*815": 𐚢 #LAXYZ only; same as *402, according to Younger
+  "*904": 𐙫 #LAXYZ only; same as *319, according to Younger
+  "*905": 𐝆 #LAXYZ only; same as fraction J, according to Younger
+  "*906": 𐝇 #LAXYZ only; same as fraction K?
 
 patterns_to_ignore:
   - "vacat\\s*\\.?"

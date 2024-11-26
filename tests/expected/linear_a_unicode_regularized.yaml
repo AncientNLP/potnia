@@ -10,7 +10,7 @@
 # Test that 'double mina' is tokenized, so that it can be picked up by the correct YAML mapping.
 # Test that '?' is tokenized, so that it can be picked up by the correct YAML mapping.
 # Test that '𐄁' is tokenized, but not included in regularized output
-    "DA-RE-KU 𐄁  KU-*321 𐄁 GRA+PA 2 double mina  GRA 2 double mina  OLE+KI ?  OLIV ¹⁄₄  𐝫" : "𐘀𐘙𐙂 𐄁 𐙂𐙭 𐄁 𐛭 2 𐝂𐝂 𐙉 2 𐝂𐝂 𐜓 𐝁𐝁 𐙋 𐝃 %" #ZA18a
+    "DA-RE-KU 𐄁  KU-*321 𐄁 GRA+PA 2 double mina  GRA 2 double mina  OLE+KI ?  OLIV ¹⁄₄  𐝫" : "𐘀𐘙𐙂 𐙂𐙭 𐛭 2 𐝂𐝂 𐙉 2 𐝂𐝂 𐜓 𐝁𐝁 𐙋 𐝃 %" #ZA18a
 
 # Test that '+' signs concatenate the signs on either side into a single token. This includes when the '+' sign is followed by a '[?]'' or '[ ]'.
 # There can be multiple '+' signs in a single token.
@@ -26,3 +26,12 @@
 
 # Test that LA signs included in transliteration are tokenized, and printed as is in regularized output (e.g 𐝃, 𐝉, 𐝋)
     "SA-RA₂ 𐄁 *401+*304  QA2+[?]+RE+PU 1 ¹⁄₄  QA2+[?]+RE 𐝉𐝋𐝫  3  E+KA 𐝃𐝉  MI+JA+KA ¹⁄₅  *305 90  *341+PI 100  PA3+QE 100" : "𐘞𐘽 𐄁 𐜫 𐚺 1 𐝃 𐚹 𐝉𐝋% 3 𐛆 𐝃𐝉 𐛜 𐝂 𐙙 90 𐜦 100 𐛐 100" #HT33
+
+# Test that vessel codes (e.g. '*403-VS') are tokenized, and correctly mapped in regularized scenarios
+    # Note that '*403-VS' is currently being tokenized as '*403VS', presumaby because the '-' is being treated as syllable separator and being stripped out. Therefore the mappings aren't working.
+    # i.e. '% % 𐘀𐘁𐘂 *403VS 1 𐙄 1 𐘒 3 𐛞𐙈 3 𐛎 2 𐛏 1' >> are we better to handle in code or in mappings?
+    "𐝫  𐝫  DA-RO-PA *403-VS 1  AU 1  CAP 3  *554-*118 3  TELA+KU 2  TELA+*312 1" : "% % 𐘀𐘁𐘂 𐚣 1 𐙄 1 𐘒 3 𐛞𐙈 3 𐛎 2 𐛏 1" #HT38
+    "*412+E 2  *659 3  *404-VS" : "𐜰 2 𐜱 3 𐚤"
+
+# Test that "*903" is tokenized, but is not included in regularized scenarios (actually a checkmark '𐄂')
+    "*903-I-DU-WI *47  QE-DE-MI-NU 𐄁" : "𐘚𐘬𐘣 𐘨 𐘿𐘦𐘻𐘯"
