@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from ..script import Script
+from functools import reduce
 
 @dataclass
 class LinearA(Script):
@@ -28,6 +29,14 @@ class LinearA(Script):
         tokens = []
         token = ""
         i = 0
+        
+        for symbol, placeholder in self.complex_symbols.items():
+            input_string = input_string.replace(symbol, placeholder)
+            
+        # Apply each pattern replacement in order
+        for pattern, replacement in self.transliteration_patterns:
+            input_string = pattern.sub(replacement, input_string)
+            
 
         while i < len(input_string):
             char = input_string[i]
@@ -67,8 +76,35 @@ class LinearA(Script):
         # Add the last token if it exists
         if token:
             tokens.append(token)
-
+            
+        # Apply processing to each token and filter out empty tokens
+        tokens = [
+            reduce(lambda t, p: p[0].sub(p[1], t), self.restore_patterns, tok)
+            for tok in tokens if tok and tok != "-"
+        ]
+            
+                    # Restore complex symbols using the reversed dictionary
+        for placeholder, symbol in self.reversed_symbols.items():
+            tokens = [tok.replace(placeholder, symbol) for tok in tokens]
+            
         return tokens
+    
+    def to_unicode(self, text:str, regularize:bool=False) -> str:
+        """
+        Converts transliterated text to unicode format.
+
+        Args:
+            text (str): Input text in transliterated format.
+            regularize (bool, optional): Whether to apply regularization. Defaults to False.
+
+        Returns:
+            str: Text converted to unicode format, optionally regularized.
+        """
+        tokens = self.tokenize_transliteration(text)
+        result = "".join([self.transliteration_to_unicode_dict.get(token, token) for token in tokens])
+        if regularize:
+            result = self.regularize(result)
+        return result
 
 
 linear_a = LinearA()

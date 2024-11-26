@@ -5,7 +5,7 @@
     "𐝫  KU  I-KI TA  —  𐝫  KA  𐝫" : "% 𐙂 𐘚𐘸 𐘳 % 𐘾 %" #HT49b
 
 # Test that '≈' is tokenized, but not included in regularized output.
-    "165 ≈ ¹⁄₆  KI-RO" : "165 𐝅 𐘸𐘁" #HT93b
+    "165 ≈ ¹⁄₆  KI-RO" : "165 𐝀 𐘸𐘁" #HT93b
 
 # Test that 'double mina' is tokenized, so that it can be picked up by the correct YAML mapping.
 # Test that '?' is tokenized, so that it can be picked up by the correct YAML mapping.

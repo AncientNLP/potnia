@@ -82,8 +82,6 @@ class Script():
         for symbol, placeholder in self.complex_symbols.items():
             text = text.replace(symbol, placeholder)
             
-        print(text)
-
         # Apply each pattern replacement in order
         for pattern, replacement in self.transliteration_patterns:
             text = pattern.sub(replacement, text)
@@ -171,7 +169,6 @@ class Script():
         """
         for pattern, replacement in self.regularization_regex:
             string = pattern.sub(replacement, string)
-
         for regex in self.regex_to_ignore:
             string = regex.sub("", string)
         string = re.sub(r'\s+', ' ', string)

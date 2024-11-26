@@ -308,8 +308,8 @@ mappings:
   "*371": 𐚟
 
   # SPECIAL CHARACTERS
-    "double mina": 𐝂𐝂
-    "?": 𐝁𐝁
+  "double mina": 𐝂𐝂
+  "?": 𐝁𐝁
 
   # FRACTIONS
   "¹⁄₆": 𐝀
@@ -437,6 +437,7 @@ mappings:
   "QA2+[?]+RE": 𐚹
   "QA2+[?]+PU+RE": 𐚼
   "QA2+[?]+RE+PU": 𐚺
+  
   "QE+GRA+PA": 𐛟
   "QI+SI": 𐚽
   "RA+KA": 𐛔
@@ -498,73 +499,20 @@ patterns_to_ignore:
 
 
 regularization:
-  - ['\\[\\?\\]', '%']
-  - ['\\[unclassified\\]', '%']  # Maps `[unclassified]` to `%`
-  - ['[?]','%']
-  - ['\\|', '']
-  - [':', '']
-  - ['r\\.', '']
-  - ['\\[•~\\]', '']
-  - ['⌜', '']
-  - ['⌝', '']
-  - ['mutila', '']
-  - ['\\[?•~•~•~•\\]?', '%%%%']
-  - ['\\[?•~•~•\\]?', '%%%']
-  - ['\\[?•~•~\\]?', '%%']
-  - ['\\[?•~•\\]?', '%%']  # Corrected this line
-  - ['\\<|\\>', '']
-  - ['\\[ \\]', '[ ]']
-  - ['ro2', '𐁊']
-  - ['vestigia', '%']
-  - ['\\bqs\\b', '%']
-  - ['vest\\s*\\.', '%']
-  - ['\\[•\\]', '%']
-  - ['supra sigillum|CMS \\w+\\d+[A-Z]* \\d+', '']
-  - ['reliqua pars sine regulis', '']
-  - ['[αβγ]', '']
-  - ['v\\.→', '']
-  - ['v\\.↓', '']
-  - ['v\\.', '']
-  - ['\\b(vacat|sup. mut.|inf. mut.|deest|X|fragmentum A|fragmentum B|graffito|angustum|prior pars sine regulis|fragmentum C|fragmentum D|fragmentum separatum|α|β|γ|δ|sigillum|)\\b', '']  # Corrected this line
-  - ['\\b(x|m|f)\\b', '']
+  - ['—','']
+  - ['≈','']
   - ['[\\[\\]]', '%']
-  - ['=[^ ]*', '']
-  - ['•', '%']
-  - ['●', '']
-  - ['dex.', '']
-  - ['sin.', '']
+  - ['\U0001076b','%']
 
 tokenization:
-  - ['\u00a0', ' ']  # Replace non-breaking space with regular space
-  - ['\u0323', '']   # Remove specific character (e.g., dot below)
-  - ['</em>', '']    # Remove HTML closing emphasis tag
-  - ['<em>', '']     # Remove HTML opening emphasis tag
-  - ['\|([^|]+)\|', '|\1|']  # Special handling to ensure pipes are treated as separate tokens
-  - ['ME<±RI>', 'ME±RI']  # Handle specific compound tokens like 'ME<±RI>'
-  - ['--', '-']  # Normalize the text by replacing double dashes with a single dash
-  - ['\b(EQU|SUS|OVIS|BOS|CAP)\s+(x|m|f)\b', '\1\2']  # Combine animal ideograms followed by 'x', 'm', or 'f' without space
-  - ['⌜', ' ⌜ ']  # Explicit tokenization for half brackets
-  - ['⌝', ' ⌝ ']
-  - ['mutila', ' mutila ']  # Handle 'mutila'
-  - ['fragmentum A', 'fragmentum_A']  # Preprocess 'fragmentum A' and 'fragmentum B' to ensure they are not split
-  - ['fragmentum B', 'fragmentum_B']
-  - ['\b(BOS|SUS|OVIS|CAP|EQU)\s([mf])\b', '\1\2']  # Combine terms with 'm' or 'f'
-  - ['\](?=[^\s])', ']-']  # Pre-process ']' and '[' for special handling
-  - ['(?<=[^\s])\[', '-[']
-  - ['TELA\s+(?=[1234x]\b)', 'TELA']  # Handle specific cases
-  - ['TELA\s+(\d+)', 'TELA \1']  # Handle other numbers with space
-  - ['\* (\d+)', '*\1']  # Combine '*' with the following numeral
-  - ['\+ ([^\s]+)', '+\1']  # Combine '+' with surrounding ideograms
-  - ['([^\s]) \+', '\1+']  # Ensure '+' is properly attached
-  - ['([^\s]+) VAS', '\1VAS']  # Attach 'VAS' properly
-  - ['\b(vac|vest|l|s|lat|inf|mut|sup|i)\s?\.', '\1.']  # Ignore or modify specific patterns
-  - ['\b(supra sigillum|reliqua pars sine regulis|vacat)\b', '\1']  # Explicit tokenization
-
+  - ['double mina','double_mina']
+  
 complex_symbols:
-  'TELA-[;1+TE': 'PLACEHOLDER_TELA1'
-  'TELA;1+TE': 'PLACEHOLDER_TELA2'
-  'TELA-[;1]-+TE': 'PLACEHOLDER_TELA3'
-  'OVIS]-:m': 'PLACEHOLDER_OVIS'
+  "QA2+[?]+PU+RE": 'PLACEHOLDER_QA3'
+  "QA2+[?]+RE+PU": 'PLACEHOLDER_QA4'
+  "QA2+[?]+PU": 'PLACEHOLDER_QA1'
+  "QA2+[?]+RE": 'PLACEHOLDER_QA2'
+  "*401+[ ]": 'PLACEHOLDER_401'
 
 special_chars_pattern: "(\\[|\\]|\\,|\\'|\\u27e6|\\u27e7|-|\\?|<|>|⌞|⌟|⸤|⸥|\\||\ue000)"
 
@@ -572,3 +520,4 @@ restore_patterns:
   - ['fragmentum_A', 'fragmentum A']
   - ['fragmentum_B', 'fragmentum B']
   - ['ME±RI', 'ME<±RI>']  
+  - ['double_mina','double mina']
