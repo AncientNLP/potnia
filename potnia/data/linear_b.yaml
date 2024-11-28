@@ -8,7 +8,6 @@ mappings:
   i: 𐀂
   o: 𐀃
   u: 𐀄
-  au: 𐁂
   da: 𐀅
   de: 𐀆
   di: 𐀇
@@ -33,21 +32,16 @@ mappings:
   ni: 𐀛
   "no": 𐀜
   nu: 𐀝
-  nwa: 𐁅
   pa: 𐀞
   pe: 𐀟
   pi: 𐀠
   po: 𐀡
   pu: 𐀢
-  pu₂: 𐁆
-  pu2: 𐁆
   qa: 𐀣
   qe: 𐀤
   qi: 𐀥
   qo: 𐀦
   ra: 𐀨
-  ra₂: 𐁈
-  ra2: 𐁈
   re: 𐀩
   ri: 𐀪
   ro: 𐀫
@@ -58,13 +52,10 @@ mappings:
   so: 𐀰
   su: 𐀱
   ta: 𐀲
-  ta₂: 𐁋
-  ta2: 𐁋
   te: 𐀳
   ti: 𐀴
   to: 𐀵
   tu: 𐀶
-  twe: 𐁌
   wa: 𐀷
   we: 𐀸
   wi: 𐀹
@@ -73,12 +64,23 @@ mappings:
   ze: 𐀽
   zo: 𐀿
 
+# subsyllabary
+  au: 𐁂
+  nwa: 𐁅
+  pu₂: 𐁆
+  pu2: 𐁆
+  ra₂: 𐁈
+  ra2: 𐁈
+  ta₂: 𐁋
+  ta2: 𐁋
+  twe: 𐁌
+
   # LB SOUND VALUES UNKNOWN
-  "*22": 𐁒
-  "*34": 𐁓
-  "*47": 𐁔
+  "*22": 𐁒 # pi₂?
+  "*34": 𐁓 # a5?
+  "*47": 𐁔 #silver?
   "*49": 𐁕
-  "*86": 𐁜
+  "*86": 𐁜 # dwa?
 
   ############################################################
   ######      Syllabograms Unique to Linear B         ########
@@ -103,15 +105,15 @@ mappings:
   "*19": 𐁑
   # *35 missing unicode sign?
   "*63": 𐁗
-  "*83": 𐁛
+  "*83": 𐁛 #nwe?
   "*89": 𐁝
 
   # Doubtful sound values
   "*56": 𐁖 # potential sound value 'pa₃'
   "*64": 𐁘 # potential sound value 'swi'
   "*65": 𐀎 # potential sound value 'ju'
-  "*79": 𐁙 # potential sound value 'zu'
-  "*82": 𐁚 # potential sound value 'swa'
+  "*79": 𐁙 # potential sound value 'zu' or 'wo2'
+  "*82": 𐁚 # potential sound value 'swa' or 'twa'
 
   ############################################################
   #####                  Logograms                     #######
@@ -163,8 +165,8 @@ mappings:
   AROM: 𐂑 # spices
   CYP: 𐂒 # cyperus
   PYC: 𐂒 # cyperus
-  KA+PO: 𐂓 # fruit?
-  KA±PO: 𐂓 # fruit?
+  KA+PO: 𐂓 # fruit? bark?
+  KA±PO: 𐂓 # fruit? bark?
   KA+NA+KO: 𐂔 # saffron
   KA±NA±KO: 𐂔 # saffron
   KANAKO: 𐂔 # saffron
@@ -174,63 +176,57 @@ mappings:
   # LIQUID COMMODITIES
   OLE: 𐂕 # olive oil
   VIN: 𐂖 # wine
-  "*132": 𐂗
+  "*132": 𐂗 # container for honey?
   A+RE+PA: 𐂘 # ointment
   A±RE±PA: 𐂘 # ointment
   ME+RI: 𐂙 # honey
   ME±RI: 𐂙 # honey
   ME<±RI>: 𐂙 # honey
 
-  # METALS
-  AES: 𐂚 # bronze
-  AUR: 𐂛 # gold
-  "*142": 𐂜
-
-  # OTHER MATERIALS AND ITEMS
-  LANA: 𐂝 # wool
-  "*146": 𐂞 # linen garment?
-  "*146;2": 𐂞² # linen garment?
-  "*146+PE": 𐂞+𐀟 # linen garment?
-  "*150": 𐂟
-  CORN: 𐂠 # horn (wild goat)
-  "*152": 𐂡 # oxhinde
-  "*153": 𐂢  # sheepskin
-  "*154": 𐂣 # hide?
   TU+RO₂: 𐂤 # cheese
   TU±RO2 : 𐂤 # cheese
+
+  # METALS
+  AES: 𐂚 # bronze (not copper)
+  AUR: 𐂛 # gold
+
+  # OTHER MATERIALS AND ITEMS
   "*157": 𐂥
-  "*158": 𐂦
-  TELA: 𐂧 # cloth
-  "*160": 𐂨
-  "*161": 𐂩
-  TUN: 𐂪 # breastplate
-  ARM: 𐂫 # armour
-  "*164": 𐂬
-  "*165": 𐂭
-  "*166": 𐂮
+  "*158": 𐂦 # bag for garments? leather bag?
+  "*160": 𐂨 # linen?
+  "*161": 𐂩 # relating to textiles?
+  "*164": 𐂬 #garment
+  "*165": 𐂭 # ingot?
+  "*166": 𐂮 # cloth?
   "*167": 𐂯 # ingot
   "*168": 𐂰
-  "*169": 𐂱
-  "*170": 𐂲
+  "*169": 𐂱 # bed?
+  "*170": 𐂲 # bundle (of sinew or tendons)?
   "*171": 𐂳
   "*172": 𐂴 # honeycomb?
-  LUNA: 𐂵 # month's ration?
+  LUNA: 𐂵 # # month? month's ration?
   "*174": 𐂶
-  ARB: 𐂷 # tree
-  "*177": 𐂸
+  ARB: 𐂷 # tree # fruit tree?
+  "*177": 𐂸 # yoke?
+
   "*178": 𐂹
   "*179": 𐂺
   "*180": 𐂻 # parchment?
   "*181": 𐂼
   "*182": 𐂽
-  "*183": 𐂾
+  "*183": 𐂾 # vessel type?
   "*184": 𐂿
   "*185": 𐃀
   "*189": 𐃁
+
   "*190": 𐃂
+
+  # FURNITURE
+    "*220": 𐃄 # footstool?
+    ALV: 𐃅 # bathtub
+
+  # MILITARY
   GAL: 𐃃 # helmet
-  "*220": 𐃄 # footstool
-  ALV: 𐃅 # bathtub
   HAS: 𐃆 # spear
   SAG: 𐃇 # arrow
   "*232": 𐃈
@@ -241,17 +237,34 @@ mappings:
   CUR: 𐃍 # chariot
   CAPS: 𐃎 # chariot frame
   ROTA: 𐃏 # wheel
-  "*245": 𐃐 # chariot part?
-  "*246": 𐃑 # chariot part?
+  JAC: 𐃘 # javelin or dart
+  TUN: 𐂪 # breastplate? # linen garment?
+  ARM: 𐂫 # armour
+
+  # ANIMAL BY-PRODUCTS
   DI+PTE: 𐃒 # parchment?
   DI±PTE: 𐃒 # parchment?
+  TELA: 𐂧 # cloth
+  "*142": 𐂜 # bundle? possibly tendons or sinew?
+  LANA: 𐂝 # wool
+  "*146": 𐂞 # linen garment?
+  "*146;2": 𐂞² # linen garment?
+  "*146+PE": 𐂞+𐀟 # linen garment?
+  "*150": 𐂟 #hide?
+  CORN: 𐂠 # horn (wild goat)
+  "*152": 𐂡 # oxhine
+  "*153": 𐂢  # sheepskin
+  "*154": 𐂣 # hide?
+
+# UNKNOWN
+  "*245": 𐃐 # chariot part?
+  "*246": 𐃑
   "*248": 𐃓
-  "*249": 𐃔
+  "*249": 𐃔 # vessel?
   "*251": 𐃕
   "*252": 𐃖
-  "*253": 𐃗
-  JAC: 𐃘 # javelin or dart
-  "*255": 𐃙
+  "*253": 𐃗 #chariot part?
+  "*255": 𐃙 # military?
   "*256": 𐃚 # bow?
   "*257": 𐃛
   "*258": 𐃜
@@ -259,10 +272,10 @@ mappings:
 
   # VESSELS
   "*155VAS": 𐃞 # basket?
-  "*200VAS": 𐃟
+  "*200VAS": 𐃟 # phiala
   "*201VAS": 𐃠 # tripod
-  "*202VAS": 𐃡
-  "*203VAS": 𐃢
+  "*202VAS": 𐃡 # krater
+  "*203VAS": 𐃢 #urceus?
   "*204VAS": 𐃣
   "*205VAS": 𐃤
   "*206VAS": 𐃥 # hydria
@@ -271,9 +284,9 @@ mappings:
   "*208aVAS": 𐃧 # patera
   "*208bVAS": 𐃧 # patera
   "*209VAS": 𐃨 # amphora
-  "*210VAS": 𐃩
+  "*210VAS": 𐃩 #olearia
   "*211VAS": 𐃪
-  "*212VAS": 𐃫 
+  "*212VAS": 𐃫 # situla?
   "*213VAS": 𐃬 # lanx
   "*214VAS": 𐃭
   "*215VAS": 𐃮 # kylix
@@ -361,7 +374,7 @@ mappings:
   I: 𐀂
   O: 𐀃
   U: 𐀄
-  DA: 𐀅 # male steward
+  DA: 𐀅 # male steward?
   DE: 𐀆 # bundle (used to measure ginger grass)
   DI: 𐀇
   DO: 𐀈
@@ -392,7 +405,7 @@ mappings:
   PU: 𐀢
   QA: 𐀣
   QE: 𐀤
-  QI: 𐀥
+  QI: 𐀥 # also CAP
   QO: 𐀦
   RA: 𐀨
   RE: 𐀩
@@ -404,7 +417,7 @@ mappings:
   SI: 𐀯
   SO: 𐀰
   SU: 𐀱
-  TA: 𐀲 # female steward
+  TA: 𐀲 # female steward?
   TE: 𐀳
   TI: 𐀴
   TO: 𐀵
