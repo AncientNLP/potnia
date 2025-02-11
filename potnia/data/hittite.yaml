@@ -409,3 +409,10 @@ mappings:
   "(URU)": 𒌷 # "city"
   "(URUDU)": 𒍐 # "copper"
   "(UZU)": 𒍜 # "meat"
+
+tokenization:
+  - ['\[', ' [ ']    # Ensure opening brackets are separated
+  - ['\]', ' ] ']    # Ensure closing brackets are separated
+  - ['‑', ' ']       # Replace non-breaking hyphens with spaces
+  - ['-', ' ']       # Replace regular hyphens with spaces
+  - ['\s+', ' ']     # Normalize spaces

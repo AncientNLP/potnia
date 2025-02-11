@@ -2,6 +2,7 @@ import pytest
 from potnia import hittite
 from .data import expected
 
+breakpoint()
 
 @pytest.mark.parametrize("test_input,expected", expected("hittite_unicode"))
 def test_hittite_unicode(test_input, expected):

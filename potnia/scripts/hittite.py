@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from ..script import Script
+import re
 
 
 @dataclass
@@ -18,44 +19,28 @@ class Hittite(Script):
     """
     config:str = "hittite"
 
-    def tokenize_transliteration(self, input_string:str) -> list[str]:
+    def tokenize_transliteration(self, input_string: str) -> list[str]:
         """
-        Tokenizes transliterated text according to specific patterns.
-
+        Tokenizes transliterated text according to simple patterns (brackets, dashes, and spaces).
+        
         Args:
-            text (str): Input text in transliterated format.
+            input_string (str): Input text in transliterated format.
 
         Returns:
-            list[str]: List of tokens
+            list[str]: List of tokens.
         """
-        tokens = []
-        token = ""
-        i = 0
+        # Apply tokenization patterns from YAML (if applicable)
+        for pattern, replacement in self.transliteration_patterns:
+            input_string = re.sub(pattern, replacement, input_string)
 
-        while i < len(input_string):
-            char = input_string[i]
+         # Correctly split on spaces, brackets, or dashes (no empty tokens)
+        tokens = re.split(r'(\s+|\[|\]|-)', input_string)
+        
+        breakpoint()
 
-            # Handle characters ']', '[', and ' '
-            if char in '[] ':
-                if token:
-                    tokens.append(token)
-                    token = ""
-                tokens.append(char)
-            # Handle other characters
-            elif char in ['-','‑']:
-                if token:
-                    tokens.append(token)
-                    token = ""
-            else:
-                token += char
-            i += 1
-
-        # Add the last token if it exists
-        if token:
-            tokens.append(token)
-
-        return tokens
-
+        # Filter and return only meaningful tokens
+        cleaned_tokens = [token for token in tokens if token.strip() or token in [' ', '[', ']', '-']]
+        return cleaned_tokens
 
 
 
