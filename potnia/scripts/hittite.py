@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from ..script import Script
-import re
+import unicodedata
 
 
 @dataclass
@@ -19,29 +19,74 @@ class Hittite(Script):
     """
     config:str = "hittite"
 
-    def tokenize_transliteration(self, input_string: str) -> list[str]:
+    def tokenize_transliteration(self, input_string:str) -> list[str]:
         """
-        Tokenizes transliterated text according to simple patterns (brackets, dashes, and spaces).
-        
+        Tokenizes transliterated text according to specific patterns.
+
         Args:
-            input_string (str): Input text in transliterated format.
+            text (str): Input text in transliterated format.
 
         Returns:
-            list[str]: List of tokens.
+            list[str]: List of tokens
         """
-        # Apply tokenization patterns from YAML (if applicable)
-        for pattern, replacement in self.transliteration_patterns:
-            input_string = re.sub(pattern, replacement, input_string)
+        # Normalize Unicode to NFC (canonical composition)
+        input_string = unicodedata.normalize("NFC", input_string)
+        tokens = []
+        token = ""
+        i = 0
 
-         # Correctly split on spaces, brackets, or dashes (no empty tokens)
-        tokens = re.split(r'(\s+|\[|\]|-)', input_string)
-        
-        breakpoint()
+        while i < len(input_string):
+            char = input_string[i]
 
-        # Filter and return only meaningful tokens
-        cleaned_tokens = [token for token in tokens if token.strip() or token in [' ', '[', ']', '-']]
-        return cleaned_tokens
+            # Handle characters ']', '[', and ' '
+            if char in '[] ':
+                if token:
+                    tokens.append(token)
+                    token = ""
+                tokens.append(char)
+            # Handle other characters
+            elif char in ['-','‑','.']:
+                if token:
+                    tokens.append(token)
+                    token = ""
+            else:
+                token += char
+            i += 1
 
+        # Add the last token if it exists
+        if token:
+            tokens.append(token)
 
+        return tokens
+
+    def to_unicode(self, text: str, regularize: bool = False) -> str:
+        """
+        Converts transliterated text to unicode format with additional handling for Hittite-specific cases.
+
+        Args:
+            text (str): Input text in transliterated format.
+            regularize (bool, optional): Whether to apply regularization. Defaults to False.
+
+        Returns:
+            str: Text converted to unicode format, optionally regularized.
+        """
+        # Remove ⸢ and ⸣ before tokenization
+        text = text.replace('⸢', '').replace('⸣', '')
+
+        tokens = self.tokenize_transliteration(text)
+        result = []
+
+        for token in tokens:
+            # Ignore square brackets
+            if token in ['[', ']']:
+                continue
+            
+
+            # Convert token to unicode if mapping exists, otherwise keep the token
+            unicode_char = self.transliteration_to_unicode_dict.get(token, token)
+            result.append(unicode_char)
+
+        unicode_text = "".join(result)
+        return unicode_text
 
 hittite = Hittite()
