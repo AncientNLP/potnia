@@ -1,4 +1,4 @@
-Viewing Ancient Glyphs
+Fonts
 ======================
 
 If the glyphs for Linear A, Linear B, or other ancient scripts do not display correctly in your terminal, code editor, web browser, or Jupyter notebook, it is likely due to missing fonts. Install the following Noto Sans fonts from Google Fonts for proper rendering:
