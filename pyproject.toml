@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "potnia"
-version = "0.3.2"
+version = "0.3.3"
 description = "Potnia is an open-source Python library designed to convert Romanized transliterations of ancient texts into Unicode representations of ther respective native scripts.."
 authors = ["Emily Tour <esmtour@gmail.com>", "Kabir Manandhar Shrestha", "Robert Turnbull"]
 license = "Apache-2.0"
@@ -17,13 +17,14 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.13"
 pyyaml = "^6.0.1"
 typer = "^0.12.5"
 guigaga = ">=0.0.5"
 numpy = "<2"
 pybtex = ">=0.24.0"
 pybtexnbib = ">=0.1.1"
+setuptools = "^75.8.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -40,6 +41,8 @@ myst-parser = "^3.0.1"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::DeprecationWarning"]
 
 [tool.poetry.scripts]
 potnia = "potnia.main:app"
