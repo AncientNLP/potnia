@@ -17,6 +17,7 @@ Welcome to potnia's documentation!
    :caption: Contents:
 
    quickstart
+   fonts
    linear_b
    additions
    api
