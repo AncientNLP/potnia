@@ -66,7 +66,7 @@ To install the latest version from the repository, you can use this command:
 
     pip install git+https://github.com/AncientNLP/potnia.git
     
-Note: For proper display of ancient script glyphs, please refer to the `GLYPHS.rst <GLYPHS.rst>`_  section.
+Note: For proper display of ancient script glyphs, please refer to the `glyphs.rst <docs/glyphs.rst>`_  section.
 
 Usage
 ====================
