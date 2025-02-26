@@ -65,8 +65,23 @@ To install the latest version from the repository, you can use this command:
 .. code-block:: bash
 
     pip install git+https://github.com/AncientNLP/potnia.git
-    
-Note: For proper display of ancient script glyphs, please refer to the `Fonts <https://ancientnlp.github.io/potnia/fonts.html>`_  section.
+
+You can also install Potnia by cloning the repository and installing using poetry. 
+This will install all the dependencies required for Potnia from the with the version numbers pinned in the ``poetry.lock`` file. 
+Make sure that poetry is installed on your system. If not, see the `instructions <https://python-poetry.org/docs/#installation>`_.
+Then follow these steps:
+
+.. code-block:: bash
+
+    git clone https://github.com/AncientNLP/potnia.git
+    cd potnia
+    poetry install
+
+You can test that Potnia is working by running ``pytest``.
+
+.. note::
+
+    For proper display of ancient script glyphs, please refer to the `Fonts <https://ancientnlp.github.io/potnia/fonts.html>`_  section.
 
 Usage
 ====================
