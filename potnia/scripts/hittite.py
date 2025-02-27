@@ -80,10 +80,15 @@ class Hittite(Script):
             # Ignore square brackets
             if token in ['[', ']']:
                 continue
-            
 
-            # Convert token to unicode if mapping exists, otherwise keep the token
-            unicode_char = self.transliteration_to_unicode_dict.get(token, token)
+            # Try the original token first
+            unicode_char = self.transliteration_to_unicode_dict.get(token)
+
+            # If no match, try the opposite case (lowercase if uppercase, uppercase if lowercase)
+            if unicode_char is None:
+                opposite_case_token = token.lower() if token.isupper() else token.upper()
+                unicode_char = self.transliteration_to_unicode_dict.get(opposite_case_token, token)
+
             result.append(unicode_char)
 
         unicode_text = "".join(result)
