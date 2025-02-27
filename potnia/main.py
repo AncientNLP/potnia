@@ -4,6 +4,7 @@ from potnia import linear_a as linear_a_script
 from potnia import linear_b as linear_b_script
 from potnia import hittite as hittite_script
 from potnia import arabic as arabic_script
+from potnia import lydian as lydian_script
 # from potnia import luwian as luwian_script
 # from potnia import akkadian as akkadian_script
 
@@ -64,6 +65,14 @@ def arabic(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT
     if isinstance(text, list):
         text = " ".join(text)
     print(arabic_script(text, regularize=regularize))
+
+
+@app.command()
+def lydian(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT):
+    """ Converts a Lydian text to Unicode. """
+    if isinstance(text, list):
+        text = " ".join(text)
+    print(lydian_script(text, regularize=regularize))
 
 
 @app.command()
