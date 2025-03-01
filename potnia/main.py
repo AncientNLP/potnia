@@ -12,7 +12,7 @@ from .data import DATA_DIR
 
 BIBTEX_PATH = DATA_DIR / "potnia.bib"
 
-app = typer.Typer()
+app  = typer.Typer(context_settings={"help_option_names": ["-h", "--help"]})
 
 TEXT_ARGUMENT = typer.Argument(help="The transliterated text to be converted to Unicode.")
 REGULARIZATION_DEFAULT = typer.Option(False, help="Whether or not to regularize the output.")
