@@ -101,10 +101,10 @@ As part of a broader initiative to develop language models for ancient language 
 
 # Availability
 
-Potnia is open-source software released under the Apache 2.0 license. It is available through PyPI [https://pypi.org/project/potnia/](https://pypi.org/project/potnia/) and Github [https://github.com/AncientNLP/potnia](https://github.com/AncientNLP/potnia). We welcome contributions from the community and adhere to the Contributor Covenant Code of Conduct. Documentation is available at [https://ancientnlp.github.io/potnia/](https://ancientnlp.github.io/potnia/).
+Potnia is open-source software released under the Apache 2.0 license. It is available through PyPI [https://pypi.org/project/potnia/](https://pypi.org/project/potnia/) and GitHub [https://github.com/AncientNLP/potnia](https://github.com/AncientNLP/potnia). We welcome contributions from the community and adhere to the Contributor Covenant Code of Conduct. Documentation is available at [https://ancientnlp.github.io/potnia/](https://ancientnlp.github.io/potnia/).
 
 # Acknowledgements
 
-We acknowledge support from Wytamma Wirth, Brent Davis, Kim Doyle, Man-Hua (Kate) Chu, Anhui (Ellie) Situ, Ekaterina Vylomova, Chris Guest and Stavroula (Stephie) Nikoloudis. This research was supported by The University of Melbourne’s Research Computing Services.
+We acknowledge support from Wytamma Wirth, Brent Davis, Kim Doyle, Man-Hua (Kate) Chu, Anhui (Ellie) Situ, Ekaterina Vylomova, Chris Guest and Stavroula (Stephie) Nikoloudis. This research was supported by The University of Melbourne’s Research Computing Services. Robert Turnbull completed part of this work through the BICROSS project, which has received funding from the European Research Council (ERC) under the European Union’s Horizon Europe research and innovation programme (grant agreement no. 101043730 – BICROSS – ERC-2021-COG).
 
 # References
