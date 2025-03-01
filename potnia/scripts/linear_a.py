@@ -1,3 +1,4 @@
+import re
 from dataclasses import dataclass
 from ..script import Script
 
@@ -69,6 +70,35 @@ class LinearA(Script):
             tokens.append(token)
 
         return tokens
+
+    def tokenize_unicode(self, text:str) -> list[str]:
+        """
+        Tokenizes a unicode string by splitting and joining words with dashes.
+
+        Args:
+            text (str): Input text in unicode format.
+
+        Returns:
+            list[str]: List of tokenized strings.
+        """
+        def is_aegean(char):
+            return "\U00010000" <= char <= "\U0001007F" or "\U00010600" <= char <= "\U0001077F"
+
+        # Insert hyphens between consecutive Linear B characters
+        modified_text = ""
+        prev_was_aegean = False
+
+        for char in text:
+            if is_aegean(char):
+                if prev_was_aegean:
+                    modified_text += "-"  # Add hyphen if previous character was also Linear B
+                modified_text += char
+                prev_was_aegean = True
+            else:
+                modified_text += char
+                prev_was_aegean = False  # Reset flag on encountering a non-Linear B character
+
+        return list(modified_text)
 
 
 linear_a = LinearA()
