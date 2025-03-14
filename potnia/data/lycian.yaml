@@ -1,0 +1,32 @@
+mappings:
+  a: "𐊀"  # Sound: [a]
+  b: "𐊂"  # Sound: [β]
+  g: "𐊄"  # Sound: [ɣ]
+  d: "𐊅"  # Sound: [ð]
+  i: "𐊆"  # Sound: [i], [ĩ]
+  w: "𐊇"  # Sound: [w]
+  z: "𐊈"  # Sound: [t͡s]
+  h: "𐊛"  # Sound: [h]
+  θ: "𐊉"  # Sound: [θ]
+  j: "𐊊"  # Sound: [j]
+  k: "𐊋"  # Sound: [kʲ~ɡʲ]
+  l: "𐊍"  # Sound: [l], [l̩~əl]
+  m: "𐊎"  # Sound: [m]
+  n: "𐊏"  # Sound: [n]
+  u: "𐊒"  # Sound: [u], [ũ]
+  p: "𐊓"  # Sound: [p~b]
+  c: "𐊐"  # Sound: [k]?, [kʲ]?, [h(e)]?
+  r: "𐊕"  # Sound: [r], [r̩~ər]
+  s: "𐊖"  # Sound: [s]
+  t: "𐊗"  # Sound: [t]
+  e: "𐊁"  # Sound: [e]
+  ã: "𐊙"  # Sound: [ã]
+  ẽ: "𐊚"  # Sound: [ẽ]
+  m̃: "𐊐"  # Sound: [m̩~əm], [m.]
+  ñ: "𐊑"  # Sound: [n̩~ən], [n.]
+  τ: "𐊘"  # Sound: [tʷ]?, [t͡ʃ]?
+  q: "𐊌"  # Sound: [k]?, [kʷ]?
+  β: "𐊃"  # Sound: [k]?, [kʷ]?, [ç]?
+  χ: "𐊜"  # Sound: [q]?, [kʷ]?
+
+  "=": ''  # Morpheme boundary indicator

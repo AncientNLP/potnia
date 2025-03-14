@@ -4,6 +4,8 @@ from .scripts.linear_b import linear_b, LinearB
 from .scripts.hittite import hittite, Hittite
 from .scripts.arabic import arabic, Arabic
 from .scripts.lydian import lydian, Lydian
+from .scripts.lycian import lycian, Lycian
+
 
 
 # Luwian is currently a work in progress
