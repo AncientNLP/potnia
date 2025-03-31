@@ -6,6 +6,7 @@ from potnia import hittite as hittite_script
 from potnia import arabic as arabic_script
 from potnia import lydian as lydian_script
 from potnia import lycian as lycian_script
+from potnia import luwian_cuneiform as luwian_cuneiform_script
 
 # from potnia import luwian as luwian_script
 # from potnia import akkadian as akkadian_script
@@ -75,6 +76,13 @@ def lydian(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT
     if isinstance(text, list):
         text = " ".join(text)
     print(lydian_script(text, regularize=regularize))
+    
+@app.command()
+def luwian_cuneiform(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT):
+    """ Converts a Lydian text to Unicode. """
+    if isinstance(text, list):
+        text = " ".join(text)
+    print(luwian_cuneiform_script(text, regularize=regularize))
 
 
 @app.command()
