@@ -6,6 +6,7 @@ from .scripts.arabic import arabic, Arabic
 from .scripts.lydian import lydian, Lydian
 from .scripts.lycian import lycian, Lycian
 from .scripts.luwian_cuneiform import luwian_cuneiform,Luwian_Cuneiform
+from .scripts.luwian_hieroglyphic import luwian_hieroglyphic,Luwian_Hieroglyphic
 
 
 

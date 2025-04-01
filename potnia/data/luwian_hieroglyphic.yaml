@@ -1,0 +1,95 @@
+mappings:
+  # V syllabograms
+  "a": "𔐀"
+  "i": "𔐁"
+  "u": "𔐂"
+
+  # CV syllabograms
+  "pa": "𔑒"
+  "ta": "𔑕"
+  "na": "𔑙"
+  "ra": "𔑞"
+  "sa": "𔑠"
+  "wa": "𔑣"
+  "ma": "𔑓"
+  "la": "𔑘"
+  "ha": "𔑑"
+  "ka": "𔑗"
+  "mu": "𔑔"
+  "li": "𔑚"
+  "ti": "𔑖"
+  "ru": "𔑟"
+  "šu": "𔑤"
+  "zi": "𔑧"
+  "du": "𔑕𔐂"  # compound approximation
+  "tar": "𔑕𔑞"
+  "ša": "𔑤"
+  "ŠA": "𔑤"
+  "an": "𔐀𔑙"
+  "ia": "𔓱"
+  "aš": "𔐀𔑩"
+  "iš": "𔐁𔑩"
+  "uš": "𔐂𔑩"
+  "ya": "𔓱"  # optional, for clarity if 'ia' isn't intuitive
+
+  # CVC syllabograms (selected)
+  "ara": "𔒟"
+  "ari": "𔒠"
+  "pari": "𔐎"
+  "sara": "𔕕"
+  "tari": "𔖹"
+  "kar": "𔕢"
+  "tapa": "𔒋"
+  "tal": "𔖞"
+  "hur": "𔗹"
+
+  # Logograms
+  "MUNUS": "𔐽"
+  "DINGIR": "𔑀"
+  "URBS": "𔑡"
+  "ADORARE": "𔐅"
+  "ANIMAL": "𔗈"
+  "AQUA": "𔓳"
+  "ARGENTUM": "𔔣"
+  "AVIS": "𔒚"
+  "BONUS": "𔕧"
+  "BOS": "𔑺"
+  "CANIS": "𔑬"
+  "DOMUS": "𔔙"
+  "DEUS": "𔖖"
+  "FEMINA": "𔑘"
+  "FRATER": "𔐰"
+  "LIGNUM": "𔖰"
+  "MATER": "𔑘"
+  "PES": "𔑣"
+  "PISCIS": "𔒥"
+  "REX": "𔐑"
+  "SOL": "𔓚"
+  "TERRA": "𔓤"
+  "VIR": "𔕠"
+  "UR": "𔖙"
+
+  # Determinatives
+  "(DINGIR)": "𔑀"
+  "(MUNUS)": "𔐽"
+  "(URBS)": "𔑡"
+
+  # Unmapped but frequent signs (provisional mappings or placeholders)
+  "mi": "𔑓𔐁"     # ma + i (approx.)
+  "ku": "𔑗𔐂"     # ka + u (approx.)
+  "nu": "𔑙𔐂"     # na + u (approx.)
+  "hu": "𔑑𔐂"     # ha + u (approx.)
+  "ri": "𔑞𔐁"     # ra + i (approx.)
+  "arha": "𔐀𔑞𔑑" # a + ra + ha (compound)
+  "ala/i": "𔐀𔑘"  # a + la (compound)
+  "sar": "𔑠𔑞"     # sa + ra (approx.)
+  "tar/i": "𔑕𔐁"   # ta + i (variant of tar)
+  "ana": "𔐀𔑙𔐀"   # a + na + a (compound)
+  "hap": "𔑑𔑒"     # ha + pa (approx.)
+  "pat": "𔑒𔑕"     # pa + ta (approx.)
+  "apu": "𔐀𔑒𔐂"   # a + pa + u (compound)
+  "mali": "𔑓𔑚"    # ma + li
+  "ari+tu": "𔒠𔐁𔑕" # ari + tu (split compound)
+  "ina": "𔐁𔑙𔐀"   # i + na + a (compound)
+
+  # Note: These are educated approximations based on syllabic analysis and should be reviewed.
