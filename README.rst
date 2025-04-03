@@ -194,8 +194,9 @@ You can also use the following BibTeX entries:
 
 We acknowledge support from Wytamma Wirth, Brent Davis, Kim Doyle, Man-Hua (Kate) Chu, Anhui (Ellie) Situ, Ekaterina Vylomova, Chris Guest and Stavroula (Stephie) Nikoloudis. This research was supported by The University of Melbourne’s Research Computing Services. Robert Turnbull completed part of this work through the BICROSS project, which has received funding from the European Research Council (ERC) under the European Union’s Horizon Europe research and innovation programme (grant agreement no. 101043730 – BICROSS – ERC-2021-COG).
 
-.. image:: https://raw.githubusercontent.com/AncientNLP/potnia/main/docs/_static/img/erc-logo.png
+.. image:: https://raw.githubusercontent.com/AncientNLP/potnia/main/docs/_static/img/erc-logo.jpg
     :alt: ERC logo
     :align: center
+    :width: 200px
 
 .. end-credits
