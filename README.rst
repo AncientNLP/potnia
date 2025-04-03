@@ -162,4 +162,35 @@ Potnia is developed by:
 - `Kabir Manandhar Shrestha <https://findanexpert.unimelb.edu.au/profile/892683-kabir-manandhar-shrestha>`_ (Melbourne Data Analytics Platform, University of Melbourne)
 - `Dr Robert Turnbull <https://robturnbull.com>`_ (Melbourne Data Analytics Platform, University of Melbourne)
 
+To cite Potnia, use this reference:
+
+    Tour, Emily, Kabir Manandhar Shrestha, and Robert Turnbull. 'Potnia: A Python Library for the Conversion of Transliterated Ancient Texts to Unicode.' *Journal of Open Source Software* 10, no. 108 (2025): 7725. `doi:10.21105/joss.07725 <https://doi.org/10.21105/joss.07725>`_
+
+You can also use the following BibTeX entries:
+
+.. code-block:: bibtex
+
+    @article{potnia, 
+        author       = {Emily Tour and Kabir Manandhar Shrestha and Robert Turnbull},
+        title        = {{Potnia: A Python library for the conversion of transliterated ancient texts to Unicode}},
+        year         = {2025}, 
+        journal      = {Journal of Open Source Software},
+        publisher    = {The Open Journal}, 
+        volume       = {10}, 
+        number       = {108},
+        pages        = {7725},
+        doi          = {10.21105/joss.07725}, 
+        url          = {https://doi.org/10.21105/joss.07725}
+    }
+
+    @misc{potnia_release,
+        author       = {Emily Tour and Kabir Manandhar Shrestha and Robert Turnbull},
+        title        = {{Potnia: A Python library for the conversion of transliterated ancient texts to Unicode}},
+        year         = {2025},
+        url          = {https://doi.org/10.26188/28721354.v1},
+        note         = {Version 0.4.0, Apache License 2.0},
+        doi          = {10.26188/28721354.v1}
+    }
+
+
 .. end-credits

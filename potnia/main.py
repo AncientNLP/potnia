@@ -6,6 +6,7 @@ from potnia import hittite as hittite_script
 from potnia import arabic as arabic_script
 # from potnia import luwian as luwian_script
 # from potnia import akkadian as akkadian_script
+from rich.console import Console
 
 from .enums import BibliographyStyle, BibliographyFormat
 from .data import DATA_DIR
@@ -69,8 +70,6 @@ def arabic(text: list[str]=TEXT_ARGUMENT, regularize:bool=REGULARIZATION_DEFAULT
 @app.command()
 def bibtex():
     """ Prints the BibTeX entry for this software package. """
-    print("% This BibTeX entry can be used to cite this software package.")
-    print("% This will get updated when Potnia has a preprint and is published.")
     bibtex_str = BIBTEX_PATH.read_text()
     print(bibtex_str)
 
@@ -117,3 +116,9 @@ def gui(ctx: typer.Context, share:bool=False):
     )
     gui.launch(launch_kwargs={"share": share})    
 
+
+@app.command()
+def bibtex():
+    """ Prints the BibTeX entry for this software package. """
+    bibtex_str = BIBTEX_PATH.read_text()
+    print(bibtex_str)
