@@ -46,9 +46,9 @@ def test_arabic_main(test_input, expected):
 
 def test_bibtex():
     result = runner.invoke(app, ["bibtex"])
-    assert "https://github.com/AncientNLP/potnia" in result.stdout
-    assert "software" in result.stdout
-    assert "2024" in result.stdout
+    assert "Journal of Open Source Software" in result.stdout
+    assert "10.21105/joss.07725" in result.stdout
+    assert "2025" in result.stdout
 
 
 def test_bibliography():
@@ -56,7 +56,7 @@ def test_bibliography():
     assert "Emily Tour" in result.stdout
     assert "Kabir" in result.stdout
     assert "Turnbull" in result.stdout
-    assert "2024" in result.stdout
+    assert "2025" in result.stdout
 
 
 def test_gui_launch():
