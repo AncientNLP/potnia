@@ -3,6 +3,7 @@ name: joss-draft-pdf
 on:
   push:
     branches:
+      - main
       - paper
 
 jobs:
