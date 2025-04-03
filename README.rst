@@ -42,7 +42,7 @@ Currently, the scripts supported by Potnia are:
 - Hittite cuneiform
 - Arabic
 
-Functionality for Luwian hieroglyphs, Sumero-Akkadian cuneiform and Etruscan is in development.
+Functionality for Luwian hieroglyphs, Sumero-Akkadian cuneiform, Lydian and Etruscan is in development.
 
 Contributions are welcome! Please see the `CONTRIBUTING.rst <CONTRIBUTING.rst>`_ file for more information.
 
