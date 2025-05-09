@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from ..script import Script
+import unicodedata
 
 
 @dataclass
@@ -28,6 +29,8 @@ class Hittite(Script):
         Returns:
             list[str]: List of tokens
         """
+        # Normalize Unicode to NFC (canonical composition)
+        input_string = unicodedata.normalize("NFC", input_string)
         tokens = []
         token = ""
         i = 0
@@ -42,7 +45,7 @@ class Hittite(Script):
                     token = ""
                 tokens.append(char)
             # Handle other characters
-            elif char in ['-','‑']:
+            elif char in ['-','‑','.']:
                 if token:
                     tokens.append(token)
                     token = ""
@@ -56,7 +59,28 @@ class Hittite(Script):
 
         return tokens
 
+    def to_unicode(self, text: str, regularize: bool = False) -> str:
+        """
+        Converts transliterated text to unicode format with additional handling for Hittite-specific cases.
+        """
+        # Remove editorial markers and brackets before tokenization
+        
+        text = text.replace('⸢','').replace('⸣','').replace('[','').replace(']','').replace('?', '').strip()
 
+        tokens = self.tokenize_transliteration(text)
+        result = []
 
+        for token in tokens:
+            # Try the original token first
+            unicode_char = self.transliteration_to_unicode_dict.get(token)
+
+            # If no match, try the opposite case
+            if unicode_char is None:
+                opposite = token.lower() if token.isupper() else token.upper()
+                unicode_char = self.transliteration_to_unicode_dict.get(opposite, token)
+
+            result.append(unicode_char)
+
+        return "".join(result)
 
 hittite = Hittite()

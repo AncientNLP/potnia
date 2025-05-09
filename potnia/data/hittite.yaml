@@ -1,6 +1,7 @@
 mappings:
   # V syllabograms
   "a": 𒀀
+  "A": 𒀀
   "e": 𒂊
   "i": 𒄿
   "u": 𒌋
@@ -36,12 +37,14 @@ mappings:
   "ka": 𒅗
   "ke": 𒆠
   "ki": 𒆠
+  "KI": 𒆠
   "ku": 𒆪
 
   "ḫa": 𒄩
   "ḫe": 𒄭
   "ḫé": 𒃶
   "ḫi": 𒄭
+  "ḪI": 𒄭
   "ḫu": 𒄷
 
   "la": 𒆷
@@ -53,9 +56,11 @@ mappings:
   "me": 𒈨
   "mé": 𒈪
   "mi": 𒈪
+  "MIN": 𒈫
   "mu": 𒈬
 
   "na": 𒈾
+  "NA": 𒈾
   "ne": 𒉈
   "né": 𒉌
   "ni": 𒉌
@@ -66,7 +71,9 @@ mappings:
   "ri": 𒊑
   "ru": 𒊒
 
+  "SA": 𒊓
   "ša": 𒊭
+  "ŠA": 𒊭
   "še": 𒊺
   "ši": 𒅆
   "šu": 𒋗
@@ -78,10 +85,14 @@ mappings:
   "ya": 𒅀
 
   "za": 𒍝
+  "ZAG": 𒍠
   "ze": 𒍣
   "zé": 𒍢
   "zi": 𒍣
   "zu": 𒍪
+
+  # Numerals
+  "12": 𒌋𒈫
 
   # VC syllabograms
   "ab": 𒀊
@@ -99,7 +110,8 @@ mappings:
   "et": 𒀉
   "id": 𒀉
   "it": 𒀉
-  "ud": 𒌓 
+  "ud": 𒌓
+  "UD": 𒌓
   "ut": 𒌓
 
   "ag": 𒀝 
@@ -136,6 +148,7 @@ mappings:
   "ir": 𒅕
   "ur": 𒌨
   "úr": 𒌫
+  "ÚR": 𒌫
 
   "aš": 𒀸
   "eš": 𒌍
@@ -170,6 +183,7 @@ mappings:
   "kal": 𒆗
   "gal9": 𒆗
   "kam": 𒄰
+  "KAM": 𒄰
   "gám": 𒄰
   "TU7": 𒄰 # soup
   "kán": 𒃷
@@ -229,7 +243,7 @@ mappings:
   "mar": 𒈥
   "maš": 𒈦
   "MAŠ": 𒈦 # half
-  "meš": "𒌍" # check
+  "meš": "𒎌" # check
   "mil": 𒅖
   "mel": 𒅖
   "miš": 𒈩
@@ -349,7 +363,7 @@ mappings:
   "KUR": 𒆳 # "land"
   "KUŠ": 𒋢 # "hide, fur"
   "LÚ": 𒇽 # "man"
-  "MEŠ": 𒌍 # (suffixed) # plural
+  "MEŠ": 𒎌 # (suffixed) # plural
   "MEŠ ḪI.A": 𒌍𒄭𒀀 # (suffixed) # plural
   "MUL": 𒀯 # "star"
   "MUNUS": 𒊩 # (ᶠ) # "woman" # female personal name
@@ -365,8 +379,11 @@ mappings:
   "TÚG": 𒌆 # "garment"
   "Ú": 𒌑 # "plant"
   "URU": 𒌷 # "city"
+  "UDU": 𒇻
   "URUDU": 𒍐 # "copper"
   "UZU": 𒍜 # "meat"
+  "ANA": 𒀀𒈾
+  "LUGAL": 𒈗
 
   # Determinatives
 
@@ -409,3 +426,10 @@ mappings:
   "(URU)": 𒌷 # "city"
   "(URUDU)": 𒍐 # "copper"
   "(UZU)": 𒍜 # "meat"
+
+tokenization:
+  - ['\[', ' [ ']    # Ensure opening brackets are separated
+  - ['\]', ' ] ']    # Ensure closing brackets are separated
+  - ['‑', ' ']       # Replace non-breaking hyphens with spaces
+  - ['-', ' ']       # Replace regular hyphens with spaces
+  - ['\s+', ' ']     # Normalize spaces
