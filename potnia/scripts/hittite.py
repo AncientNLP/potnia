@@ -45,7 +45,7 @@ class Hittite(Script):
                     token = ""
                 tokens.append(char)
             # Handle other characters
-            elif char in ['-','‑','.', ' ']:
+            elif char in ['-','‑','.']:
                 if token:
                     tokens.append(token)
                     token = ""
