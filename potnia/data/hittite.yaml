@@ -427,6 +427,18 @@ mappings:
   "(URU)": 𒌷 # "city"
   "(URUDU)": 𒍐 # "copper"
   "(UZU)": 𒍜 # "meat"
+  'EGIR': '𒂕𒉺
+  'LIM': '𒅆'
+  'EZEN₄': '𒍸'
+  'UTU': '𒌓'
+  'GUR₄': '𒆸'
+  'kat': '𒃰'
+  'DUMU': '𒌉'
+  'KIN': '𒆥'
+  'BABBAR': '𒌓'
+  'SANGA': '𒋃
+  'QÍ': '𒆠'
+  'BÍ': '𒉈'
 
 tokenization:
   - ['\[', ' [ ']    # Ensure opening brackets are separated

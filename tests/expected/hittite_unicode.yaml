@@ -2,6 +2,7 @@
 
 "a-ši KÁ-aš ku-iš pa-it nu DINGIR (MEŠ)  2 ḪUR.SAG (MEŠ)" : "𒀀𒅆 𒆍𒀸 𒆪𒅖 𒉺𒀉 𒉡 𒀭 𒌍  2 𒄯𒊕 𒌍"
 
+# KUB 23.79
 # https://www.hethport.uni-wuerzburg.de/TLHdig/tlh_xtx.php?d=KUB%2023.79
 "[n]u": "𒉡"
 "ka-ru-ú-i-li-e-eš": "𒅗𒊒𒌑𒄿𒇷𒂊𒐁"
@@ -15,4 +16,31 @@
 # assume that TAL=DAL 𒊑
 "[ ḫa?-a]t?-tal-wa-er": "𒄩𒀜𒊑𒉿𒅕"
 "nu-wa ka-a-aš LUGAL-u[š ]": "𒉡𒉿 𒅗𒀀𒀸 𒈗𒍑"
-"nu-wa ka-a-aš LUGAL u[š ]": "𒉡𒉿 𒅗𒀀𒀸 𒈗 𒍑"
+
+# KUB36.98b
+# https://www.hethport.uni-wuerzburg.de/TLHdig/tlh_xtx.php?d=KUB%2036.98b
+'m.am‑mu‑ú‑⸢na⸣ LUGAL GAL': '𒇽𒄠𒈬𒌑𒈾 𒈗 𒃲'
+'A‑NA GIŠ.GIGIR‑ia‑kán GIŠ.GIGIR me‑ek‑ká[n GÙB‑la‑a]z': '𒀀𒈾 𒄑𒇀𒅀𒃷 𒄑𒇀 𒈨𒅅𒃷 𒇀𒆷𒊍'
+'Ù UGULA LI.MEŠ [ KÙ.BABB]AR‑it KÙ.S[I₂₂‑i]t': '𒅇 𒉺 𒇷𒎌  𒆬𒌓𒀉 𒆬𒄀𒀉'
+# UGULA 𒉺 (pa?)
+# 𒆬𒄀 - gold - typically transliterated as KÙ.SIG₁₇ rather than KÙ.SI₂₂
+'DU[MU.M]EŠ LUG[AL‑ia': '𒌉𒎌 𒈗𒅀'
+'EGIR‑pa LUGAL‑uš': '𒂕𒉺 𒈗𒍑'
+'x(‑)ši‑ia‑an‑te‑eš KASKAL.MEŠ.‑ŠU': '%𒅆𒅀𒀭𒋼𒐁 𒆜𒎌𒋗'
+# not sure if we should be representing numerals as cuneiform.
+'D.10‑n[i': '𒀭10𒉌'
+
+# KBo 3.22
+# https://www.hethport.uni-wuerzburg.de/TLHdig/tlh_xtx.php?d=KBo%203.22
+'D.UTU‑az': '𒀭𒌓𒊍'
+# I presume that the ha-a+na is an error for ha-a-an.
+# QÍ ~= KÍ.
+# BÍ ~= NE.
+# For a simpler example of QÍBÍMA in a text see Autograph of KBo 8.21 https://www.hethport.uni-wuerzburg.de/hetkonk/hetkonk_abfrage.php?c=185
+'⸢.m.⸣a‑ni‑it‑ta DUMU m.pí‑it‑ḫa‑a+na LUGAL URU.ku‑uš‑ša‑ra QÍ‑B[Í‑M]A': '𒇽𒀀𒉌𒀉𒋫 𒌉 𒇽𒁉𒀉𒄩𒀀𒈾 𒈗 𒌷𒆪𒍑𒊭𒊏 𒆠𒉈𒈠'
+
+# 3 KBo12.19
+# https://www.hethport.uni-wuerzburg.de/TLHdig/tlh_xtx.php?d=KBo%2012.19
+# https://www.hethport.adwmainz.de/hetautgrf/Autogrfbetrachter.php?ori=&p=KBo%2012.19%20&bildnr=KBo12.19-Vs_ColI.png&x=KBo12
+'GAL LÚ.MEŠ.SANGA‑ŠU': '𒃲 𒇽𒎌𒋃𒋗'
+'D.x[ iš‑ku‑ne‑eš‑kán‑z[i K[IN] ⸢URU⸣ [ ': '𒀭% 𒅖𒆪𒉈𒐁𒃷𒍣 𒆥 𒌷'
