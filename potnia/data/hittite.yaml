@@ -1,6 +1,7 @@
 mappings:
   # V syllabograms
   "a": 𒀀
+  "m": 𒇽
   "A": 𒀀
   "e": 𒂊
   "i": 𒄿
@@ -237,7 +238,7 @@ mappings:
   "luḫ": 𒈛
   "LUḪ": 𒈛 # minister
   "lum": 𒈝
-  "maḫ": 𒈤
+  "maḫ": 𒈤'
   "MAḪ": 𒈤 # great
   "man": "??" # Find
   "mar": 𒈥
@@ -385,6 +386,8 @@ mappings:
   "ANA": 𒀀𒈾
   "LUGAL": 𒈗
   "lugal": 𒈗
+  'a': 𒀀
+  'na': 𒈾
 
   # Determinatives
 
@@ -427,18 +430,28 @@ mappings:
   "(URU)": 𒌷 # "city"
   "(URUDU)": 𒍐 # "copper"
   "(UZU)": 𒍜 # "meat"
-  'EGIR': '𒂕𒉺
-  'LIM': '𒅆'
-  'EZEN₄': '𒍸'
-  'UTU': '𒌓'
-  'GUR₄': '𒆸'
+  "EGIR": 𒂕
+  'LIM': 𒅆
+  'EZEN₄': 𒍸
+  'UTU': 𒌓
+  'GUR₄': 𒆸
   'kat': '𒃰'
   'DUMU': '𒌉'
   'KIN': '𒆥'
   'BABBAR': '𒌓'
-  'SANGA': '𒋃
+  'SANGA': '𒋃'
   'QÍ': '𒆠'
   'BÍ': '𒉈'
+  "GIGIR": 𒇀
+  "GÙB":  𒇀
+  "Ù":     𒅇    #  (the sign Ù)
+  "UGULA": 𒉺    #  (the sign UGULA)
+  "KÙ":    𒆬    #  (KÙ = 𒆬)
+  "BABB":  𒌓𒀉  #  (BABB = 𒌓𒀉)
+  "SI₂₂":  𒄀    #  (SI₂₂ = 𒄀)
+  "KASKAL": 𒆜
+  "D": 𒀭
+  'x': '%'
 
 tokenization:
   - ['\[', ' [ ']    # Ensure opening brackets are separated
