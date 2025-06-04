@@ -453,9 +453,38 @@ mappings:
   "D": 𒀭
   'x': '%'
 
-tokenization:
-  - ['\[', ' [ ']    # Ensure opening brackets are separated
-  - ['\]', ' ] ']    # Ensure closing brackets are separated
-  - ['‑', ' ']       # Replace non-breaking hyphens with spaces
-  - ['-', ' ']       # Replace regular hyphens with spaces
-  - ['\s+', ' ']     # Normalize spaces
+  #new additions: Kabir
+
+  # ——— Numerals (the plain signs 1–9) ———
+
+  "ANŠE": 𒀲
+  "BANŠUR": 𒈤          # table / tray
+  "GUR₇": 𒄡
+  "KA×U": 𒅗𒌨        # composite; unicode has pre-composed U+12195, if you prefer
+  "KU₇": 𒄪
+  "LÍL": 𒆤
+  "MÁŠ": 𒈃
+  "NÍ": 𒉌
+  "NÍG": 𒂅
+  "ARAD": 𒀜
+
+  # ——— Logograms missing so far ———
+  "ALAM":       𒉿            # statue (*alam*)   U+123FF
+  "BAD":        𒁇            # precious/ore
+  "BAPPIR":     𒆐            # malt
+  "BURU₁₄":     𒋡            # granary
+  "DIM₄":       𒄰𒊬          # (MUL + SAR) ‘sweet’ / ‘honey’
+  "DUR₅":       𒄙            # tether, strip  (already have DUR = 𒄙, add alias)
+  "EREN":       𒄑            # cedar
+  "GIR₄":       𒄯            # sickle
+  "KASKAL":     𒆜            # road, journey   (already added at bottom but repeat to be safe)
+  "MÁŠTUR":     𒈤𒌆          # young animal
+  "NUNUZ":      𒄀            # seed / ovum
+  "SIPA":       𒋫            # shepherd
+  "ŠIM":        𒋞            # aromatic oil
+  "UGU":        𒌝            # upper, over     (use NA / over‐wedge sign)
+  "(ALAM)":     𒉿
+  "(BAD)":      𒁇
+  "(BAPPIR)":   𒆐
+  "(KASKAL)":   𒆜
+  "(SIPA)":     𒋫
