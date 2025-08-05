@@ -1,10 +1,12 @@
 mappings:
   a: "𐤠"  # Sound: [a]
   b: "𐤡"  # New transliteration p; Sound: [p~b] – plain labial voiced to [b] before nasals and probably [r]
+  p: "𐤡"  # " "
   g: "𐤢"  # Sound: [ɡ]; occasionally substituted for secondarily voiced /k/
   d: "𐤣"  # Sound: [θ~ð]? – descends from PIE *d/*dʰ, lenited PIE *t, and PIE *i̯; likely interdental
   e: "𐤤"  # Sound: [eː] – fairly high and long (like Greek ει), only occurs accented
   v: "𐤥"  # New transliteration w; Sound: [w~v] – descends from PIE *w; may have been labiodental; transcribed as w to avoid confusion with ν
+  w: "𐤥"  #  " "
   i: "𐤦"  # Sound: [i]
   y: "𐤧"  # Sound: [i̯~j]? – possibly an allophone of /i/ (attested only 11 times, maybe a Carian borrowing)
   k: "𐤨"  # Sound: [k~ɡ] – voiced to [ɡ] before nasals and probably [r]
@@ -19,10 +21,12 @@ mappings:
   f: "𐤱"  # Sound: [f] or [ɸ] – labiodental or bilabial fricative; alternates with /w/ in “lews~lefs” (“Zeus”)
   q: "𐤲"  # Sound: [kʷ] – historically [kʷ], though its current pronunciation is unclear
   s: "𐤳"  # New transliteration š; Sound: [ʃ] or [ç] – palatalized *s; newer transcriptions use š
+  š: "𐤳"  # " "
   τ: "𐤴"  # Transliteration given as “τ”; Sound: [tʃ] or [tç] – derived from 𐤯+𐤳 (t+š) as in “kat+šadmẽs > kaττadmẽs”
   ã: "𐤵"  # Nasal vowel, perhaps [ãː] – only occurs accented; appears before nasal consonants
   ẽ: "𐤶"  # Nasal vowel – not [ẽ], perhaps [ã] or [æ̃] as in Lycian; only occurs accented
   λ: "𐤷"  # Sound: [ʎ] (or [ɾʲ]?) – palatalized *l (or possibly a palatalized flap)
   ν: "𐤸"  # New transliteration ñ; Sound: [ɲ] or [ŋ]? – arose from word-final/palatalized *m/*n; re-transliterated as ñ to avoid confusion
+  ñ: "𐤸"  # " "
   c: "𐤹"  # Sound: [ts~dz]? – an undetermined affricate or fricative (possibly [ts], [z], [dz], or [dʒ])
   "=": '' # This is used as a morpheme boundary

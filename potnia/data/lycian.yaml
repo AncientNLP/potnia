@@ -28,5 +28,9 @@ mappings:
   q: "𐊌"  # Sound: [k]?, [kʷ]?
   β: "𐊃"  # Sound: [k]?, [kʷ]?, [ç]?
   χ: "𐊜"  # Sound: [q]?, [kʷ]?
+  x: "𐊜"  #  ""    ex, rather than xi.
+  κ: "𐊔"  # Sound: [k]? [kʲ]? [h(e)]
+  c: "𐊔"  #  ""
+  ◊: "𐊔"  #  ""
 
   "=": ''  # Morpheme boundary indicator
