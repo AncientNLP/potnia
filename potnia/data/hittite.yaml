@@ -489,7 +489,7 @@ mappings:
   "(KASKAL)":   𒆜
   "(SIPA)":     𒋫
 
-  # --- Upper case
+  # ———  Upper case
   'A': '𒀀'
   'M': '𒇽'
   'E': '𒂊'
@@ -755,7 +755,7 @@ mappings:
   'KAT': '𒃰'
   'X': '%'
  
-  # --- ETCSL ---
+  # ———  ETCSL 
   'DURU₅': '𒀀'
   'IS₃': '𒀊'
   'ABA': '𒀊'
@@ -1058,4 +1058,3 @@ mappings:
   'RIG₂': '𒍮'
   'ḪAŠ₄': '𒍮'
   'SUM₂': '𒍮'
-  # end etcsl ---
