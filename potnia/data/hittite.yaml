@@ -170,8 +170,7 @@ mappings:
   "ḫad": 𒉺
   "ḫat": 𒉺
   "PA": 𒉺 # sceptre
-  "ḫul": "??"
-  "ḪUL": "??" # evil # Find
+  "ḫul": 𒅆𒌨
   "ḫub": 𒄽
   "ḫup": 𒄽
   "ḫar": 𒄯
@@ -195,8 +194,7 @@ mappings:
   "gáb": 𒆏
   "gáp": 𒆏
   "KAB": 𒆏 # left
-  "kar": "??" # find
-  "KAR": "??" # find # But actually find
+  'kar': 𒋼𒀀
   "kàr": 𒃼
   "gàr": 𒃼
   "kaš": 𒁉
@@ -208,7 +206,7 @@ mappings:
   "GAD": 𒃰 # linen
   "gaz": 𒄤
   "GAZ": 𒄤 # kill
-  "kib": "??" # Find
+  "kib": 𒍼
   "kir": 𒄫
   "gir": 𒄫
   "kiš": 𒆧
@@ -240,7 +238,7 @@ mappings:
   "lum": 𒈝
   "maḫ": 𒈤'
   "MAḪ": 𒈤 # great
-  "man": "??" # Find
+  "man": 𒎙
   "mar": 𒈥
   "maš": 𒈦
   "MAŠ": 𒈦 # half
@@ -256,12 +254,12 @@ mappings:
   "nab": 𒀮
   "nap": 𒀮
   "nir": 𒉪
-  "niš": "??" # Find
+  "niš": 𒎙
   "pal": 𒁄
   "bal": 𒁄
   "pár": 𒈦
   "bar": 𒈦
-  "paš": "??" # Find
+  "paš": 𒄫 
   "pád": 𒁁
   "pát": 𒁁
   "píd": 𒁁
@@ -269,12 +267,12 @@ mappings:
   "píl": 𒉋
   "bíl": 𒉋
   "GIBIL": 𒉋 # new
-  "pir": "??" # Find
+  "pir": 𒌓
   "piš": 𒄫
   "biš": 𒄫
   "pùš": 𒄫
-  "pur": "??" # Find
-  "bur": "??" # Find
+  "pur": 𒁓
+  "bur": 𒁓
   "rad": 𒋥
   "rat": 𒋥
   "riš": 𒊕
@@ -286,12 +284,12 @@ mappings:
   "šal": 𒊩
   "MUNUS": 𒊩 # woman
   "šam": 𒌑
-  "šàm": "??" # Find
-  "šab": "??" # Find
-  "šap": "??" # Find
+  "šàm": 𒉓   # confirm
+  "šab": 𒉺𒅁
+  "šap": 𒉺𒅁
   "šar": 𒊬
   "SAR": 𒊬 # plant
-  "šìp": "??" # Find
+  "šìp": 𒉺𒅁
   "šir": 𒋓
   "ŠIR": 𒋓 # testicles
   "šum": 𒋳
@@ -330,7 +328,7 @@ mappings:
   "tir": 𒌁
   "ter": 𒌁
   "TIR": 𒌁 # forest
-  "tíš": "??" # Find
+  "tíš": 𒁹
   "túl": 𒇥
   "tum": 𒌈
   "dum": 𒌈
@@ -616,7 +614,7 @@ mappings:
   'ḪAŠ': '𒋻'
   'ḪAD': '𒉺'
   'ḪAT': '𒉺'
-  'ḪUL': '??'
+  'ḪUL': '𒅆𒌨'
   'ḪUB': '𒄽'
   'ḪUP': '𒄽'
   'ḪAR': '𒄯'
@@ -632,7 +630,7 @@ mappings:
   'KAP': '𒆏'
   'GÁB': '𒆏'
   'GÁP': '𒆏'
-  'KAR': '??'
+  'KAR': '𒋼𒀀'
   'KÀR': '𒃼'
   'GÀR': '𒃼'
   'KAŠ': '𒁉'
@@ -641,7 +639,7 @@ mappings:
   'GAD': '𒃰'
   'GAT': '𒃰'
   'GAZ': '𒄤'
-  'KIB': '??'
+  'KIB': '𒍼'  
   'KIR': '𒄫'
   'GIR': '𒄫'
   'KIŠ': '𒆧'
@@ -663,7 +661,7 @@ mappings:
   'LUḪ': '𒈛'
   'LUM': '𒈝'
   'MAḪ': '𒈤'
-  'MAN': '??'
+  'MAN': '𒎙'
   'MAR': '𒈥'
   'MAŠ': '𒈦'
   'MEŠ': '𒎌'
@@ -676,24 +674,24 @@ mappings:
   'NAB': '𒀮'
   'NAP': '𒀮'
   'NIR': '𒉪'
-  'NIŠ': '??'
+  'NIŠ': '𒎙'
   'PAL': '𒁄'
   'BAL': '𒁄'
   'PÁR': '𒈦'
   'BAR': '𒈦'
-  'PAŠ': '??'
+  'PAŠ': '𒄫'
   'PÁD': '𒁁'
   'PÁT': '𒁁'
   'PÍD': '𒁁'
   'PÍT': '𒁁'
   'PÍL': '𒉋'
   'BÍL': '𒉋'
-  'PIR': '??'
+  'PIR': '𒌓'
   'PIŠ': '𒄫'
   'BIŠ': '𒄫'
   'PÙŠ': '𒄫'
-  'PUR': '??'
-  'BUR': '??'
+  'PUR': '𒁓'
+  'BUR': '𒁓'
   'RAD': '𒋥'
   'RAT': '𒋥'
   'RIŠ': '𒊕'
@@ -702,11 +700,11 @@ mappings:
   'ŠAK': '𒊕'
   'ŠAL': '𒊩'
   'ŠAM': '𒌑'
-  'ŠÀM': '??'
-  'ŠAB': '??'
-  'ŠAP': '??'
+  'ŠÀM': '𒉓' # confirm
+  'ŠAB': '𒉺𒅁'
+  'ŠAP': '𒉺𒅁'
   'ŠAR': '𒊬'
-  'ŠÌP': '??'
+  'ŠÌP': '𒉺𒅁'
   'ŠIR': '𒋓'
   'ŠUM': '𒋳'
   'ŠUR': '𒋩'
@@ -740,7 +738,7 @@ mappings:
   'DIR': '𒊑'
   'TIR': '𒌁'
   'TER': '𒌁'
-  'TÍŠ': '??'
+  'TÍŠ': '𒁹'
   'TÚL': '𒇥'
   'TUM': '𒌈'
   'DUM': '𒌈'
