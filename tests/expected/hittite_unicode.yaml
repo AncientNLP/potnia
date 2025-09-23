@@ -3,13 +3,13 @@
 "a-ši KÁ-aš ku-iš pa-it nu DINGIR (MEŠ)  2 ḪUR.SAG (MEŠ)" : "𒀀𒅆 𒆍𒀸 𒆪𒅖 𒉺𒀉 𒉡 𒀭 𒌍  2 𒄯𒊕 𒌍"
 
 # CTH-1 KBo 22.5
+# https://www.hethport.uni-wuerzburg.de/TLHdig/tlh_xtx.php?d=KBo%2022.5
 "x -it x me-na-aḫ-ḫa-an-da .URU.ne-e-ša-an iš-pa-an-ti e-ep-ta": "% 𒀉 % 𒈨𒈾𒄴𒄩𒀭𒁕 𒌷𒉈𒂊𒊭𒀭 𒅖𒉺𒀭𒋾 𒂊𒅁𒋫"
 ".URU.ne-e-ša i-da-a-lu": "𒌷𒉈𒂊𒊭 𒄿𒁕𒀀𒇻"
 "Ú-UL ku-it-ki": "𒌑𒌌 𒆪𒀉𒆠"
 "at-tu-uš an-ni-uš i-ia-nu-un pé-ra-an": "𒀜𒌅𒍑 𒀭𒉌𒍑 𒄿𒅀𒉡𒌦 𒁉𒊏𒀭"
 # "ḫu-u-e-nu-〈nu〉-un x": "𒄷𒌋𒂊𒉡𒉡𒌦 %"
 "ḫu-u-e-nu-nu-un x": "𒄷𒌋𒂊𒉡𒉡𒌦 %"
-
 # "I-NA UD 1.KAM. 3-an-du-u x-aš-ša KUR .URU.ul-lam-ma": "𒄿𒈾 𒌓 𒁹𒄰 𒐈𒀭𒁺𒌋 %𒀸𒊭 𒆳 𒌷𒌌𒇴𒈠 "
 "I-NA UD 1.KAM. 3-an-du-u x-aš-ša KUR .URU.ul-lam-ma": "𒄿𒈾 𒌓 1𒄰 3𒀭𒁺𒌋 %𒀸𒊭 𒆳 𒌷𒌌𒇴𒈠"
 "pa-an-ku an- -e-et x-za-na x(-)x x": "𒉺𒀭𒆪 𒀭 𒂊𒀉 %𒍝𒈾 %% %"
@@ -20,6 +20,43 @@
 "QÍ-BÍ-MA ne-pí-iš-za-aš-ta .D.IŠKUR-un-ni": "𒆠𒉈𒈠 𒉈𒁉𒅖𒍝𒀸𒋫 𒀭𒅎𒌦𒉌"
 # "a-aš-šu-uš e-eš-ta na-aš-ta .D.IŠKUR-un-ni-ma": "𒀀𒀸𒋗𒍑 𒂊𒌍𒋫 𒈾𒀸𒋫 𒀭𒅎𒌦𒉌𒈠"
 # "LUGAL-un IṢ-BAT Ù DUMU.MEŠ. .URU.ne-e-ša-aš i-da-a-lu na-at-ta ku-e-da-ni-ik-ki ták-ki-iš-ta šu-uš-za an-nu-uš at-tu-uš i-e-et": "𒈗𒌦 𒄑𒁁 𒅇 𒌉𒎌 𒌷𒉈𒂊𒊭𒀸 𒄿𒁕𒀀𒇻 𒈾𒀜𒋫 𒆪𒂊𒁕𒉌𒅅𒆠 𒁖𒆠𒅖𒋫 𒋗𒍑𒍝 𒀭𒉡𒍑 𒀜𒌅𒍑 𒄿𒂊𒀉"
+
+# CTH-8 KBo 12.11
+# https://www.hethport.uni-wuerzburg.de/TLHdig/tlh_xtx.php?d=KBo%2012.11
+".m.ta-az-zi-iš": "𒇽𒋫𒊍𒍣𒅖"
+"nu 14 x[": "𒉡 𒌋𒐉 %"
+"nu 14 x[": "𒉡 14 %"
+"A-BI LUGAL IŠ-ME": "𒀀𒁉 𒈗 𒅖𒈨"
+"i-da-lu ḫe-en-kán": "𒄿𒁕𒇻 𒄭𒂗𒃷"
+"DUMU.MEŠ..LUGAL A-[NA": "𒌉𒎌𒈗 𒀀𒈾"
+"LÚ .URU.šu-uk-zi-ia": "𒇽 𒌷𒋗𒊌𒍣𒅀"
+"ke-e kar-ti-ia-aš-ša-aš": "𒆠𒂊 𒋼𒀀𒋾𒅀𒀸𒊭𒀸"
+".GIŠ.BANŠUR-uš-[": "𒄑𒈤𒍑"
+"ḫa-ap-pa-aš-š[u-uš": "𒄩𒀊𒉺𒀸𒋗𒍑"
+# "a-〈ap〉-pa-an-na": "𒀀𒀊𒉺𒀭𒈾"
+"nu-uš-š[i": "𒉡𒍑𒅆"
+
+# "CTH-211 KBo 13.47"
+# https://www.hethport.uni-wuerzburg.de/TLHdig/tlh_xtx.php?d=KBo%2013.47
+"(-)i-ia-": "𒄿𒅀"
+"](-)i-ia-[": "𒄿𒅀"
+"I-N]A .URU.a-": "𒄿𒈾 𒌷𒀀"
+# "-ḫu-u": "𒄷𒌦"
+# "KUR .URU.pa-la-a ÉRIN.MEŠ. ANŠE.KUR.RA": "𒆳 𒌷𒉺𒆷𒀀 𒂟𒎌 𒀲𒆳𒊏"
+# "x-aš-ša 〈〈x x〉〉 ša-": "%𒀸𒊭 % % 𒊭"
+# "-aḫ-ḫu-un nu .URU.pár-ma-an-na(-)": "𒄴𒄷𒌦 𒉡 𒌷𒈦𒈠𒀭𒈾"
+# "LÚ.MEŠ.GURUŠ .URU.pár-ma-an-na": "𒇽𒎌𒈨 𒌷𒈦𒈠𒀭𒈾"
+# "-eš-na e-še-er": "𒈾 𒂊𒊺𒅕"
+"x x": "% %"
+
+
+# CTH-211 KBo 13.51"
+# https://www.hethport.uni-wuerzburg.de/TLHdig/tlh_xtx.php?d=KBo%2013.51
+"nu-uš-ši-iš-[": "𒉡𒍑𒅆𒅖"
+# "BÀD KARAŠ [": "𒆗 𒁁"
+"an⸣-da wa-aḫ-n[u?(-)": "𒀭𒁕 𒉿𒄴𒉡"
+"[ n]a-an ar-[": "𒈾𒀭 𒅈"
+"[ ] x x [": "% %"
 
 # KUB 23.79
 # https://www.hethport.uni-wuerzburg.de/TLHdig/tlh_xtx.php?d=KUB%2023.79
