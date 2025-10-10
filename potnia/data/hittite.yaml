@@ -297,279 +297,159 @@ mappings:
   "zum": 𒍮
 
   # Logograms
-  "ANA": 𒀀𒈾
-  "DIDLI ḪI.A": 𒀸𒄭𒀀 # (suffixed) # plural
-  "DIDLI": 𒀸 # (suffixed) # plural or collective
-  "DINGIR": 𒀭 # (ᴰ) # "deity"
-  "DIR": 𒊑 # red
-  "DIŠ": 𒁹 # (ᵐ) # male personal names
-  "M": 𒁹 # (ᵐ) # male personal names
+  "ana": 𒀀𒈾
+  "didli ḫi.a": 𒀸𒄭𒀀 # (suffixed) # plural
+  "didli": 𒀸 # (suffixed) # plural or collective
+  "dingir": 𒀭 # (ᴰ) # "deity"
+  "dir": 𒊑 # red
+  "diš": 𒁹 # (ᵐ) # male personal names
+  "m": 𒁹 # (ᵐ) # male personal names
   "ᵐ": 𒁹 # (ᵐ) # male personal names
-  "DUB": 𒁾 # clay tablet
-  "DUG": 𒂁 # "vessel"
-  "DUR": 𒄙 # strip
-  "É": 𒂍 # "house"
-  "GAD": 𒃰 # "linen, cloth"
-  "GIŠ": 𒄑 # "wood"
-  "GI": 𒄀 # "tube; reed"
-  "GUD": 𒄞 # "bovid"
-  "ḪUR.SAG": 𒄯𒊕 # "mountain"
-  "ÍD": 𒀀𒇉 # "river"
-  "IM": 𒅎 # "clay"
-  "ITU": 𒌚 # "month"
-  "KÁ": 𒆍
-  "KU6": 𒄩 # "fish"
-  "KUR": 𒆳 # "land"
-  "KUŠ": 𒋢 # "hide, fur"
+  "dub": 𒁾 # clay tablet
+  "dug": 𒂁 # "vessel"
+  "dur": 𒄙 # strip
+  "é": 𒂍 # "house"
+  "gad": 𒃰 # "linen, cloth"
+  "giš": 𒄑 # "wood"
+  "gi": 𒄀 # "tube; reed"
+  "gud": 𒄞 # "bovid"
+  "ḫur.sag": 𒄯𒊕 # "mountain"
+  "íd": 𒀀𒇉 # "river"
+  "im": 𒅎 # "clay"
+  "itu": 𒌚 # "month"
+  "ká": 𒆍
+  "ku6": 𒄩 # "fish"
+  "kur": 𒆳 # "land"
+  "kuš": 𒋢 # "hide, fur"
   "lugal": 𒈗
-  "LUGAL": 𒈗
-  "LÚ": 𒇽 # "man"
-  "MEŠ ḪI.A": 𒌍𒄭𒀀 # (suffixed) # plural
-  "MEŠ": 𒎌 # (suffixed) # plural
-  "MUL": 𒀯 # "star"
-  "MUNUS": 𒊩 # (ᶠ) # "woman" # female personal name
-  "MUŠEN": 𒄷 # (suffixed) # "bird"
-  "MUŠ": 𒈲 # "serpent"
-  "NA₄": 𒉌𒌓 # "stone"
-  "NINDA": 𒃻 # "bread"
-  "PÚ": 𒇥 # "source"
-  "SAG": 𒊕 # head
-  "SAR": 𒊬 # (suffixed) # "plant"
-  "SÍG": 𒋠 # "wool"
-  "ŠIR": 𒋓 # testicles
-  "SI": 𒋛 # "horn"
-  "ŠUBUR": 𒋚 # pig
-  "TIR": 𒌁 # forest
-  "TU7": 𒄰 # "soup"
-  "TÚG": 𒌆 # "garment"
-  "UDU": 𒇻
-  "URUDU": 𒍐 # "copper"
-  "URU": 𒌷 # "city"
-  "UZU": 𒍜 # "meat"
-  "Ú": 𒌑 # "plant"
+  "lugal": 𒈗
+  "lú": 𒇽 # "man"
+  "meš ḫi.a": 𒌍𒄭𒀀 # (suffixed) # plural
+  "meš": 𒎌 # (suffixed) # plural
+  "mul": 𒀯 # "star"
+  "munus": 𒊩 # (ᶠ) # "woman" # female personal name
+  "mušen": 𒄷 # (suffixed) # "bird"
+  "muš": 𒈲 # "serpent"
+  "na₄": 𒉌𒌓 # "stone"
+  "ninda": 𒃻 # "bread"
+  "pú": 𒇥 # "source"
+  "sag": 𒊕 # head
+  "sar": 𒊬 # (suffixed) # "plant"
+  "síg": 𒋠 # "wool"
+  "šir": 𒋓 # testicles
+  "si": 𒋛 # "horn"
+  "šubur": 𒋚 # pig
+  "tir": 𒌁 # forest
+  "tu7": 𒄰 # "soup"
+  "túg": 𒌆 # "garment"
+  "udu": 𒇻
+  "urudu": 𒍐 # "copper"
+  "uru": 𒌷 # "city"
+  "uzu": 𒍜 # "meat"
+  "ú": 𒌑 # "plant"
 
   # Determinatives
-
-  "(DIŠ)": 𒁹 # (ᵐ) # male personal names
-  "(M)": 𒁹
-  "(DIDLI)": 𒀸 # (suffixed) # plural or collective
-  "(DIDLI ḪI.A)": 𒀸𒄭𒀀 # (suffixed) # plural
-  "(DINGIR)": 𒀭 # (ᴰ) # "deity"
-  "(DUG)": 𒂁 # "vessel"
-  "(É)": 𒂍 # "house"
-  "(GAD)": 𒃰 # "linen, cloth"
-  "(GI)": 𒄀 # "tube; reed"
-  "(GIŠ)": 𒄑 # "wood"
-  "(GUD)": 𒄞 # "bovid"
-  "(ḪI.A)": 𒄭𒀀 # (suffixed) # plural
-  "(ḪUR.SAG)": 𒄯𒊕 # "mountain"
-  "(ÍD)": 𒀀𒇉 # "river"
-  "(IM)": 𒅎 # "clay"
-  "(ITU)": 𒌚 # "month"
-  "(KAM)": 𒄰 # (suffixed) # numerals
-  "(KI)": 𒆠 # (suffixed) # in 0.6% of toponyms[5]
-  "(KU6)": 𒄩 # "fish"
-  "(KUR)": 𒆳 # "land"
-  "(KUŠ)": 𒋢 # "hide, fur"
-  "(LÚ)": 𒇽 # "man"
-  "(MEŠ)": 𒌍 # (suffixed) # plural
-  "(MEŠ ḪI.A)": 𒌍𒄭𒀀 # (suffixed) # plural
-  "(MUL)": 𒀯 # "star"
-  "(MUNUS)": 𒊩 # (ᶠ) # "woman" # female personal name
-  "(MUŠ)": 𒈲 # "serpent"
-  "(MUŠEN)": 𒄷 # (suffixed) # "bird"
-  "(NA₄)": 𒉌𒌓 # "stone"
-  "(NINDA)": 𒃻 # "bread"
-  "(PÚ)": 𒇥 # "source"
-  "(SAR)": 𒊬 # (suffixed) # "plant"
-  "(SI)": 𒋛 # "horn"
-  "(SÍG)": 𒋠 # "wool"
-  "(TU7)": 𒄰 # "soup"
-  "(TÚG)": 𒌆 # "garment"
-  "(Ú)": 𒌑 # "plant"
-  "(URU)": 𒌷 # "city"
-  "(URUDU)": 𒍐 # "copper"
-  "(UZU)": 𒍜 # "meat"
-  "EGIR": 𒂕
-  "LIM": 𒅆
-  "EZEN₄": 𒍸
-  "UTU": 𒌓
-  "GUR₄": 𒆸
+  "(diš)": 𒁹 # (ᵐ) # male personal names
+  "(m)": 𒁹
+  "(didli)": 𒀸 # (suffixed) # plural or collective
+  "(didli ḫi.a)": 𒀸𒄭𒀀 # (suffixed) # plural
+  "(dingir)": 𒀭 # (ᴰ) # "deity"
+  "(dug)": 𒂁 # "vessel"
+  "(é)": 𒂍 # "house"
+  "(gad)": 𒃰 # "linen, cloth"
+  "(gi)": 𒄀 # "tube; reed"
+  "(giš)": 𒄑 # "wood"
+  "(gud)": 𒄞 # "bovid"
+  "(ḫi.a)": 𒄭𒀀 # (suffixed) # plural
+  "(ḫur.sag)": 𒄯𒊕 # "mountain"
+  "(íd)": 𒀀𒇉 # "river"
+  "(im)": 𒅎 # "clay"
+  "(itu)": 𒌚 # "month"
+  "(kam)": 𒄰 # (suffixed) # numerals
+  "(ki)": 𒆠 # (suffixed) # in 0.6% of toponyms[5]
+  "(ku6)": 𒄩 # "fish"
+  "(kur)": 𒆳 # "land"
+  "(kuš)": 𒋢 # "hide, fur"
+  "(lú)": 𒇽 # "man"
+  "(meš)": 𒌍 # (suffixed) # plural
+  "(meš ḫi.a)": 𒌍𒄭𒀀 # (suffixed) # plural
+  "(mul)": 𒀯 # "star"
+  "(munus)": 𒊩 # (ᶠ) # "woman" # female personal name
+  "(muš)": 𒈲 # "serpent"
+  "(mušen)": 𒄷 # (suffixed) # "bird"
+  "(na₄)": 𒉌𒌓 # "stone"
+  "(ninda)": 𒃻 # "bread"
+  "(pú)": 𒇥 # "source"
+  "(sar)": 𒊬 # (suffixed) # "plant"
+  "(si)": 𒋛 # "horn"
+  "(síg)": 𒋠 # "wool"
+  "(tu7)": 𒄰 # "soup"
+  "(túg)": 𒌆 # "garment"
+  "(ú)": 𒌑 # "plant"
+  "(uru)": 𒌷 # "city"
+  "(urudu)": 𒍐 # "copper"
+  "(uzu)": 𒍜 # "meat"
+  "egir": 𒂕
+  "lim": 𒅆
+  "ezen₄": 𒍸
+  "utu": 𒌓
+  "gur₄": 𒆸
   "kat": 𒃰
-  "DUMU": 𒌉
-  "KIN": 𒆥
-  "BABBAR": 𒌓
-  "SANGA": 𒋃
-  "QÍ": 𒆠
-  "BÍ": 𒉈
-  "GIGIR": 𒇀
-  "GÙB":  𒇀
-  "Ù":     𒅇    #  (the sign Ù)
-  "UGULA": 𒉺    #  (the sign UGULA)
-  "KÙ":    𒆬    #  (KÙ = 𒆬)
-  "BABB":  𒌓𒀉  #  (BABB = 𒌓𒀉)
-  "SI₂₂":  𒄀    #  (SI₂₂ = 𒄀)
-  "KASKAL": 𒆜
-  "D": 𒀭
+  "dumu": 𒌉
+  "kin": 𒆥
+  "babbar": 𒌓
+  "sanga": 𒋃
+  "qí": 𒆠
+  "bí": 𒉈
+  "gigir": 𒇀
+  "gùb":  𒇀
+  "ù":     𒅇    #  (the sign Ù)
+  "ugula": 𒉺    #  (the sign UGULA)
+  "kù":    𒆬    #  (KÙ = 𒆬)
+  "babb":  𒌓𒀉  #  (BABB = 𒌓𒀉)
+  "si₂₂":  𒄀    #  (SI₂₂ = 𒄀)
+  "kaskal": 𒆜
+  "d": 𒀭
   "x": "%"
 
   #new additions: Kabir
 
   # ——— Numerals (the plain signs 1–9) ———
 
-  "ANŠE": 𒀲
-  "BANŠUR": 𒈤          # table / tray
-  "GUR₇": 𒄡
-  "KA×U": 𒅗𒌨        # composite; unicode has pre-composed U+12195, if you prefer
-  "KU₇": 𒄪
-  "LÍL": 𒆤
-  "MÁŠ": 𒈃
-  "NÍ": 𒉌
-  "NÍG": 𒂅
-  "ARAD": 𒀜
+  "anše": 𒀲
+  "banšur": 𒈤          # table / tray
+  "gur₇": 𒄡
+  "ka×u": 𒅗𒌨        # composite; unicode has pre-composed U+12195, if you prefer
+  "ku₇": 𒄪
+  "líl": 𒆤
+  "máš": 𒈃
+  "ní": 𒉌
+  "níg": 𒂅
+  "arad": 𒀜
 
   # ——— Logograms missing so far ———
-  "ALAM":       𒉿            # statue (*alam*)   U+123FF
-  "BAD":        𒁇            # precious/ore
-  "BAPPIR":     𒆐            # malt
-  "BURU₁₄":     𒋡            # granary
-  "DIM₄":       𒄰𒊬          # (MUL + SAR) ‘sweet’ / ‘honey’
-  "DUR₅":       𒄙            # tether, strip  (already have DUR = 𒄙, add alias)
-  "EREN":       𒄑            # cedar
-  "GIR₄":       𒄯            # sickle
-  "KASKAL":     𒆜            # road, journey   (already added at bottom but repeat to be safe)
-  "MÁŠTUR":     𒈤𒌆          # young animal
-  "NUNUZ":      𒄀            # seed / ovum
-  "SIPA":       𒋫            # shepherd
-  "ŠIM":        𒋞            # aromatic oil
-  "UGU":        𒌝            # upper, over     (use NA / over‐wedge sign)
-  "(ALAM)":     𒉿
-  "(BAD)":      𒁇
-  "(BAPPIR)":   𒆐
-  "(KASKAL)":   𒆜
-  "(SIPA)":     𒋫
+  "alam":       𒉿            # statue (*alam*)   U+123FF
+  "bad":        𒁇            # precious/ore
+  "bappir":     𒆐            # malt
+  "buru₁₄":     𒋡            # granary
+  "dim₄":       𒄰𒊬          # (MUL + SAR) ‘sweet’ / ‘honey’
+  "dur₅":       𒄙            # tether, strip  (already have DUR = 𒄙, add alias)
+  "eren":       𒄑            # cedar
+  "gir₄":       𒄯            # sickle
+  "kaskal":     𒆜            # road, journey   (already added at bottom but repeat to be safe)
+  "máštur":     𒈤𒌆          # young animal
+  "nunuz":      𒄀            # seed / ovum
+  "sipa":       𒋫            # shepherd
+  "šim":        𒋞            # aromatic oil
+  "ugu":        𒌝            # upper, over     (use NA / over‐wedge sign)
+  "(alam)":     𒉿
+  "(bad)":      𒁇
+  "(bappir)":   𒆐
+  "(kaskal)":   𒆜
+  "(sipa)":     𒋫
 
   # ———  Upper case
-  "A": 𒀀
-  "M": 𒇽
-  "E": 𒂊
-  "I": 𒄿
-  "U": 𒌋
-  "Ú": 𒌑
-  "IA": 𒅀
-  "BA": 𒁀
-  "BE": 𒁁
-  "BI": 𒁉
-  "BU": 𒁍
-  "PA": 𒉺
-  "PÉ": 𒁉
-  "PÍ": 𒁉
-  "PU": 𒁍
-  "DA": 𒁕
-  "DE": 𒁲
-  "DI": 𒁲
-  "DU": 𒁺
-  "TA": 𒋫
-  "TE": 𒋼
-  "TI": 𒋾
-  "TU": 𒌅
-  "GA": 𒂵
-  "GE": 𒄀
-  "GI": 𒄀
-  "GU": 𒄖
-  "KA": 𒅗
-  "KE": 𒆠
-  "KI": 𒆠
-  "KU": 𒆪
-  "ḪA": 𒄩
-  "ḪE": 𒄭
-  "ḪÉ": 𒃶
-  "ḪI": 𒄭
-  "ḪU": 𒄷
-  "LA": 𒆷
-  "LE": 𒇷
-  "LI": 𒇷
-  "LU": 𒇻
-  "MA": 𒈠
-  "ME": 𒈨
-  "MÉ": 𒈪
-  "MI": 𒈪
-  "MU": 𒈬
-  "NA": 𒈾
-  "NE": 𒉈
-  "NÉ": 𒉌
-  "NI": 𒉌
-  "NU": 𒉡
-  "RA": 𒊏
-  "RE": 𒊑
-  "RI": 𒊑
-  "RU": 𒊒
-  "ŠA": 𒊭
-  "ŠE": 𒊺
-  "ŠI": 𒅆
-  "ŠU": 𒋗
-  "ŠÚ": 𒋙
-  "WA": 𒉿
   "WI5": 𒃾
-  "YA": 𒅀
-  "ZA": 𒍝
-  "ZE": 𒍣
-  "ZÉ": 𒍢
-  "ZI": 𒍣
-  "ZU": 𒍪
-  "AB": 𒀊
-  "AP": 𒀊
-  "EB": 𒅁
-  "EP": 𒅁
-  "IB": 𒅁
-  "IP": 𒅁
-  "UB": 𒌒
-  "UP": 𒌒
-  "AD": 𒀜
-  "AT": 𒀜
-  "ED": 𒀉
-  "ET": 𒀉
-  "ID": 𒀉
-  "IT": 𒀉
-  "UD": 𒌓
-  "UT": 𒌓
-  "AG": 𒀝
-  "AK": 𒀝
-  "EG": 𒅅
-  "EK": 𒅅
-  "IG": 𒅅
-  "IK": 𒅅
-  "UG": 𒊌
-  "UK": 𒊌
-  "AḪ": 𒄴
-  "EḪ": 𒄴
-  "IḪ": 𒄴
-  "UḪ": 𒄴
-  "AL": 𒀠
-  "EL": 𒂖
-  "IL": 𒅋
-  "UL": 𒌌
-  "AM": 𒄠
-  "EM": 𒅎
-  "IM": 𒅎
-  "UM": 𒌝
-  "AN": 𒀭
-  "EN": 𒂗
-  "IN": 𒅔
-  "UN": 𒌦
-  "AR": 𒅈
-  "ER": 𒅕
-  "IR": 𒅕
-  "UR": 𒌨
-  "ÚR": 𒌫
-  "AŠ": 𒀸
-  "EŠ": 𒐁
-  "IŠ": 𒅖
-  "UŠ": 𒍑
-  "AZ": 𒊍
-  "EZ": 𒄑
-  "IZ": 𒄑
-  "UZ": 𒊻
   "ḪAL": 𒄬
   "ḪAB": 𒆸
   "ḪAP": 𒆸
@@ -663,7 +543,7 @@ mappings:
   "ŠAK": 𒊕
   "ŠAL": 𒊩
   "ŠAM": 𒌑
-  "ŠÀM": 𒉓 # confirm
+  "šàm": 𒉓 # confirm
   "ŠAB": 𒉺𒅁
   "ŠAP": 𒉺𒅁
   "ŠAR": 𒊬
