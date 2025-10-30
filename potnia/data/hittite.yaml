@@ -4,7 +4,7 @@ mappings:
   "e": 𒂊
   "i": 𒄿
   "u": 𒌋
-  "ú": 𒌑
+  "ú": 𒌑 # "plant"
   "ia": 𒅀
 
   # CV syllabograms
@@ -30,7 +30,7 @@ mappings:
 
   "ga": 𒂵
   "ge": 𒄀
-  "gi": 𒄀
+  "gi": 𒄀 # "tube; reed"
   "gu": 𒄖
 
   "ka": 𒅗
@@ -126,7 +126,7 @@ mappings:
 
   "am": 𒄠
   "em": 𒅎
-  "im": 𒅎
+  "im": 𒅎 # "clay"
   "um": 𒌝
 
   "an": 𒀭
@@ -164,7 +164,7 @@ mappings:
   "ḫar": 𒄯
   "ḫur": 𒄯
   "gal": 𒃲
-  "kal": 𒆗
+  "kal": 𒆗 # strong
   "gal9": 𒆗
   "kam": 𒄰
   "gám": 𒄰
@@ -180,7 +180,7 @@ mappings:
   "kaš": 𒁉 # beer
   "gáš": 𒁉
   "kad": 𒃰
-  "gad": 𒃰 # linen
+  "gad": 𒃰 # "linen, cloth"
   "gat": 𒃰
   "gaz": 𒄤 # kill
   "kib": 𒍼
@@ -189,7 +189,6 @@ mappings:
   "kiš": 𒆧 # world
   "kid": 𒃰
   "t9": 𒃰
-  "kal": 𒆗 # strong
   "kul": 𒆰 # offspring
   "kúl": 𒄢
   "gul": 𒄢 # break
@@ -209,7 +208,7 @@ mappings:
   "man": 𒎙
   "mar": 𒈥
   "maš": 𒈦 # half
-  "meš": 𒎌 # check
+  "meš": 𒎌 # (suffixed) # plural
   "mil": 𒅖
   "mel": 𒅖
   "miš": 𒈩
@@ -251,7 +250,7 @@ mappings:
   "šap": 𒉺𒅁
   "šar": 𒊬
   "šìp": 𒉺𒅁
-  "šir": 𒋓
+  "šir": 𒋓 # testicles
   "šum": 𒋳
   "šur": 𒋩
   "taḫ": 𒈭
@@ -281,18 +280,18 @@ mappings:
   "tén": 𒁷
   "tim": 𒁴
   "dim": 𒁴
-  "dir": 𒊑
-  "tir": 𒌁
+  "dir": 𒊑 # red
+  "tir": 𒌁 # forest
   "ter": 𒌁
   "tíš": 𒁹
   "túl": 𒇥
   "tum": 𒌈
   "dum": 𒌈
   "tub": 𒁾
-  "dub": 𒁾
+  "dub": 𒁾 # clay tablet
   "dup": 𒁾
   "túr": 𒄙
-  "dur": 𒄙
+  "dur": 𒄙 # strip
   "zul": 𒂄
   "zum": 𒍮
 
@@ -301,30 +300,21 @@ mappings:
   "didli ḫi.a": 𒀸𒄭𒀀 # (suffixed) # plural
   "didli": 𒀸 # (suffixed) # plural or collective
   "dingir": 𒀭 # (ᴰ) # "deity"
-  "dir": 𒊑 # red
-  "diš": 𒁹 # (ᵐ) # male personal names
   "m": 𒁹 # (ᵐ) # male personal names
   "ᵐ": 𒁹 # (ᵐ) # male personal names
-  "dub": 𒁾 # clay tablet
   "dug": 𒂁 # "vessel"
-  "dur": 𒄙 # strip
   "é": 𒂍 # "house"
-  "gad": 𒃰 # "linen, cloth"
   "giš": 𒄑 # "wood"
-  "gi": 𒄀 # "tube; reed"
   "gud": 𒄞 # "bovid"
   "ḫur.sag": 𒄯𒊕 # "mountain"
   "íd": 𒀀𒇉 # "river"
-  "im": 𒅎 # "clay"
   "itu": 𒌚 # "month"
   "ká": 𒆍
   "ku6": 𒄩 # "fish"
-  "kur": 𒆳 # "land"
   "kuš": 𒋢 # "hide, fur"
   "lugal": 𒈗
   "lú": 𒇽 # "man"
   "meš ḫi.a": 𒌍𒄭𒀀 # (suffixed) # plural
-  "meš": 𒎌 # (suffixed) # plural
   "mul": 𒀯 # "star"
   "munus": 𒊩 # (ᶠ) # "woman" # female personal name
   "mušen": 𒄷 # (suffixed) # "bird"
@@ -335,17 +325,14 @@ mappings:
   "sag": 𒊕 # head
   "sar": 𒊬 # (suffixed) # "plant"
   "síg": 𒋠 # "wool"
-  "šir": 𒋓 # testicles
   "si": 𒋛 # "horn"
   "šubur": 𒋚 # pig
-  "tir": 𒌁 # forest
   "tu7": 𒄰 # "soup"
   "túg": 𒌆 # "garment"
   "udu": 𒇻
   "urudu": 𒍐 # "copper"
   "uru": 𒌷 # "city"
   "uzu": 𒍜 # "meat"
-  "ú": 𒌑 # "plant"
 
   # Determinatives
   "(diš)": 𒁹 # (ᵐ) # male personal names
@@ -450,24 +437,10 @@ mappings:
   # ———  
   "kab": 𒆏
   "kaš": 𒁉
-  "gad": 𒃰
-  "gaz": 𒄤
   "kib": 𒍼  
-  "kiš": 𒆧
-  "kul": 𒆰
-  "gul": 𒄢
-  "kur": 𒆳
-  "lal": 𒇲
-  "liš": 𒇺
-  "luḫ": 𒈛
-  "maḫ": 𒈤
-  "maš": 𒈦
-  "meš": 𒎌
   "min": 𒈫
-  "nam": 𒉆
   "paš": 𒄫
   "šàm": 𒉓 # confirm
-  "tab": 𒋰
  
   # ———  ETCSL 
   "duru₅": 𒀀
@@ -832,7 +805,6 @@ mappings:
   "pu₂": 𒇥
   "sig₂": 𒋠
   "tug₂": 𒌆
-  "u₂": 𒌑
   "qi₂": 𒆠
   "bi₂": 𒉈
   "gub₃": 𒇀
@@ -894,7 +866,6 @@ mappings:
   "pu2": 𒇥
   "sig2": 𒋠
   "tug2": 𒌆
-  "u2": 𒌑
   "qi2": 𒆠
   "bi2": 𒉈
   "gub3": 𒇀
@@ -906,7 +877,7 @@ mappings:
   "nig2": 𒂅
   "maštur2": 𒈤𒌆
 
-  # ———  Supplementary (lower case)
+  # ———  Supplementary
   "abul": 𒆍
   "agrig": 𒅆
   "agàr": 𒄭
