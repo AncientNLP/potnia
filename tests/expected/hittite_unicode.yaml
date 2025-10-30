@@ -1,3 +1,10 @@
+"ANA": 𒀀𒈾
+
+"DIDLI ḪI.A" : "𒀸 𒄭𒀀"
+"didli ḪI.A" : "𒀸 𒄭𒀀"
+"DIDLI ḫi.A" : "𒀸 𒄭𒀀"
+"didli ḫi.a" : "𒀸 𒄭𒀀"
+
 "ḫe]-en-ku-un šu-me-eš ma-ni-ia-aḫ-ḫi-eš-ke-et-tén" : "𒄭𒂗𒆪𒌦 𒋗𒈨𒐁 𒈠𒉌𒅀𒄴𒄭𒐁𒆠𒀉𒁷"
 
 "a-ši KÁ-aš ku-iš pa-it nu DINGIR (MEŠ)  2 ḪUR.SAG (MEŠ)" : "𒀀𒅆 𒆍𒀸 𒆪𒅖 𒉺𒀉 𒉡 𒀭 𒌍  2 𒄯𒊕 𒌍"
@@ -23,7 +30,7 @@
 
 # CTH-8 KBo 12.11
 # https://www.hethport.uni-wuerzburg.de/TLHdig/tlh_xtx.php?d=KBo%2012.11
-".m.ta-az-zi-iš": "𒇽𒋫𒊍𒍣𒅖"
+".m.ta-az-zi-iš": "𒁹𒋫𒊍𒍣𒅖"
 "nu 14 x[": "𒉡 𒌋𒐉 %"
 "nu 14 x[": "𒉡 14 %"
 "A-BI LUGAL IŠ-ME": "𒀀𒁉 𒈗 𒅖𒈨"
@@ -75,7 +82,7 @@
 
 # KUB36.98b
 # https://www.hethport.uni-wuerzburg.de/TLHdig/tlh_xtx.php?d=KUB%2036.98b
-'m.am‑mu‑ú‑⸢na⸣ LUGAL GAL': '𒇽𒄠𒈬𒌑𒈾 𒈗 𒃲'
+'m.am‑mu‑ú‑⸢na⸣ LUGAL GAL': '𒁹𒄠𒈬𒌑𒈾 𒈗 𒃲'
 'A‑NA GIŠ.GIGIR‑ia‑kán GIŠ.GIGIR me‑ek‑ká[n GÙB‑la‑a]z': '𒀀𒈾 𒄑𒇀𒅀𒃷 𒄑𒇀 𒈨𒅅𒃷 𒇀𒆷𒊍'
 'Ù UGULA LI.MEŠ [ KÙ.BABB]AR‑it KÙ.S[I₂₂‑i]t': '𒅇 𒉺 𒇷𒎌  𒆬𒌓𒀉 𒆬𒄀𒀉'
 # UGULA 𒉺 (pa?)
@@ -93,7 +100,7 @@
 # QÍ ~= KÍ.
 # BÍ ~= NE.
 # For a simpler example of QÍBÍMA in a text see Autograph of KBo 8.21 https://www.hethport.uni-wuerzburg.de/hetkonk/hetkonk_abfrage.php?c=185
-'⸢.m.⸣a‑ni‑it‑ta DUMU m.pí‑it‑ḫa‑a+na LUGAL URU.ku‑uš‑ša‑ra QÍ‑B[Í‑M]A': '𒇽𒀀𒉌𒀉𒋫 𒌉 𒇽𒁉𒀉𒄩𒀀𒈾 𒈗 𒌷𒆪𒍑𒊭𒊏 𒆠𒉈𒈠'
+'⸢.m.⸣a‑ni‑it‑ta DUMU m.pí‑it‑ḫa‑a+na LUGAL URU.ku‑uš‑ša‑ra QÍ‑B[Í‑M]A': '𒁹𒀀𒉌𒀉𒋫 𒌉 𒁹𒁉𒀉𒄩𒀀𒈾 𒈗 𒌷𒆪𒍑𒊭𒊏 𒆠𒉈𒈠'
 
 # 3 KBo12.19
 # https://www.hethport.uni-wuerzburg.de/TLHdig/tlh_xtx.php?d=KBo%2012.19
