@@ -45,7 +45,7 @@ class Hittite(Script):
                     token = ""
                 tokens.append(char)
             # Handle other characters
-            elif char in ['-','‑','.','+']:
+            elif char in ['-','‑','.','+','˽']:
                 if token:
                     tokens.append(token)
                     token = ""
@@ -64,7 +64,10 @@ class Hittite(Script):
         Converts transliterated text to unicode format with additional handling for Hittite-specific cases.
         """
         # Remove editorial markers and brackets before tokenization
-        text = text.replace('⸢','').replace('⸣','').replace('[','').replace(']','').replace('?', '').strip()
+        text = text.replace('⸢','').replace('⸣','').replace('[','').replace(']','')
+        text = text.replace('〈', '').replace('〉', '')
+        text = text.replace('?', '').replace('*', '').strip()
+
 
         tokens = self.tokenize_transliteration(text)
         tokens = [
