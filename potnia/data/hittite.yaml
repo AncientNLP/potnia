@@ -292,6 +292,7 @@ mappings:
   "dup": 𒁾
   "túr": 𒄙
   "dur": 𒄙 # strip
+  "zag": 𒍠
   "zul": 𒂄
   "zum": 𒍮
 
@@ -797,6 +798,7 @@ mappings:
   "tiš₂": 𒁹
   "tul₂": 𒇥
   "tur₂": 𒄙
+  "tu₇": 𒄰
   "e₂": 𒂍
   "id₂": 𒀀𒇉
   "ka₂": 𒆍
@@ -859,6 +861,7 @@ mappings:
   "tiš2": 𒁹
   "tul2": 𒇥
   "tur2": 𒄙
+  "tu7": 𒄰
   "e2": 𒂍
   "id2": 𒀀𒇉
   "ka2": 𒆍

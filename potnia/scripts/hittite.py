@@ -65,7 +65,7 @@ class Hittite(Script):
         """
         # Remove editorial markers and brackets before tokenization
         text = text.replace('⸢','').replace('⸣','').replace('[','').replace(']','')
-        text = text.replace('〈', '').replace('〉', '')
+        text = text.replace('〈', '').replace('〉', '').replace('〈', '').replace('〉', '')
         text = text.replace('?', '').replace('*', '').strip()
 
 
