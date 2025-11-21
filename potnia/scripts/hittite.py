@@ -65,7 +65,8 @@ class Hittite(Script):
         Removes some epigraphic annotations that has appeared in the text portion of a few hundred documents in HPM.
         """
         # this kind of parsing probably belongs in Ancient Corpora.
-        text = re.sub(r"obv \d+′ ", "", text)
+        text = re.sub(r"(obv|rev) \d+′ ", "", text)
+        text = re.sub(r"\d+′ ", "", text)
         text = re.sub(r'Frg( \d)+( [VR]s)( [IVX]+)?( \d+)′?', '', text)
         text = re.sub('Ende [VR]s[.]? ?[IVX]*', '', text)
         text = re.sub('[VR]s[.]?[?!]?( lk.)?( Kol.)? ?[IVX/]*[?]* bricht ab', '', text)
@@ -89,6 +90,7 @@ class Hittite(Script):
             'lk. Rd. bricht ab',
             '\" lg=\"Hit\"/>',
             'Kolophon',
+            'Rasur',
             ' "/>',
             'breaks off',
             # other ca formulations
@@ -109,7 +111,8 @@ class Hittite(Script):
         # Remove editorial markers and brackets before tokenization
         text = text.replace('⸢','').replace('⸣','').replace('[','').replace(']','')
         text = text.replace('〈', '').replace('〉', '').replace('〈', '').replace('〉', '')
-        text = text.replace('?', '').replace('*', '').strip()
+        text = text.replace('?', '').replace('*', '').replace('…', '').replace('_', '')
+        text = text.replace('¬¬¬', '').strip()
 
         text = self.remove_epigraphic_annotations(text)
 
