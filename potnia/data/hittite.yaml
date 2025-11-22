@@ -43,6 +43,11 @@ mappings:
   "ḫé": 𒃶
   "ḫi": 𒄭
   "ḫu": 𒄷
+  "ha": 𒄩
+  "he": 𒄭
+  "hé": 𒃶
+  "hi": 𒄭
+  "hu": 𒄷
 
   "la": 𒆷
   "le": 𒇷
@@ -118,6 +123,10 @@ mappings:
   "eḫ": 𒄴
   "iḫ": 𒄴
   "uḫ": 𒄴
+  "ah": 𒄴
+  "eh": 𒄴
+  "ih": 𒄴
+  "uh": 𒄴
 
   "al": 𒀠
   "el": 𒂖
@@ -163,6 +172,17 @@ mappings:
   "ḫup": 𒄽
   "ḫar": 𒄯
   "ḫur": 𒄯
+  "hal": 𒄬
+  "hab": 𒆸
+  "hap": 𒆸
+  "haš": 𒋻
+  "had": 𒉺
+  "hat": 𒉺
+  "hul": 𒅆𒌨
+  "hub": 𒄽
+  "hup": 𒄽
+  "har": 𒄯
+  "hur": 𒄯
   "gal": 𒃲
   "kal": 𒆗 # strong
   "gal9": 𒆗
@@ -203,8 +223,10 @@ mappings:
   "lik": 𒌨
   "liš": 𒇺 # spoon
   "luḫ": 𒈛 # minister
+  "luh": 𒈛 # minister
   "lum": 𒈝
   "maḫ": 𒈤 # great
+  "mah": 𒈤 # great
   "man": 𒎙
   "mar": 𒈥
   "maš": 𒈦 # half
@@ -227,6 +249,9 @@ mappings:
   "paš": 𒄫 
   "pád": 𒁁
   "pát": 𒁁
+  "per": 𒌓
+  "pér": 𒂟
+  "pèr": 𒄵
   "píd": 𒁁
   "pít": 𒁁
   "píl": 𒉋
@@ -241,6 +266,7 @@ mappings:
   "rat": 𒋥
   "riš": 𒊕
   "šaḫ": 𒋚
+  "šah": 𒋚
   "šag": 𒊕
   "šak": 𒊕
   "šal": 𒊩
@@ -254,8 +280,11 @@ mappings:
   "šum": 𒋳
   "šur": 𒋩
   "taḫ": 𒈭
+  "tah": 𒈭
   "daḫ": 𒈭
+  "dah": 𒈭
   "túḫ": 𒈭
+  "túh": 𒈭
   "tág": 𒁖
   "ták": 𒁖
   "dag": 𒁖
@@ -299,6 +328,7 @@ mappings:
   # Logograms
   "ana": 𒀀𒈾
   "didli ḫi.a": 𒀸𒄭𒀀 # (suffixed) # plural
+  "ḫia": 𒄭𒀀
   "didli": 𒀸 # (suffixed) # plural or collective
   "dingir": 𒀭 # (ᴰ) # "deity"
   "m": 𒁹 # (ᵐ) # male personal names
@@ -308,6 +338,7 @@ mappings:
   "giš": 𒄑 # "wood"
   "gud": 𒄞 # "bovid"
   "ḫur.sag": 𒄯𒊕 # "mountain"
+  "hur.sag": 𒄯𒊕 # "mountain"
   "íd": 𒀀𒇉 # "river"
   "itu": 𒌚 # "month"
   "ká": 𒆍
@@ -316,6 +347,7 @@ mappings:
   "lugal": 𒈗
   "lú": 𒇽 # "man"
   "meš ḫi.a": 𒌍𒄭𒀀 # (suffixed) # plural
+  "meš hi.a": 𒌍𒄭𒀀 # (suffixed) # plural
   "mul": 𒀯 # "star"
   "munus": 𒊩 # (ᶠ) # "woman" # female personal name
   "mušen": 𒄷 # (suffixed) # "bird"
@@ -340,6 +372,7 @@ mappings:
   "(m)": 𒁹
   "(didli)": 𒀸 # (suffixed) # plural or collective
   "(didli ḫi.a)": 𒀸𒄭𒀀 # (suffixed) # plural
+  "(didli hi.a)": 𒀸𒄭𒀀 # (suffixed) # plural
   "(dingir)": 𒀭 # (ᴰ) # "deity"
   "(dug)": 𒂁 # "vessel"
   "(é)": 𒂍 # "house"
@@ -348,6 +381,8 @@ mappings:
   "(giš)": 𒄑 # "wood"
   "(gud)": 𒄞 # "bovid"
   "(ḫi.a)": 𒄭𒀀 # (suffixed) # plural
+  "(hi.a)": 𒄭𒀀 # (suffixed) # plural
+  "(hur.sag)": 𒄯𒊕 # "mountain"
   "(ḫur.sag)": 𒄯𒊕 # "mountain"
   "(íd)": 𒀀𒇉 # "river"
   "(im)": 𒅎 # "clay"
@@ -360,6 +395,7 @@ mappings:
   "(lú)": 𒇽 # "man"
   "(meš)": 𒌍 # (suffixed) # plural
   "(meš ḫi.a)": 𒌍𒄭𒀀 # (suffixed) # plural
+  "(meš hi.a)": 𒌍𒄭𒀀 # (suffixed) # plural
   "(mul)": 𒀯 # "star"
   "(munus)": 𒊩 # (ᶠ) # "woman" # female personal name
   "(muš)": 𒈲 # "serpent"
@@ -456,6 +492,7 @@ mappings:
   "am₆": 𒀭
   "er₃": 𒀜
   "nitaḫ₂": 𒀜
+  "nitah₂": 𒀜
   "rum": 𒀸
   "til₄": 𒀸
   "dil": 𒀸
@@ -480,6 +517,7 @@ mappings:
   "sa₂": 𒁲
   "eš₄": 𒁹
   "laḫ₆": 𒁺
+  "lah₆": 𒁺
   "ša₄": 𒁺
   "tum₂": 𒁺
   "kurₓ": 𒁺
@@ -543,6 +581,7 @@ mappings:
   "isin₂": 𒅔
   "iši": 𒅖
   "saḫar": 𒅖
+  "sahar": 𒅖
   "kukkuš": 𒅖
   "isiš": 𒅖
   "kuš₇": 𒅖
@@ -556,6 +595,7 @@ mappings:
   "šudₓ": 𒅗
   "pi₄": 𒅗
   "zuḫ": 𒅗
+  "zuh": 𒅗
   "giri₁₇": 𒅗
   "inim": 𒅗
   "sigₓ": 𒊬
@@ -585,6 +625,7 @@ mappings:
   "bid₃": 𒆪
   "dib₂": 𒆪
   "suḫ₅": 𒆪
+  "suh₅": 𒆪
   "duru₂": 𒆪
   "gu₅": 𒆪
   "dab₅": 𒆪
@@ -609,10 +650,12 @@ mappings:
   "šarrum": 𒈗
   "rab₃": 𒈗
   "ḫum": 𒈝
+  "hum": 𒈝
   "guz": 𒈝
   "gum₂": 𒈝
   "num₂": 𒈝
   "ḫuz": 𒈝
+  "huz": 𒈝
   "gun₅": 𒈝
   "peš₃": 𒈠
   "sa₉": 𒈦
@@ -625,8 +668,11 @@ mappings:
   "gig₂": 𒈪
   "ĝu₁₀": 𒈬
   "muḫaldim": 𒈬
+  "muhaldim": 𒈬
   "suḫₓ": 𒈲
+  "suhₓ": 𒈲
   "niraḫ": 𒈲
+  "nirah": 𒈲
   "bir₅": 𒉆
   "sin₂": 𒉆
   "sim": 𒉆
@@ -646,6 +692,7 @@ mappings:
   "kum₂": 𒉈
   "be₇": 𒉈
   "saḫarₓ": 𒉈
+  "saharₓ": 𒉈
   "izi": 𒉈
   "suš₂": 𒉌
   "zar₂": 𒉌
@@ -665,6 +712,7 @@ mappings:
   "sig₃": 𒉺
   "kumₓ": 𒉺
   "ḫendur": 𒉺
+  "hendur": 𒉺
   "mu₆": 𒉺
   "uₓ": 𒉺
   "sag₃": 𒉺
@@ -678,6 +726,7 @@ mappings:
   "saĝ": 𒊕
   "kiri₆": 𒊬
   "saḫar₂": 𒊬
+  "sahar₂": 𒊬
   "mu₂": 𒊬
   "nisig": 𒊬
   "sakar": 𒊬
@@ -716,6 +765,7 @@ mappings:
   "buru₃": 𒌋
   "ar₂": 𒌒
   "ḫad₂": 𒌓
+  "had₂": 𒌓
   "u₄": 𒌓
   "dag₂": 𒌓
   "tam": 𒌓
@@ -724,6 +774,7 @@ mappings:
   "a₁₂": 𒌓
   "šamaš": 𒌓
   "deḫi₂": 𒌝
+  "dehi₂": 𒌝
   "kalam": 𒌦
   "uĝ₃": 𒌦
   "teš₂": 𒌨
@@ -733,6 +784,7 @@ mappings:
   "eri": 𒌷
   "u₁₉": 𒌷
   "nitaḫ": 𒍑
+  "nitah": 𒍑
   "ĝiš₃": 𒍑
   "us₂": 𒍑
   "sa₃": 𒍝
@@ -747,6 +799,7 @@ mappings:
   "su₂": 𒍪
   "rig₂": 𒍮
   "ḫaš₄": 𒍮
+  "haš₄": 𒍮
   "sum₂": 𒍮
 
   # ——— Subscript notation
@@ -754,6 +807,7 @@ mappings:
   "pe₂": 𒁉
   "pi₂": 𒁉
   "ḫe₂": 𒃶
+  "he₂": 𒃶
   "me₂": 𒈪
   "ne₂": 𒉌
   "šu₂": 𒋙
@@ -763,10 +817,8 @@ mappings:
   "UR₂": 𒌫
   "gal₉": 𒆗
   "gam₂": 𒄰
-  "TU₇": 𒄰
   "kan₂": 𒃷
   "gan₂": 𒃷
-  "GAN₂": 𒃷
   "gab₂": 𒆏
   "gap₂": 𒆏
   "kar₃": 𒃼
@@ -778,6 +830,8 @@ mappings:
   "par₂": 𒈦
   "pad₂": 𒁁
   "pat₂": 𒁁
+  "per₂": 𒂟
+  "per₃": 𒄵
   "pid₂": 𒁁
   "pit₂": 𒁁
   "pil₂": 𒉋
@@ -786,6 +840,7 @@ mappings:
   "šam₃": 𒉓
   "šip₃": 𒉺𒅁
   "tuḫ₂": 𒈭
+  "tuh₂": 𒈭
   "tag₂": 𒁖
   "tak₂": 𒁖
   "tam₂": 𒁮
@@ -823,6 +878,7 @@ mappings:
   "pe2": 𒁉
   "pi2": 𒁉
   "ḫe2": 𒃶
+  "he2": 𒃶
   "me2": 𒈪
   "ne2": 𒉌
   "šu2": 𒋙
@@ -849,6 +905,7 @@ mappings:
   "šam3": 𒉓
   "šip3": 𒉺𒅁
   "tuḫ2": 𒈭
+  "tuh2": 𒈭
   "tag2": 𒁖
   "tak2": 𒁖
   "tam2": 𒁮
@@ -912,6 +969,7 @@ mappings:
   "bar₈": 𒅀
   "bat": 𒁁
   "baḫar₅": 𒋡
+  "bahar₅": 𒋡
   "ba₄": 𒂷
   "ba₆": 𒌑
   "bel": 𒀬
@@ -931,7 +989,9 @@ mappings:
   "bár": 𒁈
   "bára": 𒃻
   "báḫar": 𒋡
+  "báhar": 𒋡
   "báḫar₅": 𒁹
+  "báhar₅": 𒁹
   "bé": 𒁉
   "bìl": 𒈩
   "bùlug": 𒉽
@@ -949,9 +1009,11 @@ mappings:
   "de₄": 𒈠
   "dib": 𒁳
   "didliḫi": 𒅈
+  "didlihi": 𒅈
   "din": 𒁷
   "diri": 𒋛
   "diḫ": 𒁾
+  "dih": 𒁾
   "di₁₂": 𒅆
   "dkal": 𒆗
   "du1": 𒋼
@@ -965,6 +1027,7 @@ mappings:
   "dutu": 𒌓
   "du°meš": 𒊕
   "duḫ": 𒂃
+  "duh": 𒂃
   "du₁₀": 𒄭
   "du₁₄": 𒂕
   "du₆": 𒇯
@@ -980,6 +1043,7 @@ mappings:
   "dì": 𒋾
   "dìm": 𒊐
   "dìḫ": 𒄬
+  "dìh": 𒄬
   "dílim": 𒃲
   "dím": 𒁶
   "dù": 𒆕
@@ -1123,6 +1187,7 @@ mappings:
   "kak": 𒆕
   "kala": 𒆗
   "kamḫi": 𒀀
+  "kamhi": 𒀀
   "kan": 𒄩
   "kankal": 𒇷
   "karaš": 𒆗
@@ -1144,6 +1209,7 @@ mappings:
   "kisal": 𒆦
   "kisim": 𒁬
   "kislaḫ": 𒌓
+  "kislah": 𒌓
   "kišib": 𒈩
   "kubabbar": 𒀭
   "kun": 𒆲
@@ -1171,6 +1237,7 @@ mappings:
   "lagab": 𒆸
   "lagab×a": 𒈠
   "laḫta": 𒉴
+  "lahta": 𒉴
   "la₅": 𒇳
   "libir": 𒅆
   "ligidba": 𒀀
@@ -1191,6 +1258,7 @@ mappings:
   "lúgud": 𒅗
   "lúkin": 𒇽
   "lúḫal": 𒅀
+  "lúhal": 𒅀
   "mad": 𒋾
   "maskim": 𒇽
   "mat": 𒆳
@@ -1209,12 +1277,12 @@ mappings:
   "mun": 𒁵
   "munu": 𒄀
   "mununs": 𒌈
-  "munuslugal": 𒈾
+  "munuslugal": 𒈾  # ?
   "munu₈": 𒉽
   "murub₄": 𒊭
   "mur₇": 𒄘
   "musen": 𒊍
-  "mušen°ḫi": 𒄭
+  "mušen°ḫi": 𒄭  # ?
   "mu₄": 𒅋
   "mu₇": 𒅲
   "má": 𒈣
@@ -1310,6 +1378,7 @@ mappings:
   "sahar": 𒄭
   "sal": 𒊩
   "saḫ": 𒌉
+  "sah": 𒌉
   "sa₂₀": 𒋾
   "sa₅": 𒀀
   "sa₆": 𒊷
@@ -1338,7 +1407,9 @@ mappings:
   "sur": 𒊏
   "sur₁₄": 𒆕
   "suḫur": 𒋦
+  "suhur": 𒋦
   "suḫuš": 𒌫
+  "suhuš": 𒌫
   "sà": 𒀭
   "sá": 𒁲
   "sè": 𒈗
@@ -1357,6 +1428,7 @@ mappings:
   "sîn": 𒌋
   "sùd": 𒀭
   "sùḫ": 𒊒
+  "sùh": 𒊒
   "sú": 𒍪
   "súd": 𒁹
   "súm": 𒄑
@@ -1418,24 +1490,28 @@ mappings:
   "uru₆": 𒉞
   "ur₅": 𒄯
   "us": 𒌨
-  "usduḫa": 𒅁
+  "usduḫa": 𒅁  # ?
   "utul2": 𒌋
   "utul₇": 𒆚
   "uz₆": 𒍚
   "uš₁₁": 𒍪
   "uḫ₇": 𒆕
+  "uh₇": 𒆕
   "uṣ": 𒍣
-  "u⁯₁₉": 𒈨
+  "u⁯₁₉": 𒈨  # ?
   "u₁₈": 𒍇
   "u₅": 𒄷
   "u₈": 𒀴
   "we": 𒇻
-  "xxx": 𒀸
+  "xxx": 𒀸 ? 
   "zabar": 𒁇
   "zalág": 𒂵
   "zaraḫ": 𒄴
+  "zarah": 𒄴
   "zaḫ": 𒉈
+  "zah": 𒉈
   "zeḫ": 𒇻
+  "zeh": 𒇻
   "zig": 𒋫
   "zikin": 𒀀
   "zimbir": 𒌓
@@ -1547,6 +1623,7 @@ mappings:
   "kaz": 𒍝
   "kań": 𒍣
   "kaḫu": 𒊏
+  "kahu": 𒊏
   "kaṣ": 𒆏
   "ka₄b": 𒀀
   "ka₄l": 𒇻
@@ -1615,6 +1692,7 @@ mappings:
   "muk": 𒈮
   "muš₈": 𒄷
   "muḫ": 𒅗
+  "muh": 𒅗
   "már": 𒀫
   "mím": 𒈠
   "mùs": 𒃶
@@ -1729,12 +1807,14 @@ mappings:
   "tul": 𒍝
   "tum₄": 𒉏
   "tuḫ": 𒂃
+  "tuh": 𒂃
   "tàl": 𒀸
   "tàq": 𒁉
   "tàr": 𒁰
   "tàs": 𒀀
   "táw": 𒊀
   "táḫ": 𒂃
+  "táh": 𒂃
   "tèg": 𒋼
   "té": 𒈗
   "tér": 𒋫
@@ -1748,9 +1828,10 @@ mappings:
   "umuš": 𒈬
   "usu": 𒂊
   "ušum": 𒃲
-  "uš⟨⟨eš⟩⟩": 𒄩
+  "uš⟨⟨eš⟩⟩": 𒄩  # ?
   "uʾ": 𒀪
   "uḫ₅": 𒄠
+  "uh₅": 𒄠
   "uṭ": 𒌓
   "von": 𒐊
   "w": 𒂊
@@ -1760,16 +1841,16 @@ mappings:
   "wr": 𒉡
   "wu": 𒊇
   "wuu": 𒌋
-  "x3": 𒌅
-  "xba": 𒁀
-  "xke": 𒉺
-  "xkán": 𒀭
-  "xna": 𒈾
-  "xra": 𒊏
-  "xx": 𒋫
-  "xšu": 𒀭
-  "xḫu": 𒄷
-  "z": 𒋾
+  "x3": 𒌅   # ?
+  "xba": 𒁀  # ?
+  "xke": 𒉺  # ?
+  "xkán": 𒀭  # ?
+  "xna": 𒈾  # ?
+  "xra": 𒊏  # ?
+  "xx": 𒋫a # ?
+  "xšu": 𒀭  # ?
+  "xḫu": 𒄷  # ?
+  "z": 𒋾   # ?
   "zapát": 𒅀
   "zar": 𒇡
   "zia": 𒁉
@@ -1831,19 +1912,23 @@ mappings:
   "áw": 𒊀
   "áz": 𒀾
   "áḫ": 𒋾
+  "áh": 𒋾
   "èl": 𒀭
   "és": 𒌑
   "éw": 𒊄
   "éši": 𒀮
   "éḫ": 𒇷
+  "éh": 𒇷
   "ìl": 𒀭
   "ìmma": 𒅊
   "í": 𒐊
   "íḫ": 𒋫
+  "íh": 𒋫
   "íṣ": 𒀀
   "úru": 𒍍
   "úwa": 𒍝
   "úḫ": 𒈾
+  "úh": 𒈾
   "úṣ": 𒊒
   "ĝá": 𒀠
   "šaga": 𒆥
@@ -1852,6 +1937,7 @@ mappings:
   "šakir": 𒍀
   "šakkan": 𒅈
   "šaḫar": 𒄭
+  "šahar": 𒄭
   "šaṭ": 𒆳
   "šen": 𒊿
   "šennur": 𒄒
@@ -1869,7 +1955,9 @@ mappings:
   "šul": 𒂄
   "šunu": 𒅗
   "šuḫub": 𒀯
+  "šuhub": 𒀯
   "šuḫur": 𒀭
+  "šuhur": 𒀭
   "šà": 𒊮
   "šá": 𒁹
   "šákan": 𒄊
@@ -1900,6 +1988,7 @@ mappings:
   "šip": 𒊑
   "šipri": 𒊬
   "šiḫ": 𒄿
+  "ših": 𒄿
   "šug": 𒂵
   "šum₄": 𒁁
   "šun": 𒊿
@@ -1909,21 +1998,23 @@ mappings:
   "šàr": 𒊒
   "šákkan": 𒊭
   "šáḫ": 𒀜
+  "šáḫ": 𒀜
+  "šáh": 𒀜
   "šé": 𒄀
   "šìr": 𒂡
   "ší": 𒊏
   "šùl": 𒊕
   "šúm": 𒈠
-  "ʾe": 𒁶
-  "ʾa": 𒀪
-  "ʾi": 𒀪
-  "ʾu": 𒀪
-  "ʾì": 𒋗
-  "ˀa₄": 𒀊
-  "̀ḫa": 𒆠
-  "νινdα": 𒊭
-  "׃ki": 𒁹
-  "ḫ": 𒅀
+  "ʾe": 𒁶  # ?
+  "ʾa": 𒀪  # ?
+  "ʾi": 𒀪  # ?
+  "ʾu": 𒀪  # ?
+  "ʾì": 𒋗  # ?
+  "ˀa₄": 𒀊  # ?
+  "̀ḫa": 𒆠  # ?
+  "νινdα": 𒊭  # ?
+  "׃ki": 𒁹 # ?
+  "ḫ": 𒅀   # ?
   "ḫabrud": 𒁕
   "ḫašḫur": 𒈢
   "ḫaṭ": 𒆬
@@ -1947,6 +2038,29 @@ mappings:
   "ḫée": 𒁕
   "ḫíš": 𒍨
   "ḫúl": 𒄾
+  "habrud": 𒁕
+  "hašhur": 𒈢
+  "haṭ": 𒆬
+  "ha₆": 𒉺
+  "hum₄": 𒈠
+  "huš": 𒌋
+  "há": 𒄭
+  "hád": 𒀀
+  "hí": 𒌈
+  "húb": 𒄸
+  "hi̇": 𒁕
+  "hal!": 𒈠
+  "hantantat": 𒆠
+  "harši": 𒉿
+  "haz": 𒋻
+  "haṣ": 𒋻
+  "hir": 𒋾
+  "huinut": 𒀀
+  "háb": 𒀀
+  "hár": 𒃷
+  "hée": 𒁕
+  "híš": 𒍨
+  "húl": 𒄾
   "ṣa": 𒀀
   "ṣar": 𒇡
   "ṣe": 𒍢
